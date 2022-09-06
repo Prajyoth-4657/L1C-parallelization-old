@@ -1,0 +1,1104 @@
+Total PDU count = 3 
+PDSCH PDU count = 2 
+CSIRS PDU count = 0 
+
+
+=====================CBS configurations========================
+Hardware packet for write FSM is : 0X3400000000001680
+PDU ID 0 , Codeword 0 , Number of codeblocks 3 , Codeblock size 7688
+Hardware packet for write FSM is : 0X3400000000003200
+PDU ID 1 , Codeword 0 , Number of codeblocks 7 , Codeblock size 7320
+
+Hardware packet1 for READ FSM is : 0X2200000000000000
+Hardware packet2 for READ FSM is : 0X2200000000001E08
+Codeblock index : 0
+Slot number : 0
+Starting Address : 0
+Starting Bit location : 0
+CB length : 7688
+
+Hardware packet for CB CRC is : 0X2300000001003C08
+l1_k is : 8
+l1_r is : 60
+l1_poly_type : 1
+
+Hardware packet1 for READ FSM is : 0X2200000000001680
+Hardware packet2 for READ FSM is : 0X2200000000001C98
+Codeblock index : 3
+Slot number : 0
+Starting Address : 180
+Starting Bit location : 0
+CB length : 7320
+
+Hardware packet for CB CRC is : 0X2300000001003918
+l1_k is : 24
+l1_r is : 57
+l1_poly_type : 1
+
+Hardware packet1 for READ FSM is : 0X2200000001801DA0
+Hardware packet2 for READ FSM is : 0X2200000000001C98
+Codeblock index : 4
+Slot number : 0
+Starting Address : 237
+Starting Bit location : 24
+CB length : 7320
+
+Hardware packet for CB CRC is : 0X2300000001003918
+l1_k is : 24
+l1_r is : 57
+l1_poly_type : 1
+
+Hardware packet1 for READ FSM is : 0X2200000000800780
+Hardware packet2 for READ FSM is : 0X2200000000001E08
+Codeblock index : 1
+Slot number : 0
+Starting Address : 60
+Starting Bit location : 8
+CB length : 7688
+
+Hardware packet for CB CRC is : 0X2300000001003C08
+l1_k is : 8
+l1_r is : 60
+l1_poly_type : 1
+
+Hardware packet1 for READ FSM is : 0X22000000030024C0
+Hardware packet2 for READ FSM is : 0X2200000000001C98
+Codeblock index : 5
+Slot number : 0
+Starting Address : 294
+Starting Bit location : 48
+CB length : 7320
+
+Hardware packet for CB CRC is : 0X2300000001003918
+l1_k is : 24
+l1_r is : 57
+l1_poly_type : 1
+
+Hardware packet1 for READ FSM is : 0X2200000004802BE0
+Hardware packet2 for READ FSM is : 0X2200000000001C98
+Codeblock index : 6
+Slot number : 0
+Starting Address : 351
+Starting Bit location : 72
+CB length : 7320
+
+Hardware packet for CB CRC is : 0X2300000001003918
+l1_k is : 24
+l1_r is : 57
+l1_poly_type : 1
+
+Hardware packet1 for READ FSM is : 0X2200000006003300
+Hardware packet2 for READ FSM is : 0X2200000000001C98
+Codeblock index : 7
+Slot number : 0
+Starting Address : 408
+Starting Bit location : 96
+CB length : 7320
+
+Hardware packet for CB CRC is : 0X2300000001003918
+l1_k is : 24
+l1_r is : 57
+l1_poly_type : 1
+
+Hardware packet1 for READ FSM is : 0X2200000001000F00
+Hardware packet2 for READ FSM is : 0X2200000000001E08
+Codeblock index : 2
+Slot number : 0
+Starting Address : 120
+Starting Bit location : 16
+CB length : 7688
+
+Hardware packet for CB CRC is : 0X2300000001003C08
+l1_k is : 8
+l1_r is : 60
+l1_poly_type : 1
+
+Hardware packet1 for READ FSM is : 0X2200000007803A20
+Hardware packet2 for READ FSM is : 0X2200000000001C98
+Codeblock index : 8
+Slot number : 0
+Starting Address : 465
+Starting Bit location : 120
+CB length : 7320
+
+Hardware packet for CB CRC is : 0X2300000001003918
+l1_k is : 24
+l1_r is : 57
+l1_poly_type : 1
+
+Hardware packet1 for READ FSM is : 0X2200000001004160
+Hardware packet2 for READ FSM is : 0X2200000000001C98
+Codeblock index : 9
+Slot number : 0
+Starting Address : 523
+Starting Bit location : 16
+CB length : 7320
+
+Hardware packet for CB CRC is : 0X2300000001003918
+l1_k is : 24
+l1_r is : 57
+l1_poly_type : 1
+
+
+=====================DMRS configurations=======================
+
+Hardware packet1 is : 0X3000000000F06400
+Hardware packet2 is : 0X30000000000400EC
+Hardware packet3 is : 0X3000000000000000
+PDU index : 0 
+Starting RB is : 0 
+PRB length is : 50 
+DMRS configuration type is : 0 
+n_scid is : 0 
+The layers which are present are : 0X000F 
+DMRS scrambling ID is : 236 
+DMRS symbols are : 0X0004 
+The value of l_prime is : 0X0000 
+Slot number in the frame is : 0 
+The reserved REs for TB 0 by DMRS is 2400
+
+Hardware packet1 is : 0X300000000014F096
+Hardware packet2 is : 0X30000000000407D0
+Hardware packet3 is : 0X3000000000000000
+PDU index : 1 
+Starting RB is : 150 
+PRB length is : 120 
+DMRS configuration type is : 1 
+n_scid is : 0 
+The layers which are present are : 0X0001 
+DMRS scrambling ID is : 2000 
+DMRS symbols are : 0X0004 
+The value of l_prime is : 0X0000 
+Slot number in the frame is : 0 
+The reserved REs for TB 1 by DMRS is 480
+
+Hardware packet1 is : 0X3000000000000000
+Hardware packet2 is : 0X3000000000000000
+Hardware packet3 is : 0X3000000000000000
+
+Hardware packet1 is : 0X3000000000000000
+Hardware packet2 is : 0X3000000000000000
+Hardware packet3 is : 0X3000000000000000
+
+Hardware packet1 is : 0X3000000000000000
+Hardware packet2 is : 0X3000000000000000
+Hardware packet3 is : 0X3000000000000000
+
+Hardware packet1 is : 0X3000000000000000
+Hardware packet2 is : 0X3000000000000000
+Hardware packet3 is : 0X3000000000000000
+
+Hardware packet1 is : 0X3000000000000000
+Hardware packet2 is : 0X3000000000000000
+Hardware packet3 is : 0X3000000000000000
+
+Hardware packet1 is : 0X3000000000000000
+Hardware packet2 is : 0X3000000000000000
+Hardware packet3 is : 0X3000000000000000
+
+Hardware packet1 is : 0X3000000000000000
+Hardware packet2 is : 0X3000000000000000
+Hardware packet3 is : 0X3000000000000000
+
+Hardware packet1 is : 0X3000000000000000
+Hardware packet2 is : 0X3000000000000000
+Hardware packet3 is : 0X3000000000000000
+
+Hardware packet1 is : 0X3000000000000000
+Hardware packet2 is : 0X3000000000000000
+Hardware packet3 is : 0X3000000000000000
+
+Hardware packet1 is : 0X3000000000000000
+Hardware packet2 is : 0X3000000000000000
+Hardware packet3 is : 0X3000000000000000
+
+Hardware packet1 is : 0X3000000000000000
+Hardware packet2 is : 0X3000000000000000
+Hardware packet3 is : 0X3000000000000000
+
+Hardware packet1 is : 0X3000000000000000
+Hardware packet2 is : 0X3000000000000000
+Hardware packet3 is : 0X3000000000000000
+
+Hardware packet1 is : 0X3000000000000000
+Hardware packet2 is : 0X3000000000000000
+Hardware packet3 is : 0X3000000000000000
+
+Hardware packet1 is : 0X3000000000000000
+Hardware packet2 is : 0X3000000000000000
+Hardware packet3 is : 0X3000000000000000
+
+Hardware packet1 is : 0X3000000000000000
+Hardware packet2 is : 0X3000000000000000
+Hardware packet3 is : 0X3000000000000000
+
+Hardware packet1 is : 0X3000000000000000
+Hardware packet2 is : 0X3000000000000000
+Hardware packet3 is : 0X3000000000000000
+
+Hardware packet1 is : 0X3000000000000000
+Hardware packet2 is : 0X3000000000000000
+Hardware packet3 is : 0X3000000000000000
+
+Hardware packet1 is : 0X3000000000000000
+Hardware packet2 is : 0X3000000000000000
+Hardware packet3 is : 0X3000000000000000
+
+Hardware packet1 is : 0X3000000000000000
+Hardware packet2 is : 0X3000000000000000
+Hardware packet3 is : 0X3000000000000000
+
+Hardware packet1 is : 0X3000000000000000
+Hardware packet2 is : 0X3000000000000000
+Hardware packet3 is : 0X3000000000000000
+
+Hardware packet1 is : 0X3000000000000000
+Hardware packet2 is : 0X3000000000000000
+Hardware packet3 is : 0X3000000000000000
+
+Hardware packet1 is : 0X3000000000000000
+Hardware packet2 is : 0X3000000000000000
+Hardware packet3 is : 0X3000000000000000
+
+Hardware packet1 is : 0X3000000000000000
+Hardware packet2 is : 0X3000000000000000
+Hardware packet3 is : 0X3000000000000000
+
+Hardware packet1 is : 0X3000000000000000
+Hardware packet2 is : 0X3000000000000000
+Hardware packet3 is : 0X3000000000000000
+
+Hardware packet1 is : 0X3000000000000000
+Hardware packet2 is : 0X3000000000000000
+Hardware packet3 is : 0X3000000000000000
+
+Hardware packet1 is : 0X3000000000000000
+Hardware packet2 is : 0X3000000000000000
+Hardware packet3 is : 0X3000000000000000
+
+Hardware packet1 is : 0X3000000000000000
+Hardware packet2 is : 0X3000000000000000
+Hardware packet3 is : 0X3000000000000000
+
+Hardware packet1 is : 0X3000000000000000
+Hardware packet2 is : 0X3000000000000000
+Hardware packet3 is : 0X3000000000000000
+
+
+=====================CSIRS configurations======================
+
+Hardware packet is : 0X3100000000000000
+Slot number in the frame is : 0 
+
+Hardware packet1 is : 0X3100000000000000
+Hardware packet2 is : 0X3100000000000000
+
+Hardware packet1 is : 0X3100000000000000
+Hardware packet2 is : 0X3100000000000000
+
+Hardware packet1 is : 0X3100000000000000
+Hardware packet2 is : 0X3100000000000000
+
+Hardware packet1 is : 0X3100000000000000
+Hardware packet2 is : 0X3100000000000000
+
+Hardware packet1 is : 0X3100000000000000
+Hardware packet2 is : 0X3100000000000000
+
+Hardware packet1 is : 0X3100000000000000
+Hardware packet2 is : 0X3100000000000000
+
+Hardware packet1 is : 0X3100000000000000
+Hardware packet2 is : 0X3100000000000000
+
+Hardware packet1 is : 0X3100000000000000
+Hardware packet2 is : 0X3100000000000000
+
+Hardware packet1 is : 0X3100000000000000
+Hardware packet2 is : 0X3100000000000000
+
+Hardware packet1 is : 0X3100000000000000
+Hardware packet2 is : 0X3100000000000000
+
+Hardware packet1 is : 0X3100000000000000
+Hardware packet2 is : 0X3100000000000000
+
+Hardware packet1 is : 0X3100000000000000
+Hardware packet2 is : 0X3100000000000000
+
+Hardware packet1 is : 0X3100000000000000
+Hardware packet2 is : 0X3100000000000000
+
+Hardware packet1 is : 0X3100000000000000
+Hardware packet2 is : 0X3100000000000000
+
+Hardware packet1 is : 0X3100000000000000
+Hardware packet2 is : 0X3100000000000000
+
+Hardware packet1 is : 0X3100000000000000
+Hardware packet2 is : 0X3100000000000000
+
+Hardware packet1 is : 0X3100000000000000
+Hardware packet2 is : 0X3100000000000000
+
+Hardware packet1 is : 0X3100000000000000
+Hardware packet2 is : 0X3100000000000000
+
+Hardware packet1 is : 0X3100000000000000
+Hardware packet2 is : 0X3100000000000000
+
+Hardware packet1 is : 0X3100000000000000
+Hardware packet2 is : 0X3100000000000000
+
+Hardware packet1 is : 0X3100000000000000
+Hardware packet2 is : 0X3100000000000000
+
+Hardware packet1 is : 0X3100000000000000
+Hardware packet2 is : 0X3100000000000000
+
+Hardware packet1 is : 0X3100000000000000
+Hardware packet2 is : 0X3100000000000000
+
+Hardware packet1 is : 0X3100000000000000
+Hardware packet2 is : 0X3100000000000000
+
+Hardware packet1 is : 0X3100000000000000
+Hardware packet2 is : 0X3100000000000000
+
+Hardware packet1 is : 0X3100000000000000
+Hardware packet2 is : 0X3100000000000000
+
+Hardware packet1 is : 0X3100000000000000
+Hardware packet2 is : 0X3100000000000000
+
+Hardware packet1 is : 0X3100000000000000
+Hardware packet2 is : 0X3100000000000000
+
+Hardware packet1 is : 0X3100000000000000
+Hardware packet2 is : 0X3100000000000000
+
+Hardware packet1 is : 0X3100000000000000
+Hardware packet2 is : 0X3100000000000000
+
+==================SSB/PBCH configs===========================
+
+Hardware packet1 is : 0X3200000000000001
+Hardware packet2 is : 0X3200000000406355
+MIB bits are : 0X0001 
+SSB index is : 0 
+Frame number is : 853 
+Half frame number is : 0 
+Subcarrier offset Kssb is : 0 
+Cell NID1 is : 0X0006 
+Cell NID2 is : 0X0002 
+
+
+====================PDSCH configurations=====================
+
+PDSCH PDU index: 0 
+TB index: 0 
+CB index: 0 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X2400000000315E20
+total_no_of_message_bits: 7712 
+base_graph_index 1 
+lifting_size_index: 49 
+user_id: 0 
+=======================
+Configuration for puncturing module- 
+Hardware packet1 is : 0X2500000007901E20
+Hardware packet2 is : 0X2500000000B58160
+k_cb: 7712 
+K_cb: 7744 
+Z: 352 
+N_cb: 23232 
+=======================
+Configuration for rate matching module- 
+Hardware packet1 is : 0X260000005AA05AC0
+Hardware packet2 is : 0X26000000000044C0
+Ncb: 23232 
+N_dash: 23200 
+E: 17600 
+start_pos: 0 
+=======================
+Configuration for bit interleaving module- 
+Hardware packet is : 0X2800000000044C02
+Q: 2 
+Rmsize: 17600 
+=======================
+Configuration for golden sequence module- 
+Hardware packet is : 0X29000000002800EB
+NRNTI: 235 
+q: 0 
+N_id: 20 
+=======================
+Configuration for scrambler module- 
+Hardware packet is : 0X2A00000000113000
+Userid: 0 
+q: 0 
+CB_size: 17600 
+End_TB: 0 
+=======================
+Configuration for modulator module- 
+Hardware packet is : 0X2B00000000898002
+Mod_Order: 2 
+No_of_packets: 17600 
+=======================
+Configuration for layer mapper module- 
+Hardware packet is : 0X2C00000008984688
+layer0: 0 
+layer1: 1 
+layer2: 2 
+layer3: 3 
+mapping_type: 4 
+no_modulated_symbols: 8800 
+=========================================================
+
+PDSCH PDU index: 1 
+TB index: 1 
+CB index: 3 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X2400000000715CB0
+total_no_of_message_bits: 7344 
+base_graph_index 1 
+lifting_size_index: 49 
+user_id: 1 
+=======================
+Configuration for puncturing module- 
+Hardware packet1 is : 0X2500000007901CB0
+Hardware packet2 is : 0X2500000000B58160
+k_cb: 7344 
+K_cb: 7744 
+Z: 352 
+N_cb: 23232 
+=======================
+Configuration for rate matching module- 
+Hardware packet1 is : 0X2600000059305AC0
+Hardware packet2 is : 0X2600000000003840
+Ncb: 23232 
+N_dash: 22832 
+E: 14400 
+start_pos: 0 
+=======================
+Configuration for bit interleaving module- 
+Hardware packet is : 0X2800000000038406
+Q: 6 
+Rmsize: 14400 
+=======================
+Configuration for golden sequence module- 
+Hardware packet is : 0X29000000002800EC
+NRNTI: 236 
+q: 0 
+N_id: 20 
+=======================
+Configuration for scrambler module- 
+Hardware packet is : 0X2A000000000E1001
+Userid: 1 
+q: 0 
+CB_size: 14400 
+End_TB: 0 
+=======================
+Configuration for modulator module- 
+Hardware packet is : 0X2B00000000708006
+Mod_Order: 6 
+No_of_packets: 14400 
+=======================
+Configuration for layer mapper module- 
+Hardware packet is : 0X2C00000002581000
+layer0: 0 
+layer1: 0 
+layer2: 0 
+layer3: 0 
+mapping_type: 1 
+no_modulated_symbols: 2400 
+=========================================================
+
+PDSCH PDU index: 1 
+TB index: 1 
+CB index: 4 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X2400000000715CB0
+total_no_of_message_bits: 7344 
+base_graph_index 1 
+lifting_size_index: 49 
+user_id: 1 
+=======================
+Configuration for puncturing module- 
+Hardware packet1 is : 0X2500000007901CB0
+Hardware packet2 is : 0X2500000000B58160
+k_cb: 7344 
+K_cb: 7744 
+Z: 352 
+N_cb: 23232 
+=======================
+Configuration for rate matching module- 
+Hardware packet1 is : 0X2600000059305AC0
+Hardware packet2 is : 0X2600000000003840
+Ncb: 23232 
+N_dash: 22832 
+E: 14400 
+start_pos: 0 
+=======================
+Configuration for bit interleaving module- 
+Hardware packet is : 0X2800000000038406
+Q: 6 
+Rmsize: 14400 
+=======================
+Configuration for golden sequence module- 
+Hardware packet is : 0X29000000002800EC
+NRNTI: 236 
+q: 0 
+N_id: 20 
+=======================
+Configuration for scrambler module- 
+Hardware packet is : 0X2A000000000E1001
+Userid: 1 
+q: 0 
+CB_size: 14400 
+End_TB: 0 
+=======================
+Configuration for modulator module- 
+Hardware packet is : 0X2B00000000708006
+Mod_Order: 6 
+No_of_packets: 14400 
+=======================
+Configuration for layer mapper module- 
+Hardware packet is : 0X2C00000002581000
+layer0: 0 
+layer1: 0 
+layer2: 0 
+layer3: 0 
+mapping_type: 1 
+no_modulated_symbols: 2400 
+=========================================================
+
+PDSCH PDU index: 0 
+TB index: 0 
+CB index: 1 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X2400000000315E20
+total_no_of_message_bits: 7712 
+base_graph_index 1 
+lifting_size_index: 49 
+user_id: 0 
+=======================
+Configuration for puncturing module- 
+Hardware packet1 is : 0X2500000007901E20
+Hardware packet2 is : 0X2500000000B58160
+k_cb: 7712 
+K_cb: 7744 
+Z: 352 
+N_cb: 23232 
+=======================
+Configuration for rate matching module- 
+Hardware packet1 is : 0X260000005AA05AC0
+Hardware packet2 is : 0X26000000000044C0
+Ncb: 23232 
+N_dash: 23200 
+E: 17600 
+start_pos: 0 
+=======================
+Configuration for bit interleaving module- 
+Hardware packet is : 0X2800000000044C02
+Q: 2 
+Rmsize: 17600 
+=======================
+Configuration for golden sequence module- 
+Hardware packet is : 0X29000000002800EB
+NRNTI: 235 
+q: 0 
+N_id: 20 
+=======================
+Configuration for scrambler module- 
+Hardware packet is : 0X2A00000000113000
+Userid: 0 
+q: 0 
+CB_size: 17600 
+End_TB: 0 
+=======================
+Configuration for modulator module- 
+Hardware packet is : 0X2B00000000898002
+Mod_Order: 2 
+No_of_packets: 17600 
+=======================
+Configuration for layer mapper module- 
+Hardware packet is : 0X2C00000008984688
+layer0: 0 
+layer1: 1 
+layer2: 2 
+layer3: 3 
+mapping_type: 4 
+no_modulated_symbols: 8800 
+=========================================================
+
+PDSCH PDU index: 1 
+TB index: 1 
+CB index: 5 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X2400000000715CB0
+total_no_of_message_bits: 7344 
+base_graph_index 1 
+lifting_size_index: 49 
+user_id: 1 
+=======================
+Configuration for puncturing module- 
+Hardware packet1 is : 0X2500000007901CB0
+Hardware packet2 is : 0X2500000000B58160
+k_cb: 7344 
+K_cb: 7744 
+Z: 352 
+N_cb: 23232 
+=======================
+Configuration for rate matching module- 
+Hardware packet1 is : 0X2600000059305AC0
+Hardware packet2 is : 0X2600000000003840
+Ncb: 23232 
+N_dash: 22832 
+E: 14400 
+start_pos: 0 
+=======================
+Configuration for bit interleaving module- 
+Hardware packet is : 0X2800000000038406
+Q: 6 
+Rmsize: 14400 
+=======================
+Configuration for golden sequence module- 
+Hardware packet is : 0X29000000002800EC
+NRNTI: 236 
+q: 0 
+N_id: 20 
+=======================
+Configuration for scrambler module- 
+Hardware packet is : 0X2A000000000E1001
+Userid: 1 
+q: 0 
+CB_size: 14400 
+End_TB: 0 
+=======================
+Configuration for modulator module- 
+Hardware packet is : 0X2B00000000708006
+Mod_Order: 6 
+No_of_packets: 14400 
+=======================
+Configuration for layer mapper module- 
+Hardware packet is : 0X2C00000002581000
+layer0: 0 
+layer1: 0 
+layer2: 0 
+layer3: 0 
+mapping_type: 1 
+no_modulated_symbols: 2400 
+=========================================================
+
+PDSCH PDU index: 1 
+TB index: 1 
+CB index: 6 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X2400000000715CB0
+total_no_of_message_bits: 7344 
+base_graph_index 1 
+lifting_size_index: 49 
+user_id: 1 
+=======================
+Configuration for puncturing module- 
+Hardware packet1 is : 0X2500000007901CB0
+Hardware packet2 is : 0X2500000000B58160
+k_cb: 7344 
+K_cb: 7744 
+Z: 352 
+N_cb: 23232 
+=======================
+Configuration for rate matching module- 
+Hardware packet1 is : 0X2600000059305AC0
+Hardware packet2 is : 0X2600000000003840
+Ncb: 23232 
+N_dash: 22832 
+E: 14400 
+start_pos: 0 
+=======================
+Configuration for bit interleaving module- 
+Hardware packet is : 0X2800000000038406
+Q: 6 
+Rmsize: 14400 
+=======================
+Configuration for golden sequence module- 
+Hardware packet is : 0X29000000002800EC
+NRNTI: 236 
+q: 0 
+N_id: 20 
+=======================
+Configuration for scrambler module- 
+Hardware packet is : 0X2A000000001E1001
+Userid: 1 
+q: 0 
+CB_size: 14400 
+End_TB: 1 
+=======================
+Configuration for modulator module- 
+Hardware packet is : 0X2B00000000708006
+Mod_Order: 6 
+No_of_packets: 14400 
+=======================
+Configuration for layer mapper module- 
+Hardware packet is : 0X2C00000002581000
+layer0: 0 
+layer1: 0 
+layer2: 0 
+layer3: 0 
+mapping_type: 1 
+no_modulated_symbols: 2400 
+=========================================================
+
+PDSCH PDU index: 1 
+TB index: 1 
+CB index: 7 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X2400000000715CB0
+total_no_of_message_bits: 7344 
+base_graph_index 1 
+lifting_size_index: 49 
+user_id: 1 
+=======================
+Configuration for puncturing module- 
+Hardware packet1 is : 0X2500000007901CB0
+Hardware packet2 is : 0X2500000000B58160
+k_cb: 7344 
+K_cb: 7744 
+Z: 352 
+N_cb: 23232 
+=======================
+Configuration for rate matching module- 
+Hardware packet1 is : 0X2600000059305AC0
+Hardware packet2 is : 0X2600000000003840
+Ncb: 23232 
+N_dash: 22832 
+E: 14400 
+start_pos: 0 
+=======================
+Configuration for bit interleaving module- 
+Hardware packet is : 0X2800000000038406
+Q: 6 
+Rmsize: 14400 
+=======================
+Configuration for golden sequence module- 
+Hardware packet is : 0X29000000002800EC
+NRNTI: 236 
+q: 0 
+N_id: 20 
+=======================
+Configuration for scrambler module- 
+Hardware packet is : 0X2A000000000E1001
+Userid: 1 
+q: 0 
+CB_size: 14400 
+End_TB: 0 
+=======================
+Configuration for modulator module- 
+Hardware packet is : 0X2B00000000708006
+Mod_Order: 6 
+No_of_packets: 14400 
+=======================
+Configuration for layer mapper module- 
+Hardware packet is : 0X2C00000002581000
+layer0: 0 
+layer1: 0 
+layer2: 0 
+layer3: 0 
+mapping_type: 1 
+no_modulated_symbols: 2400 
+=========================================================
+
+PDSCH PDU index: 0 
+TB index: 0 
+CB index: 2 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X2400000000315E20
+total_no_of_message_bits: 7712 
+base_graph_index 1 
+lifting_size_index: 49 
+user_id: 0 
+=======================
+Configuration for puncturing module- 
+Hardware packet1 is : 0X2500000007901E20
+Hardware packet2 is : 0X2500000000B58160
+k_cb: 7712 
+K_cb: 7744 
+Z: 352 
+N_cb: 23232 
+=======================
+Configuration for rate matching module- 
+Hardware packet1 is : 0X260000005AA05AC0
+Hardware packet2 is : 0X26000000000044C0
+Ncb: 23232 
+N_dash: 23200 
+E: 17600 
+start_pos: 0 
+=======================
+Configuration for bit interleaving module- 
+Hardware packet is : 0X2800000000044C02
+Q: 2 
+Rmsize: 17600 
+=======================
+Configuration for golden sequence module- 
+Hardware packet is : 0X29000000002800EB
+NRNTI: 235 
+q: 0 
+N_id: 20 
+=======================
+Configuration for scrambler module- 
+Hardware packet is : 0X2A00000000213000
+Userid: 0 
+q: 0 
+CB_size: 17600 
+End_TB: 1 
+=======================
+Configuration for modulator module- 
+Hardware packet is : 0X2B00000000898002
+Mod_Order: 2 
+No_of_packets: 17600 
+=======================
+Configuration for layer mapper module- 
+Hardware packet is : 0X2C00000008984688
+layer0: 0 
+layer1: 1 
+layer2: 2 
+layer3: 3 
+mapping_type: 4 
+no_modulated_symbols: 8800 
+=========================================================
+
+PDSCH PDU index: 1 
+TB index: 1 
+CB index: 8 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X2400000000715CB0
+total_no_of_message_bits: 7344 
+base_graph_index 1 
+lifting_size_index: 49 
+user_id: 1 
+=======================
+Configuration for puncturing module- 
+Hardware packet1 is : 0X2500000007901CB0
+Hardware packet2 is : 0X2500000000B58160
+k_cb: 7344 
+K_cb: 7744 
+Z: 352 
+N_cb: 23232 
+=======================
+Configuration for rate matching module- 
+Hardware packet1 is : 0X2600000059305AC0
+Hardware packet2 is : 0X2600000000003840
+Ncb: 23232 
+N_dash: 22832 
+E: 14400 
+start_pos: 0 
+=======================
+Configuration for bit interleaving module- 
+Hardware packet is : 0X2800000000038406
+Q: 6 
+Rmsize: 14400 
+=======================
+Configuration for golden sequence module- 
+Hardware packet is : 0X29000000002800EC
+NRNTI: 236 
+q: 0 
+N_id: 20 
+=======================
+Configuration for scrambler module- 
+Hardware packet is : 0X2A000000000E1001
+Userid: 1 
+q: 0 
+CB_size: 14400 
+End_TB: 0 
+=======================
+Configuration for modulator module- 
+Hardware packet is : 0X2B00000000708006
+Mod_Order: 6 
+No_of_packets: 14400 
+=======================
+Configuration for layer mapper module- 
+Hardware packet is : 0X2C00000002581000
+layer0: 0 
+layer1: 0 
+layer2: 0 
+layer3: 0 
+mapping_type: 1 
+no_modulated_symbols: 2400 
+=========================================================
+
+PDSCH PDU index: 1 
+TB index: 1 
+CB index: 9 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X2400000000715CB0
+total_no_of_message_bits: 7344 
+base_graph_index 1 
+lifting_size_index: 49 
+user_id: 1 
+=======================
+Configuration for puncturing module- 
+Hardware packet1 is : 0X2500000007901CB0
+Hardware packet2 is : 0X2500000000B58160
+k_cb: 7344 
+K_cb: 7744 
+Z: 352 
+N_cb: 23232 
+=======================
+Configuration for rate matching module- 
+Hardware packet1 is : 0X2600000059305AC0
+Hardware packet2 is : 0X2600000000003840
+Ncb: 23232 
+N_dash: 22832 
+E: 14400 
+start_pos: 0 
+=======================
+Configuration for bit interleaving module- 
+Hardware packet is : 0X2800000000038406
+Q: 6 
+Rmsize: 14400 
+=======================
+Configuration for golden sequence module- 
+Hardware packet is : 0X29000000002800EC
+NRNTI: 236 
+q: 0 
+N_id: 20 
+=======================
+Configuration for scrambler module- 
+Hardware packet is : 0X2A000000000E1001
+Userid: 1 
+q: 0 
+CB_size: 14400 
+End_TB: 0 
+=======================
+Configuration for modulator module- 
+Hardware packet is : 0X2B00000000708006
+Mod_Order: 6 
+No_of_packets: 14400 
+=======================
+Configuration for layer mapper module- 
+Hardware packet is : 0X2C00000002581000
+layer0: 0 
+layer1: 0 
+layer2: 0 
+layer3: 0 
+mapping_type: 1 
+no_modulated_symbols: 2400 
+=========================================================
+
+
+
+===================User Interleaver and RE mapper configurations===================
+
+
+==================Codeblock configs===========================
+
+Hardware packet for UE interleaver 2 is : 0X2E00000003D13000
+User ID is : 0 
+Length of CB is : 17600 
+Time locations are : 0X0F 
+
+Hardware packet for UE interleaver 2 is : 0X2E00000000400001
+User ID is : 1 
+Length of CB is : 0 
+Time locations are : 0X01 
+
+Hardware packet for UE interleaver 2 is : 0X2E00000000400001
+User ID is : 1 
+Length of CB is : 0 
+Time locations are : 0X01 
+
+Hardware packet for UE interleaver 2 is : 0X2E00000003D13000
+User ID is : 0 
+Length of CB is : 17600 
+Time locations are : 0X0F 
+
+Hardware packet for UE interleaver 2 is : 0X2E00000000400001
+User ID is : 1 
+Length of CB is : 0 
+Time locations are : 0X01 
+
+Hardware packet for UE interleaver 2 is : 0X2E000000004E1001
+User ID is : 1 
+Length of CB is : 14400 
+Time locations are : 0X01 
+
+Hardware packet for UE interleaver 2 is : 0X2E000000004E1001
+User ID is : 1 
+Length of CB is : 14400 
+Time locations are : 0X01 
+
+Hardware packet for UE interleaver 2 is : 0X2E00000003D13000
+User ID is : 0 
+Length of CB is : 17600 
+Time locations are : 0X0F 
+
+Hardware packet for UE interleaver 2 is : 0X2E000000004E1001
+User ID is : 1 
+Length of CB is : 14400 
+Time locations are : 0X01 
+
+Hardware packet for UE interleaver 2 is : 0X2E000000004E1001
+User ID is : 1 
+Length of CB is : 14400 
+Time locations are : 0X01 
+
+==================PDSCH configs===========================
+
+Hardware packet 1 for UE interleaver is : 0X2D00000000320000
+Hardware packet 2 for UE interleaver is : 0X2D0000003FFC19C8
+Hardware packet 3 for UE interleaver is : 0X2D00000000020004
+Hardware packet 1 for RE mapper is : 0X2F0000003FFC6400
+Hardware packet 2 for RE mapper is : 0X2F00000000020004
+Starting RB is : 0 
+Length of RB is : 50 
+Time locations are : 0X3FFC 
+DMRS locations are : 0X0004 
+DMRS configuration is : 0 
+Layers are : 0X0004 
+User ID is : 0 
+Maximum number of modulation symbols is : 6600 
+
+Hardware packet 1 for UE interleaver is : 0X2D00000000782581
+Hardware packet 2 for UE interleaver is : 0X2D0000003FFC41A0
+Hardware packet 3 for UE interleaver is : 0X2D0000000000C004
+Hardware packet 1 for RE mapper is : 0X2F0000003FFCF096
+Hardware packet 2 for RE mapper is : 0X2F0000000000C004
+Starting RB is : 150 
+Length of RB is : 120 
+Time locations are : 0X3FFC 
+DMRS locations are : 0X0004 
+DMRS configuration is : 1 
+Layers are : 0X0001 
+User ID is : 1 
+Maximum number of modulation symbols is : 16800 
+
+==================CSIRS configs===========================
+
+==================PDCCH configs===========================
+
+==================SSB configs===========================
+
+Hardware packet for UE interleaver is : 0X2D00000000007860
+Hardware packet for RE mapper is : 0X2F00000000007860
+Starting RB is : 96 
+Time locations are : 0X003C 
