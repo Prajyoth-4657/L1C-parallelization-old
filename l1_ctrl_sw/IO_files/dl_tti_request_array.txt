@@ -1,0 +1,386 @@
+
+//pdcch (1)      
+dl_tti_req_data[0]  = 0x05a40080; //128 in decimal
+dl_tti_req_data[1]  = 0x00000000; //lsb yet to know,length?
+dl_tti_req_data[2]  = 0x030b0000;
+dl_tti_req_data[3]  = 0x00000000; //dl_tti_req_datasize -Msb??       //pdcch params
+dl_tti_req_data[4]  = 0x00000032; 
+dl_tti_req_data[5]  = 0x02000001;
+dl_tti_req_data[6]  = 0x00000000;
+dl_tti_req_data[7]  = 0x06000100;
+dl_tti_req_data[8]  = 0x00000100;
+dl_tti_req_data[9]  = 0x32000101;//RNTI
+dl_tti_req_data[10] = 0xd2005000;
+dl_tti_req_data[11] = 0x01100004;
+dl_tti_req_data[12] = 0x04003000;
+dl_tti_req_data[13] = 0x00000000;//pmidx
+dl_tti_req_data[14] = 0x00000000;
+dl_tti_req_data[15] = 0x01080000;
+dl_tti_req_data[16] = 0x0000006c;
+dl_tti_req_data[17] = 0x02010000;
+dl_tti_req_data[18] = 0x06050403; 
+dl_tti_req_data[19] = 0x08090807;
+dl_tti_req_data[20] = 0x04050607;
+
+//psdch(2)
+dl_tti_req_data[21] = 0x00000001;//dl_tti_req_datasize//dl_tti_req_datatype//pdsch
+dl_tti_req_data[22] = 0x04d20003;
+dl_tti_req_data[23] = 0x00320000;
+dl_tti_req_data[24] = 0x00010000;
+dl_tti_req_data[25] = 0x06222e01;//ncw starts
+dl_tti_req_data[26] = 0x00000113;
+dl_tti_req_data[27] = 0x14000110;//datascrambling//tbsize
+dl_tti_req_data[28] = 0x00000200;
+dl_tti_req_data[29] = 0xd2000004;//Dmrsscrambling id//dmrsconfig//dmrsPOS
+dl_tti_req_data[30] = 0x03020004;//freq ----SCID is missing from 3rd bit.
+dl_tti_req_data[31] = 0x00000100;//RBbitmap[36] 
+dl_tti_req_data[32] = 0x00000000;
+dl_tti_req_data[33] = 0x00000000;
+dl_tti_req_data[34] = 0x00000000;
+dl_tti_req_data[35] = 0x00000000;
+dl_tti_req_data[36] = 0x00000000;
+dl_tti_req_data[37] = 0x00000000;
+dl_tti_req_data[38] = 0x00000000;
+dl_tti_req_data[39] = 0x00000000; // extra added
+dl_tti_req_data[40] = 0x00000000;//rbsize//RBstart
+dl_tti_req_data[41] = 0x03000032;
+dl_tti_req_data[42] = 0x0000000b;
+dl_tti_req_data[43] = 0x000d0000;//prgsize//numPRG -----nEPRE is missing!
+dl_tti_req_data[44] = 0x01040004;//beamidx//pmidx//digbfinterface
+dl_tti_req_data[45] = 0x00000000;
+dl_tti_req_data[46] = 0x00000000;//PMIDX=2
+dl_tti_req_data[47] = 0x00000200;
+dl_tti_req_data[48] = 0x00000000;
+dl_tti_req_data[49] = 0x03000000;//pmidx=3
+dl_tti_req_data[50] = 0x00000000;
+dl_tti_req_data[51] = 0x00000000;//pmidx=4
+dl_tti_req_data[52] = 0x00000400;
+dl_tti_req_data[53] = 0x00000000;
+dl_tti_req_data[54] = 0x05000000;//pmidx=5
+dl_tti_req_data[55] = 0x00000000;
+dl_tti_req_data[56] = 0x00000000;//pmidx=6
+dl_tti_req_data[57] = 0x00000600;
+dl_tti_req_data[58] = 0x00000000;
+dl_tti_req_data[59] = 0x07000000;//pmidx=7
+dl_tti_req_data[60] = 0x00000000;
+dl_tti_req_data[61] = 0x00000000;//pmidx=8
+dl_tti_req_data[62] = 0x00000800;
+dl_tti_req_data[63] = 0x00000000;
+dl_tti_req_data[64] = 0x09000000;//pmidx=9
+dl_tti_req_data[65] = 0x00000000;
+dl_tti_req_data[66] = 0x00000000;//pmidx=10
+dl_tti_req_data[67] = 0x00000a00;
+dl_tti_req_data[68] = 0x00000000;
+dl_tti_req_data[69] = 0x0b000000;//pmidx=11
+dl_tti_req_data[70] = 0x00000000;
+dl_tti_req_data[71] = 0x00000000;//pmidx=12
+dl_tti_req_data[72] = 0x00000c00;
+dl_tti_req_data[73] = 0x00000000;
+dl_tti_req_data[74] = 0x0d000000;//pmidx=13
+dl_tti_req_data[75] = 0x00000000;
+dl_tti_req_data[76] = 0x00000000;
+dl_tti_req_data[77] = 0x00010800;//powercontroloffset changed
+dl_tti_req_data[78] = 0x00000000;
+
+//pdcch (3)
+dl_tti_req_data[79] = 0x00000000; //from 3rd bit pdcch starts
+dl_tti_req_data[80] = 0x00003200;
+dl_tti_req_data[81] = 0x00000100; //SCS,CP, Start Symbol
+dl_tti_req_data[82] = 0x00000002; //Duartion Freq CE's
+dl_tti_req_data[83] = 0x00010000;
+dl_tti_req_data[84] = 0x00010006; //Reg Bundle --Shift Index
+dl_tti_req_data[85] = 0x00010100; // Shift Index -- num  Dci
+dl_tti_req_data[86] = 0x00900050;  //Rnti,ScramblingID
+dl_tti_req_data[87] = 0x040004d2;   //Scrambling RNTI---Aggregation
+dl_tti_req_data[88] = 0x000c0001;  //numPRG, PRGSize
+dl_tti_req_data[89] = 0x00000004;  //digINterface,	PMIdx=0 
+dl_tti_req_data[90] = 0x00000000;
+dl_tti_req_data[91] = 0x08000000; //beta PDcch
+dl_tti_req_data[92] = 0x00006c01; //PowerControlOffsetSS, Payload starts from 6th bit
+dl_tti_req_data[93] = 0x01000000;
+dl_tti_req_data[94] = 0x05040302;
+dl_tti_req_data[95] = 0x09080706;
+dl_tti_req_data[96] = 0x05060708; 
+dl_tti_req_data[97] = 0x00000104; // 8 bits are used(next psdch starts from 3rd bit)
+
+//pdsch (4)
+dl_tti_req_data[98]  = 0xd2000300; //dl_tti_req_dataSize,bitmap,RNTI
+dl_tti_req_data[99]  = 0x32000104; //idx--BWPSize
+dl_tti_req_data[100] = 0x01000000; //BWPStart -SCS
+dl_tti_req_data[101] = 0x222e0100; //cp --CodeRAte
+dl_tti_req_data[102] = 0x00011306; //MOdOrder --RVIndex
+dl_tti_req_data[103] = 0x00008800; //TBSize
+dl_tti_req_data[104] = 0x00010014; //DataScramblingID --TransmisionScheme
+dl_tti_req_data[105] = 0x00000400; //refPoint -- DMRSConfig
+dl_tti_req_data[106] = 0x020004d2; //DMRS Scrambling ID--CDMnoData
+dl_tti_req_data[107] = 0x00010004; //DMRSports -- RBbitMap[0]
+dl_tti_req_data[108] = 0x00000000;
+dl_tti_req_data[109] = 0x00000000;
+dl_tti_req_data[110] = 0x00000000;
+dl_tti_req_data[111] = 0x00000000;
+dl_tti_req_data[112] = 0x00000000;
+dl_tti_req_data[113] = 0x00000000;
+dl_tti_req_data[114] = 0x00000000;
+dl_tti_req_data[115] = 0x00000000;
+dl_tti_req_data[116] = 0x00000000; //msb 2 bits -rbStart
+dl_tti_req_data[117] = 0x00003200; //RBStart vrb-prb
+dl_tti_req_data[118] = 0x00000b03; //Start symINdex --PTRSTime Density
+dl_tti_req_data[119] = 0x0d000000; //FreqDesity--numPRG
+dl_tti_req_data[120] = 0x04000400;
+dl_tti_req_data[121] = 0x0000000e; //PMidx = 14
+dl_tti_req_data[122] = 0x00000000;
+dl_tti_req_data[123] = 0x000f0000; //PMidx = 15
+dl_tti_req_data[124] = 0x00000000;
+dl_tti_req_data[125] = 0x00000000;
+dl_tti_req_data[126] = 0x00000010;  //PMidx = 16
+dl_tti_req_data[127] = 0x00000000;
+dl_tti_req_data[128] = 0x00110000; //PMidx = 17
+dl_tti_req_data[129] = 0x00000000;
+dl_tti_req_data[130] = 0x00000000;
+dl_tti_req_data[131] = 0x00000012; //PMidx = 18
+dl_tti_req_data[132] = 0x00000000;
+dl_tti_req_data[133] = 0x00130000; //PMidx = 19
+dl_tti_req_data[134] = 0x00000000;
+dl_tti_req_data[135] = 0x00000000;
+dl_tti_req_data[136] = 0x00000014; //PMidx = 20
+dl_tti_req_data[137] = 0x00000000;
+dl_tti_req_data[138] = 0x00150000; //PMidx = 21
+dl_tti_req_data[139] = 0x00000000;
+dl_tti_req_data[140] = 0x00000000;
+dl_tti_req_data[141] = 0x00000016; //PMidx = 22
+dl_tti_req_data[142] = 0x00000000;
+dl_tti_req_data[143] = 0x00170000; //PMidx = 23
+dl_tti_req_data[144] = 0x00000000;
+dl_tti_req_data[145] = 0x00000000;
+dl_tti_req_data[146] = 0x00000018; //PMidx = 24
+dl_tti_req_data[147] = 0x00000000;
+dl_tti_req_data[148] = 0x00190000; //PMidx = 25
+dl_tti_req_data[149] = 0x00000000;
+dl_tti_req_data[150] = 0x00000000;
+dl_tti_req_data[151] = 0x00000020; //PMidx = 26
+dl_tti_req_data[152] = 0x00000000;
+dl_tti_req_data[153] = 0x01080000; //powerCOntrolOffset,SS
+dl_tti_req_data[154] = 0x00000000; //IsLAstCBPresent
+dl_tti_req_data[155] = 0x00000000; //last 16 bits for pdcch,Type
+
+//pdcch (5)
+dl_tti_req_data[156] = 0x00320000; //dl_tti_req_dataSize --BWStart
+dl_tti_req_data[157] = 0x00010064; //SCS--Duration
+dl_tti_req_data[158] = 0x00000200; //Freq CE's
+dl_tti_req_data[159] = 0x00000200; //Freq ce's[5,6] --CCE reg--reg bundle
+dl_tti_req_data[160] = 0x01000600; //Interleaver --ShiftIndex
+dl_tti_req_data[161] = 0x01010000; //preGranularity --RNTI
+dl_tti_req_data[162] = 0x5e009900; //ScramblingID,RNti
+dl_tti_req_data[163] = 0x0004d201;
+dl_tti_req_data[164] = 0x18000108; //PRGSiz3,DigInterface
+dl_tti_req_data[165] = 0x00000400; //pmidx = 0
+dl_tti_req_data[166] = 0x00000000;
+dl_tti_req_data[167] = 0x00000000; //powercontrolOffsetSS
+dl_tti_req_data[168] = 0x006c0108; //PayloadSizeBits
+dl_tti_req_data[169] = 0x00000000;
+dl_tti_req_data[170] = 0x04030201;
+dl_tti_req_data[171] = 0x08070605;
+dl_tti_req_data[172] = 0x06070809;
+dl_tti_req_data[173] = 0x00010405; //last 16 for pdsch-Type
+
+//pdsch (6)
+dl_tti_req_data[174] = 0x00030000; //dl_tti_req_dataSize,map
+dl_tti_req_data[175] = 0x000204d2; //RNTI,idx
+dl_tti_req_data[176] = 0x00640032; //BWSize,Start
+dl_tti_req_data[177] = 0x2e010001; //SCS
+dl_tti_req_data[178] = 0x01130622; //CodeRAte
+dl_tti_req_data[179] = 0x01100000; //RVindex
+dl_tti_req_data[180] = 0x02001400; //TBSize --num of layers
+dl_tti_req_data[181] = 0x00040000; //TXScheme
+dl_tti_req_data[182] = 0x00015000; //DMRSConfig
+dl_tti_req_data[183] = 0x01000301; //CDMnoDAta
+dl_tti_req_data[184] = 0x00000000; //RBbitmap
+dl_tti_req_data[185] = 0x00000000;
+dl_tti_req_data[186] = 0x00000000;
+dl_tti_req_data[187] = 0x00000000;
+dl_tti_req_data[188] = 0x00000000;
+dl_tti_req_data[189] = 0x00000000;
+dl_tti_req_data[190] = 0x00000000;
+dl_tti_req_data[191] = 0x00000000;
+dl_tti_req_data[192] = 0x00000000;
+dl_tti_req_data[193] = 0x00320000; //RBStart
+dl_tti_req_data[194] = 0x000b0200; //VRB-PRB
+dl_tti_req_data[195] = 0x00000000; //PTRStimeDensity
+dl_tti_req_data[196] = 0x0004000d; //numPRG
+dl_tti_req_data[197] = 0x00000104; //dig,PMidx=1
+dl_tti_req_data[198] = 0x00000000;
+dl_tti_req_data[199] = 0x02000000;
+dl_tti_req_data[200] = 0x00000000;
+dl_tti_req_data[201] = 0x00000000;
+dl_tti_req_data[202] = 0x00000300;
+dl_tti_req_data[203] = 0x00000000;
+dl_tti_req_data[204] = 0x04000000;
+dl_tti_req_data[205] = 0x00000000;
+dl_tti_req_data[206] = 0x00000000;
+dl_tti_req_data[207] = 0x00000500;
+dl_tti_req_data[208] = 0x00000000;
+dl_tti_req_data[209] = 0x06000000;
+dl_tti_req_data[210] = 0x00000000;
+dl_tti_req_data[211] = 0x00000000;
+dl_tti_req_data[212] = 0x00000700;
+dl_tti_req_data[213] = 0x00000000;
+dl_tti_req_data[214] = 0x08000000;
+dl_tti_req_data[215] = 0x00000000;
+dl_tti_req_data[216] = 0x00000000;
+dl_tti_req_data[217] = 0x00000900;
+dl_tti_req_data[218] = 0x00000000;
+dl_tti_req_data[219] = 0x0a000000;
+dl_tti_req_data[220] = 0x00000000;
+dl_tti_req_data[221] = 0x00000000;
+dl_tti_req_data[222] = 0x00000b00;
+dl_tti_req_data[223] = 0x00000000;
+dl_tti_req_data[224] = 0x0c000000;
+dl_tti_req_data[225] = 0x00000000;
+dl_tti_req_data[226] = 0x00000000;
+dl_tti_req_data[227] = 0x00000d00;
+dl_tti_req_data[228] = 0x00000000;
+dl_tti_req_data[229] = 0x08000000;
+dl_tti_req_data[230] = 0x00000001; //powControlOffsetSS
+dl_tti_req_data[231] = 0x00000000; //last 8bits for next config ,PDcch-dl_tti_req_dataType
+
+//pdcch (7)
+dl_tti_req_data[232] = 0x32000000; //type,SIze
+dl_tti_req_data[233] = 0x0100c800;
+dl_tti_req_data[234] = 0x00020000; //CP
+dl_tti_req_data[235] = 0x00000002; //Freq Ce[1]
+dl_tti_req_data[236] = 0x00060000;
+dl_tti_req_data[237] = 0x01000001; //Corset Type
+dl_tti_req_data[238] = 0x00320001; //numDci
+dl_tti_req_data[239] = 0x04d20050; //Scrambling Id
+dl_tti_req_data[240] = 0x00010200; //CEIndex
+dl_tti_req_data[241] = 0x00040006; //PRGSize
+dl_tti_req_data[242] = 0x00000000; //pmidx =0
+dl_tti_req_data[243] = 0x00000000;
+dl_tti_req_data[244] = 0x6c010800; //beta_pdcch
+dl_tti_req_data[245] = 0x00000000; //payload
+dl_tti_req_data[246] = 0x03020100;
+dl_tti_req_data[247] = 0x07060504;
+dl_tti_req_data[248] = 0x07080908;
+dl_tti_req_data[249] = 0x01040506; //last 8 bits for pdsch,type
+
+//pdsch (8)
+dl_tti_req_data[250] = 0x03000000; //type,Size
+dl_tti_req_data[251] = 0x0304d200;
+dl_tti_req_data[252] = 0xc8003200; //BWSize
+dl_tti_req_data[253] = 0x01000100;
+dl_tti_req_data[254] = 0x1306222e; //CodeRAte
+dl_tti_req_data[255] = 0x88000001; //MCStable
+dl_tti_req_data[256] = 0x00140000;
+dl_tti_req_data[257] = 0x04000001; //numLayers
+dl_tti_req_data[258] = 0x04d20000;
+dl_tti_req_data[259] = 0x00010100; //SCID
+dl_tti_req_data[260] = 0x00000001; //FreqAlloc ,RB bitmap
+dl_tti_req_data[261] = 0x00000000;
+dl_tti_req_data[262] = 0x00000000;
+dl_tti_req_data[263] = 0x00000000;
+dl_tti_req_data[264] = 0x00000000;
+dl_tti_req_data[265] = 0x00000000;
+dl_tti_req_data[266] = 0x00000000;
+dl_tti_req_data[267] = 0x00000000;
+dl_tti_req_data[268] = 0x00000000;
+dl_tti_req_data[269] = 0x32000000; //RBStart
+dl_tti_req_data[270] = 0x0b020000;
+dl_tti_req_data[271] = 0x00000000; //PTRSports
+dl_tti_req_data[272] = 0x04000d00; //nePRe
+dl_tti_req_data[273] = 0x00010400; //PMIDX =1
+dl_tti_req_data[274] = 0x00000000;
+dl_tti_req_data[275] = 0x00000000;
+dl_tti_req_data[276] = 0x00000002; //PMIDX =2
+dl_tti_req_data[277] = 0x00000000;
+dl_tti_req_data[278] = 0x00030000; //PMIDX =3
+dl_tti_req_data[279] = 0x00000000;
+dl_tti_req_data[280] = 0x00000000;
+dl_tti_req_data[281] = 0x00000004; //PMIDX =4
+dl_tti_req_data[282] = 0x00000000;
+dl_tti_req_data[283] = 0x00050000; //PMIDX =5
+dl_tti_req_data[284] = 0x00000000;
+dl_tti_req_data[285] = 0x00000000;
+dl_tti_req_data[286] = 0x00000006; //PMIDX =6
+dl_tti_req_data[287] = 0x00000000;
+dl_tti_req_data[288] = 0x00070000; //PMIDX =7
+dl_tti_req_data[289] = 0x00000000;
+dl_tti_req_data[290] = 0x00000000;
+dl_tti_req_data[291] = 0x00000008; //PMIDX =8
+dl_tti_req_data[292] = 0x00000000;
+dl_tti_req_data[293] = 0x00090000; //PMIDX =9
+dl_tti_req_data[294] = 0x00000000;
+dl_tti_req_data[295] = 0x00000000;
+dl_tti_req_data[296] = 0x0000000a; //PMIDX =10
+dl_tti_req_data[297] = 0x00000000;
+dl_tti_req_data[298] = 0x000b0000; //PMIDX =11
+dl_tti_req_data[299] = 0x00000000;
+dl_tti_req_data[300] = 0x00000000;
+dl_tti_req_data[301] = 0x0000000c; //PMIDX =12
+dl_tti_req_data[302] = 0x00000000;
+dl_tti_req_data[303] = 0x000d0000; //PMIDX =3
+dl_tti_req_data[304] = 0x00000000;
+dl_tti_req_data[305] = 0x00000000;
+dl_tti_req_data[306] = 0x00000108; //Power COntrolOffset
+dl_tti_req_data[307] = 0x00000000; //dlTBcrc
+
+//Csi_rs (9)
+dl_tti_req_data[308] = 0x00000002; //type,Size
+dl_tti_req_data[309] = 0x00320032; //inside CSI_RS starts
+dl_tti_req_data[310] = 0x00340001;
+dl_tti_req_data[311] = 0x05010030; 
+dl_tti_req_data[312] = 0x07050ffd; //FreqDomain
+dl_tti_req_data[313] = 0x01630202;
+dl_tti_req_data[314] = 0x000c0108; //PowerControlOffset
+dl_tti_req_data[315] = 0x01040004; //pmidx =1
+dl_tti_req_data[316] = 0x00000000;
+dl_tti_req_data[317] = 0x00000000; 
+dl_tti_req_data[318] = 0x00000200; //pmidx=2
+dl_tti_req_data[319] = 0x00000000;
+dl_tti_req_data[320] = 0x03000000;  //pmidx=3
+dl_tti_req_data[321] = 0x00000000;
+dl_tti_req_data[322] = 0x00000000;
+dl_tti_req_data[323] = 0x00000400; //pmidx =4 
+dl_tti_req_data[324] = 0x00000000;
+dl_tti_req_data[325] = 0x05000000; //pmidx =5
+dl_tti_req_data[326] = 0x00000000;
+dl_tti_req_data[327] = 0x00000000;
+dl_tti_req_data[328] = 0x00000600; //pmidx= 6
+dl_tti_req_data[329] = 0x00000000;
+dl_tti_req_data[330] = 0x07000000; //pmidx =7
+dl_tti_req_data[331] = 0x00000000;
+dl_tti_req_data[332] = 0x00000000;
+dl_tti_req_data[333] = 0x00000800; //pmidx =8
+dl_tti_req_data[334] = 0x00000000;
+dl_tti_req_data[335] = 0x09000000; //pmidx =9
+dl_tti_req_data[336] = 0x00000000;
+dl_tti_req_data[337] = 0x00000000;
+dl_tti_req_data[338] = 0x00000a00; //pmidx =10
+dl_tti_req_data[339] = 0x00000000;
+dl_tti_req_data[340] = 0x0b000000; //pmidx =11
+dl_tti_req_data[341] = 0x00000000;
+dl_tti_req_data[342] = 0x00000000;
+dl_tti_req_data[343] = 0x00000c00; //pmidx =12
+dl_tti_req_data[344] = 0x00000000;
+dl_tti_req_data[345] = 0x03000000; //msb 8bits are SSB.dl_tti_req_datatype
+
+//SSB (10)
+dl_tti_req_data[346] = 0x14000000;
+dl_tti_req_data[347] = 0x00000000; //SSB loop starts, CellID -- SSBSubCarrierOffset
+dl_tti_req_data[348] = 0xff010528; //SSBoffsetPointA
+dl_tti_req_data[349] = 0x0100ffff;
+dl_tti_req_data[350] = 0x04001400;
+dl_tti_req_data[351] = 0x00000000; //pmidx=0
+dl_tti_req_data[352] = 0x00000000;
+dl_tti_req_data[353] = 0x00030000;// last 16 bits are for next config
+
+//SSb (11)
+dl_tti_req_data[354] = 0x00140000; //Size
+dl_tti_req_data[355] = 0x28000100; //betaPSS 
+dl_tti_req_data[356] = 0xffff0105;
+dl_tti_req_data[357] = 0x000100ff;
+dl_tti_req_data[358] = 0x00040014; //PRGSize
+dl_tti_req_data[359] = 0x00000000;
+dl_tti_req_data[360] = 0x00000000;
+dl_tti_req_data[361] = 0x02000200; //nuE
+dl_tti_req_data[362] = 0x06010401; //nuE
+
