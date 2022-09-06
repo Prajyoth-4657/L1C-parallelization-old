@@ -1,0 +1,472 @@
+Path,Name,DisplayValue,Type,Length,DisplayFormat,ValidityChkOpt,ValidityChkStr,ToolTip,Visibility
+,,,struct,1,none,"none","","",on
+,SFN,853,uint16,1,numeric,"Limits:[min,max]","[0,1023]","System Frame Number, Value: 0-1023",on
+,Slot,10,uint16,1,numeric,"Limits:[min,max]","[0,319]","Value: 0-319",on
+,nPDUs,6,uint8,1,numeric,"CallbackFunction","@dl_tti_callback","Number of PDUs that are included in this message. All PDUs in the message are numbered in order. Value 0-255",on
+,nGroup,6,uint8,1,numeric,"CallbackFunction","@dl_tti_callback","Number of UE Groups included in this message. Value 0-255",on
+,PDU(1),,struct,1,none,"none","","",on
+PDU(1),PDUType,1,uint16,1,numeric,"CallbackFunction","dl_tti_callback","0: PDCCH, 1: PDSCH,  2: CSI-RS, 3: SSB",on
+PDU(1),PDUSize,0,uint16,1,numeric,"Limits:[min,max]","[0, 65535]","Size of the PDU control information (in bytes). This length value includes the 4 bytes required for the PDU type and PDU size parameters.",on
+PDU(1),PDSCH,,struct,1,none,"none","","",on
+PDU(1).PDSCH,pduBitmap,0,uint16,1,numeric,"CallbackFunction","@dl_tti_callback","Bitmap indicating presence of optional PDUs Bit 0: pdschPtrs - Indicates PTRS included (FR2) Bit 1:cbgRetxCtrl (Present when CBG based retransmit is used) All other bits reserved",on
+PDU(1).PDSCH,RNTI,1,uint16,1,numeric,"Limits:[min,max]","[1,65535]","The RNTI used for identifying the UE when receiving the PDU",on
+PDU(1).PDSCH,pduIndex,0,uint16,1,numeric,"Limits:[min,max]","[0,65535]","PDU index incremented for each PDSCH PDU sent in TX control message. This is used to associate control information to data and is reset every slot. Value: 0 - 65535",on
+PDU(1).PDSCH,BWP,,struct,1,none,"none","","",on
+PDU(1).PDSCH.BWP,BWPsize,20,uint16,1,numeric,"Limits:[min,max]","[1,275]","Number of contiguous PRBs allocated to the BWP, Value: 1->275",on
+PDU(1).PDSCH.BWP,BWPStart,0,uint16,1,numeric,"Limits:[min,max]","[0,274]","Bandwidth part start RB index from reference CRB, Value: 0->274",on
+PDU(1).PDSCH.BWP,SubcarrierSpacing,1,uint8,1,numeric,"DropDownList","{0,1,2,3,4}","Value:0->4",on
+PDU(1).PDSCH.BWP,CyclicPrefix,0,uint8,1,numeric,"DropDownList","{0,1}","Cyclic prefix type, 0: Normal; 1: Extended",on
+PDU(1).PDSCH,NrOfCodewords,1,uint8,1,numeric,"CallbackFunction","@dl_tti_callback","Number of code words for this RNTI (UE) Value: 1 - 2",on
+PDU(1).PDSCH,CODEWORD(1),,struct,1,none,"none","","",on
+PDU(1).PDSCH.CODEWORD(1),targetCodeRate,8850,uint16,1,numeric,"none","","Target coding rate [TS38.212 sec 5.4.2.1 and 38.214 sec 5.1.3.1]. This is the number of information bits per 1024 coded bits expressed in 0.1 bit units",on
+PDU(1).PDSCH.CODEWORD(1),qamModOrder,8,uint8,1,numeric,"DropDownList","{2,4,6,8}","QAM modulation [TS38.212 sec 5.4.2.1 and 38.214 sec 5.1.3.1] Value: 2,4,6,8",on
+PDU(1).PDSCH.CODEWORD(1),mcsIndex,25,uint8,1,numeric,"Limits:[min,max]","[0,31]","MCS index [TS38.214, sec 5.1.3.1], should match value sent in DCI Value : 0-31",on
+PDU(1).PDSCH.CODEWORD(1),mcsTable,1,uint8,1,numeric,"DropDownList","{0,1,2}","MCS-Table-PDSCH [TS38.214, sec 5.1.3.1] 0: notqam256 1: qam256 2: qam64LowSE",on
+PDU(1).PDSCH.CODEWORD(1),rvIndex,0,uint8,1,numeric,"DropDownList","{0,1,2,3}","Redundancy version index [TS38.212, Table 5.4.2.1-2 and 38.214, Table 5.1.2.1-2], should match value sent in DCI Value : 0-3",on
+PDU(1).PDSCH.CODEWORD(1),TBSize,4482,uint32,1,numeric,"Limits:[min,max]","[0,65535]","Transmit block size (in bytes) [TS38.214 sec 5.1.3.2] Value: 0-65535",on
+PDU(1).PDSCH,dataScramblingId,20,uint16,1,numeric,"Limits:[min,max]","[0,65535]","dataScramblingIdentityPdsch [TS38.211, sec 7.3.1.1] It equals the higher-layer parameter Datascrambling- Identity if configured and the RNTI equals the C-RNTI, otherwise L2 needs to set it to physical cell id. Value: 0-65535",on
+PDU(1).PDSCH,nrOfLayers,1,uint8,1,numeric,"DropDownList","{1,2,3,4,5,6,7,8}","Number of layers [TS38.211, sec 7.3.1.3] Value : 1-8",on
+PDU(1).PDSCH,transmissionScheme,0,uint8,1,numeric,"Limits:[min,max]","[0,0]","PDSCH transmission schemes [TS38.214, sec 5.1.1] 0: Up to 8 transmission layers",on
+PDU(1).PDSCH,refPoint,0,uint8,1,numeric,"DropDownList","{0,1}","Reference point for PDSCH DMRS, Value: 0 - 1.",on
+PDU(1).PDSCH,DMRS,,struct,1,none,"none","","",on
+PDU(1).PDSCH.DMRS,dlDmrsSymbPos,3096,uint16,1,numeric,"none","","DMRS symbol positions [TS38.211, sec 7.4.1.1.2 and Tables 7.4.1.1.2-3 and 7.4.1.1.2-4]. Bitmap occupying the 14 LSBs with: bit 0: first symbol and for each bit 0: no DMRS 1: DMRS",on
+PDU(1).PDSCH.DMRS,dmrsConfigType,0,uint8,1,numeric,"DropDownList","{0,1}","DL DMRS config type [TS38.211, sec 7.4.1.1.2], 0: type 1 1: type 2",on
+PDU(1).PDSCH.DMRS,dlDmrsScramblingId,1000,uint16,1,numeric,"Limits:[min,max]","[0,65535]","DL-DMRS-Scrambling-ID, 0-65535",on
+PDU(1).PDSCH.DMRS,SCID,0,uint8,1,numeric,"DropDownList","{0,1}","DMRS sequence initialization [TS38.211, sec 7.4.1.1.2]. Should match what is sent in DCI 1_1, otherwise set to 0. Value : 0-1",on
+PDU(1).PDSCH.DMRS,numDmrsCdmGrpsNoData,1,uint8,1,numeric,"DropDownList","{0,1,2,3}","Number of DM-RS CDM groups without data [TS38.212 sec 7.3.1.2.2] [TS38.214 Table 4.1-1] it determines the ratio of PDSCH EPRE to DM-RS EPRE. Value: 1-3",on
+PDU(1).PDSCH.DMRS,dmrsPorts,1,uint16,1,numeric,"none","","DMRS ports. [TS38.212 7.3.1.2.2] provides description between DCI 1-1 content and DMRS ports. Bitmap occupying the 11 LSBs with: bit 0: antenna port 1000 bit 11: antenna port 1011 and for each bit 0: DMRS port not used 1: DMRS port used",on
+PDU(1).PDSCH,FD_ALLOC,,struct,1,none,"none","","",on
+PDU(1).PDSCH.FD_ALLOC,resourceAlloc,1,uint8,1,numeric,"DropDownList","{0,1}","Resource Allocation Type [TS38.214, sec 5.1.2.2] 0: Type 0 1: Type 1",on
+PDU(1).PDSCH.FD_ALLOC,rbBitmap,"zeros(1,36)",uint8,36,matlab expr string,"none","","For resource alloc type 0. TS 38.212 V15.0.x, 7.3.1.2.2 bitmap of RBs, 273 rounded up to multiple of 32. This bitmap is in units of VRBs. LSB of byte 0 of the bitmap represents the first RB of the bwp",on
+PDU(1).PDSCH.FD_ALLOC,rbStart,0,uint16,1,numeric,"Limits:[min,max]","[0,274]","For resource allocation type 1. [TS38.214, sec 5.1.2.2.2] The starting resource block within the BWP for this PDSCH. Value: 0-274",on
+PDU(1).PDSCH.FD_ALLOC,rbSize,20,uint16,1,numeric,"none","[1,275]","For resource allocation type 1. [TS38.214, sec 5.1.2.2.2] The number of resource block within for this PDSCH. Value: 1-275",on
+PDU(1).PDSCH.FD_ALLOC,VRBtoPRBMapping,0,uint8,1,numeric,"DropDownList","{0,1,2}","VRB-to-PRB-mapping [TS38.211, sec 7.3.1.6] 0: non-interleaved 1: interleaved with RB size 2 2: Interleaved with RB size 4",on
+PDU(1).PDSCH,TD_ALLOC,,struct,1,none,"none","","",on
+PDU(1).PDSCH.TD_ALLOC,StartSymbolIndex,3,uint8,1,numeric,"Limits:[min,max]","[0,13]","Start symbol index of PDSCH mapping from the start of the slot, S. [TS38.214, Table 5.1.2.1-1] Value: 0-13",on
+PDU(1).PDSCH.TD_ALLOC,NrOfSymbols,11,uint8,1,numeric,"Limits:[min,max]","[1,14]","PDSCH duration in symbols, L [TS38.214, Table 5.1.2.1-1] Value: 1-14",on
+PDU(1).PDSCH,PTRS,,struct,1,none,"none","","",on
+PDU(1).PDSCH,TX_PRECODE_BEAMFORM,,struct,1,none,"none","","",on
+PDU(1).PDSCH.TX_PRECODE_BEAMFORM,numPRGs,5,uint16,1,numeric,"CallbackFunction","@dl_tti_callback","Number of PRGs spanning this allocation. Value : 1-275",on
+PDU(1).PDSCH.TX_PRECODE_BEAMFORM,prgSize,4,uint16,1,numeric,"Limits:[min,max]","[1,275]","Size in RBs of a precoding resource block group (PRG) – to which same precoding and digital beamforming gets applied. Value: 1-275",on
+PDU(1).PDSCH.TX_PRECODE_BEAMFORM,digBFInterfaces,1,uint8,1,numeric,"CallbackFunction","@dl_tti_callback","Number of STD ant ports (parallel streams) feeding into the digBF Value: 0-255",on
+PDU(1).PDSCH.TX_PRECODE_BEAMFORM,PRG(1),,struct,1,none,"none","","",on
+PDU(1).PDSCH.TX_PRECODE_BEAMFORM.PRG(1),PMidx,2,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index to precoding matrix (PM) pre-stored at cell configuration. Note: If precoding is not used this parameter should be set to 0. Value: 0-65535.",on
+PDU(1).PDSCH.TX_PRECODE_BEAMFORM.PRG(1),DIG_BF_INTERFACE(1),,struct,1,none,"none","","",on
+PDU(1).PDSCH.TX_PRECODE_BEAMFORM.PRG(1).DIG_BF_INTERFACE(1),beamIdx,0,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index of the digital beam weight vector pre-stored at cell configuration. The vector maps this input port to output TXRUs. Value: 0-65535",on
+PDU(1).PDSCH.TX_PRECODE_BEAMFORM,PRG(2),,struct,1,none,"none","","",on
+PDU(1).PDSCH.TX_PRECODE_BEAMFORM.PRG(2),PMidx,2,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index to precoding matrix (PM) pre-stored at cell configuration. Note: If precoding is not used this parameter should be set to 0. Value: 0-65535.",on
+PDU(1).PDSCH.TX_PRECODE_BEAMFORM.PRG(2),DIG_BF_INTERFACE(1),,struct,1,none,"none","","",on
+PDU(1).PDSCH.TX_PRECODE_BEAMFORM.PRG(2).DIG_BF_INTERFACE(1),beamIdx,1,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index of the digital beam weight vector pre-stored at cell configuration. The vector maps this input port to output TXRUs. Value: 0-65535",on
+PDU(1).PDSCH.TX_PRECODE_BEAMFORM,PRG(3),,struct,1,none,"none","","",on
+PDU(1).PDSCH.TX_PRECODE_BEAMFORM.PRG(3),PMidx,2,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index to precoding matrix (PM) pre-stored at cell configuration. Note: If precoding is not used this parameter should be set to 0. Value: 0-65535.",on
+PDU(1).PDSCH.TX_PRECODE_BEAMFORM.PRG(3),DIG_BF_INTERFACE(1),,struct,1,none,"none","","",on
+PDU(1).PDSCH.TX_PRECODE_BEAMFORM.PRG(3).DIG_BF_INTERFACE(1),beamIdx,2,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index of the digital beam weight vector pre-stored at cell configuration. The vector maps this input port to output TXRUs. Value: 0-65535",on
+PDU(1).PDSCH.TX_PRECODE_BEAMFORM,PRG(4),,struct,1,none,"none","","",on
+PDU(1).PDSCH.TX_PRECODE_BEAMFORM.PRG(4),PMidx,2,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index to precoding matrix (PM) pre-stored at cell configuration. Note: If precoding is not used this parameter should be set to 0. Value: 0-65535.",on
+PDU(1).PDSCH.TX_PRECODE_BEAMFORM.PRG(4),DIG_BF_INTERFACE(1),,struct,1,none,"none","","",on
+PDU(1).PDSCH.TX_PRECODE_BEAMFORM.PRG(4).DIG_BF_INTERFACE(1),beamIdx,3,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index of the digital beam weight vector pre-stored at cell configuration. The vector maps this input port to output TXRUs. Value: 0-65535",on
+PDU(1).PDSCH.TX_PRECODE_BEAMFORM,PRG(5),,struct,1,none,"none","","",on
+PDU(1).PDSCH.TX_PRECODE_BEAMFORM.PRG(5),PMidx,2,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index to precoding matrix (PM) pre-stored at cell configuration. Note: If precoding is not used this parameter should be set to 0. Value: 0-65535.",on
+PDU(1).PDSCH.TX_PRECODE_BEAMFORM.PRG(5),DIG_BF_INTERFACE(1),,struct,1,none,"none","","",on
+PDU(1).PDSCH.TX_PRECODE_BEAMFORM.PRG(5).DIG_BF_INTERFACE(1),beamIdx,4,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index of the digital beam weight vector pre-stored at cell configuration. The vector maps this input port to output TXRUs. Value: 0-65535",on
+PDU(1).PDSCH,TX_POWER,,struct,1,none,"none","","",on
+PDU(1).PDSCH.TX_POWER,powerControlOffset,8,uint8,1,numeric,"Limits:[min,max]","[0,23]","Ratio of PDSCH EPRE to NZP CSI-RSEPRE [TS38.214, sec 5.2.2.3.1] Value :0-23 representing -8 to 15 dB in 1dB steps",on
+PDU(1).PDSCH.TX_POWER,powerControlOffsetSS,1,uint8,1,numeric,"DropDownList","{0,1,2,3}","Ratio of SSB/PBCH block EPRE to NZP CSI-RS EPRES [TS38.214, sec 5.2.2.3.1] Values: 0: -3dB, 1: 0dB, 2: 3dB, 3: 6dB",on
+PDU(1).PDSCH,CBG,,struct,1,none,"none","","",on
+,PDU(2),,struct,1,none,"none","","",on
+PDU(2),PDUType,1,uint16,1,numeric,"CallbackFunction","dl_tti_callback","0: PDCCH, 1: PDSCH,  2: CSI-RS, 3: SSB",on
+PDU(2),PDUSize,0,uint16,1,numeric,"Limits:[min,max]","[0, 65535]","Size of the PDU control information (in bytes). This length value includes the 4 bytes required for the PDU type and PDU size parameters.",on
+PDU(2),PDSCH,,struct,1,none,"none","","",on
+PDU(2).PDSCH,pduBitmap,0,uint16,1,numeric,"CallbackFunction","@dl_tti_callback","Bitmap indicating presence of optional PDUs Bit 0: pdschPtrs - Indicates PTRS included (FR2) Bit 1:cbgRetxCtrl (Present when CBG based retransmit is used) All other bits reserved",on
+PDU(2).PDSCH,RNTI,5,uint16,1,numeric,"Limits:[min,max]","[1,65535]","The RNTI used for identifying the UE when receiving the PDU",on
+PDU(2).PDSCH,pduIndex,1,uint16,1,numeric,"Limits:[min,max]","[0,65535]","PDU index incremented for each PDSCH PDU sent in TX control message. This is used to associate control information to data and is reset every slot. Value: 0 - 65535",on
+PDU(2).PDSCH,BWP,,struct,1,none,"none","","",on
+PDU(2).PDSCH.BWP,BWPsize,30,uint16,1,numeric,"Limits:[min,max]","[1,275]","Number of contiguous PRBs allocated to the BWP, Value: 1->275",on
+PDU(2).PDSCH.BWP,BWPStart,20,uint16,1,numeric,"Limits:[min,max]","[0,274]","Bandwidth part start RB index from reference CRB, Value: 0->274",on
+PDU(2).PDSCH.BWP,SubcarrierSpacing,1,uint8,1,numeric,"DropDownList","{0,1,2,3,4}","Value:0->4",on
+PDU(2).PDSCH.BWP,CyclicPrefix,0,uint8,1,numeric,"DropDownList","{0,1}","Cyclic prefix type, 0: Normal; 1: Extended",on
+PDU(2).PDSCH,NrOfCodewords,1,uint8,1,numeric,"CallbackFunction","@dl_tti_callback","Number of code words for this RNTI (UE) Value: 1 - 2",on
+PDU(2).PDSCH,CODEWORD(1),,struct,1,none,"none","","",on
+PDU(2).PDSCH.CODEWORD(1),targetCodeRate,6160,uint16,1,numeric,"none","","Target coding rate [TS38.212 sec 5.4.2.1 and 38.214 sec 5.1.3.1]. This is the number of information bits per 1024 coded bits expressed in 0.1 bit units",on
+PDU(2).PDSCH.CODEWORD(1),qamModOrder,4,uint8,1,numeric,"DropDownList","{2,4,6,8}","QAM modulation [TS38.212 sec 5.4.2.1 and 38.214 sec 5.1.3.1] Value: 2,4,6,8",on
+PDU(2).PDSCH.CODEWORD(1),mcsIndex,9,uint8,1,numeric,"Limits:[min,max]","[0,31]","MCS index [TS38.214, sec 5.1.3.1], should match value sent in DCI Value : 0-31",on
+PDU(2).PDSCH.CODEWORD(1),mcsTable,1,uint8,1,numeric,"DropDownList","{0,1,2}","MCS-Table-PDSCH [TS38.214, sec 5.1.3.1] 0: notqam256 1: qam256 2: qam64LowSE",on
+PDU(2).PDSCH.CODEWORD(1),rvIndex,0,uint8,1,numeric,"DropDownList","{0,1,2,3}","Redundancy version index [TS38.212, Table 5.4.2.1-2 and 38.214, Table 5.1.2.1-2], should match value sent in DCI Value : 0-3",on
+PDU(2).PDSCH.CODEWORD(1),TBSize,992,uint32,1,numeric,"Limits:[min,max]","[0,65535]","Transmit block size (in bytes) [TS38.214 sec 5.1.3.2] Value: 0-65535",on
+PDU(2).PDSCH,dataScramblingId,20,uint16,1,numeric,"Limits:[min,max]","[0,65535]","dataScramblingIdentityPdsch [TS38.211, sec 7.3.1.1] It equals the higher-layer parameter Datascrambling- Identity if configured and the RNTI equals the C-RNTI, otherwise L2 needs to set it to physical cell id. Value: 0-65535",on
+PDU(2).PDSCH,nrOfLayers,1,uint8,1,numeric,"DropDownList","{1,2,3,4,5,6,7,8}","Number of layers [TS38.211, sec 7.3.1.3] Value : 1-8",on
+PDU(2).PDSCH,transmissionScheme,0,uint8,1,numeric,"Limits:[min,max]","[0,0]","PDSCH transmission schemes [TS38.214, sec 5.1.1] 0: Up to 8 transmission layers",on
+PDU(2).PDSCH,refPoint,0,uint8,1,numeric,"DropDownList","{0,1}","Reference point for PDSCH DMRS, Value: 0 - 1.",on
+PDU(2).PDSCH,DMRS,,struct,1,none,"none","","",on
+PDU(2).PDSCH.DMRS,dlDmrsSymbPos,4,uint16,1,numeric,"none","","DMRS symbol positions [TS38.211, sec 7.4.1.1.2 and Tables 7.4.1.1.2-3 and 7.4.1.1.2-4]. Bitmap occupying the 14 LSBs with: bit 0: first symbol and for each bit 0: no DMRS 1: DMRS",on
+PDU(2).PDSCH.DMRS,dmrsConfigType,0,uint8,1,numeric,"DropDownList","{0,1}","DL DMRS config type [TS38.211, sec 7.4.1.1.2], 0: type 1 1: type 2",on
+PDU(2).PDSCH.DMRS,dlDmrsScramblingId,2000,uint16,1,numeric,"Limits:[min,max]","[0,65535]","DL-DMRS-Scrambling-ID, 0-65535",on
+PDU(2).PDSCH.DMRS,SCID,0,uint8,1,numeric,"DropDownList","{0,1}","DMRS sequence initialization [TS38.211, sec 7.4.1.1.2]. Should match what is sent in DCI 1_1, otherwise set to 0. Value : 0-1",on
+PDU(2).PDSCH.DMRS,numDmrsCdmGrpsNoData,1,uint8,1,numeric,"DropDownList","{0,1,2,3}","Number of DM-RS CDM groups without data [TS38.212 sec 7.3.1.2.2] [TS38.214 Table 4.1-1] it determines the ratio of PDSCH EPRE to DM-RS EPRE. Value: 1-3",on
+PDU(2).PDSCH.DMRS,dmrsPorts,1,uint16,1,numeric,"none","","DMRS ports. [TS38.212 7.3.1.2.2] provides description between DCI 1-1 content and DMRS ports. Bitmap occupying the 11 LSBs with: bit 0: antenna port 1000 bit 11: antenna port 1011 and for each bit 0: DMRS port not used 1: DMRS port used",on
+PDU(2).PDSCH,FD_ALLOC,,struct,1,none,"none","","",on
+PDU(2).PDSCH.FD_ALLOC,resourceAlloc,1,uint8,1,numeric,"DropDownList","{0,1}","Resource Allocation Type [TS38.214, sec 5.1.2.2] 0: Type 0 1: Type 1",on
+PDU(2).PDSCH.FD_ALLOC,rbBitmap,"zeros(1,36)",uint8,36,matlab expr string,"none","","For resource alloc type 0. TS 38.212 V15.0.x, 7.3.1.2.2 bitmap of RBs, 273 rounded up to multiple of 32. This bitmap is in units of VRBs. LSB of byte 0 of the bitmap represents the first RB of the bwp",on
+PDU(2).PDSCH.FD_ALLOC,rbStart,10,uint16,1,numeric,"Limits:[min,max]","[0,274]","For resource allocation type 1. [TS38.214, sec 5.1.2.2.2] The starting resource block within the BWP for this PDSCH. Value: 0-274",on
+PDU(2).PDSCH.FD_ALLOC,rbSize,20,uint16,1,numeric,"none","[1,275]","For resource allocation type 1. [TS38.214, sec 5.1.2.2.2] The number of resource block within for this PDSCH. Value: 1-275",on
+PDU(2).PDSCH.FD_ALLOC,VRBtoPRBMapping,0,uint8,1,numeric,"DropDownList","{0,1,2}","VRB-to-PRB-mapping [TS38.211, sec 7.3.1.6] 0: non-interleaved 1: interleaved with RB size 2 2: Interleaved with RB size 4",on
+PDU(2).PDSCH,TD_ALLOC,,struct,1,none,"none","","",on
+PDU(2).PDSCH.TD_ALLOC,StartSymbolIndex,2,uint8,1,numeric,"Limits:[min,max]","[0,13]","Start symbol index of PDSCH mapping from the start of the slot, S. [TS38.214, Table 5.1.2.1-1] Value: 0-13",on
+PDU(2).PDSCH.TD_ALLOC,NrOfSymbols,12,uint8,1,numeric,"Limits:[min,max]","[1,14]","PDSCH duration in symbols, L [TS38.214, Table 5.1.2.1-1] Value: 1-14",on
+PDU(2).PDSCH,PTRS,,struct,1,none,"none","","",on
+PDU(2).PDSCH,TX_PRECODE_BEAMFORM,,struct,1,none,"none","","",on
+PDU(2).PDSCH.TX_PRECODE_BEAMFORM,numPRGs,5,uint16,1,numeric,"CallbackFunction","@dl_tti_callback","Number of PRGs spanning this allocation. Value : 1-275",on
+PDU(2).PDSCH.TX_PRECODE_BEAMFORM,prgSize,4,uint16,1,numeric,"Limits:[min,max]","[1,275]","Size in RBs of a precoding resource block group (PRG) – to which same precoding and digital beamforming gets applied. Value: 1-275",on
+PDU(2).PDSCH.TX_PRECODE_BEAMFORM,digBFInterfaces,1,uint8,1,numeric,"CallbackFunction","@dl_tti_callback","Number of STD ant ports (parallel streams) feeding into the digBF Value: 0-255",on
+PDU(2).PDSCH.TX_PRECODE_BEAMFORM,PRG(1),,struct,1,none,"none","","",on
+PDU(2).PDSCH.TX_PRECODE_BEAMFORM.PRG(1),PMidx,4,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index to precoding matrix (PM) pre-stored at cell configuration. Note: If precoding is not used this parameter should be set to 0. Value: 0-65535.",on
+PDU(2).PDSCH.TX_PRECODE_BEAMFORM.PRG(1),DIG_BF_INTERFACE(1),,struct,1,none,"none","","",on
+PDU(2).PDSCH.TX_PRECODE_BEAMFORM.PRG(1).DIG_BF_INTERFACE(1),beamIdx,5,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index of the digital beam weight vector pre-stored at cell configuration. The vector maps this input port to output TXRUs. Value: 0-65535",on
+PDU(2).PDSCH.TX_PRECODE_BEAMFORM,PRG(2),,struct,1,none,"none","","",on
+PDU(2).PDSCH.TX_PRECODE_BEAMFORM.PRG(2),PMidx,4,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index to precoding matrix (PM) pre-stored at cell configuration. Note: If precoding is not used this parameter should be set to 0. Value: 0-65535.",on
+PDU(2).PDSCH.TX_PRECODE_BEAMFORM.PRG(2),DIG_BF_INTERFACE(1),,struct,1,none,"none","","",on
+PDU(2).PDSCH.TX_PRECODE_BEAMFORM.PRG(2).DIG_BF_INTERFACE(1),beamIdx,6,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index of the digital beam weight vector pre-stored at cell configuration. The vector maps this input port to output TXRUs. Value: 0-65535",on
+PDU(2).PDSCH.TX_PRECODE_BEAMFORM,PRG(3),,struct,1,none,"none","","",on
+PDU(2).PDSCH.TX_PRECODE_BEAMFORM.PRG(3),PMidx,4,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index to precoding matrix (PM) pre-stored at cell configuration. Note: If precoding is not used this parameter should be set to 0. Value: 0-65535.",on
+PDU(2).PDSCH.TX_PRECODE_BEAMFORM.PRG(3),DIG_BF_INTERFACE(1),,struct,1,none,"none","","",on
+PDU(2).PDSCH.TX_PRECODE_BEAMFORM.PRG(3).DIG_BF_INTERFACE(1),beamIdx,7,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index of the digital beam weight vector pre-stored at cell configuration. The vector maps this input port to output TXRUs. Value: 0-65535",on
+PDU(2).PDSCH.TX_PRECODE_BEAMFORM,PRG(4),,struct,1,none,"none","","",on
+PDU(2).PDSCH.TX_PRECODE_BEAMFORM.PRG(4),PMidx,4,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index to precoding matrix (PM) pre-stored at cell configuration. Note: If precoding is not used this parameter should be set to 0. Value: 0-65535.",on
+PDU(2).PDSCH.TX_PRECODE_BEAMFORM.PRG(4),DIG_BF_INTERFACE(1),,struct,1,none,"none","","",on
+PDU(2).PDSCH.TX_PRECODE_BEAMFORM.PRG(4).DIG_BF_INTERFACE(1),beamIdx,8,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index of the digital beam weight vector pre-stored at cell configuration. The vector maps this input port to output TXRUs. Value: 0-65535",on
+PDU(2).PDSCH.TX_PRECODE_BEAMFORM,PRG(5),,struct,1,none,"none","","",on
+PDU(2).PDSCH.TX_PRECODE_BEAMFORM.PRG(5),PMidx,4,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index to precoding matrix (PM) pre-stored at cell configuration. Note: If precoding is not used this parameter should be set to 0. Value: 0-65535.",on
+PDU(2).PDSCH.TX_PRECODE_BEAMFORM.PRG(5),DIG_BF_INTERFACE(1),,struct,1,none,"none","","",on
+PDU(2).PDSCH.TX_PRECODE_BEAMFORM.PRG(5).DIG_BF_INTERFACE(1),beamIdx,9,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index of the digital beam weight vector pre-stored at cell configuration. The vector maps this input port to output TXRUs. Value: 0-65535",on
+PDU(2).PDSCH,TX_POWER,,struct,1,none,"none","","",on
+PDU(2).PDSCH.TX_POWER,powerControlOffset,8,uint8,1,numeric,"Limits:[min,max]","[0,23]","Ratio of PDSCH EPRE to NZP CSI-RSEPRE [TS38.214, sec 5.2.2.3.1] Value :0-23 representing -8 to 15 dB in 1dB steps",on
+PDU(2).PDSCH.TX_POWER,powerControlOffsetSS,1,uint8,1,numeric,"DropDownList","{0,1,2,3}","Ratio of SSB/PBCH block EPRE to NZP CSI-RS EPRES [TS38.214, sec 5.2.2.3.1] Values: 0: -3dB, 1: 0dB, 2: 3dB, 3: 6dB",on
+PDU(2).PDSCH,CBG,,struct,1,none,"none","","",on
+,PDU(3),,struct,1,none,"none","","",on
+PDU(3),PDUType,1,uint16,1,numeric,"CallbackFunction","dl_tti_callback","0: PDCCH, 1: PDSCH,  2: CSI-RS, 3: SSB",on
+PDU(3),PDUSize,0,uint16,1,numeric,"Limits:[min,max]","[0, 65535]","Size of the PDU control information (in bytes). This length value includes the 4 bytes required for the PDU type and PDU size parameters.",on
+PDU(3),PDSCH,,struct,1,none,"none","","",on
+PDU(3).PDSCH,pduBitmap,0,uint16,1,numeric,"CallbackFunction","@dl_tti_callback","Bitmap indicating presence of optional PDUs Bit 0: pdschPtrs - Indicates PTRS included (FR2) Bit 1:cbgRetxCtrl (Present when CBG based retransmit is used) All other bits reserved",on
+PDU(3).PDSCH,RNTI,7,uint16,1,numeric,"Limits:[min,max]","[1,65535]","The RNTI used for identifying the UE when receiving the PDU",on
+PDU(3).PDSCH,pduIndex,2,uint16,1,numeric,"Limits:[min,max]","[0,65535]","PDU index incremented for each PDSCH PDU sent in TX control message. This is used to associate control information to data and is reset every slot. Value: 0 - 65535",on
+PDU(3).PDSCH,BWP,,struct,1,none,"none","","",on
+PDU(3).PDSCH.BWP,BWPsize,30,uint16,1,numeric,"Limits:[min,max]","[1,275]","Number of contiguous PRBs allocated to the BWP, Value: 1->275",on
+PDU(3).PDSCH.BWP,BWPStart,50,uint16,1,numeric,"Limits:[min,max]","[0,274]","Bandwidth part start RB index from reference CRB, Value: 0->274",on
+PDU(3).PDSCH.BWP,SubcarrierSpacing,1,uint8,1,numeric,"DropDownList","{0,1,2,3,4}","Value:0->4",on
+PDU(3).PDSCH.BWP,CyclicPrefix,0,uint8,1,numeric,"DropDownList","{0,1}","Cyclic prefix type, 0: Normal; 1: Extended",on
+PDU(3).PDSCH,NrOfCodewords,1,uint8,1,numeric,"CallbackFunction","@dl_tti_callback","Number of code words for this RNTI (UE) Value: 1 - 2",on
+PDU(3).PDSCH,CODEWORD(1),,struct,1,none,"none","","",on
+PDU(3).PDSCH.CODEWORD(1),targetCodeRate,8850,uint16,1,numeric,"none","","Target coding rate [TS38.212 sec 5.4.2.1 and 38.214 sec 5.1.3.1]. This is the number of information bits per 1024 coded bits expressed in 0.1 bit units",on
+PDU(3).PDSCH.CODEWORD(1),qamModOrder,8,uint8,1,numeric,"DropDownList","{2,4,6,8}","QAM modulation [TS38.212 sec 5.4.2.1 and 38.214 sec 5.1.3.1] Value: 2,4,6,8",on
+PDU(3).PDSCH.CODEWORD(1),mcsIndex,25,uint8,1,numeric,"Limits:[min,max]","[0,31]","MCS index [TS38.214, sec 5.1.3.1], should match value sent in DCI Value : 0-31",on
+PDU(3).PDSCH.CODEWORD(1),mcsTable,1,uint8,1,numeric,"DropDownList","{0,1,2}","MCS-Table-PDSCH [TS38.214, sec 5.1.3.1] 0: notqam256 1: qam256 2: qam64LowSE",on
+PDU(3).PDSCH.CODEWORD(1),rvIndex,0,uint8,1,numeric,"DropDownList","{0,1,2,3}","Redundancy version index [TS38.212, Table 5.4.2.1-2 and 38.214, Table 5.1.2.1-2], should match value sent in DCI Value : 0-3",on
+PDU(3).PDSCH.CODEWORD(1),TBSize,4482,uint32,1,numeric,"Limits:[min,max]","[0,65535]","Transmit block size (in bytes) [TS38.214 sec 5.1.3.2] Value: 0-65535",on
+PDU(3).PDSCH,dataScramblingId,20,uint16,1,numeric,"Limits:[min,max]","[0,65535]","dataScramblingIdentityPdsch [TS38.211, sec 7.3.1.1] It equals the higher-layer parameter Datascrambling- Identity if configured and the RNTI equals the C-RNTI, otherwise L2 needs to set it to physical cell id. Value: 0-65535",on
+PDU(3).PDSCH,nrOfLayers,1,uint8,1,numeric,"DropDownList","{1,2,3,4,5,6,7,8}","Number of layers [TS38.211, sec 7.3.1.3] Value : 1-8",on
+PDU(3).PDSCH,transmissionScheme,0,uint8,1,numeric,"Limits:[min,max]","[0,0]","PDSCH transmission schemes [TS38.214, sec 5.1.1] 0: Up to 8 transmission layers",on
+PDU(3).PDSCH,refPoint,0,uint8,1,numeric,"DropDownList","{0,1}","Reference point for PDSCH DMRS, Value: 0 - 1.",on
+PDU(3).PDSCH,DMRS,,struct,1,none,"none","","",on
+PDU(3).PDSCH.DMRS,dlDmrsSymbPos,3096,uint16,1,numeric,"none","","DMRS symbol positions [TS38.211, sec 7.4.1.1.2 and Tables 7.4.1.1.2-3 and 7.4.1.1.2-4]. Bitmap occupying the 14 LSBs with: bit 0: first symbol and for each bit 0: no DMRS 1: DMRS",on
+PDU(3).PDSCH.DMRS,dmrsConfigType,0,uint8,1,numeric,"DropDownList","{0,1}","DL DMRS config type [TS38.211, sec 7.4.1.1.2], 0: type 1 1: type 2",on
+PDU(3).PDSCH.DMRS,dlDmrsScramblingId,1000,uint16,1,numeric,"Limits:[min,max]","[0,65535]","DL-DMRS-Scrambling-ID, 0-65535",on
+PDU(3).PDSCH.DMRS,SCID,0,uint8,1,numeric,"DropDownList","{0,1}","DMRS sequence initialization [TS38.211, sec 7.4.1.1.2]. Should match what is sent in DCI 1_1, otherwise set to 0. Value : 0-1",on
+PDU(3).PDSCH.DMRS,numDmrsCdmGrpsNoData,1,uint8,1,numeric,"DropDownList","{0,1,2,3}","Number of DM-RS CDM groups without data [TS38.212 sec 7.3.1.2.2] [TS38.214 Table 4.1-1] it determines the ratio of PDSCH EPRE to DM-RS EPRE. Value: 1-3",on
+PDU(3).PDSCH.DMRS,dmrsPorts,1,uint16,1,numeric,"none","","DMRS ports. [TS38.212 7.3.1.2.2] provides description between DCI 1-1 content and DMRS ports. Bitmap occupying the 11 LSBs with: bit 0: antenna port 1000 bit 11: antenna port 1011 and for each bit 0: DMRS port not used 1: DMRS port used",on
+PDU(3).PDSCH,FD_ALLOC,,struct,1,none,"none","","",on
+PDU(3).PDSCH.FD_ALLOC,resourceAlloc,1,uint8,1,numeric,"DropDownList","{0,1}","Resource Allocation Type [TS38.214, sec 5.1.2.2] 0: Type 0 1: Type 1",on
+PDU(3).PDSCH.FD_ALLOC,rbBitmap,"zeros(1,36)",uint8,36,matlab expr string,"none","","For resource alloc type 0. TS 38.212 V15.0.x, 7.3.1.2.2 bitmap of RBs, 273 rounded up to multiple of 32. This bitmap is in units of VRBs. LSB of byte 0 of the bitmap represents the first RB of the bwp",on
+PDU(3).PDSCH.FD_ALLOC,rbStart,10,uint16,1,numeric,"Limits:[min,max]","[0,274]","For resource allocation type 1. [TS38.214, sec 5.1.2.2.2] The starting resource block within the BWP for this PDSCH. Value: 0-274",on
+PDU(3).PDSCH.FD_ALLOC,rbSize,20,uint16,1,numeric,"none","[1,275]","For resource allocation type 1. [TS38.214, sec 5.1.2.2.2] The number of resource block within for this PDSCH. Value: 1-275",on
+PDU(3).PDSCH.FD_ALLOC,VRBtoPRBMapping,0,uint8,1,numeric,"DropDownList","{0,1,2}","VRB-to-PRB-mapping [TS38.211, sec 7.3.1.6] 0: non-interleaved 1: interleaved with RB size 2 2: Interleaved with RB size 4",on
+PDU(3).PDSCH,TD_ALLOC,,struct,1,none,"none","","",on
+PDU(3).PDSCH.TD_ALLOC,StartSymbolIndex,3,uint8,1,numeric,"Limits:[min,max]","[0,13]","Start symbol index of PDSCH mapping from the start of the slot, S. [TS38.214, Table 5.1.2.1-1] Value: 0-13",on
+PDU(3).PDSCH.TD_ALLOC,NrOfSymbols,11,uint8,1,numeric,"Limits:[min,max]","[1,14]","PDSCH duration in symbols, L [TS38.214, Table 5.1.2.1-1] Value: 1-14",on
+PDU(3).PDSCH,PTRS,,struct,1,none,"none","","",on
+PDU(3).PDSCH,TX_PRECODE_BEAMFORM,,struct,1,none,"none","","",on
+PDU(3).PDSCH.TX_PRECODE_BEAMFORM,numPRGs,5,uint16,1,numeric,"CallbackFunction","@dl_tti_callback","Number of PRGs spanning this allocation. Value : 1-275",on
+PDU(3).PDSCH.TX_PRECODE_BEAMFORM,prgSize,4,uint16,1,numeric,"Limits:[min,max]","[1,275]","Size in RBs of a precoding resource block group (PRG) – to which same precoding and digital beamforming gets applied. Value: 1-275",on
+PDU(3).PDSCH.TX_PRECODE_BEAMFORM,digBFInterfaces,1,uint8,1,numeric,"CallbackFunction","@dl_tti_callback","Number of STD ant ports (parallel streams) feeding into the digBF Value: 0-255",on
+PDU(3).PDSCH.TX_PRECODE_BEAMFORM,PRG(1),,struct,1,none,"none","","",on
+PDU(3).PDSCH.TX_PRECODE_BEAMFORM.PRG(1),PMidx,20,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index to precoding matrix (PM) pre-stored at cell configuration. Note: If precoding is not used this parameter should be set to 0. Value: 0-65535.",on
+PDU(3).PDSCH.TX_PRECODE_BEAMFORM.PRG(1),DIG_BF_INTERFACE(1),,struct,1,none,"none","","",on
+PDU(3).PDSCH.TX_PRECODE_BEAMFORM.PRG(1).DIG_BF_INTERFACE(1),beamIdx,70,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index of the digital beam weight vector pre-stored at cell configuration. The vector maps this input port to output TXRUs. Value: 0-65535",on
+PDU(3).PDSCH.TX_PRECODE_BEAMFORM,PRG(2),,struct,1,none,"none","","",on
+PDU(3).PDSCH.TX_PRECODE_BEAMFORM.PRG(2),PMidx,20,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index to precoding matrix (PM) pre-stored at cell configuration. Note: If precoding is not used this parameter should be set to 0. Value: 0-65535.",on
+PDU(3).PDSCH.TX_PRECODE_BEAMFORM.PRG(2),DIG_BF_INTERFACE(1),,struct,1,none,"none","","",on
+PDU(3).PDSCH.TX_PRECODE_BEAMFORM.PRG(2).DIG_BF_INTERFACE(1),beamIdx,71,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index of the digital beam weight vector pre-stored at cell configuration. The vector maps this input port to output TXRUs. Value: 0-65535",on
+PDU(3).PDSCH.TX_PRECODE_BEAMFORM,PRG(3),,struct,1,none,"none","","",on
+PDU(3).PDSCH.TX_PRECODE_BEAMFORM.PRG(3),PMidx,20,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index to precoding matrix (PM) pre-stored at cell configuration. Note: If precoding is not used this parameter should be set to 0. Value: 0-65535.",on
+PDU(3).PDSCH.TX_PRECODE_BEAMFORM.PRG(3),DIG_BF_INTERFACE(1),,struct,1,none,"none","","",on
+PDU(3).PDSCH.TX_PRECODE_BEAMFORM.PRG(3).DIG_BF_INTERFACE(1),beamIdx,72,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index of the digital beam weight vector pre-stored at cell configuration. The vector maps this input port to output TXRUs. Value: 0-65535",on
+PDU(3).PDSCH.TX_PRECODE_BEAMFORM,PRG(4),,struct,1,none,"none","","",on
+PDU(3).PDSCH.TX_PRECODE_BEAMFORM.PRG(4),PMidx,20,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index to precoding matrix (PM) pre-stored at cell configuration. Note: If precoding is not used this parameter should be set to 0. Value: 0-65535.",on
+PDU(3).PDSCH.TX_PRECODE_BEAMFORM.PRG(4),DIG_BF_INTERFACE(1),,struct,1,none,"none","","",on
+PDU(3).PDSCH.TX_PRECODE_BEAMFORM.PRG(4).DIG_BF_INTERFACE(1),beamIdx,73,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index of the digital beam weight vector pre-stored at cell configuration. The vector maps this input port to output TXRUs. Value: 0-65535",on
+PDU(3).PDSCH.TX_PRECODE_BEAMFORM,PRG(5),,struct,1,none,"none","","",on
+PDU(3).PDSCH.TX_PRECODE_BEAMFORM.PRG(5),PMidx,20,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index to precoding matrix (PM) pre-stored at cell configuration. Note: If precoding is not used this parameter should be set to 0. Value: 0-65535.",on
+PDU(3).PDSCH.TX_PRECODE_BEAMFORM.PRG(5),DIG_BF_INTERFACE(1),,struct,1,none,"none","","",on
+PDU(3).PDSCH.TX_PRECODE_BEAMFORM.PRG(5).DIG_BF_INTERFACE(1),beamIdx,74,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index of the digital beam weight vector pre-stored at cell configuration. The vector maps this input port to output TXRUs. Value: 0-65535",on
+PDU(3).PDSCH,TX_POWER,,struct,1,none,"none","","",on
+PDU(3).PDSCH.TX_POWER,powerControlOffset,8,uint8,1,numeric,"Limits:[min,max]","[0,23]","Ratio of PDSCH EPRE to NZP CSI-RSEPRE [TS38.214, sec 5.2.2.3.1] Value :0-23 representing -8 to 15 dB in 1dB steps",on
+PDU(3).PDSCH.TX_POWER,powerControlOffsetSS,1,uint8,1,numeric,"DropDownList","{0,1,2,3}","Ratio of SSB/PBCH block EPRE to NZP CSI-RS EPRES [TS38.214, sec 5.2.2.3.1] Values: 0: -3dB, 1: 0dB, 2: 3dB, 3: 6dB",on
+PDU(3).PDSCH,CBG,,struct,1,none,"none","","",on
+,PDU(4),,struct,1,none,"none","","",on
+PDU(4),PDUType,1,uint16,1,numeric,"CallbackFunction","dl_tti_callback","0: PDCCH, 1: PDSCH,  2: CSI-RS, 3: SSB",on
+PDU(4),PDUSize,0,uint16,1,numeric,"Limits:[min,max]","[0, 65535]","Size of the PDU control information (in bytes). This length value includes the 4 bytes required for the PDU type and PDU size parameters.",on
+PDU(4),PDSCH,,struct,1,none,"none","","",on
+PDU(4).PDSCH,pduBitmap,0,uint16,1,numeric,"CallbackFunction","@dl_tti_callback","Bitmap indicating presence of optional PDUs Bit 0: pdschPtrs - Indicates PTRS included (FR2) Bit 1:cbgRetxCtrl (Present when CBG based retransmit is used) All other bits reserved",on
+PDU(4).PDSCH,RNTI,8,uint16,1,numeric,"Limits:[min,max]","[1,65535]","The RNTI used for identifying the UE when receiving the PDU",on
+PDU(4).PDSCH,pduIndex,3,uint16,1,numeric,"Limits:[min,max]","[0,65535]","PDU index incremented for each PDSCH PDU sent in TX control message. This is used to associate control information to data and is reset every slot. Value: 0 - 65535",on
+PDU(4).PDSCH,BWP,,struct,1,none,"none","","",on
+PDU(4).PDSCH.BWP,BWPsize,30,uint16,1,numeric,"Limits:[min,max]","[1,275]","Number of contiguous PRBs allocated to the BWP, Value: 1->275",on
+PDU(4).PDSCH.BWP,BWPStart,80,uint16,1,numeric,"Limits:[min,max]","[0,274]","Bandwidth part start RB index from reference CRB, Value: 0->274",on
+PDU(4).PDSCH.BWP,SubcarrierSpacing,1,uint8,1,numeric,"DropDownList","{0,1,2,3,4}","Value:0->4",on
+PDU(4).PDSCH.BWP,CyclicPrefix,0,uint8,1,numeric,"DropDownList","{0,1}","Cyclic prefix type, 0: Normal; 1: Extended",on
+PDU(4).PDSCH,NrOfCodewords,1,uint8,1,numeric,"CallbackFunction","@dl_tti_callback","Number of code words for this RNTI (UE) Value: 1 - 2",on
+PDU(4).PDSCH,CODEWORD(1),,struct,1,none,"none","","",on
+PDU(4).PDSCH.CODEWORD(1),targetCodeRate,7720,uint16,1,numeric,"none","","Target coding rate [TS38.212 sec 5.4.2.1 and 38.214 sec 5.1.3.1]. This is the number of information bits per 1024 coded bits expressed in 0.1 bit units",on
+PDU(4).PDSCH.CODEWORD(1),qamModOrder,6,uint8,1,numeric,"DropDownList","{2,4,6,8}","QAM modulation [TS38.212 sec 5.4.2.1 and 38.214 sec 5.1.3.1] Value: 2,4,6,8",on
+PDU(4).PDSCH.CODEWORD(1),mcsIndex,17,uint8,1,numeric,"Limits:[min,max]","[0,31]","MCS index [TS38.214, sec 5.1.3.1], should match value sent in DCI Value : 0-31",on
+PDU(4).PDSCH.CODEWORD(1),mcsTable,1,uint8,1,numeric,"DropDownList","{0,1,2}","MCS-Table-PDSCH [TS38.214, sec 5.1.3.1] 0: notqam256 1: qam256 2: qam64LowSE",on
+PDU(4).PDSCH.CODEWORD(1),rvIndex,0,uint8,1,numeric,"DropDownList","{0,1,2,3}","Redundancy version index [TS38.212, Table 5.4.2.1-2 and 38.214, Table 5.1.2.1-2], should match value sent in DCI Value : 0-3",on
+PDU(4).PDSCH.CODEWORD(1),TBSize,2241,uint32,1,numeric,"Limits:[min,max]","[0,65535]","Transmit block size (in bytes) [TS38.214 sec 5.1.3.2] Value: 0-65535",on
+PDU(4).PDSCH,dataScramblingId,20,uint16,1,numeric,"Limits:[min,max]","[0,65535]","dataScramblingIdentityPdsch [TS38.211, sec 7.3.1.1] It equals the higher-layer parameter Datascrambling- Identity if configured and the RNTI equals the C-RNTI, otherwise L2 needs to set it to physical cell id. Value: 0-65535",on
+PDU(4).PDSCH,nrOfLayers,1,uint8,1,numeric,"DropDownList","{1,2,3,4,5,6,7,8}","Number of layers [TS38.211, sec 7.3.1.3] Value : 1-8",on
+PDU(4).PDSCH,transmissionScheme,0,uint8,1,numeric,"Limits:[min,max]","[0,0]","PDSCH transmission schemes [TS38.214, sec 5.1.1] 0: Up to 8 transmission layers",on
+PDU(4).PDSCH,refPoint,0,uint8,1,numeric,"DropDownList","{0,1}","Reference point for PDSCH DMRS, Value: 0 - 1.",on
+PDU(4).PDSCH,DMRS,,struct,1,none,"none","","",on
+PDU(4).PDSCH.DMRS,dlDmrsSymbPos,24,uint16,1,numeric,"none","","DMRS symbol positions [TS38.211, sec 7.4.1.1.2 and Tables 7.4.1.1.2-3 and 7.4.1.1.2-4]. Bitmap occupying the 14 LSBs with: bit 0: first symbol and for each bit 0: no DMRS 1: DMRS",on
+PDU(4).PDSCH.DMRS,dmrsConfigType,0,uint8,1,numeric,"DropDownList","{0,1}","DL DMRS config type [TS38.211, sec 7.4.1.1.2], 0: type 1 1: type 2",on
+PDU(4).PDSCH.DMRS,dlDmrsScramblingId,4000,uint16,1,numeric,"Limits:[min,max]","[0,65535]","DL-DMRS-Scrambling-ID, 0-65535",on
+PDU(4).PDSCH.DMRS,SCID,0,uint8,1,numeric,"DropDownList","{0,1}","DMRS sequence initialization [TS38.211, sec 7.4.1.1.2]. Should match what is sent in DCI 1_1, otherwise set to 0. Value : 0-1",on
+PDU(4).PDSCH.DMRS,numDmrsCdmGrpsNoData,1,uint8,1,numeric,"DropDownList","{0,1,2,3}","Number of DM-RS CDM groups without data [TS38.212 sec 7.3.1.2.2] [TS38.214 Table 4.1-1] it determines the ratio of PDSCH EPRE to DM-RS EPRE. Value: 1-3",on
+PDU(4).PDSCH.DMRS,dmrsPorts,1,uint16,1,numeric,"none","","DMRS ports. [TS38.212 7.3.1.2.2] provides description between DCI 1-1 content and DMRS ports. Bitmap occupying the 11 LSBs with: bit 0: antenna port 1000 bit 11: antenna port 1011 and for each bit 0: DMRS port not used 1: DMRS port used",on
+PDU(4).PDSCH,FD_ALLOC,,struct,1,none,"none","","",on
+PDU(4).PDSCH.FD_ALLOC,resourceAlloc,1,uint8,1,numeric,"DropDownList","{0,1}","Resource Allocation Type [TS38.214, sec 5.1.2.2] 0: Type 0 1: Type 1",on
+PDU(4).PDSCH.FD_ALLOC,rbBitmap,"zeros(1,36)",uint8,36,matlab expr string,"none","","For resource alloc type 0. TS 38.212 V15.0.x, 7.3.1.2.2 bitmap of RBs, 273 rounded up to multiple of 32. This bitmap is in units of VRBs. LSB of byte 0 of the bitmap represents the first RB of the bwp",on
+PDU(4).PDSCH.FD_ALLOC,rbStart,0,uint16,1,numeric,"Limits:[min,max]","[0,274]","For resource allocation type 1. [TS38.214, sec 5.1.2.2.2] The starting resource block within the BWP for this PDSCH. Value: 0-274",on
+PDU(4).PDSCH.FD_ALLOC,rbSize,30,uint16,1,numeric,"none","[1,275]","For resource allocation type 1. [TS38.214, sec 5.1.2.2.2] The number of resource block within for this PDSCH. Value: 1-275",on
+PDU(4).PDSCH.FD_ALLOC,VRBtoPRBMapping,0,uint8,1,numeric,"DropDownList","{0,1,2}","VRB-to-PRB-mapping [TS38.211, sec 7.3.1.6] 0: non-interleaved 1: interleaved with RB size 2 2: Interleaved with RB size 4",on
+PDU(4).PDSCH,TD_ALLOC,,struct,1,none,"none","","",on
+PDU(4).PDSCH.TD_ALLOC,StartSymbolIndex,3,uint8,1,numeric,"Limits:[min,max]","[0,13]","Start symbol index of PDSCH mapping from the start of the slot, S. [TS38.214, Table 5.1.2.1-1] Value: 0-13",on
+PDU(4).PDSCH.TD_ALLOC,NrOfSymbols,11,uint8,1,numeric,"Limits:[min,max]","[1,14]","PDSCH duration in symbols, L [TS38.214, Table 5.1.2.1-1] Value: 1-14",on
+PDU(4).PDSCH,PTRS,,struct,1,none,"none","","",on
+PDU(4).PDSCH,TX_PRECODE_BEAMFORM,,struct,1,none,"none","","",on
+PDU(4).PDSCH.TX_PRECODE_BEAMFORM,numPRGs,8,uint16,1,numeric,"CallbackFunction","@dl_tti_callback","Number of PRGs spanning this allocation. Value : 1-275",on
+PDU(4).PDSCH.TX_PRECODE_BEAMFORM,prgSize,4,uint16,1,numeric,"Limits:[min,max]","[1,275]","Size in RBs of a precoding resource block group (PRG) – to which same precoding and digital beamforming gets applied. Value: 1-275",on
+PDU(4).PDSCH.TX_PRECODE_BEAMFORM,digBFInterfaces,1,uint8,1,numeric,"CallbackFunction","@dl_tti_callback","Number of STD ant ports (parallel streams) feeding into the digBF Value: 0-255",on
+PDU(4).PDSCH.TX_PRECODE_BEAMFORM,PRG(1),,struct,1,none,"none","","",on
+PDU(4).PDSCH.TX_PRECODE_BEAMFORM.PRG(1),PMidx,8,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index to precoding matrix (PM) pre-stored at cell configuration. Note: If precoding is not used this parameter should be set to 0. Value: 0-65535.",on
+PDU(4).PDSCH.TX_PRECODE_BEAMFORM.PRG(1),DIG_BF_INTERFACE(1),,struct,1,none,"none","","",on
+PDU(4).PDSCH.TX_PRECODE_BEAMFORM.PRG(1).DIG_BF_INTERFACE(1),beamIdx,15,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index of the digital beam weight vector pre-stored at cell configuration. The vector maps this input port to output TXRUs. Value: 0-65535",on
+PDU(4).PDSCH.TX_PRECODE_BEAMFORM,PRG(2),,struct,1,none,"none","","",on
+PDU(4).PDSCH.TX_PRECODE_BEAMFORM.PRG(2),PMidx,8,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index to precoding matrix (PM) pre-stored at cell configuration. Note: If precoding is not used this parameter should be set to 0. Value: 0-65535.",on
+PDU(4).PDSCH.TX_PRECODE_BEAMFORM.PRG(2),DIG_BF_INTERFACE(1),,struct,1,none,"none","","",on
+PDU(4).PDSCH.TX_PRECODE_BEAMFORM.PRG(2).DIG_BF_INTERFACE(1),beamIdx,16,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index of the digital beam weight vector pre-stored at cell configuration. The vector maps this input port to output TXRUs. Value: 0-65535",on
+PDU(4).PDSCH.TX_PRECODE_BEAMFORM,PRG(3),,struct,1,none,"none","","",on
+PDU(4).PDSCH.TX_PRECODE_BEAMFORM.PRG(3),PMidx,8,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index to precoding matrix (PM) pre-stored at cell configuration. Note: If precoding is not used this parameter should be set to 0. Value: 0-65535.",on
+PDU(4).PDSCH.TX_PRECODE_BEAMFORM.PRG(3),DIG_BF_INTERFACE(1),,struct,1,none,"none","","",on
+PDU(4).PDSCH.TX_PRECODE_BEAMFORM.PRG(3).DIG_BF_INTERFACE(1),beamIdx,17,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index of the digital beam weight vector pre-stored at cell configuration. The vector maps this input port to output TXRUs. Value: 0-65535",on
+PDU(4).PDSCH.TX_PRECODE_BEAMFORM,PRG(4),,struct,1,none,"none","","",on
+PDU(4).PDSCH.TX_PRECODE_BEAMFORM.PRG(4),PMidx,8,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index to precoding matrix (PM) pre-stored at cell configuration. Note: If precoding is not used this parameter should be set to 0. Value: 0-65535.",on
+PDU(4).PDSCH.TX_PRECODE_BEAMFORM.PRG(4),DIG_BF_INTERFACE(1),,struct,1,none,"none","","",on
+PDU(4).PDSCH.TX_PRECODE_BEAMFORM.PRG(4).DIG_BF_INTERFACE(1),beamIdx,18,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index of the digital beam weight vector pre-stored at cell configuration. The vector maps this input port to output TXRUs. Value: 0-65535",on
+PDU(4).PDSCH.TX_PRECODE_BEAMFORM,PRG(5),,struct,1,none,"none","","",on
+PDU(4).PDSCH.TX_PRECODE_BEAMFORM.PRG(5),PMidx,8,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index to precoding matrix (PM) pre-stored at cell configuration. Note: If precoding is not used this parameter should be set to 0. Value: 0-65535.",on
+PDU(4).PDSCH.TX_PRECODE_BEAMFORM.PRG(5),DIG_BF_INTERFACE(1),,struct,1,none,"none","","",on
+PDU(4).PDSCH.TX_PRECODE_BEAMFORM.PRG(5).DIG_BF_INTERFACE(1),beamIdx,19,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index of the digital beam weight vector pre-stored at cell configuration. The vector maps this input port to output TXRUs. Value: 0-65535",on
+PDU(4).PDSCH.TX_PRECODE_BEAMFORM,PRG(6),,struct,1,none,"none","","",on
+PDU(4).PDSCH.TX_PRECODE_BEAMFORM.PRG(6),PMidx,8,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index to precoding matrix (PM) pre-stored at cell configuration. Note: If precoding is not used this parameter should be set to 0. Value: 0-65535.",on
+PDU(4).PDSCH.TX_PRECODE_BEAMFORM.PRG(6),DIG_BF_INTERFACE(1),,struct,1,none,"none","","",on
+PDU(4).PDSCH.TX_PRECODE_BEAMFORM.PRG(6).DIG_BF_INTERFACE(1),beamIdx,20,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index of the digital beam weight vector pre-stored at cell configuration. The vector maps this input port to output TXRUs. Value: 0-65535",on
+PDU(4).PDSCH.TX_PRECODE_BEAMFORM,PRG(7),,struct,1,none,"none","","",on
+PDU(4).PDSCH.TX_PRECODE_BEAMFORM.PRG(7),PMidx,8,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index to precoding matrix (PM) pre-stored at cell configuration. Note: If precoding is not used this parameter should be set to 0. Value: 0-65535.",on
+PDU(4).PDSCH.TX_PRECODE_BEAMFORM.PRG(7),DIG_BF_INTERFACE(1),,struct,1,none,"none","","",on
+PDU(4).PDSCH.TX_PRECODE_BEAMFORM.PRG(7).DIG_BF_INTERFACE(1),beamIdx,21,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index of the digital beam weight vector pre-stored at cell configuration. The vector maps this input port to output TXRUs. Value: 0-65535",on
+PDU(4).PDSCH.TX_PRECODE_BEAMFORM,PRG(8),,struct,1,none,"none","","",on
+PDU(4).PDSCH.TX_PRECODE_BEAMFORM.PRG(8),PMidx,8,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index to precoding matrix (PM) pre-stored at cell configuration. Note: If precoding is not used this parameter should be set to 0. Value: 0-65535.",on
+PDU(4).PDSCH.TX_PRECODE_BEAMFORM.PRG(8),DIG_BF_INTERFACE(1),,struct,1,none,"none","","",on
+PDU(4).PDSCH.TX_PRECODE_BEAMFORM.PRG(8).DIG_BF_INTERFACE(1),beamIdx,22,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index of the digital beam weight vector pre-stored at cell configuration. The vector maps this input port to output TXRUs. Value: 0-65535",on
+PDU(4).PDSCH,TX_POWER,,struct,1,none,"none","","",on
+PDU(4).PDSCH.TX_POWER,powerControlOffset,8,uint8,1,numeric,"Limits:[min,max]","[0,23]","Ratio of PDSCH EPRE to NZP CSI-RSEPRE [TS38.214, sec 5.2.2.3.1] Value :0-23 representing -8 to 15 dB in 1dB steps",on
+PDU(4).PDSCH.TX_POWER,powerControlOffsetSS,1,uint8,1,numeric,"DropDownList","{0,1,2,3}","Ratio of SSB/PBCH block EPRE to NZP CSI-RS EPRES [TS38.214, sec 5.2.2.3.1] Values: 0: -3dB, 1: 0dB, 2: 3dB, 3: 6dB",on
+PDU(4).PDSCH,CBG,,struct,1,none,"none","","",on
+,PDU(5),,struct,1,none,"none","","",on
+PDU(5),PDUType,1,uint16,1,numeric,"CallbackFunction","dl_tti_callback","0: PDCCH, 1: PDSCH,  2: CSI-RS, 3: SSB",on
+PDU(5),PDUSize,0,uint16,1,numeric,"Limits:[min,max]","[0, 65535]","Size of the PDU control information (in bytes). This length value includes the 4 bytes required for the PDU type and PDU size parameters.",on
+PDU(5),PDSCH,,struct,1,none,"none","","",on
+PDU(5).PDSCH,pduBitmap,0,uint16,1,numeric,"CallbackFunction","@dl_tti_callback","Bitmap indicating presence of optional PDUs Bit 0: pdschPtrs - Indicates PTRS included (FR2) Bit 1:cbgRetxCtrl (Present when CBG based retransmit is used) All other bits reserved",on
+PDU(5).PDSCH,RNTI,11,uint16,1,numeric,"Limits:[min,max]","[1,65535]","The RNTI used for identifying the UE when receiving the PDU",on
+PDU(5).PDSCH,pduIndex,4,uint16,1,numeric,"Limits:[min,max]","[0,65535]","PDU index incremented for each PDSCH PDU sent in TX control message. This is used to associate control information to data and is reset every slot. Value: 0 - 65535",on
+PDU(5).PDSCH,BWP,,struct,1,none,"none","","",on
+PDU(5).PDSCH.BWP,BWPsize,143,uint16,1,numeric,"Limits:[min,max]","[1,275]","Number of contiguous PRBs allocated to the BWP, Value: 1->275",on
+PDU(5).PDSCH.BWP,BWPStart,110,uint16,1,numeric,"Limits:[min,max]","[0,274]","Bandwidth part start RB index from reference CRB, Value: 0->274",on
+PDU(5).PDSCH.BWP,SubcarrierSpacing,1,uint8,1,numeric,"DropDownList","{0,1,2,3,4}","Value:0->4",on
+PDU(5).PDSCH.BWP,CyclicPrefix,0,uint8,1,numeric,"DropDownList","{0,1}","Cyclic prefix type, 0: Normal; 1: Extended",on
+PDU(5).PDSCH,NrOfCodewords,1,uint8,1,numeric,"CallbackFunction","@dl_tti_callback","Number of code words for this RNTI (UE) Value: 1 - 2",on
+PDU(5).PDSCH,CODEWORD(1),,struct,1,none,"none","","",on
+PDU(5).PDSCH.CODEWORD(1),targetCodeRate,7540,uint16,1,numeric,"none","","Target coding rate [TS38.212 sec 5.4.2.1 and 38.214 sec 5.1.3.1]. This is the number of information bits per 1024 coded bits expressed in 0.1 bit units",on
+PDU(5).PDSCH.CODEWORD(1),qamModOrder,8,uint8,1,numeric,"DropDownList","{2,4,6,8}","QAM modulation [TS38.212 sec 5.4.2.1 and 38.214 sec 5.1.3.1] Value: 2,4,6,8",on
+PDU(5).PDSCH.CODEWORD(1),mcsIndex,22,uint8,1,numeric,"Limits:[min,max]","[0,31]","MCS index [TS38.214, sec 5.1.3.1], should match value sent in DCI Value : 0-31",on
+PDU(5).PDSCH.CODEWORD(1),mcsTable,1,uint8,1,numeric,"DropDownList","{0,1,2}","MCS-Table-PDSCH [TS38.214, sec 5.1.3.1] 0: notqam256 1: qam256 2: qam64LowSE",on
+PDU(5).PDSCH.CODEWORD(1),rvIndex,0,uint8,1,numeric,"DropDownList","{0,1,2,3}","Redundancy version index [TS38.212, Table 5.4.2.1-2 and 38.214, Table 5.1.2.1-2], should match value sent in DCI Value : 0-3",on
+PDU(5).PDSCH.CODEWORD(1),TBSize,3905,uint32,1,numeric,"Limits:[min,max]","[0,65535]","Transmit block size (in bytes) [TS38.214 sec 5.1.3.2] Value: 0-65535",on
+PDU(5).PDSCH,dataScramblingId,20,uint16,1,numeric,"Limits:[min,max]","[0,65535]","dataScramblingIdentityPdsch [TS38.211, sec 7.3.1.1] It equals the higher-layer parameter Datascrambling- Identity if configured and the RNTI equals the C-RNTI, otherwise L2 needs to set it to physical cell id. Value: 0-65535",on
+PDU(5).PDSCH,nrOfLayers,1,uint8,1,numeric,"DropDownList","{1,2,3,4,5,6,7,8}","Number of layers [TS38.211, sec 7.3.1.3] Value : 1-8",on
+PDU(5).PDSCH,transmissionScheme,0,uint8,1,numeric,"Limits:[min,max]","[0,0]","PDSCH transmission schemes [TS38.214, sec 5.1.1] 0: Up to 8 transmission layers",on
+PDU(5).PDSCH,refPoint,0,uint8,1,numeric,"DropDownList","{0,1}","Reference point for PDSCH DMRS, Value: 0 - 1.",on
+PDU(5).PDSCH,DMRS,,struct,1,none,"none","","",on
+PDU(5).PDSCH.DMRS,dlDmrsSymbPos,12,uint16,1,numeric,"none","","DMRS symbol positions [TS38.211, sec 7.4.1.1.2 and Tables 7.4.1.1.2-3 and 7.4.1.1.2-4]. Bitmap occupying the 14 LSBs with: bit 0: first symbol and for each bit 0: no DMRS 1: DMRS",on
+PDU(5).PDSCH.DMRS,dmrsConfigType,0,uint8,1,numeric,"DropDownList","{0,1}","DL DMRS config type [TS38.211, sec 7.4.1.1.2], 0: type 1 1: type 2",on
+PDU(5).PDSCH.DMRS,dlDmrsScramblingId,5000,uint16,1,numeric,"Limits:[min,max]","[0,65535]","DL-DMRS-Scrambling-ID, 0-65535",on
+PDU(5).PDSCH.DMRS,SCID,0,uint8,1,numeric,"DropDownList","{0,1}","DMRS sequence initialization [TS38.211, sec 7.4.1.1.2]. Should match what is sent in DCI 1_1, otherwise set to 0. Value : 0-1",on
+PDU(5).PDSCH.DMRS,numDmrsCdmGrpsNoData,1,uint8,1,numeric,"DropDownList","{0,1,2,3}","Number of DM-RS CDM groups without data [TS38.212 sec 7.3.1.2.2] [TS38.214 Table 4.1-1] it determines the ratio of PDSCH EPRE to DM-RS EPRE. Value: 1-3",on
+PDU(5).PDSCH.DMRS,dmrsPorts,1,uint16,1,numeric,"none","","DMRS ports. [TS38.212 7.3.1.2.2] provides description between DCI 1-1 content and DMRS ports. Bitmap occupying the 11 LSBs with: bit 0: antenna port 1000 bit 11: antenna port 1011 and for each bit 0: DMRS port not used 1: DMRS port used",on
+PDU(5).PDSCH,FD_ALLOC,,struct,1,none,"none","","",on
+PDU(5).PDSCH.FD_ALLOC,resourceAlloc,1,uint8,1,numeric,"DropDownList","{0,1}","Resource Allocation Type [TS38.214, sec 5.1.2.2] 0: Type 0 1: Type 1",on
+PDU(5).PDSCH.FD_ALLOC,rbBitmap,"zeros(1,36)",uint8,36,matlab expr string,"none","","For resource alloc type 0. TS 38.212 V15.0.x, 7.3.1.2.2 bitmap of RBs, 273 rounded up to multiple of 32. This bitmap is in units of VRBs. LSB of byte 0 of the bitmap represents the first RB of the bwp",on
+PDU(5).PDSCH.FD_ALLOC,rbStart,103,uint16,1,numeric,"Limits:[min,max]","[0,274]","For resource allocation type 1. [TS38.214, sec 5.1.2.2.2] The starting resource block within the BWP for this PDSCH. Value: 0-274",on
+PDU(5).PDSCH.FD_ALLOC,rbSize,40,uint16,1,numeric,"none","[1,275]","For resource allocation type 1. [TS38.214, sec 5.1.2.2.2] The number of resource block within for this PDSCH. Value: 1-275",on
+PDU(5).PDSCH.FD_ALLOC,VRBtoPRBMapping,0,uint8,1,numeric,"DropDownList","{0,1,2}","VRB-to-PRB-mapping [TS38.211, sec 7.3.1.6] 0: non-interleaved 1: interleaved with RB size 2 2: Interleaved with RB size 4",on
+PDU(5).PDSCH,TD_ALLOC,,struct,1,none,"none","","",on
+PDU(5).PDSCH.TD_ALLOC,StartSymbolIndex,2,uint8,1,numeric,"Limits:[min,max]","[0,13]","Start symbol index of PDSCH mapping from the start of the slot, S. [TS38.214, Table 5.1.2.1-1] Value: 0-13",on
+PDU(5).PDSCH.TD_ALLOC,NrOfSymbols,12,uint8,1,numeric,"Limits:[min,max]","[1,14]","PDSCH duration in symbols, L [TS38.214, Table 5.1.2.1-1] Value: 1-14",on
+PDU(5).PDSCH,PTRS,,struct,1,none,"none","","",on
+PDU(5).PDSCH,TX_PRECODE_BEAMFORM,,struct,1,none,"none","","",on
+PDU(5).PDSCH.TX_PRECODE_BEAMFORM,numPRGs,10,uint16,1,numeric,"CallbackFunction","@dl_tti_callback","Number of PRGs spanning this allocation. Value : 1-275",on
+PDU(5).PDSCH.TX_PRECODE_BEAMFORM,prgSize,4,uint16,1,numeric,"Limits:[min,max]","[1,275]","Size in RBs of a precoding resource block group (PRG) – to which same precoding and digital beamforming gets applied. Value: 1-275",on
+PDU(5).PDSCH.TX_PRECODE_BEAMFORM,digBFInterfaces,1,uint8,1,numeric,"CallbackFunction","@dl_tti_callback","Number of STD ant ports (parallel streams) feeding into the digBF Value: 0-255",on
+PDU(5).PDSCH.TX_PRECODE_BEAMFORM,PRG(1),,struct,1,none,"none","","",on
+PDU(5).PDSCH.TX_PRECODE_BEAMFORM.PRG(1),PMidx,10,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index to precoding matrix (PM) pre-stored at cell configuration. Note: If precoding is not used this parameter should be set to 0. Value: 0-65535.",on
+PDU(5).PDSCH.TX_PRECODE_BEAMFORM.PRG(1),DIG_BF_INTERFACE(1),,struct,1,none,"none","","",on
+PDU(5).PDSCH.TX_PRECODE_BEAMFORM.PRG(1).DIG_BF_INTERFACE(1),beamIdx,23,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index of the digital beam weight vector pre-stored at cell configuration. The vector maps this input port to output TXRUs. Value: 0-65535",on
+PDU(5).PDSCH.TX_PRECODE_BEAMFORM,PRG(2),,struct,1,none,"none","","",on
+PDU(5).PDSCH.TX_PRECODE_BEAMFORM.PRG(2),PMidx,10,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index to precoding matrix (PM) pre-stored at cell configuration. Note: If precoding is not used this parameter should be set to 0. Value: 0-65535.",on
+PDU(5).PDSCH.TX_PRECODE_BEAMFORM.PRG(2),DIG_BF_INTERFACE(1),,struct,1,none,"none","","",on
+PDU(5).PDSCH.TX_PRECODE_BEAMFORM.PRG(2).DIG_BF_INTERFACE(1),beamIdx,24,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index of the digital beam weight vector pre-stored at cell configuration. The vector maps this input port to output TXRUs. Value: 0-65535",on
+PDU(5).PDSCH.TX_PRECODE_BEAMFORM,PRG(3),,struct,1,none,"none","","",on
+PDU(5).PDSCH.TX_PRECODE_BEAMFORM.PRG(3),PMidx,10,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index to precoding matrix (PM) pre-stored at cell configuration. Note: If precoding is not used this parameter should be set to 0. Value: 0-65535.",on
+PDU(5).PDSCH.TX_PRECODE_BEAMFORM.PRG(3),DIG_BF_INTERFACE(1),,struct,1,none,"none","","",on
+PDU(5).PDSCH.TX_PRECODE_BEAMFORM.PRG(3).DIG_BF_INTERFACE(1),beamIdx,25,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index of the digital beam weight vector pre-stored at cell configuration. The vector maps this input port to output TXRUs. Value: 0-65535",on
+PDU(5).PDSCH.TX_PRECODE_BEAMFORM,PRG(4),,struct,1,none,"none","","",on
+PDU(5).PDSCH.TX_PRECODE_BEAMFORM.PRG(4),PMidx,10,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index to precoding matrix (PM) pre-stored at cell configuration. Note: If precoding is not used this parameter should be set to 0. Value: 0-65535.",on
+PDU(5).PDSCH.TX_PRECODE_BEAMFORM.PRG(4),DIG_BF_INTERFACE(1),,struct,1,none,"none","","",on
+PDU(5).PDSCH.TX_PRECODE_BEAMFORM.PRG(4).DIG_BF_INTERFACE(1),beamIdx,26,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index of the digital beam weight vector pre-stored at cell configuration. The vector maps this input port to output TXRUs. Value: 0-65535",on
+PDU(5).PDSCH.TX_PRECODE_BEAMFORM,PRG(5),,struct,1,none,"none","","",on
+PDU(5).PDSCH.TX_PRECODE_BEAMFORM.PRG(5),PMidx,10,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index to precoding matrix (PM) pre-stored at cell configuration. Note: If precoding is not used this parameter should be set to 0. Value: 0-65535.",on
+PDU(5).PDSCH.TX_PRECODE_BEAMFORM.PRG(5),DIG_BF_INTERFACE(1),,struct,1,none,"none","","",on
+PDU(5).PDSCH.TX_PRECODE_BEAMFORM.PRG(5).DIG_BF_INTERFACE(1),beamIdx,27,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index of the digital beam weight vector pre-stored at cell configuration. The vector maps this input port to output TXRUs. Value: 0-65535",on
+PDU(5).PDSCH.TX_PRECODE_BEAMFORM,PRG(6),,struct,1,none,"none","","",on
+PDU(5).PDSCH.TX_PRECODE_BEAMFORM.PRG(6),PMidx,10,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index to precoding matrix (PM) pre-stored at cell configuration. Note: If precoding is not used this parameter should be set to 0. Value: 0-65535.",on
+PDU(5).PDSCH.TX_PRECODE_BEAMFORM.PRG(6),DIG_BF_INTERFACE(1),,struct,1,none,"none","","",on
+PDU(5).PDSCH.TX_PRECODE_BEAMFORM.PRG(6).DIG_BF_INTERFACE(1),beamIdx,28,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index of the digital beam weight vector pre-stored at cell configuration. The vector maps this input port to output TXRUs. Value: 0-65535",on
+PDU(5).PDSCH.TX_PRECODE_BEAMFORM,PRG(7),,struct,1,none,"none","","",on
+PDU(5).PDSCH.TX_PRECODE_BEAMFORM.PRG(7),PMidx,10,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index to precoding matrix (PM) pre-stored at cell configuration. Note: If precoding is not used this parameter should be set to 0. Value: 0-65535.",on
+PDU(5).PDSCH.TX_PRECODE_BEAMFORM.PRG(7),DIG_BF_INTERFACE(1),,struct,1,none,"none","","",on
+PDU(5).PDSCH.TX_PRECODE_BEAMFORM.PRG(7).DIG_BF_INTERFACE(1),beamIdx,29,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index of the digital beam weight vector pre-stored at cell configuration. The vector maps this input port to output TXRUs. Value: 0-65535",on
+PDU(5).PDSCH.TX_PRECODE_BEAMFORM,PRG(8),,struct,1,none,"none","","",on
+PDU(5).PDSCH.TX_PRECODE_BEAMFORM.PRG(8),PMidx,10,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index to precoding matrix (PM) pre-stored at cell configuration. Note: If precoding is not used this parameter should be set to 0. Value: 0-65535.",on
+PDU(5).PDSCH.TX_PRECODE_BEAMFORM.PRG(8),DIG_BF_INTERFACE(1),,struct,1,none,"none","","",on
+PDU(5).PDSCH.TX_PRECODE_BEAMFORM.PRG(8).DIG_BF_INTERFACE(1),beamIdx,30,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index of the digital beam weight vector pre-stored at cell configuration. The vector maps this input port to output TXRUs. Value: 0-65535",on
+PDU(5).PDSCH.TX_PRECODE_BEAMFORM,PRG(9),,struct,1,none,"none","","",on
+PDU(5).PDSCH.TX_PRECODE_BEAMFORM.PRG(9),PMidx,10,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index to precoding matrix (PM) pre-stored at cell configuration. Note: If precoding is not used this parameter should be set to 0. Value: 0-65535.",on
+PDU(5).PDSCH.TX_PRECODE_BEAMFORM.PRG(9),DIG_BF_INTERFACE(1),,struct,1,none,"none","","",on
+PDU(5).PDSCH.TX_PRECODE_BEAMFORM.PRG(9).DIG_BF_INTERFACE(1),beamIdx,31,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index of the digital beam weight vector pre-stored at cell configuration. The vector maps this input port to output TXRUs. Value: 0-65535",on
+PDU(5).PDSCH.TX_PRECODE_BEAMFORM,PRG(10),,struct,1,none,"none","","",on
+PDU(5).PDSCH.TX_PRECODE_BEAMFORM.PRG(10),PMidx,10,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index to precoding matrix (PM) pre-stored at cell configuration. Note: If precoding is not used this parameter should be set to 0. Value: 0-65535.",on
+PDU(5).PDSCH.TX_PRECODE_BEAMFORM.PRG(10),DIG_BF_INTERFACE(1),,struct,1,none,"none","","",on
+PDU(5).PDSCH.TX_PRECODE_BEAMFORM.PRG(10).DIG_BF_INTERFACE(1),beamIdx,32,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index of the digital beam weight vector pre-stored at cell configuration. The vector maps this input port to output TXRUs. Value: 0-65535",on
+PDU(5).PDSCH,TX_POWER,,struct,1,none,"none","","",on
+PDU(5).PDSCH.TX_POWER,powerControlOffset,8,uint8,1,numeric,"Limits:[min,max]","[0,23]","Ratio of PDSCH EPRE to NZP CSI-RSEPRE [TS38.214, sec 5.2.2.3.1] Value :0-23 representing -8 to 15 dB in 1dB steps",on
+PDU(5).PDSCH.TX_POWER,powerControlOffsetSS,1,uint8,1,numeric,"DropDownList","{0,1,2,3}","Ratio of SSB/PBCH block EPRE to NZP CSI-RS EPRES [TS38.214, sec 5.2.2.3.1] Values: 0: -3dB, 1: 0dB, 2: 3dB, 3: 6dB",on
+PDU(5).PDSCH,CBG,,struct,1,none,"none","","",on
+,PDU(6),,struct,1,none,"none","","",on
+PDU(6),PDUType,1,uint16,1,numeric,"CallbackFunction","dl_tti_callback","0: PDCCH, 1: PDSCH,  2: CSI-RS, 3: SSB",on
+PDU(6),PDUSize,0,uint16,1,numeric,"Limits:[min,max]","[0, 65535]","Size of the PDU control information (in bytes). This length value includes the 4 bytes required for the PDU type and PDU size parameters.",on
+PDU(6),PDSCH,,struct,1,none,"none","","",on
+PDU(6).PDSCH,pduBitmap,0,uint16,1,numeric,"CallbackFunction","@dl_tti_callback","Bitmap indicating presence of optional PDUs Bit 0: pdschPtrs - Indicates PTRS included (FR2) Bit 1:cbgRetxCtrl (Present when CBG based retransmit is used) All other bits reserved",on
+PDU(6).PDSCH,RNTI,133,uint16,1,numeric,"Limits:[min,max]","[1,65535]","The RNTI used for identifying the UE when receiving the PDU",on
+PDU(6).PDSCH,pduIndex,5,uint16,1,numeric,"Limits:[min,max]","[0,65535]","PDU index incremented for each PDSCH PDU sent in TX control message. This is used to associate control information to data and is reset every slot. Value: 0 - 65535",on
+PDU(6).PDSCH,BWP,,struct,1,none,"none","","",on
+PDU(6).PDSCH.BWP,BWPsize,20,uint16,1,numeric,"Limits:[min,max]","[1,275]","Number of contiguous PRBs allocated to the BWP, Value: 1->275",on
+PDU(6).PDSCH.BWP,BWPStart,253,uint16,1,numeric,"Limits:[min,max]","[0,274]","Bandwidth part start RB index from reference CRB, Value: 0->274",on
+PDU(6).PDSCH.BWP,SubcarrierSpacing,1,uint8,1,numeric,"DropDownList","{0,1,2,3,4}","Value:0->4",on
+PDU(6).PDSCH.BWP,CyclicPrefix,0,uint8,1,numeric,"DropDownList","{0,1}","Cyclic prefix type, 0: Normal; 1: Extended",on
+PDU(6).PDSCH,NrOfCodewords,1,uint8,1,numeric,"CallbackFunction","@dl_tti_callback","Number of code words for this RNTI (UE) Value: 1 - 2",on
+PDU(6).PDSCH,CODEWORD(1),,struct,1,none,"none","","",on
+PDU(6).PDSCH.CODEWORD(1),targetCodeRate,8850,uint16,1,numeric,"none","","Target coding rate [TS38.212 sec 5.4.2.1 and 38.214 sec 5.1.3.1]. This is the number of information bits per 1024 coded bits expressed in 0.1 bit units",on
+PDU(6).PDSCH.CODEWORD(1),qamModOrder,8,uint8,1,numeric,"DropDownList","{2,4,6,8}","QAM modulation [TS38.212 sec 5.4.2.1 and 38.214 sec 5.1.3.1] Value: 2,4,6,8",on
+PDU(6).PDSCH.CODEWORD(1),mcsIndex,25,uint8,1,numeric,"Limits:[min,max]","[0,31]","MCS index [TS38.214, sec 5.1.3.1], should match value sent in DCI Value : 0-31",on
+PDU(6).PDSCH.CODEWORD(1),mcsTable,1,uint8,1,numeric,"DropDownList","{0,1,2}","MCS-Table-PDSCH [TS38.214, sec 5.1.3.1] 0: notqam256 1: qam256 2: qam64LowSE",on
+PDU(6).PDSCH.CODEWORD(1),rvIndex,0,uint8,1,numeric,"DropDownList","{0,1,2,3}","Redundancy version index [TS38.212, Table 5.4.2.1-2 and 38.214, Table 5.1.2.1-2], should match value sent in DCI Value : 0-3",on
+PDU(6).PDSCH.CODEWORD(1),TBSize,4482,uint32,1,numeric,"Limits:[min,max]","[0,65535]","Transmit block size (in bytes) [TS38.214 sec 5.1.3.2] Value: 0-65535",on
+PDU(6).PDSCH,dataScramblingId,20,uint16,1,numeric,"Limits:[min,max]","[0,65535]","dataScramblingIdentityPdsch [TS38.211, sec 7.3.1.1] It equals the higher-layer parameter Datascrambling- Identity if configured and the RNTI equals the C-RNTI, otherwise L2 needs to set it to physical cell id. Value: 0-65535",on
+PDU(6).PDSCH,nrOfLayers,1,uint8,1,numeric,"DropDownList","{1,2,3,4,5,6,7,8}","Number of layers [TS38.211, sec 7.3.1.3] Value : 1-8",on
+PDU(6).PDSCH,transmissionScheme,0,uint8,1,numeric,"Limits:[min,max]","[0,0]","PDSCH transmission schemes [TS38.214, sec 5.1.1] 0: Up to 8 transmission layers",on
+PDU(6).PDSCH,refPoint,0,uint8,1,numeric,"DropDownList","{0,1}","Reference point for PDSCH DMRS, Value: 0 - 1.",on
+PDU(6).PDSCH,DMRS,,struct,1,none,"none","","",on
+PDU(6).PDSCH.DMRS,dlDmrsSymbPos,3096,uint16,1,numeric,"none","","DMRS symbol positions [TS38.211, sec 7.4.1.1.2 and Tables 7.4.1.1.2-3 and 7.4.1.1.2-4]. Bitmap occupying the 14 LSBs with: bit 0: first symbol and for each bit 0: no DMRS 1: DMRS",on
+PDU(6).PDSCH.DMRS,dmrsConfigType,0,uint8,1,numeric,"DropDownList","{0,1}","DL DMRS config type [TS38.211, sec 7.4.1.1.2], 0: type 1 1: type 2",on
+PDU(6).PDSCH.DMRS,dlDmrsScramblingId,1000,uint16,1,numeric,"Limits:[min,max]","[0,65535]","DL-DMRS-Scrambling-ID, 0-65535",on
+PDU(6).PDSCH.DMRS,SCID,0,uint8,1,numeric,"DropDownList","{0,1}","DMRS sequence initialization [TS38.211, sec 7.4.1.1.2]. Should match what is sent in DCI 1_1, otherwise set to 0. Value : 0-1",on
+PDU(6).PDSCH.DMRS,numDmrsCdmGrpsNoData,1,uint8,1,numeric,"DropDownList","{0,1,2,3}","Number of DM-RS CDM groups without data [TS38.212 sec 7.3.1.2.2] [TS38.214 Table 4.1-1] it determines the ratio of PDSCH EPRE to DM-RS EPRE. Value: 1-3",on
+PDU(6).PDSCH.DMRS,dmrsPorts,1,uint16,1,numeric,"none","","DMRS ports. [TS38.212 7.3.1.2.2] provides description between DCI 1-1 content and DMRS ports. Bitmap occupying the 11 LSBs with: bit 0: antenna port 1000 bit 11: antenna port 1011 and for each bit 0: DMRS port not used 1: DMRS port used",on
+PDU(6).PDSCH,FD_ALLOC,,struct,1,none,"none","","",on
+PDU(6).PDSCH.FD_ALLOC,resourceAlloc,1,uint8,1,numeric,"DropDownList","{0,1}","Resource Allocation Type [TS38.214, sec 5.1.2.2] 0: Type 0 1: Type 1",on
+PDU(6).PDSCH.FD_ALLOC,rbBitmap,"zeros(1,36)",uint8,36,matlab expr string,"none","","For resource alloc type 0. TS 38.212 V15.0.x, 7.3.1.2.2 bitmap of RBs, 273 rounded up to multiple of 32. This bitmap is in units of VRBs. LSB of byte 0 of the bitmap represents the first RB of the bwp",on
+PDU(6).PDSCH.FD_ALLOC,rbStart,5,uint16,1,numeric,"Limits:[min,max]","[0,274]","For resource allocation type 1. [TS38.214, sec 5.1.2.2.2] The starting resource block within the BWP for this PDSCH. Value: 0-274",on
+PDU(6).PDSCH.FD_ALLOC,rbSize,15,uint16,1,numeric,"none","[1,275]","For resource allocation type 1. [TS38.214, sec 5.1.2.2.2] The number of resource block within for this PDSCH. Value: 1-275",on
+PDU(6).PDSCH.FD_ALLOC,VRBtoPRBMapping,0,uint8,1,numeric,"DropDownList","{0,1,2}","VRB-to-PRB-mapping [TS38.211, sec 7.3.1.6] 0: non-interleaved 1: interleaved with RB size 2 2: Interleaved with RB size 4",on
+PDU(6).PDSCH,TD_ALLOC,,struct,1,none,"none","","",on
+PDU(6).PDSCH.TD_ALLOC,StartSymbolIndex,0,uint8,1,numeric,"Limits:[min,max]","[0,13]","Start symbol index of PDSCH mapping from the start of the slot, S. [TS38.214, Table 5.1.2.1-1] Value: 0-13",on
+PDU(6).PDSCH.TD_ALLOC,NrOfSymbols,13,uint8,1,numeric,"Limits:[min,max]","[1,14]","PDSCH duration in symbols, L [TS38.214, Table 5.1.2.1-1] Value: 1-14",on
+PDU(6).PDSCH,PTRS,,struct,1,none,"none","","",on
+PDU(6).PDSCH,TX_PRECODE_BEAMFORM,,struct,1,none,"none","","",on
+PDU(6).PDSCH.TX_PRECODE_BEAMFORM,numPRGs,4,uint16,1,numeric,"CallbackFunction","@dl_tti_callback","Number of PRGs spanning this allocation. Value : 1-275",on
+PDU(6).PDSCH.TX_PRECODE_BEAMFORM,prgSize,4,uint16,1,numeric,"Limits:[min,max]","[1,275]","Size in RBs of a precoding resource block group (PRG) – to which same precoding and digital beamforming gets applied. Value: 1-275",on
+PDU(6).PDSCH.TX_PRECODE_BEAMFORM,digBFInterfaces,1,uint8,1,numeric,"CallbackFunction","@dl_tti_callback","Number of STD ant ports (parallel streams) feeding into the digBF Value: 0-255",on
+PDU(6).PDSCH.TX_PRECODE_BEAMFORM,PRG(1),,struct,1,none,"none","","",on
+PDU(6).PDSCH.TX_PRECODE_BEAMFORM.PRG(1),PMidx,12,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index to precoding matrix (PM) pre-stored at cell configuration. Note: If precoding is not used this parameter should be set to 0. Value: 0-65535.",on
+PDU(6).PDSCH.TX_PRECODE_BEAMFORM.PRG(1),DIG_BF_INTERFACE(1),,struct,1,none,"none","","",on
+PDU(6).PDSCH.TX_PRECODE_BEAMFORM.PRG(1).DIG_BF_INTERFACE(1),beamIdx,33,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index of the digital beam weight vector pre-stored at cell configuration. The vector maps this input port to output TXRUs. Value: 0-65535",on
+PDU(6).PDSCH.TX_PRECODE_BEAMFORM,PRG(2),,struct,1,none,"none","","",on
+PDU(6).PDSCH.TX_PRECODE_BEAMFORM.PRG(2),PMidx,12,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index to precoding matrix (PM) pre-stored at cell configuration. Note: If precoding is not used this parameter should be set to 0. Value: 0-65535.",on
+PDU(6).PDSCH.TX_PRECODE_BEAMFORM.PRG(2),DIG_BF_INTERFACE(1),,struct,1,none,"none","","",on
+PDU(6).PDSCH.TX_PRECODE_BEAMFORM.PRG(2).DIG_BF_INTERFACE(1),beamIdx,34,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index of the digital beam weight vector pre-stored at cell configuration. The vector maps this input port to output TXRUs. Value: 0-65535",on
+PDU(6).PDSCH.TX_PRECODE_BEAMFORM,PRG(3),,struct,1,none,"none","","",on
+PDU(6).PDSCH.TX_PRECODE_BEAMFORM.PRG(3),PMidx,12,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index to precoding matrix (PM) pre-stored at cell configuration. Note: If precoding is not used this parameter should be set to 0. Value: 0-65535.",on
+PDU(6).PDSCH.TX_PRECODE_BEAMFORM.PRG(3),DIG_BF_INTERFACE(1),,struct,1,none,"none","","",on
+PDU(6).PDSCH.TX_PRECODE_BEAMFORM.PRG(3).DIG_BF_INTERFACE(1),beamIdx,35,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index of the digital beam weight vector pre-stored at cell configuration. The vector maps this input port to output TXRUs. Value: 0-65535",on
+PDU(6).PDSCH.TX_PRECODE_BEAMFORM,PRG(4),,struct,1,none,"none","","",on
+PDU(6).PDSCH.TX_PRECODE_BEAMFORM.PRG(4),PMidx,12,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index to precoding matrix (PM) pre-stored at cell configuration. Note: If precoding is not used this parameter should be set to 0. Value: 0-65535.",on
+PDU(6).PDSCH.TX_PRECODE_BEAMFORM.PRG(4),DIG_BF_INTERFACE(1),,struct,1,none,"none","","",on
+PDU(6).PDSCH.TX_PRECODE_BEAMFORM.PRG(4).DIG_BF_INTERFACE(1),beamIdx,36,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Index of the digital beam weight vector pre-stored at cell configuration. The vector maps this input port to output TXRUs. Value: 0-65535",on
+PDU(6).PDSCH,TX_POWER,,struct,1,none,"none","","",on
+PDU(6).PDSCH.TX_POWER,powerControlOffset,8,uint8,1,numeric,"Limits:[min,max]","[0,23]","Ratio of PDSCH EPRE to NZP CSI-RSEPRE [TS38.214, sec 5.2.2.3.1] Value :0-23 representing -8 to 15 dB in 1dB steps",on
+PDU(6).PDSCH.TX_POWER,powerControlOffsetSS,1,uint8,1,numeric,"DropDownList","{0,1,2,3}","Ratio of SSB/PBCH block EPRE to NZP CSI-RS EPRES [TS38.214, sec 5.2.2.3.1] Values: 0: -3dB, 1: 0dB, 2: 3dB, 3: 6dB",on
+PDU(6).PDSCH,CBG,,struct,1,none,"none","","",on
+,UE_GROUP(1),,struct,1,none,"none","","",on
+UE_GROUP(1),nUe,1,uint8,1,numeric,"CallbackFunction","@dl_tti_callback","Number of UE in this group For SU-MIMO, one group includes one UE only. For MU-MIMO, one group includes up to 12 UEs. Value 1 -> 12",on
+UE_GROUP(1),UE(1),,struct,1,none,"none","","",on
+UE_GROUP(1).UE(1),PduIdx,0,uint8,1,numeric,"Limits:[min,max]","[0, 255]","This value is an index for number of PDU identified by nPDU in this message, Value: 0 -> 255",on
+,UE_GROUP(2),,struct,1,none,"none","","",on
+UE_GROUP(2),nUe,1,uint8,1,numeric,"CallbackFunction","@dl_tti_callback","Number of UE in this group For SU-MIMO, one group includes one UE only. For MU-MIMO, one group includes up to 12 UEs. Value 1 -> 12",on
+UE_GROUP(2),UE(1),,struct,1,none,"none","","",on
+UE_GROUP(2).UE(1),PduIdx,0,uint8,1,numeric,"Limits:[min,max]","[0, 255]","This value is an index for number of PDU identified by nPDU in this message, Value: 0 -> 255",on
+,UE_GROUP(3),,struct,1,none,"none","","",on
+UE_GROUP(3),nUe,1,uint8,1,numeric,"CallbackFunction","@dl_tti_callback","Number of UE in this group For SU-MIMO, one group includes one UE only. For MU-MIMO, one group includes up to 12 UEs. Value 1 -> 12",on
+UE_GROUP(3),UE(1),,struct,1,none,"none","","",on
+UE_GROUP(3).UE(1),PduIdx,0,uint8,1,numeric,"Limits:[min,max]","[0, 255]","This value is an index for number of PDU identified by nPDU in this message, Value: 0 -> 255",on
+,UE_GROUP(4),,struct,1,none,"none","","",on
+UE_GROUP(4),nUe,1,uint8,1,numeric,"CallbackFunction","@dl_tti_callback","Number of UE in this group For SU-MIMO, one group includes one UE only. For MU-MIMO, one group includes up to 12 UEs. Value 1 -> 12",on
+UE_GROUP(4),UE(1),,struct,1,none,"none","","",on
+UE_GROUP(4).UE(1),PduIdx,0,uint8,1,numeric,"Limits:[min,max]","[0, 255]","This value is an index for number of PDU identified by nPDU in this message, Value: 0 -> 255",on
+,UE_GROUP(5),,struct,1,none,"none","","",on
+UE_GROUP(5),nUe,1,uint8,1,numeric,"CallbackFunction","@dl_tti_callback","Number of UE in this group For SU-MIMO, one group includes one UE only. For MU-MIMO, one group includes up to 12 UEs. Value 1 -> 12",on
+UE_GROUP(5),UE(1),,struct,1,none,"none","","",on
+UE_GROUP(5).UE(1),PduIdx,4,uint8,1,numeric,"Limits:[min,max]","[0, 255]","This value is an index for number of PDU identified by nPDU in this message, Value: 0 -> 255",on
+,UE_GROUP(6),,struct,1,none,"none","","",on
+UE_GROUP(6),nUe,1,uint8,1,numeric,"CallbackFunction","@dl_tti_callback","Number of UE in this group For SU-MIMO, one group includes one UE only. For MU-MIMO, one group includes up to 12 UEs. Value 1 -> 12",on
+UE_GROUP(6),UE(1),,struct,1,none,"none","","",on
+UE_GROUP(6).UE(1),PduIdx,0,uint8,1,numeric,"Limits:[min,max]","[0, 255]","This value is an index for number of PDU identified by nPDU in this message, Value: 0 -> 255",on

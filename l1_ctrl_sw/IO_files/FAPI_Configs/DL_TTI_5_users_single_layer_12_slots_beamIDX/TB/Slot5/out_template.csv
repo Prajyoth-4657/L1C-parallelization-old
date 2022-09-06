@@ -1,0 +1,53 @@
+Path,Name,DisplayValue,Type,Length,DisplayFormat,ValidityChkOpt,ValidityChkStr,ToolTip,Visibility
+,,,struct,1,none,"none","","",on
+,SFN,853,uint16,1,numeric,"Limits:[min,max]","[0, 1023]","SFN Value: 0-1023",on
+,Slot,5,uint16,1,numeric,"Limits:[min,max]","[0, 319]","Slot Value: 0-319",on
+,nPDUs,6,uint16,1,numeric,"CallbackFunction","@tx_data_callback","",on
+,PDU(1),,struct,1,none,"none","","",on
+PDU(1),PDU_length,4494,uint16,1,numeric,"Limits:[min,max]","[0,65535]","The total length (in bytes) of the PDU description and PDU data, without the padding bytes. Value: 0-65535",on
+PDU(1),PDU_index,0,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Used to correlate the MAC PDU with the DL_TTI PDSCH PDU.  Value: 0-65535",on
+PDU(1),numTLV,1,uint32,1,numeric,"CallbackFunction","@tx_data_callback","The number of TLVs describing the data of the transport block. Value: 0 - MaxTLVs",on
+PDU(1),TLV(1),,struct,1,none,"none","","",on
+PDU(1).TLV(1),tag,0,uint16,1,numeric,"DropDownList","{0,1}","Value: 0-1, 0: Payload is carried directly in the value field 1: Pointer to payload is in the value field",on
+PDU(1).TLV(1),length,4482,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Length of the actual payload in bytes, without the padding bytes Value: 0-65535",on
+PDU(1).TLV(1),value,"rng(0);randi([0,2^32-1],1,ceil(4482/4))",uint32,1121,matlab expr string,"none","","Always a multiple of 32-bits. Tag=0: Only the most significant bytes of the size indicated by ‘length’ field are valid. Remaining bytes are zero padded to the nearest 32-bit boundary Tag=1: Pointer to the payload. Occupies 32-bits",on
+,PDU(2),,struct,1,none,"none","","",on
+PDU(2),PDU_length,1004,uint16,1,numeric,"Limits:[min,max]","[0,65535]","The total length (in bytes) of the PDU description and PDU data, without the padding bytes. Value: 0-65535",on
+PDU(2),PDU_index,1,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Used to correlate the MAC PDU with the DL_TTI PDSCH PDU.  Value: 0-65535",on
+PDU(2),numTLV,1,uint32,1,numeric,"CallbackFunction","@tx_data_callback","The number of TLVs describing the data of the transport block. Value: 0 - MaxTLVs",on
+PDU(2),TLV(1),,struct,1,none,"none","","",on
+PDU(2).TLV(1),tag,0,uint16,1,numeric,"DropDownList","{0,1}","Value: 0-1, 0: Payload is carried directly in the value field 1: Pointer to payload is in the value field",on
+PDU(2).TLV(1),length,992,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Length of the actual payload in bytes, without the padding bytes Value: 0-65535",on
+PDU(2).TLV(1),value,"rng(1);randi([0,2^32-1],1,ceil(992/4))",uint32,248,matlab expr string,"none","","Always a multiple of 32-bits. Tag=0: Only the most significant bytes of the size indicated by ‘length’ field are valid. Remaining bytes are zero padded to the nearest 32-bit boundary Tag=1: Pointer to the payload. Occupies 32-bits",on
+,PDU(3),,struct,1,none,"none","","",on
+PDU(3),PDU_length,4494,uint16,1,numeric,"Limits:[min,max]","[0,65535]","The total length (in bytes) of the PDU description and PDU data, without the padding bytes. Value: 0-65535",on
+PDU(3),PDU_index,2,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Used to correlate the MAC PDU with the DL_TTI PDSCH PDU.  Value: 0-65535",on
+PDU(3),numTLV,1,uint32,1,numeric,"CallbackFunction","@tx_data_callback","The number of TLVs describing the data of the transport block. Value: 0 - MaxTLVs",on
+PDU(3),TLV(1),,struct,1,none,"none","","",on
+PDU(3).TLV(1),tag,0,uint16,1,numeric,"DropDownList","{0,1}","Value: 0-1, 0: Payload is carried directly in the value field 1: Pointer to payload is in the value field",on
+PDU(3).TLV(1),length,4484,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Length of the actual payload in bytes, without the padding bytes Value: 0-65535",on
+PDU(3).TLV(1),value,"zeros(1,1121)",uint32,1121,matlab expr string,"none","","Always a multiple of 32-bits. Tag=0: Only the most significant bytes of the size indicated by ‘length’ field are valid. Remaining bytes are zero padded to the nearest 32-bit boundary Tag=1: Pointer to the payload. Occupies 32-bits",on
+,PDU(4),,struct,1,none,"none","","",on
+PDU(4),PDU_length,2253,uint16,1,numeric,"Limits:[min,max]","[0,65535]","The total length (in bytes) of the PDU description and PDU data, without the padding bytes. Value: 0-65535",on
+PDU(4),PDU_index,3,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Used to correlate the MAC PDU with the DL_TTI PDSCH PDU.  Value: 0-65535",on
+PDU(4),numTLV,1,uint32,1,numeric,"CallbackFunction","@tx_data_callback","The number of TLVs describing the data of the transport block. Value: 0 - MaxTLVs",on
+PDU(4),TLV(1),,struct,1,none,"none","","",on
+PDU(4).TLV(1),tag,0,uint16,1,numeric,"DropDownList","{0,1}","Value: 0-1, 0: Payload is carried directly in the value field 1: Pointer to payload is in the value field",on
+PDU(4).TLV(1),length,2241,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Length of the actual payload in bytes, without the padding bytes Value: 0-65535",on
+PDU(4).TLV(1),value,"ones(1,561)",uint32,561,matlab expr string,"none","","Always a multiple of 32-bits. Tag=0: Only the most significant bytes of the size indicated by ‘length’ field are valid. Remaining bytes are zero padded to the nearest 32-bit boundary Tag=1: Pointer to the payload. Occupies 32-bits",on
+,PDU(5),,struct,1,none,"none","","",on
+PDU(5),PDU_length,3917,uint16,1,numeric,"Limits:[min,max]","[0,65535]","The total length (in bytes) of the PDU description and PDU data, without the padding bytes. Value: 0-65535",on
+PDU(5),PDU_index,4,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Used to correlate the MAC PDU with the DL_TTI PDSCH PDU.  Value: 0-65535",on
+PDU(5),numTLV,1,uint32,1,numeric,"CallbackFunction","@tx_data_callback","The number of TLVs describing the data of the transport block. Value: 0 - MaxTLVs",on
+PDU(5),TLV(1),,struct,1,none,"none","","",on
+PDU(5).TLV(1),tag,0,uint16,1,numeric,"DropDownList","{0,1}","Value: 0-1, 0: Payload is carried directly in the value field 1: Pointer to payload is in the value field",on
+PDU(5).TLV(1),length,3905,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Length of the actual payload in bytes, without the padding bytes Value: 0-65535",on
+PDU(5).TLV(1),value,"zeros(1,977)",uint32,977,matlab expr string,"none","","Always a multiple of 32-bits. Tag=0: Only the most significant bytes of the size indicated by ‘length’ field are valid. Remaining bytes are zero padded to the nearest 32-bit boundary Tag=1: Pointer to the payload. Occupies 32-bits",on
+,PDU(6),,struct,1,none,"none","","",on
+PDU(6),PDU_length,4494,uint16,1,numeric,"Limits:[min,max]","[0,65535]","The total length (in bytes) of the PDU description and PDU data, without the padding bytes. Value: 0-65535",on
+PDU(6),PDU_index,5,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Used to correlate the MAC PDU with the DL_TTI PDSCH PDU.  Value: 0-65535",on
+PDU(6),numTLV,1,uint32,1,numeric,"CallbackFunction","@tx_data_callback","The number of TLVs describing the data of the transport block. Value: 0 - MaxTLVs",on
+PDU(6),TLV(1),,struct,1,none,"none","","",on
+PDU(6).TLV(1),tag,0,uint16,1,numeric,"DropDownList","{0,1}","Value: 0-1, 0: Payload is carried directly in the value field 1: Pointer to payload is in the value field",on
+PDU(6).TLV(1),length,4484,uint16,1,numeric,"Limits:[min,max]","[0,65535]","Length of the actual payload in bytes, without the padding bytes Value: 0-65535",on
+PDU(6).TLV(1),value,"zeros(1,1121)",uint32,1121,matlab expr string,"none","","Always a multiple of 32-bits. Tag=0: Only the most significant bytes of the size indicated by ‘length’ field are valid. Remaining bytes are zero padded to the nearest 32-bit boundary Tag=1: Pointer to the payload. Occupies 32-bits",on
