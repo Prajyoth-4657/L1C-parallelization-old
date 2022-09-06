@@ -1,0 +1,26 @@
+IDIR =../inc
+CC=gcc
+CFLAGS=-I$(IDIR)
+
+ODIR=obj
+LDIR =../lib
+
+LIBS=-lm -lpthread
+
+_DEPS = l1_dl_tti_request.h l1_config_request.h l1_sw_common.h constants.h
+DEPS = $(patsubst %,$(IDIR)/%,$(_DEPS))
+
+_OBJ = l1_dl_tti_request_main.o l1_dl_tti_request.o l1_config_request.o l1_sw_common.o
+OBJ = $(patsubst %,$(ODIR)/%,$(_OBJ))
+
+
+$(ODIR)/%.o: %.c $(DEPS)
+	$(CC) -g -c -o $@ $< $(CFLAGS) -O0
+
+testmake_DL: $(OBJ)
+	$(CC) -o $@ $^ $(CFLAGS) -O0 $(LIBS)
+
+.PHONY: clean
+
+clean:
+	rm -f $(ODIR)/*.o *~ core $(INCDIR)/*~ 
