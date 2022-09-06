@@ -1,0 +1,2937 @@
+Total PDU count = 4 
+PUSCH PDU count = 3 
+SRS PDU count = 0 
+PUCCH PDU count = 0 
+PRACH PDU count = 1 
+
+
+===================RE demapper configurations===================
+
+
+Hardware packet for number of configs is : 0X4000000000000463
+Number of PUSCH/DMRS configs are : 3 
+Number of PTRS configs are : 3 
+Number of PRACH configs are : 1 
+Number of SRS configs are : 0 
+Number of PUCCH configs are : 0 
+Number of PUCCH Format0 configs are : 0 
+
+==================PUSCH/DMRS/PTRS configs===========================
+
+Hardware packet 1(DMRS) is : 0X40000000B030A000
+Hardware packet 2(PUSCH) is : 0X40000000CFCCA000
+Hardware packet 3(PTRS) is : 0X400000008000A000
+Starting RB is : 0 
+Length of RB is : 80 
+PUSCH locations are : 0X33F3 
+DMRS locations are : 0X0C0C 
+PTRS locations are : 0X0000 
+Interleaved DMRS is : 1 
+
+Hardware packet 1(DMRS) is : 0X4000000080305050
+Hardware packet 2(PUSCH) is : 0X40000000FFCC5050
+Hardware packet 3(PTRS) is : 0X4000000080005050
+Starting RB is : 80 
+Length of RB is : 40 
+PUSCH locations are : 0X3FF3 
+DMRS locations are : 0X000C 
+PTRS locations are : 0X0000 
+Interleaved DMRS is : 1 
+
+Hardware packet 1(DMRS) is : 0X40000000A0106AAA
+Hardware packet 2(PUSCH) is : 0X40000000DFEC6AAA
+Hardware packet 3(PTRS) is : 0X4000000080006AAA
+Starting RB is : 170 
+Length of RB is : 53 
+PUSCH locations are : 0X37FB 
+DMRS locations are : 0X0804 
+PTRS locations are : 0X0000 
+Interleaved DMRS is : 1 
+
+==================PRACH configs===========================
+
+Hardware packet is : 0X400000007E001800
+Starting RB is : 0 
+Number of RB are : 12 
+Time locations are : 0X1F80 
+
+==================SRS configs===========================
+
+==================PUCCH configs===========================
+
+
+=====================DMRS configurations=======================
+
+Hardware packet1 is : 0X410000000014A000
+Hardware packet2 is : 0X410000000C0C07D0
+Hardware packet3 is : 0X4100000000048808
+PDU index : 0 
+Starting RB is : 0 
+PRB length is : 80 
+DMRS configuration type is : 1 
+n_scid is : 0 
+The layers which are present are : 0X0001 
+DMRS scrambling ID is : 2000 
+DMRS symbols are : 0X0C0C 
+The value of l_prime is : 0X0808 
+Slot number in the frame is : 18 
+The reserved REs for TB 0 by DMRS is 3840
+
+Hardware packet1 is : 0X4100000000145050
+Hardware packet2 is : 0X41000000000C07D0
+Hardware packet3 is : 0X4100000000048008
+PDU index : 1 
+Starting RB is : 80 
+PRB length is : 40 
+DMRS configuration type is : 1 
+n_scid is : 0 
+The layers which are present are : 0X0001 
+DMRS scrambling ID is : 2000 
+DMRS symbols are : 0X000C 
+The value of l_prime is : 0X0008 
+Slot number in the frame is : 18 
+The reserved REs for TB 1 by DMRS is 960
+
+Hardware packet1 is : 0X4100000000146AAA
+Hardware packet2 is : 0X41000000080407D0
+Hardware packet3 is : 0X4100000000048000
+PDU index : 2 
+Starting RB is : 170 
+PRB length is : 53 
+DMRS configuration type is : 1 
+n_scid is : 0 
+The layers which are present are : 0X0001 
+DMRS scrambling ID is : 2000 
+DMRS symbols are : 0X0804 
+The value of l_prime is : 0X0000 
+Slot number in the frame is : 18 
+The reserved REs for TB 2 by DMRS is 1272
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+
+=====================CBS configurations========================
+PDU ID 0 , Number of codeblocks 1 , Codeblock size 2296
+PDU ID 1 , Number of codeblocks 1 , Codeblock size 2168
+PDU ID 2 , Number of codeblocks 1 , Codeblock size 4632
+
+Hardware packet for CBS write is : 0X5100000000000912
+Slot number : 18
+Sum total of CB length : 72
+
+Hardware packet for CBS read is : 0X5200000008F88036
+TB/User index : 0
+Codeblock index in TB : 0
+CB length in bits : 2296
+CB start address in packets : 54
+Is the CB the last for the TB : 1
+
+Hardware packet for CBS read is : 0X5200000008788000
+TB/User index : 1
+Codeblock index in TB : 0
+CB length in bits : 2168
+CB start address in packets : 0
+Is the CB the last for the TB : 1
+
+Hardware packet for CBS read is : 0X5200000012188011
+TB/User index : 2
+Codeblock index in TB : 0
+CB length in bits : 4632
+CB start address in packets : 17
+Is the CB the last for the TB : 1
+
+Hardware packet for CBS read is : 0X5200000040000000
+End of slot, dummy config
+
+
+=====================Channel Estimation configurations=======================
+
+Hardware packet1 is : 0X4200000004FE06DE
+Hardware packet2 is : 0X420000001674435C
+Number of DMRS location at the first occasion : 1758 
+Number of DMRS location at the second occasion : 1278 
+Number of PUSCH location TILL the second DMRS : 17244 
+Number of PUSCH location TILL the third DMRS : 5748 
+
+
+====================PUSCH configurations=====================
+
+CB index: 1 
+
+PUSCH PDU index: 1 
+UE index: 1 
+CB index in TB: 0 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X4E00000001B0AD80
+ip_codeblock_size: 11648 
+base_graph_index: 1 
+lifting_size_index: 44 
+user_id: 1 
+=======================
+Configuration for filler bit remover module- 
+Hardware packet is : 0X4F00000000230048
+no_of_filler_bits: 72 
+msg_block_size: 2240 
+=======================
+Configuration for depuncturing module- 
+Hardware packet1 is : 0X4D00000002300878
+Hardware packet2 is : 0X4D000000005780E0
+kcb: 2168 
+Kcb: 2240 
+lifting_factor: 224 
+Ncb: 11200 
+=======================
+Configuration for rate dematching module- 
+Hardware packet1 is : 0X4C000000015BC380
+Hardware packet2 is : 0X4C0000000120AD00
+rvid: 0 
+lifting_factor: 224 
+ncb: 11128 
+tot_llrs_codeblock: 11520 
+base_graph_index: 1 
+filler_bits: 72 
+=======================
+Configuration for deinterleaver module- 
+Hardware packet1 is : 0X4B0000000002D001
+QAM_type: 1 
+tot_llrs_codeblock: 11520 
+=======================
+=========================================================
+
+CB index: 2 
+
+PUSCH PDU index: 2 
+UE index: 2 
+CB index in TB: 0 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X4E00000002B03B80
+ip_codeblock_size: 15232 
+base_graph_index: 0 
+lifting_size_index: 44 
+user_id: 2 
+=======================
+Configuration for filler bit remover module- 
+Hardware packet is : 0X4F000000004D0128
+no_of_filler_bits: 296 
+msg_block_size: 4928 
+=======================
+Configuration for depuncturing module- 
+Hardware packet1 is : 0X4D00000004D01218
+Hardware packet2 is : 0X4D000000007380E0
+kcb: 4632 
+Kcb: 4928 
+lifting_factor: 224 
+Ncb: 14784 
+=======================
+Configuration for rate dematching module- 
+Hardware packet1 is : 0X4C00000001C4C380
+Hardware packet2 is : 0X4C00000004A03BA0
+rvid: 0 
+lifting_factor: 224 
+ncb: 14488 
+tot_llrs_codeblock: 15264 
+base_graph_index: 0 
+filler_bits: 296 
+=======================
+Configuration for deinterleaver module- 
+Hardware packet1 is : 0X4B0000000003BA01
+QAM_type: 1 
+tot_llrs_codeblock: 15264 
+=======================
+=========================================================
+
+CB index: 0 
+
+PUSCH PDU index: 0 
+UE index: 0 
+CB index in TB: 0 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X4E00000000B4B0C0
+ip_codeblock_size: 12480 
+base_graph_index: 1 
+lifting_size_index: 45 
+user_id: 0 
+=======================
+Configuration for filler bit remover module- 
+Hardware packet is : 0X4F00000000258068
+no_of_filler_bits: 104 
+msg_block_size: 2400 
+=======================
+Configuration for depuncturing module- 
+Hardware packet1 is : 0X4D000000025808F8
+Hardware packet2 is : 0X4D000000005DC0F0
+kcb: 2296 
+Kcb: 2400 
+lifting_factor: 240 
+Ncb: 12000 
+=======================
+Configuration for rate dematching module- 
+Hardware packet1 is : 0X4C0000000173C3C0
+Hardware packet2 is : 0X4C00000001A0CB00
+rvid: 0 
+lifting_factor: 240 
+ncb: 11896 
+tot_llrs_codeblock: 19200 
+base_graph_index: 1 
+filler_bits: 104 
+=======================
+Configuration for deinterleaver module- 
+Hardware packet1 is : 0X4B0000000004B001
+QAM_type: 1 
+tot_llrs_codeblock: 19200 
+=======================
+=========================================================
+
+
+
+=====================User Interleaver configurations=======================
+
+Hardware packet for write config is : 0X430000000000002A
+Number of write configs are : 42
+
+Hardware packet for write config is : 0X43000000000003C0
+Start address for write number 1 is : 0
+End address for write number 1 is : 960
+OFDM Symbol number is : 0
+BWP/User number is : 0
+
+Hardware packet for write config is : 0X4300000025802760
+Start address for write number 2 is : 9600
+End address for write number 2 is : 10080
+OFDM Symbol number is : 0
+BWP/User number is : 1
+
+Hardware packet for write config is : 0X430000003C003E7C
+Start address for write number 3 is : 15360
+End address for write number 3 is : 15996
+OFDM Symbol number is : 0
+BWP/User number is : 2
+
+Hardware packet for write config is : 0X4300000003C00780
+Start address for write number 4 is : 960
+End address for write number 4 is : 1920
+OFDM Symbol number is : 1
+BWP/User number is : 0
+
+Hardware packet for write config is : 0X4300000027602940
+Start address for write number 5 is : 10080
+End address for write number 5 is : 10560
+OFDM Symbol number is : 1
+BWP/User number is : 1
+
+Hardware packet for write config is : 0X430000003E7C40F8
+Start address for write number 6 is : 15996
+End address for write number 6 is : 16632
+OFDM Symbol number is : 1
+BWP/User number is : 2
+
+Hardware packet for write config is : 0X4300000007800780
+Start address for write number 7 is : 1920
+End address for write number 7 is : 1920
+OFDM Symbol number is : 2
+BWP/User number is : 0
+
+Hardware packet for write config is : 0X4300000029402940
+Start address for write number 8 is : 10560
+End address for write number 8 is : 10560
+OFDM Symbol number is : 2
+BWP/User number is : 1
+
+Hardware packet for write config is : 0X4300000040F840F8
+Start address for write number 9 is : 16632
+End address for write number 9 is : 16632
+OFDM Symbol number is : 2
+BWP/User number is : 2
+
+Hardware packet for write config is : 0X4300000007800780
+Start address for write number 10 is : 1920
+End address for write number 10 is : 1920
+OFDM Symbol number is : 3
+BWP/User number is : 0
+
+Hardware packet for write config is : 0X4300000029402940
+Start address for write number 11 is : 10560
+End address for write number 11 is : 10560
+OFDM Symbol number is : 3
+BWP/User number is : 1
+
+Hardware packet for write config is : 0X4300000040F84374
+Start address for write number 12 is : 16632
+End address for write number 12 is : 17268
+OFDM Symbol number is : 3
+BWP/User number is : 2
+
+Hardware packet for write config is : 0X4300000007800B40
+Start address for write number 13 is : 1920
+End address for write number 13 is : 2880
+OFDM Symbol number is : 4
+BWP/User number is : 0
+
+Hardware packet for write config is : 0X4300000029402B20
+Start address for write number 14 is : 10560
+End address for write number 14 is : 11040
+OFDM Symbol number is : 4
+BWP/User number is : 1
+
+Hardware packet for write config is : 0X43000000437445F0
+Start address for write number 15 is : 17268
+End address for write number 15 is : 17904
+OFDM Symbol number is : 4
+BWP/User number is : 2
+
+Hardware packet for write config is : 0X430000000B400F00
+Start address for write number 16 is : 2880
+End address for write number 16 is : 3840
+OFDM Symbol number is : 5
+BWP/User number is : 0
+
+Hardware packet for write config is : 0X430000002B202D00
+Start address for write number 17 is : 11040
+End address for write number 17 is : 11520
+OFDM Symbol number is : 5
+BWP/User number is : 1
+
+Hardware packet for write config is : 0X4300000045F0486C
+Start address for write number 18 is : 17904
+End address for write number 18 is : 18540
+OFDM Symbol number is : 5
+BWP/User number is : 2
+
+Hardware packet for write config is : 0X430000000F0012C0
+Start address for write number 19 is : 3840
+End address for write number 19 is : 4800
+OFDM Symbol number is : 6
+BWP/User number is : 0
+
+Hardware packet for write config is : 0X430000002D002EE0
+Start address for write number 20 is : 11520
+End address for write number 20 is : 12000
+OFDM Symbol number is : 6
+BWP/User number is : 1
+
+Hardware packet for write config is : 0X43000000486C4AE8
+Start address for write number 21 is : 18540
+End address for write number 21 is : 19176
+OFDM Symbol number is : 6
+BWP/User number is : 2
+
+Hardware packet for write config is : 0X4300000012C01680
+Start address for write number 22 is : 4800
+End address for write number 22 is : 5760
+OFDM Symbol number is : 7
+BWP/User number is : 0
+
+Hardware packet for write config is : 0X430000002EE030C0
+Start address for write number 23 is : 12000
+End address for write number 23 is : 12480
+OFDM Symbol number is : 7
+BWP/User number is : 1
+
+Hardware packet for write config is : 0X430000004AE84D64
+Start address for write number 24 is : 19176
+End address for write number 24 is : 19812
+OFDM Symbol number is : 7
+BWP/User number is : 2
+
+Hardware packet for write config is : 0X4300000016801A40
+Start address for write number 25 is : 5760
+End address for write number 25 is : 6720
+OFDM Symbol number is : 8
+BWP/User number is : 0
+
+Hardware packet for write config is : 0X4300000030C032A0
+Start address for write number 26 is : 12480
+End address for write number 26 is : 12960
+OFDM Symbol number is : 8
+BWP/User number is : 1
+
+Hardware packet for write config is : 0X430000004D644FE0
+Start address for write number 27 is : 19812
+End address for write number 27 is : 20448
+OFDM Symbol number is : 8
+BWP/User number is : 2
+
+Hardware packet for write config is : 0X430000001A401E00
+Start address for write number 28 is : 6720
+End address for write number 28 is : 7680
+OFDM Symbol number is : 9
+BWP/User number is : 0
+
+Hardware packet for write config is : 0X4300000032A03480
+Start address for write number 29 is : 12960
+End address for write number 29 is : 13440
+OFDM Symbol number is : 9
+BWP/User number is : 1
+
+Hardware packet for write config is : 0X430000004FE0525C
+Start address for write number 30 is : 20448
+End address for write number 30 is : 21084
+OFDM Symbol number is : 9
+BWP/User number is : 2
+
+Hardware packet for write config is : 0X430000001E001E00
+Start address for write number 31 is : 7680
+End address for write number 31 is : 7680
+OFDM Symbol number is : 10
+BWP/User number is : 0
+
+Hardware packet for write config is : 0X4300000034803660
+Start address for write number 32 is : 13440
+End address for write number 32 is : 13920
+OFDM Symbol number is : 10
+BWP/User number is : 1
+
+Hardware packet for write config is : 0X43000000525C54D8
+Start address for write number 33 is : 21084
+End address for write number 33 is : 21720
+OFDM Symbol number is : 10
+BWP/User number is : 2
+
+Hardware packet for write config is : 0X430000001E001E00
+Start address for write number 34 is : 7680
+End address for write number 34 is : 7680
+OFDM Symbol number is : 11
+BWP/User number is : 0
+
+Hardware packet for write config is : 0X4300000036603840
+Start address for write number 35 is : 13920
+End address for write number 35 is : 14400
+OFDM Symbol number is : 11
+BWP/User number is : 1
+
+Hardware packet for write config is : 0X4300000054D854D8
+Start address for write number 36 is : 21720
+End address for write number 36 is : 21720
+OFDM Symbol number is : 11
+BWP/User number is : 2
+
+Hardware packet for write config is : 0X430000001E0021C0
+Start address for write number 37 is : 7680
+End address for write number 37 is : 8640
+OFDM Symbol number is : 12
+BWP/User number is : 0
+
+Hardware packet for write config is : 0X4300000038403A20
+Start address for write number 38 is : 14400
+End address for write number 38 is : 14880
+OFDM Symbol number is : 12
+BWP/User number is : 1
+
+Hardware packet for write config is : 0X4300000054D85754
+Start address for write number 39 is : 21720
+End address for write number 39 is : 22356
+OFDM Symbol number is : 12
+BWP/User number is : 2
+
+Hardware packet for write config is : 0X4300000021C02580
+Start address for write number 40 is : 8640
+End address for write number 40 is : 9600
+OFDM Symbol number is : 13
+BWP/User number is : 0
+
+Hardware packet for write config is : 0X430000003A203C00
+Start address for write number 41 is : 14880
+End address for write number 41 is : 15360
+OFDM Symbol number is : 13
+BWP/User number is : 1
+
+Hardware packet for write config is : 0X43000000575459D0
+Start address for write number 42 is : 22356
+End address for write number 42 is : 22992
+OFDM Symbol number is : 13
+BWP/User number is : 2
+
+Hardware packet 1 for read config is : 0X4400000025801680
+Hardware packet 2 for read config is : 0X44000000000059D0
+Start address for read for CB number 0 in layer 0 is : 9600
+Number address for read for CB number 0 in layer 0 is : 5760
+Write counter for read for CB number 0 in layer 0 is : 22992
+Last OFDM symbol for CB number 0 in layer 0 is : 13
+CB number 0 of user 1 at cb_in_tb 0
+
+Hardware packet 1 for read config is : 0X4500000025801680
+Hardware packet 2 for read config is : 0X45000000000059D0
+Start address for DISCARD read for CB number 0 in layer 1 is : 9600
+Number address for DISCARD read for CB number 0 in layer 1 is : 5760
+Write counter for DISCARD read for CB number 0 in layer 1 is : 22992
+
+Hardware packet 1 for read config is : 0X4600000025801680
+Hardware packet 2 for read config is : 0X46000000000059D0
+Start address for DISCARD read for CB number 0 in layer 2 is : 9600
+Number address for DISCARD read for CB number 0 in layer 2 is : 5760
+Write counter for DISCARD read for CB number 0 in layer 2 is : 22992
+
+Hardware packet 1 for read config is : 0X4700000025801680
+Hardware packet 2 for read config is : 0X47000000000059D0
+Start address for DISCARD read for CB number 0 in layer 3 is : 9600
+Number address for DISCARD read for CB number 0 in layer 3 is : 5760
+Write counter for DISCARD read for CB number 0 in layer 3 is : 22992
+
+Hardware packet 1 for layer-demap is : 0X4800000000000001
+Hardware packet 2 for layer-demap is : 0X4800000000000001
+Hardware packet 3 for layer-demap is : 0X4800000000000000
+Layer Map for CB number 0 in layer 0 is : 1
+Layer Map for CB number 0 in layer 1 is : 0
+Layer Map for CB number 0 in layer 2 is : 0
+Layer Map for CB number 0 in layer 3 is : 0
+Layer Map for CB number 0 in layer 4 is : 0
+Layer Map for CB number 0 in layer 5 is : 0
+Layer Map for CB number 0 in layer 6 is : 0
+Layer Map for CB number 0 in layer 7 is : 0
+User ID for CB number 0 in layer 0 is : 1
+User ID for CB number 0 in layer 1 is : 0
+User ID for CB number 0 in layer 2 is : 0
+User ID for CB number 0 in layer 3 is : 0
+User ID for CB number 0 in layer 4 is : 0
+User ID for CB number 0 in layer 5 is : 0
+User ID for CB number 0 in layer 6 is : 0
+User ID for CB number 0 in layer 7 is : 0
+
+Hardware packet 1 for read config is : 0X440000003C001DD0
+Hardware packet 2 for read config is : 0X44000000000059D0
+Start address for read for CB number 1 in layer 0 is : 15360
+Number address for read for CB number 1 in layer 0 is : 7632
+Write counter for read for CB number 1 in layer 0 is : 22992
+Last OFDM symbol for CB number 1 in layer 0 is : 13
+CB number 1 of user 2 at cb_in_tb 0
+
+Hardware packet 1 for read config is : 0X450000003C001DD0
+Hardware packet 2 for read config is : 0X45000000000059D0
+Start address for DISCARD read for CB number 1 in layer 1 is : 15360
+Number address for DISCARD read for CB number 1 in layer 1 is : 7632
+Write counter for DISCARD read for CB number 1 in layer 1 is : 22992
+
+Hardware packet 1 for read config is : 0X460000003C001DD0
+Hardware packet 2 for read config is : 0X46000000000059D0
+Start address for DISCARD read for CB number 1 in layer 2 is : 15360
+Number address for DISCARD read for CB number 1 in layer 2 is : 7632
+Write counter for DISCARD read for CB number 1 in layer 2 is : 22992
+
+Hardware packet 1 for read config is : 0X470000003C001DD0
+Hardware packet 2 for read config is : 0X47000000000059D0
+Start address for DISCARD read for CB number 1 in layer 3 is : 15360
+Number address for DISCARD read for CB number 1 in layer 3 is : 7632
+Write counter for DISCARD read for CB number 1 in layer 3 is : 22992
+
+Hardware packet 1 for layer-demap is : 0X4800000000000001
+Hardware packet 2 for layer-demap is : 0X4800000000000002
+Hardware packet 3 for layer-demap is : 0X4800000000000000
+Layer Map for CB number 1 in layer 0 is : 1
+Layer Map for CB number 1 in layer 1 is : 0
+Layer Map for CB number 1 in layer 2 is : 0
+Layer Map for CB number 1 in layer 3 is : 0
+Layer Map for CB number 1 in layer 4 is : 0
+Layer Map for CB number 1 in layer 5 is : 0
+Layer Map for CB number 1 in layer 6 is : 0
+Layer Map for CB number 1 in layer 7 is : 0
+User ID for CB number 1 in layer 0 is : 2
+User ID for CB number 1 in layer 1 is : 0
+User ID for CB number 1 in layer 2 is : 0
+User ID for CB number 1 in layer 3 is : 0
+User ID for CB number 1 in layer 4 is : 0
+User ID for CB number 1 in layer 5 is : 0
+User ID for CB number 1 in layer 6 is : 0
+User ID for CB number 1 in layer 7 is : 0
+
+Hardware packet 1 for read config is : 0X4400000000002580
+Hardware packet 2 for read config is : 0X44000000000059D0
+Start address for read for CB number 2 in layer 0 is : 0
+Number address for read for CB number 2 in layer 0 is : 9600
+Write counter for read for CB number 2 in layer 0 is : 22992
+Last OFDM symbol for CB number 2 in layer 0 is : 13
+CB number 2 of user 0 at cb_in_tb 0
+
+Hardware packet 1 for read config is : 0X4500000000002580
+Hardware packet 2 for read config is : 0X45000000000059D0
+Start address for DISCARD read for CB number 2 in layer 1 is : 0
+Number address for DISCARD read for CB number 2 in layer 1 is : 9600
+Write counter for DISCARD read for CB number 2 in layer 1 is : 22992
+
+Hardware packet 1 for read config is : 0X4600000000002580
+Hardware packet 2 for read config is : 0X46000000000059D0
+Start address for DISCARD read for CB number 2 in layer 2 is : 0
+Number address for DISCARD read for CB number 2 in layer 2 is : 9600
+Write counter for DISCARD read for CB number 2 in layer 2 is : 22992
+
+Hardware packet 1 for read config is : 0X4700000000002580
+Hardware packet 2 for read config is : 0X47000000000059D0
+Start address for DISCARD read for CB number 2 in layer 3 is : 0
+Number address for DISCARD read for CB number 2 in layer 3 is : 9600
+Write counter for DISCARD read for CB number 2 in layer 3 is : 22992
+
+Hardware packet 1 for layer-demap is : 0X4800000000000001
+Hardware packet 2 for layer-demap is : 0X4800000000000000
+Hardware packet 3 for layer-demap is : 0X4800000000000000
+Layer Map for CB number 2 in layer 0 is : 1
+Layer Map for CB number 2 in layer 1 is : 0
+Layer Map for CB number 2 in layer 2 is : 0
+Layer Map for CB number 2 in layer 3 is : 0
+Layer Map for CB number 2 in layer 4 is : 0
+Layer Map for CB number 2 in layer 5 is : 0
+Layer Map for CB number 2 in layer 6 is : 0
+Layer Map for CB number 2 in layer 7 is : 0
+User ID for CB number 2 in layer 0 is : 0
+User ID for CB number 2 in layer 1 is : 0
+User ID for CB number 2 in layer 2 is : 0
+User ID for CB number 2 in layer 3 is : 0
+User ID for CB number 2 in layer 4 is : 0
+User ID for CB number 2 in layer 5 is : 0
+User ID for CB number 2 in layer 6 is : 0
+User ID for CB number 2 in layer 7 is : 0
+
+Hardware packet for read config is : 0X4400000000000003
+Total number of read configs for layer 0 are : 3
+
+Hardware packet for read config is : 0X4500000000000003
+Total number of read configs for layer 1 are : 3
+
+Hardware packet for read config is : 0X4600000000000003
+Total number of read configs for layer 2 are : 3
+
+Hardware packet for read config is : 0X4700000000000003
+Total number of read configs for layer 3 are : 3
+
+
+=====================Remaining PUSCH configurations=======================
+Configuration for descrambler module- 
+Hardware packet1 is : 0X4A00000000140001
+rnti_user0: 1 
+n_id_user0: 20 
+Hardware packet1 is : 0X4A00000000140002
+rnti_user1: 2 
+n_id_user1: 20 
+Hardware packet1 is : 0X4A00000000140003
+rnti_user2: 3 
+n_id_user2: 20 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user3: 0 
+n_id_user3: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user4: 0 
+n_id_user4: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user5: 0 
+n_id_user5: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user6: 0 
+n_id_user6: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user7: 0 
+n_id_user7: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user8: 0 
+n_id_user8: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user9: 0 
+n_id_user9: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user10: 0 
+n_id_user10: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user11: 0 
+n_id_user11: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user12: 0 
+n_id_user12: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user13: 0 
+n_id_user13: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user14: 0 
+n_id_user14: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user15: 0 
+n_id_user15: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user16: 0 
+n_id_user16: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user17: 0 
+n_id_user17: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user18: 0 
+n_id_user18: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user19: 0 
+n_id_user19: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user20: 0 
+n_id_user20: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user21: 0 
+n_id_user21: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user22: 0 
+n_id_user22: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user23: 0 
+n_id_user23: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user24: 0 
+n_id_user24: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user25: 0 
+n_id_user25: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user26: 0 
+n_id_user26: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user27: 0 
+n_id_user27: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user28: 0 
+n_id_user28: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user29: 0 
+n_id_user29: 0 
+=======================
+Configuration for LLR gen module- 
+Hardware packet1 is : 0X49000000000059D0
+tot_iq_samples_slot: 22992 
+Hardware packet0 is : 0X4900000000000049
+qam_type_user0: 1 
+qam_type_user1: 1 
+qam_type_user2: 1 
+qam_type_user3: 0 
+qam_type_user4: 0 
+qam_type_user5: 0 
+qam_type_user6: 0 
+qam_type_user7: 0 
+qam_type_user8: 0 
+qam_type_user9: 0 
+Hardware packet1 is : 0X4900000000000000
+qam_type_user10: 0 
+qam_type_user11: 0 
+qam_type_user12: 0 
+qam_type_user13: 0 
+qam_type_user14: 0 
+qam_type_user15: 0 
+qam_type_user16: 0 
+qam_type_user17: 0 
+qam_type_user18: 0 
+qam_type_user19: 0 
+Hardware packet2 is : 0X4900000000000000
+qam_type_user20: 0 
+qam_type_user21: 0 
+qam_type_user22: 0 
+qam_type_user23: 0 
+qam_type_user24: 0 
+qam_type_user25: 0 
+qam_type_user26: 0 
+qam_type_user27: 0 
+qam_type_user28: 0 
+qam_type_user29: 0 
+=======================
+
+
+=====================TB and CB CRC configurations=======================
+
+Hardware packet for CB CRC for CB 1 is : 0X5000000003001078
+l1_r is : 120
+l1_k is : 16
+l1_poly_type is : 3
+
+Hardware packet for CB CRC for CB 2 is : 0X5000000003002418
+l1_r is : 24
+l1_k is : 36
+l1_poly_type is : 3
+
+Hardware packet for CB CRC for CB 0 is : 0X5000000003001178
+l1_r is : 120
+l1_k is : 17
+l1_poly_type is : 3
+
+Hardware packet for TB CRC for user 0 is : 0X5300000002001178
+l1_r is : 120
+l1_k is : 17
+l1_poly_type is : 2
+
+Hardware packet for TB CRC for user 1 is : 0X5300000002001078
+l1_r is : 120
+l1_k is : 16
+l1_poly_type is : 2
+
+Hardware packet for TB CRC for user 2 is : 0X5300000000002418
+l1_r is : 24
+l1_k is : 36
+l1_poly_type is : 0
+
+
+=================================================ORAN configurations===================================================
+
+=====================================================C-plane configs=====================================================================
+
+Hardware packet 1 of Application Header is : 0X68101082AC800020
+Hardware packet 2 of Application Header is : 0X6810180000000000
+Section type is : 1 
+Data Direction is : 0 
+Frame number is : 85 
+Subframe number is : 9 
+Slot number is : 0 
+Starting symbol is : 0 
+Number of sections are : 1 
+Compression header is : 0 
+
+Hardware packet 1 of Section Header is : 0X6820100000029FFE
+Hardware packet 2 of Section Header is : 0X68201F0001880000
+Section type is : 1 
+Section ID is : 0 
+RB is : 0 
+Symbol Increment is : 0 
+Start PRB is : 0 
+Number of PRB are : 80 
+RE mask is : 0X0FFF 
+Number of symbols are : 14 
+Beam ID is : 1 
+RTC ID is : 0X1000 
+
+Hardware packet 1 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 2 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 3 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 4 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 5 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 6 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 7 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 8 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 9 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 10 of Section Extension Header is : 0X6830B80000000000
+Extension type is : 11 
+ef is : 1 
+extLen is : 1 
+disableBFW is : 0 
+RAD is : 0 
+Number of PRBs in a bundle are : 4 
+BFW compression header is : 0X0000 
+BFW CompParam is : 0 
+Beam1 ID is : 0X0000 
+Beam2 ID is : 0X0000 
+Beam3 ID is : 0X0000 
+Beam4 ID is : 0X0000 
+Beam5 ID is : 0X0000 
+
+Hardware packet 1 of Application Header is : 0X68101082AC800020
+Hardware packet 2 of Application Header is : 0X6810180000000000
+Section type is : 1 
+Data Direction is : 0 
+Frame number is : 85 
+Subframe number is : 9 
+Slot number is : 0 
+Starting symbol is : 0 
+Number of sections are : 1 
+Compression header is : 0 
+
+Hardware packet 1 of Section Header is : 0X6820100000029FFE
+Hardware packet 2 of Section Header is : 0X68201F0001880000
+Section type is : 1 
+Section ID is : 0 
+RB is : 0 
+Symbol Increment is : 0 
+Start PRB is : 0 
+Number of PRB are : 80 
+RE mask is : 0X0FFF 
+Number of symbols are : 14 
+Beam ID is : 1 
+RTC ID is : 0X1000 
+
+Hardware packet 1 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 2 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 3 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 4 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 5 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 6 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 7 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 8 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 9 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 10 of Section Extension Header is : 0X6830B80000000000
+Extension type is : 11 
+ef is : 1 
+extLen is : 1 
+disableBFW is : 0 
+RAD is : 0 
+Number of PRBs in a bundle are : 4 
+BFW compression header is : 0X0000 
+BFW CompParam is : 0 
+Beam1 ID is : 0X0000 
+Beam2 ID is : 0X0000 
+Beam3 ID is : 0X0000 
+Beam4 ID is : 0X0000 
+Beam5 ID is : 0X0000 
+
+Hardware packet 1 of Application Header is : 0X68101082AC800020
+Hardware packet 2 of Application Header is : 0X6810180000000000
+Section type is : 1 
+Data Direction is : 0 
+Frame number is : 85 
+Subframe number is : 9 
+Slot number is : 0 
+Starting symbol is : 0 
+Number of sections are : 1 
+Compression header is : 0 
+
+Hardware packet 1 of Section Header is : 0X6820100000029FFE
+Hardware packet 2 of Section Header is : 0X68201F0001880000
+Section type is : 1 
+Section ID is : 0 
+RB is : 0 
+Symbol Increment is : 0 
+Start PRB is : 0 
+Number of PRB are : 80 
+RE mask is : 0X0FFF 
+Number of symbols are : 14 
+Beam ID is : 1 
+RTC ID is : 0X1000 
+
+Hardware packet 1 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 2 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 3 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 4 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 5 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 6 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 7 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 8 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 9 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 10 of Section Extension Header is : 0X6830B80000000000
+Extension type is : 11 
+ef is : 1 
+extLen is : 1 
+disableBFW is : 0 
+RAD is : 0 
+Number of PRBs in a bundle are : 4 
+BFW compression header is : 0X0000 
+BFW CompParam is : 0 
+Beam1 ID is : 0X0000 
+Beam2 ID is : 0X0000 
+Beam3 ID is : 0X0000 
+Beam4 ID is : 0X0000 
+Beam5 ID is : 0X0000 
+
+Hardware packet 1 of Application Header is : 0X68101082AC800020
+Hardware packet 2 of Application Header is : 0X6810180000000000
+Section type is : 1 
+Data Direction is : 0 
+Frame number is : 85 
+Subframe number is : 9 
+Slot number is : 0 
+Starting symbol is : 0 
+Number of sections are : 1 
+Compression header is : 0 
+
+Hardware packet 1 of Section Header is : 0X6820100000029FFE
+Hardware packet 2 of Section Header is : 0X68201F0001880000
+Section type is : 1 
+Section ID is : 0 
+RB is : 0 
+Symbol Increment is : 0 
+Start PRB is : 0 
+Number of PRB are : 80 
+RE mask is : 0X0FFF 
+Number of symbols are : 14 
+Beam ID is : 1 
+RTC ID is : 0X1000 
+
+Hardware packet 1 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 2 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 3 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 4 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 5 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 6 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 7 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 8 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 9 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 10 of Section Extension Header is : 0X6830B80000000000
+Extension type is : 11 
+ef is : 1 
+extLen is : 1 
+disableBFW is : 0 
+RAD is : 0 
+Number of PRBs in a bundle are : 4 
+BFW compression header is : 0X0000 
+BFW CompParam is : 0 
+Beam1 ID is : 0X0000 
+Beam2 ID is : 0X0000 
+Beam3 ID is : 0X0000 
+Beam4 ID is : 0X0000 
+Beam5 ID is : 0X0000 
+
+Hardware packet 1 of Application Header is : 0X68101082AC800020
+Hardware packet 2 of Application Header is : 0X6810180000000000
+Section type is : 1 
+Data Direction is : 0 
+Frame number is : 85 
+Subframe number is : 9 
+Slot number is : 0 
+Starting symbol is : 0 
+Number of sections are : 1 
+Compression header is : 0 
+
+Hardware packet 1 of Section Header is : 0X682010020A029FFE
+Hardware packet 2 of Section Header is : 0X68201F0001880000
+Section type is : 1 
+Section ID is : 4 
+RB is : 0 
+Symbol Increment is : 0 
+Start PRB is : 80 
+Number of PRB are : 40 
+RE mask is : 0X0FFF 
+Number of symbols are : 14 
+Beam ID is : 1 
+RTC ID is : 0X1000 
+
+Hardware packet 1 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 2 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 3 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 4 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 5 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 6 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 7 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 8 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 9 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 10 of Section Extension Header is : 0X6830B80000000000
+Extension type is : 11 
+ef is : 1 
+extLen is : 1 
+disableBFW is : 0 
+RAD is : 0 
+Number of PRBs in a bundle are : 4 
+BFW compression header is : 0X0000 
+BFW CompParam is : 0 
+Beam1 ID is : 0X0000 
+Beam2 ID is : 0X0000 
+Beam3 ID is : 0X0000 
+Beam4 ID is : 0X0000 
+Beam5 ID is : 0X0000 
+
+Hardware packet 1 of Application Header is : 0X68101082AC800020
+Hardware packet 2 of Application Header is : 0X6810180000000000
+Section type is : 1 
+Data Direction is : 0 
+Frame number is : 85 
+Subframe number is : 9 
+Slot number is : 0 
+Starting symbol is : 0 
+Number of sections are : 1 
+Compression header is : 0 
+
+Hardware packet 1 of Section Header is : 0X682010020A029FFE
+Hardware packet 2 of Section Header is : 0X68201F0001880000
+Section type is : 1 
+Section ID is : 4 
+RB is : 0 
+Symbol Increment is : 0 
+Start PRB is : 80 
+Number of PRB are : 40 
+RE mask is : 0X0FFF 
+Number of symbols are : 14 
+Beam ID is : 1 
+RTC ID is : 0X1000 
+
+Hardware packet 1 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 2 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 3 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 4 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 5 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 6 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 7 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 8 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 9 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 10 of Section Extension Header is : 0X6830B80000000000
+Extension type is : 11 
+ef is : 1 
+extLen is : 1 
+disableBFW is : 0 
+RAD is : 0 
+Number of PRBs in a bundle are : 4 
+BFW compression header is : 0X0000 
+BFW CompParam is : 0 
+Beam1 ID is : 0X0000 
+Beam2 ID is : 0X0000 
+Beam3 ID is : 0X0000 
+Beam4 ID is : 0X0000 
+Beam5 ID is : 0X0000 
+
+Hardware packet 1 of Application Header is : 0X68101082AC80E020
+Hardware packet 2 of Application Header is : 0X6810180000000000
+PDU type is : PRACH 
+Section type is : 1 
+Data Direction is : 0 
+Frame number is : 85 
+Subframe number is : 9 
+Slot number is : 0 
+Starting symbol is : 7 
+Number of sections are : 1 
+Compression header is : 0 
+
+Hardware packet 1 of Section Header is : 0X6820100312C19FFE
+Hardware packet 2 of Section Header is : 0X6820180001880000
+Section type is : 1 
+Section ID is : 6 
+RB is : 0 
+Symbol Increment is : 0 
+Start PRB is : 150 
+Number of PRB are : 12 
+RE mask is : 0X0FFF 
+Number of symbols are : 0 
+Beam ID is : 1 
+RTC ID is : 4096 
+
+Hardware packet 1 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 2 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 3 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 4 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 5 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 6 of Section Extension Header is : 0X6830B80000000000
+Extension type is : 11 
+ef is : 1 
+extLen is : 1 
+disableBFW is : 0 
+RAD is : 0 
+Number of PRBs in a bundle are : 4 
+BFW compression header is : 0X0000 
+BFW CompParam is : 0 
+Beam1 ID is : 0X0000 
+Beam2 ID is : 0X0000 
+Beam3 ID is : 0X0000 
+
+Hardware packet 1 of Application Header is : 0X68101082AC800020
+Hardware packet 2 of Application Header is : 0X6810180000000000
+Section type is : 1 
+Data Direction is : 0 
+Frame number is : 85 
+Subframe number is : 9 
+Slot number is : 0 
+Starting symbol is : 0 
+Number of sections are : 1 
+Compression header is : 0 
+
+Hardware packet 1 of Section Header is : 0X6820100395429FFE
+Hardware packet 2 of Section Header is : 0X68201F0001880000
+Section type is : 1 
+Section ID is : 7 
+RB is : 0 
+Symbol Increment is : 0 
+Start PRB is : 170 
+Number of PRB are : 53 
+RE mask is : 0X0FFF 
+Number of symbols are : 14 
+Beam ID is : 1 
+RTC ID is : 0X1000 
+
+Hardware packet 1 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 2 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 3 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 4 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 5 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 6 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 7 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 8 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 9 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 10 of Section Extension Header is : 0X6830B80000000000
+Extension type is : 11 
+ef is : 1 
+extLen is : 1 
+disableBFW is : 0 
+RAD is : 0 
+Number of PRBs in a bundle are : 4 
+BFW compression header is : 0X0000 
+BFW CompParam is : 0 
+Beam1 ID is : 0X0000 
+Beam2 ID is : 0X0000 
+Beam3 ID is : 0X0000 
+Beam4 ID is : 0X0000 
+Beam5 ID is : 0X0000 
+
+Hardware packet 1 of Application Header is : 0X68101082AC800020
+Hardware packet 2 of Application Header is : 0X6810180000000000
+Section type is : 1 
+Data Direction is : 0 
+Frame number is : 85 
+Subframe number is : 9 
+Slot number is : 0 
+Starting symbol is : 0 
+Number of sections are : 1 
+Compression header is : 0 
+
+Hardware packet 1 of Section Header is : 0X6820100395429FFE
+Hardware packet 2 of Section Header is : 0X68201F0001880000
+Section type is : 1 
+Section ID is : 7 
+RB is : 0 
+Symbol Increment is : 0 
+Start PRB is : 170 
+Number of PRB are : 53 
+RE mask is : 0X0FFF 
+Number of symbols are : 14 
+Beam ID is : 1 
+RTC ID is : 0X1000 
+
+Hardware packet 1 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 2 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 3 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 4 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 5 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 6 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 7 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 8 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 9 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 10 of Section Extension Header is : 0X6830B80000000000
+Extension type is : 11 
+ef is : 1 
+extLen is : 1 
+disableBFW is : 0 
+RAD is : 0 
+Number of PRBs in a bundle are : 4 
+BFW compression header is : 0X0000 
+BFW CompParam is : 0 
+Beam1 ID is : 0X0000 
+Beam2 ID is : 0X0000 
+Beam3 ID is : 0X0000 
+Beam4 ID is : 0X0000 
+Beam5 ID is : 0X0000 
+
+Hardware packet 1 of Application Header is : 0X68101082AC800020
+Hardware packet 2 of Application Header is : 0X6810180000000000
+Section type is : 1 
+Data Direction is : 0 
+Frame number is : 85 
+Subframe number is : 9 
+Slot number is : 0 
+Starting symbol is : 0 
+Number of sections are : 1 
+Compression header is : 0 
+
+Hardware packet 1 of Section Header is : 0X682010039541BFFE
+Hardware packet 2 of Section Header is : 0X68201F0001880000
+Section type is : 1 
+Section ID is : 7 
+RB is : 0 
+Symbol Increment is : 0 
+Start PRB is : 170 
+Number of PRB are : 53 
+RE mask is : 0X0FFF 
+Number of symbols are : 14 
+Beam ID is : 1 
+RTC ID is : 0X1000 
+
+Hardware packet 1 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 2 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 3 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 4 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 5 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 6 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 7 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 8 of Section Extension Header is : 0X6830B80000000000
+Extension type is : 11 
+ef is : 1 
+extLen is : 1 
+disableBFW is : 0 
+RAD is : 0 
+Number of PRBs in a bundle are : 4 
+BFW compression header is : 0X0000 
+BFW CompParam is : 0 
+Beam1 ID is : 0X0000 
+Beam2 ID is : 0X0000 
+Beam3 ID is : 0X0000 
+Beam4 ID is : 0X0000 
+
+Hardware packet1 of Mux config is : 0X6800050050050050
+Hardware packet2 of Mux config is : 0X6808050050050050
+Number of sections in layer 1 is 10 
+=============================================================U-plane configs=============================================================================
+
+Hardware packet of Application Header is : 0X7001055900100000
+Data direction is : 0 
+Payload version is : 1 
+Filter index is : 0 
+Frame ID is : 85 
+Subframe ID is : 9 
+Slot ID is : 0 
+Start symbol is : 1 
+Layer id is 1
+
+Hardware packet of Section Header is : 0X7010000001400000
+Section ID is : 0 
+rb is : 0 
+symInc is : 0 
+Start prb is : 0 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010010141400000
+Section ID is : 1 
+rb is : 0 
+symInc is : 0 
+Start prb is : 20 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010020281400000
+Section ID is : 2 
+rb is : 0 
+symInc is : 0 
+Start prb is : 40 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X70100303C1400000
+Section ID is : 3 
+rb is : 0 
+symInc is : 0 
+Start prb is : 60 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010040501400000
+Section ID is : 4 
+rb is : 0 
+symInc is : 0 
+Start prb is : 80 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010050641400000
+Section ID is : 5 
+rb is : 0 
+symInc is : 0 
+Start prb is : 100 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X701FFF0783200000
+Section ID is : 4095 
+rb is : 0 
+symInc is : 0 
+Start prb is : 120 
+Number of prb are : 50 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010070AA1400000
+Section ID is : 7 
+rb is : 0 
+symInc is : 0 
+Start prb is : 170 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010080BE1400000
+Section ID is : 8 
+rb is : 0 
+symInc is : 0 
+Start prb is : 190 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010090D20D00000
+Section ID is : 9 
+rb is : 0 
+symInc is : 0 
+Start prb is : 210 
+Number of prb are : 13 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X701FFE0DF3200000
+Section ID is : 4094 
+rb is : 0 
+symInc is : 0 
+Start prb is : 223 
+Number of prb are : 50 
+UD compression header is : 0X0000 
+
+Hardware packet of Application Header is : 0X7001055900200000
+Data direction is : 0 
+Payload version is : 1 
+Filter index is : 0 
+Frame ID is : 85 
+Subframe ID is : 9 
+Slot ID is : 0 
+Start symbol is : 2 
+Layer id is 1
+
+Hardware packet of Section Header is : 0X7010000001400000
+Section ID is : 0 
+rb is : 0 
+symInc is : 0 
+Start prb is : 0 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010010141400000
+Section ID is : 1 
+rb is : 0 
+symInc is : 0 
+Start prb is : 20 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010020281400000
+Section ID is : 2 
+rb is : 0 
+symInc is : 0 
+Start prb is : 40 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X70100303C1400000
+Section ID is : 3 
+rb is : 0 
+symInc is : 0 
+Start prb is : 60 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010040501400000
+Section ID is : 4 
+rb is : 0 
+symInc is : 0 
+Start prb is : 80 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010050641400000
+Section ID is : 5 
+rb is : 0 
+symInc is : 0 
+Start prb is : 100 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X701FFF0783200000
+Section ID is : 4095 
+rb is : 0 
+symInc is : 0 
+Start prb is : 120 
+Number of prb are : 50 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010070AA1400000
+Section ID is : 7 
+rb is : 0 
+symInc is : 0 
+Start prb is : 170 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010080BE1400000
+Section ID is : 8 
+rb is : 0 
+symInc is : 0 
+Start prb is : 190 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010090D20D00000
+Section ID is : 9 
+rb is : 0 
+symInc is : 0 
+Start prb is : 210 
+Number of prb are : 13 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X701FFE0DF3200000
+Section ID is : 4094 
+rb is : 0 
+symInc is : 0 
+Start prb is : 223 
+Number of prb are : 50 
+UD compression header is : 0X0000 
+
+Hardware packet of Application Header is : 0X7001055900300000
+Data direction is : 0 
+Payload version is : 1 
+Filter index is : 0 
+Frame ID is : 85 
+Subframe ID is : 9 
+Slot ID is : 0 
+Start symbol is : 3 
+Layer id is 1
+
+Hardware packet of Section Header is : 0X7010000001400000
+Section ID is : 0 
+rb is : 0 
+symInc is : 0 
+Start prb is : 0 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010010141400000
+Section ID is : 1 
+rb is : 0 
+symInc is : 0 
+Start prb is : 20 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010020281400000
+Section ID is : 2 
+rb is : 0 
+symInc is : 0 
+Start prb is : 40 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X70100303C1400000
+Section ID is : 3 
+rb is : 0 
+symInc is : 0 
+Start prb is : 60 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010040501400000
+Section ID is : 4 
+rb is : 0 
+symInc is : 0 
+Start prb is : 80 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010050641400000
+Section ID is : 5 
+rb is : 0 
+symInc is : 0 
+Start prb is : 100 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X701FFF0783200000
+Section ID is : 4095 
+rb is : 0 
+symInc is : 0 
+Start prb is : 120 
+Number of prb are : 50 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010070AA1400000
+Section ID is : 7 
+rb is : 0 
+symInc is : 0 
+Start prb is : 170 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010080BE1400000
+Section ID is : 8 
+rb is : 0 
+symInc is : 0 
+Start prb is : 190 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010090D20D00000
+Section ID is : 9 
+rb is : 0 
+symInc is : 0 
+Start prb is : 210 
+Number of prb are : 13 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X701FFE0DF3200000
+Section ID is : 4094 
+rb is : 0 
+symInc is : 0 
+Start prb is : 223 
+Number of prb are : 50 
+UD compression header is : 0X0000 
+
+Hardware packet of Application Header is : 0X7001055900400000
+Data direction is : 0 
+Payload version is : 1 
+Filter index is : 0 
+Frame ID is : 85 
+Subframe ID is : 9 
+Slot ID is : 0 
+Start symbol is : 4 
+Layer id is 1
+
+Hardware packet of Section Header is : 0X7010000001400000
+Section ID is : 0 
+rb is : 0 
+symInc is : 0 
+Start prb is : 0 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010010141400000
+Section ID is : 1 
+rb is : 0 
+symInc is : 0 
+Start prb is : 20 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010020281400000
+Section ID is : 2 
+rb is : 0 
+symInc is : 0 
+Start prb is : 40 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X70100303C1400000
+Section ID is : 3 
+rb is : 0 
+symInc is : 0 
+Start prb is : 60 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010040501400000
+Section ID is : 4 
+rb is : 0 
+symInc is : 0 
+Start prb is : 80 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010050641400000
+Section ID is : 5 
+rb is : 0 
+symInc is : 0 
+Start prb is : 100 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X701FFF0783200000
+Section ID is : 4095 
+rb is : 0 
+symInc is : 0 
+Start prb is : 120 
+Number of prb are : 50 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010070AA1400000
+Section ID is : 7 
+rb is : 0 
+symInc is : 0 
+Start prb is : 170 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010080BE1400000
+Section ID is : 8 
+rb is : 0 
+symInc is : 0 
+Start prb is : 190 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010090D20D00000
+Section ID is : 9 
+rb is : 0 
+symInc is : 0 
+Start prb is : 210 
+Number of prb are : 13 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X701FFE0DF3200000
+Section ID is : 4094 
+rb is : 0 
+symInc is : 0 
+Start prb is : 223 
+Number of prb are : 50 
+UD compression header is : 0X0000 
+
+Hardware packet of Application Header is : 0X7001055900500000
+Data direction is : 0 
+Payload version is : 1 
+Filter index is : 0 
+Frame ID is : 85 
+Subframe ID is : 9 
+Slot ID is : 0 
+Start symbol is : 5 
+Layer id is 1
+
+Hardware packet of Section Header is : 0X7010000001400000
+Section ID is : 0 
+rb is : 0 
+symInc is : 0 
+Start prb is : 0 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010010141400000
+Section ID is : 1 
+rb is : 0 
+symInc is : 0 
+Start prb is : 20 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010020281400000
+Section ID is : 2 
+rb is : 0 
+symInc is : 0 
+Start prb is : 40 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X70100303C1400000
+Section ID is : 3 
+rb is : 0 
+symInc is : 0 
+Start prb is : 60 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010040501400000
+Section ID is : 4 
+rb is : 0 
+symInc is : 0 
+Start prb is : 80 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010050641400000
+Section ID is : 5 
+rb is : 0 
+symInc is : 0 
+Start prb is : 100 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X701FFF0783200000
+Section ID is : 4095 
+rb is : 0 
+symInc is : 0 
+Start prb is : 120 
+Number of prb are : 50 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010070AA1400000
+Section ID is : 7 
+rb is : 0 
+symInc is : 0 
+Start prb is : 170 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010080BE1400000
+Section ID is : 8 
+rb is : 0 
+symInc is : 0 
+Start prb is : 190 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010090D20D00000
+Section ID is : 9 
+rb is : 0 
+symInc is : 0 
+Start prb is : 210 
+Number of prb are : 13 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X701FFE0DF3200000
+Section ID is : 4094 
+rb is : 0 
+symInc is : 0 
+Start prb is : 223 
+Number of prb are : 50 
+UD compression header is : 0X0000 
+
+Hardware packet of Application Header is : 0X7001055900600000
+Data direction is : 0 
+Payload version is : 1 
+Filter index is : 0 
+Frame ID is : 85 
+Subframe ID is : 9 
+Slot ID is : 0 
+Start symbol is : 6 
+Layer id is 1
+
+Hardware packet of Section Header is : 0X7010000001400000
+Section ID is : 0 
+rb is : 0 
+symInc is : 0 
+Start prb is : 0 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010010141400000
+Section ID is : 1 
+rb is : 0 
+symInc is : 0 
+Start prb is : 20 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010020281400000
+Section ID is : 2 
+rb is : 0 
+symInc is : 0 
+Start prb is : 40 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X70100303C1400000
+Section ID is : 3 
+rb is : 0 
+symInc is : 0 
+Start prb is : 60 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010040501400000
+Section ID is : 4 
+rb is : 0 
+symInc is : 0 
+Start prb is : 80 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010050641400000
+Section ID is : 5 
+rb is : 0 
+symInc is : 0 
+Start prb is : 100 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X701FFF0783200000
+Section ID is : 4095 
+rb is : 0 
+symInc is : 0 
+Start prb is : 120 
+Number of prb are : 50 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010070AA1400000
+Section ID is : 7 
+rb is : 0 
+symInc is : 0 
+Start prb is : 170 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010080BE1400000
+Section ID is : 8 
+rb is : 0 
+symInc is : 0 
+Start prb is : 190 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010090D20D00000
+Section ID is : 9 
+rb is : 0 
+symInc is : 0 
+Start prb is : 210 
+Number of prb are : 13 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X701FFE0DF3200000
+Section ID is : 4094 
+rb is : 0 
+symInc is : 0 
+Start prb is : 223 
+Number of prb are : 50 
+UD compression header is : 0X0000 
+
+Hardware packet of Application Header is : 0X7001055900700000
+Data direction is : 0 
+Payload version is : 1 
+Filter index is : 0 
+Frame ID is : 85 
+Subframe ID is : 9 
+Slot ID is : 0 
+Start symbol is : 7 
+Layer id is 1
+
+Hardware packet of Section Header is : 0X7010000001400000
+Section ID is : 0 
+rb is : 0 
+symInc is : 0 
+Start prb is : 0 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010010141400000
+Section ID is : 1 
+rb is : 0 
+symInc is : 0 
+Start prb is : 20 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010020281400000
+Section ID is : 2 
+rb is : 0 
+symInc is : 0 
+Start prb is : 40 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X70100303C1400000
+Section ID is : 3 
+rb is : 0 
+symInc is : 0 
+Start prb is : 60 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010040501400000
+Section ID is : 4 
+rb is : 0 
+symInc is : 0 
+Start prb is : 80 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010050641400000
+Section ID is : 5 
+rb is : 0 
+symInc is : 0 
+Start prb is : 100 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X701FFF0783200000
+Section ID is : 4095 
+rb is : 0 
+symInc is : 0 
+Start prb is : 120 
+Number of prb are : 50 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010070AA1400000
+Section ID is : 7 
+rb is : 0 
+symInc is : 0 
+Start prb is : 170 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010080BE1400000
+Section ID is : 8 
+rb is : 0 
+symInc is : 0 
+Start prb is : 190 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010090D20D00000
+Section ID is : 9 
+rb is : 0 
+symInc is : 0 
+Start prb is : 210 
+Number of prb are : 13 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X701FFE0DF3200000
+Section ID is : 4094 
+rb is : 0 
+symInc is : 0 
+Start prb is : 223 
+Number of prb are : 50 
+UD compression header is : 0X0000 
+
+Hardware packet of Application Header is : 0X7001055900800000
+Data direction is : 0 
+Payload version is : 1 
+Filter index is : 0 
+Frame ID is : 85 
+Subframe ID is : 9 
+Slot ID is : 0 
+Start symbol is : 8 
+Layer id is 1
+
+Hardware packet of Section Header is : 0X7010000001400000
+Section ID is : 0 
+rb is : 0 
+symInc is : 0 
+Start prb is : 0 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010010141400000
+Section ID is : 1 
+rb is : 0 
+symInc is : 0 
+Start prb is : 20 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010020281400000
+Section ID is : 2 
+rb is : 0 
+symInc is : 0 
+Start prb is : 40 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X70100303C1400000
+Section ID is : 3 
+rb is : 0 
+symInc is : 0 
+Start prb is : 60 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010040501400000
+Section ID is : 4 
+rb is : 0 
+symInc is : 0 
+Start prb is : 80 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010050641400000
+Section ID is : 5 
+rb is : 0 
+symInc is : 0 
+Start prb is : 100 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X701FFF0783200000
+Section ID is : 4095 
+rb is : 0 
+symInc is : 0 
+Start prb is : 120 
+Number of prb are : 50 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010070AA1400000
+Section ID is : 7 
+rb is : 0 
+symInc is : 0 
+Start prb is : 170 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010080BE1400000
+Section ID is : 8 
+rb is : 0 
+symInc is : 0 
+Start prb is : 190 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010090D20D00000
+Section ID is : 9 
+rb is : 0 
+symInc is : 0 
+Start prb is : 210 
+Number of prb are : 13 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X701FFE0DF3200000
+Section ID is : 4094 
+rb is : 0 
+symInc is : 0 
+Start prb is : 223 
+Number of prb are : 50 
+UD compression header is : 0X0000 
+
+Hardware packet of Application Header is : 0X7001055900900000
+Data direction is : 0 
+Payload version is : 1 
+Filter index is : 0 
+Frame ID is : 85 
+Subframe ID is : 9 
+Slot ID is : 0 
+Start symbol is : 9 
+Layer id is 1
+
+Hardware packet of Section Header is : 0X7010000001400000
+Section ID is : 0 
+rb is : 0 
+symInc is : 0 
+Start prb is : 0 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010010141400000
+Section ID is : 1 
+rb is : 0 
+symInc is : 0 
+Start prb is : 20 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010020281400000
+Section ID is : 2 
+rb is : 0 
+symInc is : 0 
+Start prb is : 40 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X70100303C1400000
+Section ID is : 3 
+rb is : 0 
+symInc is : 0 
+Start prb is : 60 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010040501400000
+Section ID is : 4 
+rb is : 0 
+symInc is : 0 
+Start prb is : 80 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010050641400000
+Section ID is : 5 
+rb is : 0 
+symInc is : 0 
+Start prb is : 100 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X701FFF0783200000
+Section ID is : 4095 
+rb is : 0 
+symInc is : 0 
+Start prb is : 120 
+Number of prb are : 50 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010070AA1400000
+Section ID is : 7 
+rb is : 0 
+symInc is : 0 
+Start prb is : 170 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010080BE1400000
+Section ID is : 8 
+rb is : 0 
+symInc is : 0 
+Start prb is : 190 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010090D20D00000
+Section ID is : 9 
+rb is : 0 
+symInc is : 0 
+Start prb is : 210 
+Number of prb are : 13 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X701FFE0DF3200000
+Section ID is : 4094 
+rb is : 0 
+symInc is : 0 
+Start prb is : 223 
+Number of prb are : 50 
+UD compression header is : 0X0000 
+
+Hardware packet of Application Header is : 0X7001055900A00000
+Data direction is : 0 
+Payload version is : 1 
+Filter index is : 0 
+Frame ID is : 85 
+Subframe ID is : 9 
+Slot ID is : 0 
+Start symbol is : 10 
+Layer id is 1
+
+Hardware packet of Section Header is : 0X7010000001400000
+Section ID is : 0 
+rb is : 0 
+symInc is : 0 
+Start prb is : 0 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010010141400000
+Section ID is : 1 
+rb is : 0 
+symInc is : 0 
+Start prb is : 20 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010020281400000
+Section ID is : 2 
+rb is : 0 
+symInc is : 0 
+Start prb is : 40 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X70100303C1400000
+Section ID is : 3 
+rb is : 0 
+symInc is : 0 
+Start prb is : 60 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010040501400000
+Section ID is : 4 
+rb is : 0 
+symInc is : 0 
+Start prb is : 80 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010050641400000
+Section ID is : 5 
+rb is : 0 
+symInc is : 0 
+Start prb is : 100 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X701FFF0783200000
+Section ID is : 4095 
+rb is : 0 
+symInc is : 0 
+Start prb is : 120 
+Number of prb are : 50 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010070AA1400000
+Section ID is : 7 
+rb is : 0 
+symInc is : 0 
+Start prb is : 170 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010080BE1400000
+Section ID is : 8 
+rb is : 0 
+symInc is : 0 
+Start prb is : 190 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010090D20D00000
+Section ID is : 9 
+rb is : 0 
+symInc is : 0 
+Start prb is : 210 
+Number of prb are : 13 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X701FFE0DF3200000
+Section ID is : 4094 
+rb is : 0 
+symInc is : 0 
+Start prb is : 223 
+Number of prb are : 50 
+UD compression header is : 0X0000 
+
+Hardware packet of Application Header is : 0X7001055900B00000
+Data direction is : 0 
+Payload version is : 1 
+Filter index is : 0 
+Frame ID is : 85 
+Subframe ID is : 9 
+Slot ID is : 0 
+Start symbol is : 11 
+Layer id is 1
+
+Hardware packet of Section Header is : 0X7010000001400000
+Section ID is : 0 
+rb is : 0 
+symInc is : 0 
+Start prb is : 0 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010010141400000
+Section ID is : 1 
+rb is : 0 
+symInc is : 0 
+Start prb is : 20 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010020281400000
+Section ID is : 2 
+rb is : 0 
+symInc is : 0 
+Start prb is : 40 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X70100303C1400000
+Section ID is : 3 
+rb is : 0 
+symInc is : 0 
+Start prb is : 60 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010040501400000
+Section ID is : 4 
+rb is : 0 
+symInc is : 0 
+Start prb is : 80 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010050641400000
+Section ID is : 5 
+rb is : 0 
+symInc is : 0 
+Start prb is : 100 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X701FFF0783200000
+Section ID is : 4095 
+rb is : 0 
+symInc is : 0 
+Start prb is : 120 
+Number of prb are : 50 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010070AA1400000
+Section ID is : 7 
+rb is : 0 
+symInc is : 0 
+Start prb is : 170 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010080BE1400000
+Section ID is : 8 
+rb is : 0 
+symInc is : 0 
+Start prb is : 190 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010090D20D00000
+Section ID is : 9 
+rb is : 0 
+symInc is : 0 
+Start prb is : 210 
+Number of prb are : 13 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X701FFE0DF3200000
+Section ID is : 4094 
+rb is : 0 
+symInc is : 0 
+Start prb is : 223 
+Number of prb are : 50 
+UD compression header is : 0X0000 
+
+Hardware packet of Application Header is : 0X7001055900C00000
+Data direction is : 0 
+Payload version is : 1 
+Filter index is : 0 
+Frame ID is : 85 
+Subframe ID is : 9 
+Slot ID is : 0 
+Start symbol is : 12 
+Layer id is 1
+
+Hardware packet of Section Header is : 0X7010000001400000
+Section ID is : 0 
+rb is : 0 
+symInc is : 0 
+Start prb is : 0 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010010141400000
+Section ID is : 1 
+rb is : 0 
+symInc is : 0 
+Start prb is : 20 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010020281400000
+Section ID is : 2 
+rb is : 0 
+symInc is : 0 
+Start prb is : 40 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X70100303C1400000
+Section ID is : 3 
+rb is : 0 
+symInc is : 0 
+Start prb is : 60 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010040501400000
+Section ID is : 4 
+rb is : 0 
+symInc is : 0 
+Start prb is : 80 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010050641400000
+Section ID is : 5 
+rb is : 0 
+symInc is : 0 
+Start prb is : 100 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X701FFF0783200000
+Section ID is : 4095 
+rb is : 0 
+symInc is : 0 
+Start prb is : 120 
+Number of prb are : 50 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010070AA1400000
+Section ID is : 7 
+rb is : 0 
+symInc is : 0 
+Start prb is : 170 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010080BE1400000
+Section ID is : 8 
+rb is : 0 
+symInc is : 0 
+Start prb is : 190 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010090D20D00000
+Section ID is : 9 
+rb is : 0 
+symInc is : 0 
+Start prb is : 210 
+Number of prb are : 13 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X701FFE0DF3200000
+Section ID is : 4094 
+rb is : 0 
+symInc is : 0 
+Start prb is : 223 
+Number of prb are : 50 
+UD compression header is : 0X0000 
+
+Hardware packet of Application Header is : 0X7001055900D00000
+Data direction is : 0 
+Payload version is : 1 
+Filter index is : 0 
+Frame ID is : 85 
+Subframe ID is : 9 
+Slot ID is : 0 
+Start symbol is : 13 
+Layer id is 1
+
+Hardware packet of Section Header is : 0X7010000001400000
+Section ID is : 0 
+rb is : 0 
+symInc is : 0 
+Start prb is : 0 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010010141400000
+Section ID is : 1 
+rb is : 0 
+symInc is : 0 
+Start prb is : 20 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010020281400000
+Section ID is : 2 
+rb is : 0 
+symInc is : 0 
+Start prb is : 40 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X70100303C1400000
+Section ID is : 3 
+rb is : 0 
+symInc is : 0 
+Start prb is : 60 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010040501400000
+Section ID is : 4 
+rb is : 0 
+symInc is : 0 
+Start prb is : 80 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010050641400000
+Section ID is : 5 
+rb is : 0 
+symInc is : 0 
+Start prb is : 100 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X701FFF0783200000
+Section ID is : 4095 
+rb is : 0 
+symInc is : 0 
+Start prb is : 120 
+Number of prb are : 50 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010070AA1400000
+Section ID is : 7 
+rb is : 0 
+symInc is : 0 
+Start prb is : 170 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010080BE1400000
+Section ID is : 8 
+rb is : 0 
+symInc is : 0 
+Start prb is : 190 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010090D20D00000
+Section ID is : 9 
+rb is : 0 
+symInc is : 0 
+Start prb is : 210 
+Number of prb are : 13 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X701FFE0DF3200000
+Section ID is : 4094 
+rb is : 0 
+symInc is : 0 
+Start prb is : 223 
+Number of prb are : 50 
+UD compression header is : 0X0000 
+
+Hardware packet of Application Header is : 0X7001055900E00000
+Data direction is : 0 
+Payload version is : 1 
+Filter index is : 0 
+Frame ID is : 85 
+Subframe ID is : 9 
+Slot ID is : 0 
+Start symbol is : 14 
+Layer id is 1
+
+Hardware packet of Section Header is : 0X7010000001400000
+Section ID is : 0 
+rb is : 0 
+symInc is : 0 
+Start prb is : 0 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010010141400000
+Section ID is : 1 
+rb is : 0 
+symInc is : 0 
+Start prb is : 20 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010020281400000
+Section ID is : 2 
+rb is : 0 
+symInc is : 0 
+Start prb is : 40 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X70100303C1400000
+Section ID is : 3 
+rb is : 0 
+symInc is : 0 
+Start prb is : 60 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010040501400000
+Section ID is : 4 
+rb is : 0 
+symInc is : 0 
+Start prb is : 80 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010050641400000
+Section ID is : 5 
+rb is : 0 
+symInc is : 0 
+Start prb is : 100 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X701FFF0783200000
+Section ID is : 4095 
+rb is : 0 
+symInc is : 0 
+Start prb is : 120 
+Number of prb are : 50 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010070AA1400000
+Section ID is : 7 
+rb is : 0 
+symInc is : 0 
+Start prb is : 170 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010080BE1400000
+Section ID is : 8 
+rb is : 0 
+symInc is : 0 
+Start prb is : 190 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010090D20D00000
+Section ID is : 9 
+rb is : 0 
+symInc is : 0 
+Start prb is : 210 
+Number of prb are : 13 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X701FFE0DF3200000
+Section ID is : 4094 
+rb is : 0 
+symInc is : 0 
+Start prb is : 223 
+Number of prb are : 50 
+UD compression header is : 0X0000 
+
+
+=================================================RX_Data_indication===================================================
+
+
+Hardware packet 1 for header is : 0X8000000000850001
+Hardware packet 2 for header is : 0X8000000000000000
+Hardware packet 3 for header is : 0X8000000000120355
+Hardware packet 4 for header is : 0X8000000000000003
+no_of_api_msgs is : 1 
+nFAPI_handle is : 0 
+Msg_ID is : 133 
+Msg_Len is : 0 
+SFN is : 853 
+Slot is : 18 
+nPUSCH is : 3 
+
+Hardware packet 1 for PDU is : 0X8000000000000000
+Hardware packet 2 for PDU is : 0X8000000000000001
+Hardware packet 3 for PDU is : 0X800000000000011D
+Handle is : 0 
+RNTI is : 1 
+HarqID is : 0 
+PDU_length is : 285 
+
+Hardware packet 1 for PDU is : 0X8000000000000000
+Hardware packet 2 for PDU is : 0X8000000000000002
+Hardware packet 3 for PDU is : 0X800000000000010D
+Handle is : 0 
+RNTI is : 2 
+HarqID is : 0 
+PDU_length is : 269 
+
+Hardware packet 1 for PDU is : 0X8000000000000000
+Hardware packet 2 for PDU is : 0X8000000000000003
+Hardware packet 3 for PDU is : 0X8000000000000240
+Handle is : 0 
+RNTI is : 3 
+HarqID is : 0 
+PDU_length is : 576 
+
+
+=================================================RACH_indication===================================================
+
+
+Hardware packet 1 for header is : 0X8000000000890001
+Hardware packet 2 for header is : 0X8000000000000000
+Hardware packet 3 for header is : 0X8000000000120355
+Hardware packet 4 for header is : 0X8000000000000003
+no_of_api_msgs is : 1 
+nFAPI_handle is : 0 
+Msg_ID is : 137 
+Msg_Len is : 0 
+SFN is : 853 
+Slot is : 18 
+Num PDUs is : 3 
+
+Hardware packet 1 for PDU is : 0X8000000012070000
+Hardware packet 2 for PDU is : 0X8000000000000000
+Phy Cell ID is : 0 
+Symb Index is : 7 
+Slot Index is : 18 
+Freq Index is : 0 
+
+Hardware packet 1 for PDU is : 0X8000000012090000
+Hardware packet 2 for PDU is : 0X8000000000000000
+Phy Cell ID is : 0 
+Symb Index is : 9 
+Slot Index is : 18 
+Freq Index is : 0 
+
+Hardware packet 1 for PDU is : 0X80000000120B0000
+Hardware packet 2 for PDU is : 0X8000000000000000
+Phy Cell ID is : 0 
+Symb Index is : 11 
+Slot Index is : 18 
+Freq Index is : 0 

@@ -1,0 +1,3889 @@
+Total PDU count = 2 
+PUSCH PDU count = 2 
+SRS PDU count = 0 
+PUCCH PDU count = 0 
+PRACH PDU count = 0 
+
+
+===================RE demapper configurations===================
+
+
+Hardware packet for number of configs is : 0X4000000000000842
+Number of PUSCH/DMRS/PTRS configs are : 2 
+Number of PRACH configs are : 0 
+Number of SRS configs are : 0 
+Number of PUCCH configs are : 0 
+
+==================PUSCH/DMRS/PTRS configs===========================
+
+Hardware packet 1(DMRS) is : 0X4000000000306400
+Hardware packet 2(PUSCH) is : 0X40000000FFCC6400
+Hardware packet 3(PTRS) is : 0X4000000080006400
+Starting RB is : 0 
+Length of RB is : 50 
+PUSCH locations are : 0X3FF3 
+DMRS locations are : 0X000C 
+PTRS locations are : 0X0000 
+Interleaved data is : 0 
+
+Hardware packet 1(DMRS) is : 0X4000000080306438
+Hardware packet 2(PUSCH) is : 0X40000000FFFC6438
+Hardware packet 3(PTRS) is : 0X4000000080006438
+Starting RB is : 56 
+Length of RB is : 50 
+PUSCH locations are : 0X3FFF 
+DMRS locations are : 0X000C 
+PTRS locations are : 0X0000 
+Interleaved data is : 1 
+
+==================PRACH configs===========================
+
+==================SRS configs===========================
+
+==================PUCCH configs===========================
+
+
+=====================CBS configurations========================
+PDU ID 0 , Number of codeblocks 24 , Codeblock size 8368
+PDU ID 1 , Number of codeblocks 10 , Codeblock size 7992
+
+Hardware packet for CBS write is : 0X51000000000114CF
+Slot number : 15
+Sum total of CB length : 2214
+
+Hardware packet for CBS read is : 0X5200000020B00000
+TB/User index : 0
+Codeblock index in TB : 0
+CB length in bits : 8368
+CB start address in packets : 0
+Is the CB the last for the TB : 0
+
+Hardware packet for CBS read is : 0X5200000020B00042
+TB/User index : 0
+Codeblock index in TB : 1
+CB length in bits : 8368
+CB start address in packets : 66
+Is the CB the last for the TB : 0
+
+Hardware packet for CBS read is : 0X5200000020B000C3
+TB/User index : 0
+Codeblock index in TB : 2
+CB length in bits : 8368
+CB start address in packets : 195
+Is the CB the last for the TB : 0
+
+Hardware packet for CBS read is : 0X5200000020B00144
+TB/User index : 0
+Codeblock index in TB : 3
+CB length in bits : 8368
+CB start address in packets : 324
+Is the CB the last for the TB : 0
+
+Hardware packet for CBS read is : 0X5200000020B00186
+TB/User index : 0
+Codeblock index in TB : 4
+CB length in bits : 8368
+CB start address in packets : 390
+Is the CB the last for the TB : 0
+
+Hardware packet for CBS read is : 0X5200000020B00207
+TB/User index : 0
+Codeblock index in TB : 5
+CB length in bits : 8368
+CB start address in packets : 519
+Is the CB the last for the TB : 0
+
+Hardware packet for CBS read is : 0X5200000020B00249
+TB/User index : 0
+Codeblock index in TB : 6
+CB length in bits : 8368
+CB start address in packets : 585
+Is the CB the last for the TB : 0
+
+Hardware packet for CBS read is : 0X5200000020B0028B
+TB/User index : 0
+Codeblock index in TB : 7
+CB length in bits : 8368
+CB start address in packets : 651
+Is the CB the last for the TB : 0
+
+Hardware packet for CBS read is : 0X5200000020B0030C
+TB/User index : 0
+Codeblock index in TB : 8
+CB length in bits : 8368
+CB start address in packets : 780
+Is the CB the last for the TB : 0
+
+Hardware packet for CBS read is : 0X5200000020B0034E
+TB/User index : 0
+Codeblock index in TB : 9
+CB length in bits : 8368
+CB start address in packets : 846
+Is the CB the last for the TB : 0
+
+Hardware packet for CBS read is : 0X5200000020B00390
+TB/User index : 0
+Codeblock index in TB : 10
+CB length in bits : 8368
+CB start address in packets : 912
+Is the CB the last for the TB : 0
+
+Hardware packet for CBS read is : 0X5200000020B00411
+TB/User index : 0
+Codeblock index in TB : 11
+CB length in bits : 8368
+CB start address in packets : 1041
+Is the CB the last for the TB : 0
+
+Hardware packet for CBS read is : 0X5200000020B00453
+TB/User index : 0
+Codeblock index in TB : 12
+CB length in bits : 8368
+CB start address in packets : 1107
+Is the CB the last for the TB : 0
+
+Hardware packet for CBS read is : 0X5200000020B004D4
+TB/User index : 0
+Codeblock index in TB : 13
+CB length in bits : 8368
+CB start address in packets : 1236
+Is the CB the last for the TB : 0
+
+Hardware packet for CBS read is : 0X5200000020B00516
+TB/User index : 0
+Codeblock index in TB : 14
+CB length in bits : 8368
+CB start address in packets : 1302
+Is the CB the last for the TB : 0
+
+Hardware packet for CBS read is : 0X5200000020B00558
+TB/User index : 0
+Codeblock index in TB : 15
+CB length in bits : 8368
+CB start address in packets : 1368
+Is the CB the last for the TB : 0
+
+Hardware packet for CBS read is : 0X5200000020B005D9
+TB/User index : 0
+Codeblock index in TB : 16
+CB length in bits : 8368
+CB start address in packets : 1497
+Is the CB the last for the TB : 0
+
+Hardware packet for CBS read is : 0X5200000020B0061B
+TB/User index : 0
+Codeblock index in TB : 17
+CB length in bits : 8368
+CB start address in packets : 1563
+Is the CB the last for the TB : 0
+
+Hardware packet for CBS read is : 0X5200000020B0069C
+TB/User index : 0
+Codeblock index in TB : 18
+CB length in bits : 8368
+CB start address in packets : 1692
+Is the CB the last for the TB : 0
+
+Hardware packet for CBS read is : 0X5200000020B006DE
+TB/User index : 0
+Codeblock index in TB : 19
+CB length in bits : 8368
+CB start address in packets : 1758
+Is the CB the last for the TB : 0
+
+Hardware packet for CBS read is : 0X5200000020B00720
+TB/User index : 0
+Codeblock index in TB : 20
+CB length in bits : 8368
+CB start address in packets : 1824
+Is the CB the last for the TB : 0
+
+Hardware packet for CBS read is : 0X5200000020B007A1
+TB/User index : 0
+Codeblock index in TB : 21
+CB length in bits : 8368
+CB start address in packets : 1953
+Is the CB the last for the TB : 0
+
+Hardware packet for CBS read is : 0X5200000020B007E3
+TB/User index : 0
+Codeblock index in TB : 22
+CB length in bits : 8368
+CB start address in packets : 2019
+Is the CB the last for the TB : 0
+
+Hardware packet for CBS read is : 0X5200000020B08825
+TB/User index : 0
+Codeblock index in TB : 23
+CB length in bits : 8368
+CB start address in packets : 2085
+Is the CB the last for the TB : 1
+
+Hardware packet for CBS read is : 0X520000001F380084
+TB/User index : 1
+Codeblock index in TB : 0
+CB length in bits : 7992
+CB start address in packets : 132
+Is the CB the last for the TB : 0
+
+Hardware packet for CBS read is : 0X520000001F380105
+TB/User index : 1
+Codeblock index in TB : 1
+CB length in bits : 7992
+CB start address in packets : 261
+Is the CB the last for the TB : 0
+
+Hardware packet for CBS read is : 0X520000001F3801C8
+TB/User index : 1
+Codeblock index in TB : 2
+CB length in bits : 7992
+CB start address in packets : 456
+Is the CB the last for the TB : 0
+
+Hardware packet for CBS read is : 0X520000001F3802CD
+TB/User index : 1
+Codeblock index in TB : 3
+CB length in bits : 7992
+CB start address in packets : 717
+Is the CB the last for the TB : 0
+
+Hardware packet for CBS read is : 0X520000001F3803D2
+TB/User index : 1
+Codeblock index in TB : 4
+CB length in bits : 7992
+CB start address in packets : 978
+Is the CB the last for the TB : 0
+
+Hardware packet for CBS read is : 0X520000001F380495
+TB/User index : 1
+Codeblock index in TB : 5
+CB length in bits : 7992
+CB start address in packets : 1173
+Is the CB the last for the TB : 0
+
+Hardware packet for CBS read is : 0X520000001F38059A
+TB/User index : 1
+Codeblock index in TB : 6
+CB length in bits : 7992
+CB start address in packets : 1434
+Is the CB the last for the TB : 0
+
+Hardware packet for CBS read is : 0X520000001F38065D
+TB/User index : 1
+Codeblock index in TB : 7
+CB length in bits : 7992
+CB start address in packets : 1629
+Is the CB the last for the TB : 0
+
+Hardware packet for CBS read is : 0X520000001F380762
+TB/User index : 1
+Codeblock index in TB : 8
+CB length in bits : 7992
+CB start address in packets : 1890
+Is the CB the last for the TB : 0
+
+Hardware packet for CBS read is : 0X520000001F388867
+TB/User index : 1
+Codeblock index in TB : 9
+CB length in bits : 7992
+CB start address in packets : 2151
+Is the CB the last for the TB : 1
+
+Hardware packet for CBS read is : 0X5200000040000000
+End of slot, dummy config
+
+
+=====================DMRS configurations=======================
+
+Hardware packet1 is : 0X4100000000F46400
+Hardware packet2 is : 0X41000000000C0019
+Hardware packet3 is : 0X410000000003C008
+PDU index : 0 
+Starting RB is : 0 
+PRB length is : 50 
+DMRS configuration type is : 1 
+n_scid is : 0 
+The layers which are present are : 0X000F 
+DMRS scrambling ID is : 25 
+DMRS symbols are : 0X000C 
+The value of l_prime is : 0X0008 
+Slot number in the frame is : 15 
+The reserved REs for TB 0 by DMRS is 4800
+
+Hardware packet1 is : 0X4100000000346438
+Hardware packet2 is : 0X41000000000C0019
+Hardware packet3 is : 0X410000000003C008
+PDU index : 1 
+Starting RB is : 56 
+PRB length is : 50 
+DMRS configuration type is : 1 
+n_scid is : 0 
+The layers which are present are : 0X0003 
+DMRS scrambling ID is : 25 
+DMRS symbols are : 0X000C 
+The value of l_prime is : 0X0008 
+Slot number in the frame is : 15 
+The reserved REs for TB 1 by DMRS is 1200
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+
+=====================Channel Estimation configurations=======================
+
+Hardware packet1 is : 0X4200000000000708
+Hardware packet2 is : 0X4200000000003A98
+Number of DMRS location at the first occasion : 1800 
+Number of DMRS location at the second occasion : 0 
+Number of PUSCH location TILL the second DMRS : 15000 
+Number of PUSCH location TILL the third DMRS : 0 
+
+
+====================PUSCH configurations=====================
+
+CB index: 0 
+
+PUSCH PDU index: 0 
+UE index: 0 
+CB index in TB: 0 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X4E00000000C828B8
+ip_codeblock_size: 10424 
+base_graph_index: 0 
+lifting_size_index: 50 
+user_id: 0 
+=======================
+Configuration for filler bit remover module- 
+Hardware packet is : 0X4F00000000840038
+no_of_filler_bits: 56 
+msg_block_size: 8448 
+=======================
+Configuration for depuncturing module- 
+Hardware packet1 is : 0X4D000000084020C8
+Hardware packet2 is : 0X4D000000004B7180
+kcb: 8392 
+Kcb: 8448 
+lifting_factor: 384 
+Ncb: 9656 
+=======================
+Configuration for rate dematching module- 
+Hardware packet1 is : 0X4C000000012C0600
+Hardware packet2 is : 0X4C00000000E02580
+rvid: 0 
+lifting_factor: 384 
+ncb: 9600 
+tot_llrs_codeblock: 9600 
+base_graph_index: 0 
+filler_bits: 56 
+=======================
+Configuration for deinterleaver module- 
+Hardware packet1 is : 0X4B00000000025804
+QAM_type: 4 
+tot_llrs_codeblock: 9600 
+=======================
+=========================================================
+
+CB index: 1 
+
+PUSCH PDU index: 0 
+UE index: 0 
+CB index in TB: 1 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X4E00000000C828B8
+ip_codeblock_size: 10424 
+base_graph_index: 0 
+lifting_size_index: 50 
+user_id: 0 
+=======================
+Configuration for filler bit remover module- 
+Hardware packet is : 0X4F00000000840038
+no_of_filler_bits: 56 
+msg_block_size: 8448 
+=======================
+Configuration for depuncturing module- 
+Hardware packet1 is : 0X4D000000084020C8
+Hardware packet2 is : 0X4D000000004B7180
+kcb: 8392 
+Kcb: 8448 
+lifting_factor: 384 
+Ncb: 9656 
+=======================
+Configuration for rate dematching module- 
+Hardware packet1 is : 0X4C000000012C0600
+Hardware packet2 is : 0X4C00000000E02580
+rvid: 0 
+lifting_factor: 384 
+ncb: 9600 
+tot_llrs_codeblock: 9600 
+base_graph_index: 0 
+filler_bits: 56 
+=======================
+Configuration for deinterleaver module- 
+Hardware packet1 is : 0X4B00000000025804
+QAM_type: 4 
+tot_llrs_codeblock: 9600 
+=======================
+=========================================================
+
+CB index: 24 
+
+PUSCH PDU index: 1 
+UE index: 1 
+CB index in TB: 0 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X4E00000001C82940
+ip_codeblock_size: 10560 
+base_graph_index: 0 
+lifting_size_index: 50 
+user_id: 1 
+=======================
+Configuration for filler bit remover module- 
+Hardware packet is : 0X4F000000008401B0
+no_of_filler_bits: 432 
+msg_block_size: 8448 
+=======================
+Configuration for depuncturing module- 
+Hardware packet1 is : 0X4D00000008401F50
+Hardware packet2 is : 0X4D000000004C8180
+kcb: 8016 
+Kcb: 8448 
+lifting_factor: 384 
+Ncb: 9792 
+=======================
+Configuration for rate dematching module- 
+Hardware packet1 is : 0X4C00000001248600
+Hardware packet2 is : 0X4C00000006C02490
+rvid: 0 
+lifting_factor: 384 
+ncb: 9360 
+tot_llrs_codeblock: 9360 
+base_graph_index: 0 
+filler_bits: 432 
+=======================
+Configuration for deinterleaver module- 
+Hardware packet1 is : 0X4B00000000024903
+QAM_type: 3 
+tot_llrs_codeblock: 9360 
+=======================
+=========================================================
+
+CB index: 2 
+
+PUSCH PDU index: 0 
+UE index: 0 
+CB index in TB: 2 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X4E00000000C828B8
+ip_codeblock_size: 10424 
+base_graph_index: 0 
+lifting_size_index: 50 
+user_id: 0 
+=======================
+Configuration for filler bit remover module- 
+Hardware packet is : 0X4F00000000840038
+no_of_filler_bits: 56 
+msg_block_size: 8448 
+=======================
+Configuration for depuncturing module- 
+Hardware packet1 is : 0X4D000000084020C8
+Hardware packet2 is : 0X4D000000004B7180
+kcb: 8392 
+Kcb: 8448 
+lifting_factor: 384 
+Ncb: 9656 
+=======================
+Configuration for rate dematching module- 
+Hardware packet1 is : 0X4C000000012C0600
+Hardware packet2 is : 0X4C00000000E02580
+rvid: 0 
+lifting_factor: 384 
+ncb: 9600 
+tot_llrs_codeblock: 9600 
+base_graph_index: 0 
+filler_bits: 56 
+=======================
+Configuration for deinterleaver module- 
+Hardware packet1 is : 0X4B00000000025804
+QAM_type: 4 
+tot_llrs_codeblock: 9600 
+=======================
+=========================================================
+
+CB index: 25 
+
+PUSCH PDU index: 1 
+UE index: 1 
+CB index in TB: 1 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X4E00000001C82940
+ip_codeblock_size: 10560 
+base_graph_index: 0 
+lifting_size_index: 50 
+user_id: 1 
+=======================
+Configuration for filler bit remover module- 
+Hardware packet is : 0X4F000000008401B0
+no_of_filler_bits: 432 
+msg_block_size: 8448 
+=======================
+Configuration for depuncturing module- 
+Hardware packet1 is : 0X4D00000008401F50
+Hardware packet2 is : 0X4D000000004C8180
+kcb: 8016 
+Kcb: 8448 
+lifting_factor: 384 
+Ncb: 9792 
+=======================
+Configuration for rate dematching module- 
+Hardware packet1 is : 0X4C00000001248600
+Hardware packet2 is : 0X4C00000006C02490
+rvid: 0 
+lifting_factor: 384 
+ncb: 9360 
+tot_llrs_codeblock: 9360 
+base_graph_index: 0 
+filler_bits: 432 
+=======================
+Configuration for deinterleaver module- 
+Hardware packet1 is : 0X4B00000000024903
+QAM_type: 3 
+tot_llrs_codeblock: 9360 
+=======================
+=========================================================
+
+CB index: 3 
+
+PUSCH PDU index: 0 
+UE index: 0 
+CB index in TB: 3 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X4E00000000C828B8
+ip_codeblock_size: 10424 
+base_graph_index: 0 
+lifting_size_index: 50 
+user_id: 0 
+=======================
+Configuration for filler bit remover module- 
+Hardware packet is : 0X4F00000000840038
+no_of_filler_bits: 56 
+msg_block_size: 8448 
+=======================
+Configuration for depuncturing module- 
+Hardware packet1 is : 0X4D000000084020C8
+Hardware packet2 is : 0X4D000000004B7180
+kcb: 8392 
+Kcb: 8448 
+lifting_factor: 384 
+Ncb: 9656 
+=======================
+Configuration for rate dematching module- 
+Hardware packet1 is : 0X4C000000012C0600
+Hardware packet2 is : 0X4C00000000E02580
+rvid: 0 
+lifting_factor: 384 
+ncb: 9600 
+tot_llrs_codeblock: 9600 
+base_graph_index: 0 
+filler_bits: 56 
+=======================
+Configuration for deinterleaver module- 
+Hardware packet1 is : 0X4B00000000025804
+QAM_type: 4 
+tot_llrs_codeblock: 9600 
+=======================
+=========================================================
+
+CB index: 4 
+
+PUSCH PDU index: 0 
+UE index: 0 
+CB index in TB: 4 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X4E00000000C828B8
+ip_codeblock_size: 10424 
+base_graph_index: 0 
+lifting_size_index: 50 
+user_id: 0 
+=======================
+Configuration for filler bit remover module- 
+Hardware packet is : 0X4F00000000840038
+no_of_filler_bits: 56 
+msg_block_size: 8448 
+=======================
+Configuration for depuncturing module- 
+Hardware packet1 is : 0X4D000000084020C8
+Hardware packet2 is : 0X4D000000004B7180
+kcb: 8392 
+Kcb: 8448 
+lifting_factor: 384 
+Ncb: 9656 
+=======================
+Configuration for rate dematching module- 
+Hardware packet1 is : 0X4C000000012C0600
+Hardware packet2 is : 0X4C00000000E02580
+rvid: 0 
+lifting_factor: 384 
+ncb: 9600 
+tot_llrs_codeblock: 9600 
+base_graph_index: 0 
+filler_bits: 56 
+=======================
+Configuration for deinterleaver module- 
+Hardware packet1 is : 0X4B00000000025804
+QAM_type: 4 
+tot_llrs_codeblock: 9600 
+=======================
+=========================================================
+
+CB index: 26 
+
+PUSCH PDU index: 1 
+UE index: 1 
+CB index in TB: 2 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X4E00000001C82940
+ip_codeblock_size: 10560 
+base_graph_index: 0 
+lifting_size_index: 50 
+user_id: 1 
+=======================
+Configuration for filler bit remover module- 
+Hardware packet is : 0X4F000000008401B0
+no_of_filler_bits: 432 
+msg_block_size: 8448 
+=======================
+Configuration for depuncturing module- 
+Hardware packet1 is : 0X4D00000008401F50
+Hardware packet2 is : 0X4D000000004C8180
+kcb: 8016 
+Kcb: 8448 
+lifting_factor: 384 
+Ncb: 9792 
+=======================
+Configuration for rate dematching module- 
+Hardware packet1 is : 0X4C00000001248600
+Hardware packet2 is : 0X4C00000006C02490
+rvid: 0 
+lifting_factor: 384 
+ncb: 9360 
+tot_llrs_codeblock: 9360 
+base_graph_index: 0 
+filler_bits: 432 
+=======================
+Configuration for deinterleaver module- 
+Hardware packet1 is : 0X4B00000000024903
+QAM_type: 3 
+tot_llrs_codeblock: 9360 
+=======================
+=========================================================
+
+CB index: 5 
+
+PUSCH PDU index: 0 
+UE index: 0 
+CB index in TB: 5 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X4E00000000C828B8
+ip_codeblock_size: 10424 
+base_graph_index: 0 
+lifting_size_index: 50 
+user_id: 0 
+=======================
+Configuration for filler bit remover module- 
+Hardware packet is : 0X4F00000000840038
+no_of_filler_bits: 56 
+msg_block_size: 8448 
+=======================
+Configuration for depuncturing module- 
+Hardware packet1 is : 0X4D000000084020C8
+Hardware packet2 is : 0X4D000000004B7180
+kcb: 8392 
+Kcb: 8448 
+lifting_factor: 384 
+Ncb: 9656 
+=======================
+Configuration for rate dematching module- 
+Hardware packet1 is : 0X4C000000012C0600
+Hardware packet2 is : 0X4C00000000E02580
+rvid: 0 
+lifting_factor: 384 
+ncb: 9600 
+tot_llrs_codeblock: 9600 
+base_graph_index: 0 
+filler_bits: 56 
+=======================
+Configuration for deinterleaver module- 
+Hardware packet1 is : 0X4B00000000025804
+QAM_type: 4 
+tot_llrs_codeblock: 9600 
+=======================
+=========================================================
+
+CB index: 6 
+
+PUSCH PDU index: 0 
+UE index: 0 
+CB index in TB: 6 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X4E00000000C828B8
+ip_codeblock_size: 10424 
+base_graph_index: 0 
+lifting_size_index: 50 
+user_id: 0 
+=======================
+Configuration for filler bit remover module- 
+Hardware packet is : 0X4F00000000840038
+no_of_filler_bits: 56 
+msg_block_size: 8448 
+=======================
+Configuration for depuncturing module- 
+Hardware packet1 is : 0X4D000000084020C8
+Hardware packet2 is : 0X4D000000004B7180
+kcb: 8392 
+Kcb: 8448 
+lifting_factor: 384 
+Ncb: 9656 
+=======================
+Configuration for rate dematching module- 
+Hardware packet1 is : 0X4C000000012C0600
+Hardware packet2 is : 0X4C00000000E02580
+rvid: 0 
+lifting_factor: 384 
+ncb: 9600 
+tot_llrs_codeblock: 9600 
+base_graph_index: 0 
+filler_bits: 56 
+=======================
+Configuration for deinterleaver module- 
+Hardware packet1 is : 0X4B00000000025804
+QAM_type: 4 
+tot_llrs_codeblock: 9600 
+=======================
+=========================================================
+
+CB index: 7 
+
+PUSCH PDU index: 0 
+UE index: 0 
+CB index in TB: 7 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X4E00000000C828B8
+ip_codeblock_size: 10424 
+base_graph_index: 0 
+lifting_size_index: 50 
+user_id: 0 
+=======================
+Configuration for filler bit remover module- 
+Hardware packet is : 0X4F00000000840038
+no_of_filler_bits: 56 
+msg_block_size: 8448 
+=======================
+Configuration for depuncturing module- 
+Hardware packet1 is : 0X4D000000084020C8
+Hardware packet2 is : 0X4D000000004B7180
+kcb: 8392 
+Kcb: 8448 
+lifting_factor: 384 
+Ncb: 9656 
+=======================
+Configuration for rate dematching module- 
+Hardware packet1 is : 0X4C000000012C0600
+Hardware packet2 is : 0X4C00000000E02580
+rvid: 0 
+lifting_factor: 384 
+ncb: 9600 
+tot_llrs_codeblock: 9600 
+base_graph_index: 0 
+filler_bits: 56 
+=======================
+Configuration for deinterleaver module- 
+Hardware packet1 is : 0X4B00000000025804
+QAM_type: 4 
+tot_llrs_codeblock: 9600 
+=======================
+=========================================================
+
+CB index: 27 
+
+PUSCH PDU index: 1 
+UE index: 1 
+CB index in TB: 3 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X4E00000001C82940
+ip_codeblock_size: 10560 
+base_graph_index: 0 
+lifting_size_index: 50 
+user_id: 1 
+=======================
+Configuration for filler bit remover module- 
+Hardware packet is : 0X4F000000008401B0
+no_of_filler_bits: 432 
+msg_block_size: 8448 
+=======================
+Configuration for depuncturing module- 
+Hardware packet1 is : 0X4D00000008401F50
+Hardware packet2 is : 0X4D000000004C8180
+kcb: 8016 
+Kcb: 8448 
+lifting_factor: 384 
+Ncb: 9792 
+=======================
+Configuration for rate dematching module- 
+Hardware packet1 is : 0X4C00000001248600
+Hardware packet2 is : 0X4C00000006C02490
+rvid: 0 
+lifting_factor: 384 
+ncb: 9360 
+tot_llrs_codeblock: 9360 
+base_graph_index: 0 
+filler_bits: 432 
+=======================
+Configuration for deinterleaver module- 
+Hardware packet1 is : 0X4B00000000024903
+QAM_type: 3 
+tot_llrs_codeblock: 9360 
+=======================
+=========================================================
+
+CB index: 8 
+
+PUSCH PDU index: 0 
+UE index: 0 
+CB index in TB: 8 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X4E00000000C828B8
+ip_codeblock_size: 10424 
+base_graph_index: 0 
+lifting_size_index: 50 
+user_id: 0 
+=======================
+Configuration for filler bit remover module- 
+Hardware packet is : 0X4F00000000840038
+no_of_filler_bits: 56 
+msg_block_size: 8448 
+=======================
+Configuration for depuncturing module- 
+Hardware packet1 is : 0X4D000000084020C8
+Hardware packet2 is : 0X4D000000004B7180
+kcb: 8392 
+Kcb: 8448 
+lifting_factor: 384 
+Ncb: 9656 
+=======================
+Configuration for rate dematching module- 
+Hardware packet1 is : 0X4C000000012C0600
+Hardware packet2 is : 0X4C00000000E02580
+rvid: 0 
+lifting_factor: 384 
+ncb: 9600 
+tot_llrs_codeblock: 9600 
+base_graph_index: 0 
+filler_bits: 56 
+=======================
+Configuration for deinterleaver module- 
+Hardware packet1 is : 0X4B00000000025804
+QAM_type: 4 
+tot_llrs_codeblock: 9600 
+=======================
+=========================================================
+
+CB index: 9 
+
+PUSCH PDU index: 0 
+UE index: 0 
+CB index in TB: 9 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X4E00000000C828B8
+ip_codeblock_size: 10424 
+base_graph_index: 0 
+lifting_size_index: 50 
+user_id: 0 
+=======================
+Configuration for filler bit remover module- 
+Hardware packet is : 0X4F00000000840038
+no_of_filler_bits: 56 
+msg_block_size: 8448 
+=======================
+Configuration for depuncturing module- 
+Hardware packet1 is : 0X4D000000084020C8
+Hardware packet2 is : 0X4D000000004B7180
+kcb: 8392 
+Kcb: 8448 
+lifting_factor: 384 
+Ncb: 9656 
+=======================
+Configuration for rate dematching module- 
+Hardware packet1 is : 0X4C000000012C0600
+Hardware packet2 is : 0X4C00000000E02580
+rvid: 0 
+lifting_factor: 384 
+ncb: 9600 
+tot_llrs_codeblock: 9600 
+base_graph_index: 0 
+filler_bits: 56 
+=======================
+Configuration for deinterleaver module- 
+Hardware packet1 is : 0X4B00000000025804
+QAM_type: 4 
+tot_llrs_codeblock: 9600 
+=======================
+=========================================================
+
+CB index: 10 
+
+PUSCH PDU index: 0 
+UE index: 0 
+CB index in TB: 10 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X4E00000000C828B8
+ip_codeblock_size: 10424 
+base_graph_index: 0 
+lifting_size_index: 50 
+user_id: 0 
+=======================
+Configuration for filler bit remover module- 
+Hardware packet is : 0X4F00000000840038
+no_of_filler_bits: 56 
+msg_block_size: 8448 
+=======================
+Configuration for depuncturing module- 
+Hardware packet1 is : 0X4D000000084020C8
+Hardware packet2 is : 0X4D000000004B7180
+kcb: 8392 
+Kcb: 8448 
+lifting_factor: 384 
+Ncb: 9656 
+=======================
+Configuration for rate dematching module- 
+Hardware packet1 is : 0X4C000000012C0600
+Hardware packet2 is : 0X4C00000000E02580
+rvid: 0 
+lifting_factor: 384 
+ncb: 9600 
+tot_llrs_codeblock: 9600 
+base_graph_index: 0 
+filler_bits: 56 
+=======================
+Configuration for deinterleaver module- 
+Hardware packet1 is : 0X4B00000000025804
+QAM_type: 4 
+tot_llrs_codeblock: 9600 
+=======================
+=========================================================
+
+CB index: 28 
+
+PUSCH PDU index: 1 
+UE index: 1 
+CB index in TB: 4 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X4E00000001C82940
+ip_codeblock_size: 10560 
+base_graph_index: 0 
+lifting_size_index: 50 
+user_id: 1 
+=======================
+Configuration for filler bit remover module- 
+Hardware packet is : 0X4F000000008401B0
+no_of_filler_bits: 432 
+msg_block_size: 8448 
+=======================
+Configuration for depuncturing module- 
+Hardware packet1 is : 0X4D00000008401F50
+Hardware packet2 is : 0X4D000000004C8180
+kcb: 8016 
+Kcb: 8448 
+lifting_factor: 384 
+Ncb: 9792 
+=======================
+Configuration for rate dematching module- 
+Hardware packet1 is : 0X4C00000001248600
+Hardware packet2 is : 0X4C00000006C02490
+rvid: 0 
+lifting_factor: 384 
+ncb: 9360 
+tot_llrs_codeblock: 9360 
+base_graph_index: 0 
+filler_bits: 432 
+=======================
+Configuration for deinterleaver module- 
+Hardware packet1 is : 0X4B00000000024903
+QAM_type: 3 
+tot_llrs_codeblock: 9360 
+=======================
+=========================================================
+
+CB index: 11 
+
+PUSCH PDU index: 0 
+UE index: 0 
+CB index in TB: 11 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X4E00000000C828B8
+ip_codeblock_size: 10424 
+base_graph_index: 0 
+lifting_size_index: 50 
+user_id: 0 
+=======================
+Configuration for filler bit remover module- 
+Hardware packet is : 0X4F00000000840038
+no_of_filler_bits: 56 
+msg_block_size: 8448 
+=======================
+Configuration for depuncturing module- 
+Hardware packet1 is : 0X4D000000084020C8
+Hardware packet2 is : 0X4D000000004B7180
+kcb: 8392 
+Kcb: 8448 
+lifting_factor: 384 
+Ncb: 9656 
+=======================
+Configuration for rate dematching module- 
+Hardware packet1 is : 0X4C000000012C0600
+Hardware packet2 is : 0X4C00000000E02580
+rvid: 0 
+lifting_factor: 384 
+ncb: 9600 
+tot_llrs_codeblock: 9600 
+base_graph_index: 0 
+filler_bits: 56 
+=======================
+Configuration for deinterleaver module- 
+Hardware packet1 is : 0X4B00000000025804
+QAM_type: 4 
+tot_llrs_codeblock: 9600 
+=======================
+=========================================================
+
+CB index: 12 
+
+PUSCH PDU index: 0 
+UE index: 0 
+CB index in TB: 12 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X4E00000000C828B8
+ip_codeblock_size: 10424 
+base_graph_index: 0 
+lifting_size_index: 50 
+user_id: 0 
+=======================
+Configuration for filler bit remover module- 
+Hardware packet is : 0X4F00000000840038
+no_of_filler_bits: 56 
+msg_block_size: 8448 
+=======================
+Configuration for depuncturing module- 
+Hardware packet1 is : 0X4D000000084020C8
+Hardware packet2 is : 0X4D000000004B7180
+kcb: 8392 
+Kcb: 8448 
+lifting_factor: 384 
+Ncb: 9656 
+=======================
+Configuration for rate dematching module- 
+Hardware packet1 is : 0X4C000000012C0600
+Hardware packet2 is : 0X4C00000000E02580
+rvid: 0 
+lifting_factor: 384 
+ncb: 9600 
+tot_llrs_codeblock: 9600 
+base_graph_index: 0 
+filler_bits: 56 
+=======================
+Configuration for deinterleaver module- 
+Hardware packet1 is : 0X4B00000000025804
+QAM_type: 4 
+tot_llrs_codeblock: 9600 
+=======================
+=========================================================
+
+CB index: 29 
+
+PUSCH PDU index: 1 
+UE index: 1 
+CB index in TB: 5 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X4E00000001C82940
+ip_codeblock_size: 10560 
+base_graph_index: 0 
+lifting_size_index: 50 
+user_id: 1 
+=======================
+Configuration for filler bit remover module- 
+Hardware packet is : 0X4F000000008401B0
+no_of_filler_bits: 432 
+msg_block_size: 8448 
+=======================
+Configuration for depuncturing module- 
+Hardware packet1 is : 0X4D00000008401F50
+Hardware packet2 is : 0X4D000000004C8180
+kcb: 8016 
+Kcb: 8448 
+lifting_factor: 384 
+Ncb: 9792 
+=======================
+Configuration for rate dematching module- 
+Hardware packet1 is : 0X4C00000001248600
+Hardware packet2 is : 0X4C00000006C02490
+rvid: 0 
+lifting_factor: 384 
+ncb: 9360 
+tot_llrs_codeblock: 9360 
+base_graph_index: 0 
+filler_bits: 432 
+=======================
+Configuration for deinterleaver module- 
+Hardware packet1 is : 0X4B00000000024903
+QAM_type: 3 
+tot_llrs_codeblock: 9360 
+=======================
+=========================================================
+
+CB index: 13 
+
+PUSCH PDU index: 0 
+UE index: 0 
+CB index in TB: 13 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X4E00000000C828B8
+ip_codeblock_size: 10424 
+base_graph_index: 0 
+lifting_size_index: 50 
+user_id: 0 
+=======================
+Configuration for filler bit remover module- 
+Hardware packet is : 0X4F00000000840038
+no_of_filler_bits: 56 
+msg_block_size: 8448 
+=======================
+Configuration for depuncturing module- 
+Hardware packet1 is : 0X4D000000084020C8
+Hardware packet2 is : 0X4D000000004B7180
+kcb: 8392 
+Kcb: 8448 
+lifting_factor: 384 
+Ncb: 9656 
+=======================
+Configuration for rate dematching module- 
+Hardware packet1 is : 0X4C000000012C0600
+Hardware packet2 is : 0X4C00000000E02580
+rvid: 0 
+lifting_factor: 384 
+ncb: 9600 
+tot_llrs_codeblock: 9600 
+base_graph_index: 0 
+filler_bits: 56 
+=======================
+Configuration for deinterleaver module- 
+Hardware packet1 is : 0X4B00000000025804
+QAM_type: 4 
+tot_llrs_codeblock: 9600 
+=======================
+=========================================================
+
+CB index: 14 
+
+PUSCH PDU index: 0 
+UE index: 0 
+CB index in TB: 14 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X4E00000000C828B8
+ip_codeblock_size: 10424 
+base_graph_index: 0 
+lifting_size_index: 50 
+user_id: 0 
+=======================
+Configuration for filler bit remover module- 
+Hardware packet is : 0X4F00000000840038
+no_of_filler_bits: 56 
+msg_block_size: 8448 
+=======================
+Configuration for depuncturing module- 
+Hardware packet1 is : 0X4D000000084020C8
+Hardware packet2 is : 0X4D000000004B7180
+kcb: 8392 
+Kcb: 8448 
+lifting_factor: 384 
+Ncb: 9656 
+=======================
+Configuration for rate dematching module- 
+Hardware packet1 is : 0X4C000000012C0600
+Hardware packet2 is : 0X4C00000000E02580
+rvid: 0 
+lifting_factor: 384 
+ncb: 9600 
+tot_llrs_codeblock: 9600 
+base_graph_index: 0 
+filler_bits: 56 
+=======================
+Configuration for deinterleaver module- 
+Hardware packet1 is : 0X4B00000000025804
+QAM_type: 4 
+tot_llrs_codeblock: 9600 
+=======================
+=========================================================
+
+CB index: 15 
+
+PUSCH PDU index: 0 
+UE index: 0 
+CB index in TB: 15 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X4E00000000C828B8
+ip_codeblock_size: 10424 
+base_graph_index: 0 
+lifting_size_index: 50 
+user_id: 0 
+=======================
+Configuration for filler bit remover module- 
+Hardware packet is : 0X4F00000000840038
+no_of_filler_bits: 56 
+msg_block_size: 8448 
+=======================
+Configuration for depuncturing module- 
+Hardware packet1 is : 0X4D000000084020C8
+Hardware packet2 is : 0X4D000000004B7180
+kcb: 8392 
+Kcb: 8448 
+lifting_factor: 384 
+Ncb: 9656 
+=======================
+Configuration for rate dematching module- 
+Hardware packet1 is : 0X4C000000012C0600
+Hardware packet2 is : 0X4C00000000E02580
+rvid: 0 
+lifting_factor: 384 
+ncb: 9600 
+tot_llrs_codeblock: 9600 
+base_graph_index: 0 
+filler_bits: 56 
+=======================
+Configuration for deinterleaver module- 
+Hardware packet1 is : 0X4B00000000025804
+QAM_type: 4 
+tot_llrs_codeblock: 9600 
+=======================
+=========================================================
+
+CB index: 30 
+
+PUSCH PDU index: 1 
+UE index: 1 
+CB index in TB: 6 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X4E00000001C82940
+ip_codeblock_size: 10560 
+base_graph_index: 0 
+lifting_size_index: 50 
+user_id: 1 
+=======================
+Configuration for filler bit remover module- 
+Hardware packet is : 0X4F000000008401B0
+no_of_filler_bits: 432 
+msg_block_size: 8448 
+=======================
+Configuration for depuncturing module- 
+Hardware packet1 is : 0X4D00000008401F50
+Hardware packet2 is : 0X4D000000004C8180
+kcb: 8016 
+Kcb: 8448 
+lifting_factor: 384 
+Ncb: 9792 
+=======================
+Configuration for rate dematching module- 
+Hardware packet1 is : 0X4C00000001248600
+Hardware packet2 is : 0X4C00000006C02490
+rvid: 0 
+lifting_factor: 384 
+ncb: 9360 
+tot_llrs_codeblock: 9360 
+base_graph_index: 0 
+filler_bits: 432 
+=======================
+Configuration for deinterleaver module- 
+Hardware packet1 is : 0X4B00000000024903
+QAM_type: 3 
+tot_llrs_codeblock: 9360 
+=======================
+=========================================================
+
+CB index: 16 
+
+PUSCH PDU index: 0 
+UE index: 0 
+CB index in TB: 16 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X4E00000000C828B8
+ip_codeblock_size: 10424 
+base_graph_index: 0 
+lifting_size_index: 50 
+user_id: 0 
+=======================
+Configuration for filler bit remover module- 
+Hardware packet is : 0X4F00000000840038
+no_of_filler_bits: 56 
+msg_block_size: 8448 
+=======================
+Configuration for depuncturing module- 
+Hardware packet1 is : 0X4D000000084020C8
+Hardware packet2 is : 0X4D000000004B7180
+kcb: 8392 
+Kcb: 8448 
+lifting_factor: 384 
+Ncb: 9656 
+=======================
+Configuration for rate dematching module- 
+Hardware packet1 is : 0X4C000000012C0600
+Hardware packet2 is : 0X4C00000000E02580
+rvid: 0 
+lifting_factor: 384 
+ncb: 9600 
+tot_llrs_codeblock: 9600 
+base_graph_index: 0 
+filler_bits: 56 
+=======================
+Configuration for deinterleaver module- 
+Hardware packet1 is : 0X4B00000000025804
+QAM_type: 4 
+tot_llrs_codeblock: 9600 
+=======================
+=========================================================
+
+CB index: 17 
+
+PUSCH PDU index: 0 
+UE index: 0 
+CB index in TB: 17 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X4E00000000C828B8
+ip_codeblock_size: 10424 
+base_graph_index: 0 
+lifting_size_index: 50 
+user_id: 0 
+=======================
+Configuration for filler bit remover module- 
+Hardware packet is : 0X4F00000000840038
+no_of_filler_bits: 56 
+msg_block_size: 8448 
+=======================
+Configuration for depuncturing module- 
+Hardware packet1 is : 0X4D000000084020C8
+Hardware packet2 is : 0X4D000000004B7180
+kcb: 8392 
+Kcb: 8448 
+lifting_factor: 384 
+Ncb: 9656 
+=======================
+Configuration for rate dematching module- 
+Hardware packet1 is : 0X4C000000012C0600
+Hardware packet2 is : 0X4C00000000E02580
+rvid: 0 
+lifting_factor: 384 
+ncb: 9600 
+tot_llrs_codeblock: 9600 
+base_graph_index: 0 
+filler_bits: 56 
+=======================
+Configuration for deinterleaver module- 
+Hardware packet1 is : 0X4B00000000025804
+QAM_type: 4 
+tot_llrs_codeblock: 9600 
+=======================
+=========================================================
+
+CB index: 31 
+
+PUSCH PDU index: 1 
+UE index: 1 
+CB index in TB: 7 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X4E00000001C82940
+ip_codeblock_size: 10560 
+base_graph_index: 0 
+lifting_size_index: 50 
+user_id: 1 
+=======================
+Configuration for filler bit remover module- 
+Hardware packet is : 0X4F000000008401B0
+no_of_filler_bits: 432 
+msg_block_size: 8448 
+=======================
+Configuration for depuncturing module- 
+Hardware packet1 is : 0X4D00000008401F50
+Hardware packet2 is : 0X4D000000004C8180
+kcb: 8016 
+Kcb: 8448 
+lifting_factor: 384 
+Ncb: 9792 
+=======================
+Configuration for rate dematching module- 
+Hardware packet1 is : 0X4C00000001248600
+Hardware packet2 is : 0X4C00000006C02490
+rvid: 0 
+lifting_factor: 384 
+ncb: 9360 
+tot_llrs_codeblock: 9360 
+base_graph_index: 0 
+filler_bits: 432 
+=======================
+Configuration for deinterleaver module- 
+Hardware packet1 is : 0X4B00000000024903
+QAM_type: 3 
+tot_llrs_codeblock: 9360 
+=======================
+=========================================================
+
+CB index: 18 
+
+PUSCH PDU index: 0 
+UE index: 0 
+CB index in TB: 18 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X4E00000000C828B8
+ip_codeblock_size: 10424 
+base_graph_index: 0 
+lifting_size_index: 50 
+user_id: 0 
+=======================
+Configuration for filler bit remover module- 
+Hardware packet is : 0X4F00000000840038
+no_of_filler_bits: 56 
+msg_block_size: 8448 
+=======================
+Configuration for depuncturing module- 
+Hardware packet1 is : 0X4D000000084020C8
+Hardware packet2 is : 0X4D000000004B7180
+kcb: 8392 
+Kcb: 8448 
+lifting_factor: 384 
+Ncb: 9656 
+=======================
+Configuration for rate dematching module- 
+Hardware packet1 is : 0X4C000000012C0600
+Hardware packet2 is : 0X4C00000000E02580
+rvid: 0 
+lifting_factor: 384 
+ncb: 9600 
+tot_llrs_codeblock: 9600 
+base_graph_index: 0 
+filler_bits: 56 
+=======================
+Configuration for deinterleaver module- 
+Hardware packet1 is : 0X4B00000000025804
+QAM_type: 4 
+tot_llrs_codeblock: 9600 
+=======================
+=========================================================
+
+CB index: 19 
+
+PUSCH PDU index: 0 
+UE index: 0 
+CB index in TB: 19 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X4E00000000C828B8
+ip_codeblock_size: 10424 
+base_graph_index: 0 
+lifting_size_index: 50 
+user_id: 0 
+=======================
+Configuration for filler bit remover module- 
+Hardware packet is : 0X4F00000000840038
+no_of_filler_bits: 56 
+msg_block_size: 8448 
+=======================
+Configuration for depuncturing module- 
+Hardware packet1 is : 0X4D000000084020C8
+Hardware packet2 is : 0X4D000000004B7180
+kcb: 8392 
+Kcb: 8448 
+lifting_factor: 384 
+Ncb: 9656 
+=======================
+Configuration for rate dematching module- 
+Hardware packet1 is : 0X4C000000012C0600
+Hardware packet2 is : 0X4C00000000E02580
+rvid: 0 
+lifting_factor: 384 
+ncb: 9600 
+tot_llrs_codeblock: 9600 
+base_graph_index: 0 
+filler_bits: 56 
+=======================
+Configuration for deinterleaver module- 
+Hardware packet1 is : 0X4B00000000025804
+QAM_type: 4 
+tot_llrs_codeblock: 9600 
+=======================
+=========================================================
+
+CB index: 20 
+
+PUSCH PDU index: 0 
+UE index: 0 
+CB index in TB: 20 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X4E00000000C828B8
+ip_codeblock_size: 10424 
+base_graph_index: 0 
+lifting_size_index: 50 
+user_id: 0 
+=======================
+Configuration for filler bit remover module- 
+Hardware packet is : 0X4F00000000840038
+no_of_filler_bits: 56 
+msg_block_size: 8448 
+=======================
+Configuration for depuncturing module- 
+Hardware packet1 is : 0X4D000000084020C8
+Hardware packet2 is : 0X4D000000004B7180
+kcb: 8392 
+Kcb: 8448 
+lifting_factor: 384 
+Ncb: 9656 
+=======================
+Configuration for rate dematching module- 
+Hardware packet1 is : 0X4C000000012C0600
+Hardware packet2 is : 0X4C00000000E02580
+rvid: 0 
+lifting_factor: 384 
+ncb: 9600 
+tot_llrs_codeblock: 9600 
+base_graph_index: 0 
+filler_bits: 56 
+=======================
+Configuration for deinterleaver module- 
+Hardware packet1 is : 0X4B00000000025804
+QAM_type: 4 
+tot_llrs_codeblock: 9600 
+=======================
+=========================================================
+
+CB index: 32 
+
+PUSCH PDU index: 1 
+UE index: 1 
+CB index in TB: 8 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X4E00000001C82940
+ip_codeblock_size: 10560 
+base_graph_index: 0 
+lifting_size_index: 50 
+user_id: 1 
+=======================
+Configuration for filler bit remover module- 
+Hardware packet is : 0X4F000000008401B0
+no_of_filler_bits: 432 
+msg_block_size: 8448 
+=======================
+Configuration for depuncturing module- 
+Hardware packet1 is : 0X4D00000008401F50
+Hardware packet2 is : 0X4D000000004C8180
+kcb: 8016 
+Kcb: 8448 
+lifting_factor: 384 
+Ncb: 9792 
+=======================
+Configuration for rate dematching module- 
+Hardware packet1 is : 0X4C00000001248600
+Hardware packet2 is : 0X4C00000006C02490
+rvid: 0 
+lifting_factor: 384 
+ncb: 9360 
+tot_llrs_codeblock: 9360 
+base_graph_index: 0 
+filler_bits: 432 
+=======================
+Configuration for deinterleaver module- 
+Hardware packet1 is : 0X4B00000000024903
+QAM_type: 3 
+tot_llrs_codeblock: 9360 
+=======================
+=========================================================
+
+CB index: 21 
+
+PUSCH PDU index: 0 
+UE index: 0 
+CB index in TB: 21 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X4E00000000C828B8
+ip_codeblock_size: 10424 
+base_graph_index: 0 
+lifting_size_index: 50 
+user_id: 0 
+=======================
+Configuration for filler bit remover module- 
+Hardware packet is : 0X4F00000000840038
+no_of_filler_bits: 56 
+msg_block_size: 8448 
+=======================
+Configuration for depuncturing module- 
+Hardware packet1 is : 0X4D000000084020C8
+Hardware packet2 is : 0X4D000000004B7180
+kcb: 8392 
+Kcb: 8448 
+lifting_factor: 384 
+Ncb: 9656 
+=======================
+Configuration for rate dematching module- 
+Hardware packet1 is : 0X4C000000012C0600
+Hardware packet2 is : 0X4C00000000E02580
+rvid: 0 
+lifting_factor: 384 
+ncb: 9600 
+tot_llrs_codeblock: 9600 
+base_graph_index: 0 
+filler_bits: 56 
+=======================
+Configuration for deinterleaver module- 
+Hardware packet1 is : 0X4B00000000025804
+QAM_type: 4 
+tot_llrs_codeblock: 9600 
+=======================
+=========================================================
+
+CB index: 22 
+
+PUSCH PDU index: 0 
+UE index: 0 
+CB index in TB: 22 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X4E00000000C828B8
+ip_codeblock_size: 10424 
+base_graph_index: 0 
+lifting_size_index: 50 
+user_id: 0 
+=======================
+Configuration for filler bit remover module- 
+Hardware packet is : 0X4F00000000840038
+no_of_filler_bits: 56 
+msg_block_size: 8448 
+=======================
+Configuration for depuncturing module- 
+Hardware packet1 is : 0X4D000000084020C8
+Hardware packet2 is : 0X4D000000004B7180
+kcb: 8392 
+Kcb: 8448 
+lifting_factor: 384 
+Ncb: 9656 
+=======================
+Configuration for rate dematching module- 
+Hardware packet1 is : 0X4C000000012C0600
+Hardware packet2 is : 0X4C00000000E02580
+rvid: 0 
+lifting_factor: 384 
+ncb: 9600 
+tot_llrs_codeblock: 9600 
+base_graph_index: 0 
+filler_bits: 56 
+=======================
+Configuration for deinterleaver module- 
+Hardware packet1 is : 0X4B00000000025804
+QAM_type: 4 
+tot_llrs_codeblock: 9600 
+=======================
+=========================================================
+
+CB index: 23 
+
+PUSCH PDU index: 0 
+UE index: 0 
+CB index in TB: 23 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X4E00000000C828B8
+ip_codeblock_size: 10424 
+base_graph_index: 0 
+lifting_size_index: 50 
+user_id: 0 
+=======================
+Configuration for filler bit remover module- 
+Hardware packet is : 0X4F00000000840038
+no_of_filler_bits: 56 
+msg_block_size: 8448 
+=======================
+Configuration for depuncturing module- 
+Hardware packet1 is : 0X4D000000084020C8
+Hardware packet2 is : 0X4D000000004B7180
+kcb: 8392 
+Kcb: 8448 
+lifting_factor: 384 
+Ncb: 9656 
+=======================
+Configuration for rate dematching module- 
+Hardware packet1 is : 0X4C000000012C0600
+Hardware packet2 is : 0X4C00000000E02580
+rvid: 0 
+lifting_factor: 384 
+ncb: 9600 
+tot_llrs_codeblock: 9600 
+base_graph_index: 0 
+filler_bits: 56 
+=======================
+Configuration for deinterleaver module- 
+Hardware packet1 is : 0X4B00000000025804
+QAM_type: 4 
+tot_llrs_codeblock: 9600 
+=======================
+=========================================================
+
+CB index: 33 
+
+PUSCH PDU index: 1 
+UE index: 1 
+CB index in TB: 9 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X4E00000001C82940
+ip_codeblock_size: 10560 
+base_graph_index: 0 
+lifting_size_index: 50 
+user_id: 1 
+=======================
+Configuration for filler bit remover module- 
+Hardware packet is : 0X4F000000008401B0
+no_of_filler_bits: 432 
+msg_block_size: 8448 
+=======================
+Configuration for depuncturing module- 
+Hardware packet1 is : 0X4D00000008401F50
+Hardware packet2 is : 0X4D000000004C8180
+kcb: 8016 
+Kcb: 8448 
+lifting_factor: 384 
+Ncb: 9792 
+=======================
+Configuration for rate dematching module- 
+Hardware packet1 is : 0X4C00000001248600
+Hardware packet2 is : 0X4C00000006C02490
+rvid: 0 
+lifting_factor: 384 
+ncb: 9360 
+tot_llrs_codeblock: 9360 
+base_graph_index: 0 
+filler_bits: 432 
+=======================
+Configuration for deinterleaver module- 
+Hardware packet1 is : 0X4B00000000024903
+QAM_type: 3 
+tot_llrs_codeblock: 9360 
+=======================
+=========================================================
+
+
+
+=====================User Interleaver configurations=======================
+
+Hardware packet for write config is : 0X430000000000001C
+Number of write configs are : 28
+
+Hardware packet for write config is : 0X4300000000000258
+Start address for write number 1 is : 0
+End address for write number 1 is : 600
+
+Hardware packet for write config is : 0X430000001C201E78
+Start address for write number 2 is : 7200
+End address for write number 2 is : 7800
+
+Hardware packet for write config is : 0X43000000025804B0
+Start address for write number 3 is : 600
+End address for write number 3 is : 1200
+
+Hardware packet for write config is : 0X430000001E7820D0
+Start address for write number 4 is : 7800
+End address for write number 4 is : 8400
+
+Hardware packet for write config is : 0X4300000004B004B0
+Start address for write number 5 is : 1200
+End address for write number 5 is : 1200
+
+Hardware packet for write config is : 0X4300000020D021FC
+Start address for write number 6 is : 8400
+End address for write number 6 is : 8700
+
+Hardware packet for write config is : 0X4300000004B004B0
+Start address for write number 7 is : 1200
+End address for write number 7 is : 1200
+
+Hardware packet for write config is : 0X4300000021FC2328
+Start address for write number 8 is : 8700
+End address for write number 8 is : 9000
+
+Hardware packet for write config is : 0X4300000004B00708
+Start address for write number 9 is : 1200
+End address for write number 9 is : 1800
+
+Hardware packet for write config is : 0X4300000023282580
+Start address for write number 10 is : 9000
+End address for write number 10 is : 9600
+
+Hardware packet for write config is : 0X4300000007080960
+Start address for write number 11 is : 1800
+End address for write number 11 is : 2400
+
+Hardware packet for write config is : 0X43000000258027D8
+Start address for write number 12 is : 9600
+End address for write number 12 is : 10200
+
+Hardware packet for write config is : 0X4300000009600BB8
+Start address for write number 13 is : 2400
+End address for write number 13 is : 3000
+
+Hardware packet for write config is : 0X4300000027D82A30
+Start address for write number 14 is : 10200
+End address for write number 14 is : 10800
+
+Hardware packet for write config is : 0X430000000BB80E10
+Start address for write number 15 is : 3000
+End address for write number 15 is : 3600
+
+Hardware packet for write config is : 0X430000002A302C88
+Start address for write number 16 is : 10800
+End address for write number 16 is : 11400
+
+Hardware packet for write config is : 0X430000000E101068
+Start address for write number 17 is : 3600
+End address for write number 17 is : 4200
+
+Hardware packet for write config is : 0X430000002C882EE0
+Start address for write number 18 is : 11400
+End address for write number 18 is : 12000
+
+Hardware packet for write config is : 0X43000000106812C0
+Start address for write number 19 is : 4200
+End address for write number 19 is : 4800
+
+Hardware packet for write config is : 0X430000002EE03138
+Start address for write number 20 is : 12000
+End address for write number 20 is : 12600
+
+Hardware packet for write config is : 0X4300000012C01518
+Start address for write number 21 is : 4800
+End address for write number 21 is : 5400
+
+Hardware packet for write config is : 0X4300000031383390
+Start address for write number 22 is : 12600
+End address for write number 22 is : 13200
+
+Hardware packet for write config is : 0X4300000015181770
+Start address for write number 23 is : 5400
+End address for write number 23 is : 6000
+
+Hardware packet for write config is : 0X43000000339035E8
+Start address for write number 24 is : 13200
+End address for write number 24 is : 13800
+
+Hardware packet for write config is : 0X43000000177019C8
+Start address for write number 25 is : 6000
+End address for write number 25 is : 6600
+
+Hardware packet for write config is : 0X4300000035E83840
+Start address for write number 26 is : 13800
+End address for write number 26 is : 14400
+
+Hardware packet for write config is : 0X4300000019C81C20
+Start address for write number 27 is : 6600
+End address for write number 27 is : 7200
+
+Hardware packet for write config is : 0X4300000038403A98
+Start address for write number 28 is : 14400
+End address for write number 28 is : 15000
+
+Hardware packet 1 for read config is : 0X440000000000012C
+Hardware packet 2 for read config is : 0X44000000000004B0
+Start address for read for CB number 0 in layer 0 is : 0
+Number address for read for CB number 0 in layer 0 is : 300
+Write counter for read for CB number 0 in layer 0 is : 1200
+
+Hardware packet 1 for read config is : 0X450000000000012C
+Hardware packet 2 for read config is : 0X45000000000004B0
+Start address for read for CB number 0 in layer 1 is : 0
+Number address for read for CB number 0 in layer 1 is : 300
+Write counter for read for CB number 0 in layer 1 is : 1200
+
+Hardware packet 1 for read config is : 0X460000000000012C
+Hardware packet 2 for read config is : 0X46000000000004B0
+Start address for read for CB number 0 in layer 2 is : 0
+Number address for read for CB number 0 in layer 2 is : 300
+Write counter for read for CB number 0 in layer 2 is : 1200
+
+Hardware packet 1 for read config is : 0X470000000000012C
+Hardware packet 2 for read config is : 0X47000000000004B0
+Start address for read for CB number 0 in layer 3 is : 0
+Number address for read for CB number 0 in layer 3 is : 300
+Write counter for read for CB number 0 in layer 3 is : 1200
+
+Hardware packet 1 for layer-demap is : 0X4800000000001111
+Hardware packet 2 for layer-demap is : 0X4800000000000000
+Hardware packet 3 for layer-demap is : 0X4800000000000000
+Layer Map for CB number 0 in layer 0 is : 1
+Layer Map for CB number 0 in layer 1 is : 1
+Layer Map for CB number 0 in layer 2 is : 1
+Layer Map for CB number 0 in layer 3 is : 1
+Layer Map for CB number 0 in layer 4 is : 0
+Layer Map for CB number 0 in layer 5 is : 0
+Layer Map for CB number 0 in layer 6 is : 0
+Layer Map for CB number 0 in layer 7 is : 0
+User ID for CB number 0 in layer 0 is : 0
+User ID for CB number 0 in layer 1 is : 0
+User ID for CB number 0 in layer 2 is : 0
+User ID for CB number 0 in layer 3 is : 0
+User ID for CB number 0 in layer 4 is : 0
+User ID for CB number 0 in layer 5 is : 0
+User ID for CB number 0 in layer 6 is : 0
+User ID for CB number 0 in layer 7 is : 0
+
+Hardware packet 1 for read config is : 0X44000000012C012C
+Hardware packet 2 for read config is : 0X4400000000000960
+Start address for read for CB number 1 in layer 0 is : 300
+Number address for read for CB number 1 in layer 0 is : 300
+Write counter for read for CB number 1 in layer 0 is : 2400
+
+Hardware packet 1 for read config is : 0X45000000012C012C
+Hardware packet 2 for read config is : 0X4500000000000960
+Start address for read for CB number 1 in layer 1 is : 300
+Number address for read for CB number 1 in layer 1 is : 300
+Write counter for read for CB number 1 in layer 1 is : 2400
+
+Hardware packet 1 for read config is : 0X46000000012C012C
+Hardware packet 2 for read config is : 0X4600000000000960
+Start address for read for CB number 1 in layer 2 is : 300
+Number address for read for CB number 1 in layer 2 is : 300
+Write counter for read for CB number 1 in layer 2 is : 2400
+
+Hardware packet 1 for read config is : 0X47000000012C012C
+Hardware packet 2 for read config is : 0X4700000000000960
+Start address for read for CB number 1 in layer 3 is : 300
+Number address for read for CB number 1 in layer 3 is : 300
+Write counter for read for CB number 1 in layer 3 is : 2400
+
+Hardware packet 1 for layer-demap is : 0X4800000000001111
+Hardware packet 2 for layer-demap is : 0X4800000000000000
+Hardware packet 3 for layer-demap is : 0X4800000000000000
+Layer Map for CB number 1 in layer 0 is : 1
+Layer Map for CB number 1 in layer 1 is : 1
+Layer Map for CB number 1 in layer 2 is : 1
+Layer Map for CB number 1 in layer 3 is : 1
+Layer Map for CB number 1 in layer 4 is : 0
+Layer Map for CB number 1 in layer 5 is : 0
+Layer Map for CB number 1 in layer 6 is : 0
+Layer Map for CB number 1 in layer 7 is : 0
+User ID for CB number 1 in layer 0 is : 0
+User ID for CB number 1 in layer 1 is : 0
+User ID for CB number 1 in layer 2 is : 0
+User ID for CB number 1 in layer 3 is : 0
+User ID for CB number 1 in layer 4 is : 0
+User ID for CB number 1 in layer 5 is : 0
+User ID for CB number 1 in layer 6 is : 0
+User ID for CB number 1 in layer 7 is : 0
+
+Hardware packet 1 for read config is : 0X440000001C20030C
+Hardware packet 2 for read config is : 0X4400000000000960
+Start address for read for CB number 2 in layer 0 is : 7200
+Number address for read for CB number 2 in layer 0 is : 780
+Write counter for read for CB number 2 in layer 0 is : 2400
+
+Hardware packet 1 for read config is : 0X450000001C20030C
+Hardware packet 2 for read config is : 0X4500000000000960
+Start address for read for CB number 2 in layer 1 is : 7200
+Number address for read for CB number 2 in layer 1 is : 780
+Write counter for read for CB number 2 in layer 1 is : 2400
+
+Hardware packet 1 for read config is : 0X460000001C20030C
+Hardware packet 2 for read config is : 0X4600000000000960
+Start address for DISCARD read for CB number 2 in layer 2 is : 7200
+Number address for DISCARD read for CB number 2 in layer 2 is : 780
+Write counter for DISCARD read for CB number 2 in layer 2 is : 2400
+
+Hardware packet 1 for read config is : 0X470000001C20030C
+Hardware packet 2 for read config is : 0X4700000000000960
+Start address for DISCARD read for CB number 2 in layer 3 is : 7200
+Number address for DISCARD read for CB number 2 in layer 3 is : 780
+Write counter for DISCARD read for CB number 2 in layer 3 is : 2400
+
+Hardware packet 1 for layer-demap is : 0X4800000000000011
+Hardware packet 2 for layer-demap is : 0X4800000000000041
+Hardware packet 3 for layer-demap is : 0X4800000000000000
+Layer Map for CB number 2 in layer 0 is : 1
+Layer Map for CB number 2 in layer 1 is : 1
+Layer Map for CB number 2 in layer 2 is : 0
+Layer Map for CB number 2 in layer 3 is : 0
+Layer Map for CB number 2 in layer 4 is : 0
+Layer Map for CB number 2 in layer 5 is : 0
+Layer Map for CB number 2 in layer 6 is : 0
+Layer Map for CB number 2 in layer 7 is : 0
+User ID for CB number 2 in layer 0 is : 1
+User ID for CB number 2 in layer 1 is : 1
+User ID for CB number 2 in layer 2 is : 0
+User ID for CB number 2 in layer 3 is : 0
+User ID for CB number 2 in layer 4 is : 0
+User ID for CB number 2 in layer 5 is : 0
+User ID for CB number 2 in layer 6 is : 0
+User ID for CB number 2 in layer 7 is : 0
+
+Hardware packet 1 for read config is : 0X440000000258012C
+Hardware packet 2 for read config is : 0X4400000000000960
+Start address for read for CB number 3 in layer 0 is : 600
+Number address for read for CB number 3 in layer 0 is : 300
+Write counter for read for CB number 3 in layer 0 is : 2400
+
+Hardware packet 1 for read config is : 0X450000000258012C
+Hardware packet 2 for read config is : 0X4500000000000960
+Start address for read for CB number 3 in layer 1 is : 600
+Number address for read for CB number 3 in layer 1 is : 300
+Write counter for read for CB number 3 in layer 1 is : 2400
+
+Hardware packet 1 for read config is : 0X460000000258012C
+Hardware packet 2 for read config is : 0X4600000000000960
+Start address for read for CB number 3 in layer 2 is : 600
+Number address for read for CB number 3 in layer 2 is : 300
+Write counter for read for CB number 3 in layer 2 is : 2400
+
+Hardware packet 1 for read config is : 0X470000000258012C
+Hardware packet 2 for read config is : 0X4700000000000960
+Start address for read for CB number 3 in layer 3 is : 600
+Number address for read for CB number 3 in layer 3 is : 300
+Write counter for read for CB number 3 in layer 3 is : 2400
+
+Hardware packet 1 for layer-demap is : 0X4800000000001111
+Hardware packet 2 for layer-demap is : 0X4800000000000000
+Hardware packet 3 for layer-demap is : 0X4800000000000000
+Layer Map for CB number 3 in layer 0 is : 1
+Layer Map for CB number 3 in layer 1 is : 1
+Layer Map for CB number 3 in layer 2 is : 1
+Layer Map for CB number 3 in layer 3 is : 1
+Layer Map for CB number 3 in layer 4 is : 0
+Layer Map for CB number 3 in layer 5 is : 0
+Layer Map for CB number 3 in layer 6 is : 0
+Layer Map for CB number 3 in layer 7 is : 0
+User ID for CB number 3 in layer 0 is : 0
+User ID for CB number 3 in layer 1 is : 0
+User ID for CB number 3 in layer 2 is : 0
+User ID for CB number 3 in layer 3 is : 0
+User ID for CB number 3 in layer 4 is : 0
+User ID for CB number 3 in layer 5 is : 0
+User ID for CB number 3 in layer 6 is : 0
+User ID for CB number 3 in layer 7 is : 0
+
+Hardware packet 1 for read config is : 0X440000001F2C030C
+Hardware packet 2 for read config is : 0X4400000000000BB8
+Start address for read for CB number 4 in layer 0 is : 7980
+Number address for read for CB number 4 in layer 0 is : 780
+Write counter for read for CB number 4 in layer 0 is : 3000
+
+Hardware packet 1 for read config is : 0X450000001F2C030C
+Hardware packet 2 for read config is : 0X4500000000000BB8
+Start address for read for CB number 4 in layer 1 is : 7980
+Number address for read for CB number 4 in layer 1 is : 780
+Write counter for read for CB number 4 in layer 1 is : 3000
+
+Hardware packet 1 for read config is : 0X460000001F2C030C
+Hardware packet 2 for read config is : 0X4600000000000BB8
+Start address for DISCARD read for CB number 4 in layer 2 is : 7980
+Number address for DISCARD read for CB number 4 in layer 2 is : 780
+Write counter for DISCARD read for CB number 4 in layer 2 is : 3000
+
+Hardware packet 1 for read config is : 0X470000001F2C030C
+Hardware packet 2 for read config is : 0X4700000000000BB8
+Start address for DISCARD read for CB number 4 in layer 3 is : 7980
+Number address for DISCARD read for CB number 4 in layer 3 is : 780
+Write counter for DISCARD read for CB number 4 in layer 3 is : 3000
+
+Hardware packet 1 for layer-demap is : 0X4800000000000011
+Hardware packet 2 for layer-demap is : 0X4800000000000041
+Hardware packet 3 for layer-demap is : 0X4800000000000000
+Layer Map for CB number 4 in layer 0 is : 1
+Layer Map for CB number 4 in layer 1 is : 1
+Layer Map for CB number 4 in layer 2 is : 0
+Layer Map for CB number 4 in layer 3 is : 0
+Layer Map for CB number 4 in layer 4 is : 0
+Layer Map for CB number 4 in layer 5 is : 0
+Layer Map for CB number 4 in layer 6 is : 0
+Layer Map for CB number 4 in layer 7 is : 0
+User ID for CB number 4 in layer 0 is : 1
+User ID for CB number 4 in layer 1 is : 1
+User ID for CB number 4 in layer 2 is : 0
+User ID for CB number 4 in layer 3 is : 0
+User ID for CB number 4 in layer 4 is : 0
+User ID for CB number 4 in layer 5 is : 0
+User ID for CB number 4 in layer 6 is : 0
+User ID for CB number 4 in layer 7 is : 0
+
+Hardware packet 1 for read config is : 0X440000000384012C
+Hardware packet 2 for read config is : 0X4400000000001068
+Start address for read for CB number 5 in layer 0 is : 900
+Number address for read for CB number 5 in layer 0 is : 300
+Write counter for read for CB number 5 in layer 0 is : 4200
+
+Hardware packet 1 for read config is : 0X450000000384012C
+Hardware packet 2 for read config is : 0X4500000000001068
+Start address for read for CB number 5 in layer 1 is : 900
+Number address for read for CB number 5 in layer 1 is : 300
+Write counter for read for CB number 5 in layer 1 is : 4200
+
+Hardware packet 1 for read config is : 0X460000000384012C
+Hardware packet 2 for read config is : 0X4600000000001068
+Start address for read for CB number 5 in layer 2 is : 900
+Number address for read for CB number 5 in layer 2 is : 300
+Write counter for read for CB number 5 in layer 2 is : 4200
+
+Hardware packet 1 for read config is : 0X470000000384012C
+Hardware packet 2 for read config is : 0X4700000000001068
+Start address for read for CB number 5 in layer 3 is : 900
+Number address for read for CB number 5 in layer 3 is : 300
+Write counter for read for CB number 5 in layer 3 is : 4200
+
+Hardware packet 1 for layer-demap is : 0X4800000000001111
+Hardware packet 2 for layer-demap is : 0X4800000000000000
+Hardware packet 3 for layer-demap is : 0X4800000000000000
+Layer Map for CB number 5 in layer 0 is : 1
+Layer Map for CB number 5 in layer 1 is : 1
+Layer Map for CB number 5 in layer 2 is : 1
+Layer Map for CB number 5 in layer 3 is : 1
+Layer Map for CB number 5 in layer 4 is : 0
+Layer Map for CB number 5 in layer 5 is : 0
+Layer Map for CB number 5 in layer 6 is : 0
+Layer Map for CB number 5 in layer 7 is : 0
+User ID for CB number 5 in layer 0 is : 0
+User ID for CB number 5 in layer 1 is : 0
+User ID for CB number 5 in layer 2 is : 0
+User ID for CB number 5 in layer 3 is : 0
+User ID for CB number 5 in layer 4 is : 0
+User ID for CB number 5 in layer 5 is : 0
+User ID for CB number 5 in layer 6 is : 0
+User ID for CB number 5 in layer 7 is : 0
+
+Hardware packet 1 for read config is : 0X4400000004B0012C
+Hardware packet 2 for read config is : 0X4400000000001068
+Start address for read for CB number 6 in layer 0 is : 1200
+Number address for read for CB number 6 in layer 0 is : 300
+Write counter for read for CB number 6 in layer 0 is : 4200
+
+Hardware packet 1 for read config is : 0X4500000004B0012C
+Hardware packet 2 for read config is : 0X4500000000001068
+Start address for read for CB number 6 in layer 1 is : 1200
+Number address for read for CB number 6 in layer 1 is : 300
+Write counter for read for CB number 6 in layer 1 is : 4200
+
+Hardware packet 1 for read config is : 0X4600000004B0012C
+Hardware packet 2 for read config is : 0X4600000000001068
+Start address for read for CB number 6 in layer 2 is : 1200
+Number address for read for CB number 6 in layer 2 is : 300
+Write counter for read for CB number 6 in layer 2 is : 4200
+
+Hardware packet 1 for read config is : 0X4700000004B0012C
+Hardware packet 2 for read config is : 0X4700000000001068
+Start address for read for CB number 6 in layer 3 is : 1200
+Number address for read for CB number 6 in layer 3 is : 300
+Write counter for read for CB number 6 in layer 3 is : 4200
+
+Hardware packet 1 for layer-demap is : 0X4800000000001111
+Hardware packet 2 for layer-demap is : 0X4800000000000000
+Hardware packet 3 for layer-demap is : 0X4800000000000000
+Layer Map for CB number 6 in layer 0 is : 1
+Layer Map for CB number 6 in layer 1 is : 1
+Layer Map for CB number 6 in layer 2 is : 1
+Layer Map for CB number 6 in layer 3 is : 1
+Layer Map for CB number 6 in layer 4 is : 0
+Layer Map for CB number 6 in layer 5 is : 0
+Layer Map for CB number 6 in layer 6 is : 0
+Layer Map for CB number 6 in layer 7 is : 0
+User ID for CB number 6 in layer 0 is : 0
+User ID for CB number 6 in layer 1 is : 0
+User ID for CB number 6 in layer 2 is : 0
+User ID for CB number 6 in layer 3 is : 0
+User ID for CB number 6 in layer 4 is : 0
+User ID for CB number 6 in layer 5 is : 0
+User ID for CB number 6 in layer 6 is : 0
+User ID for CB number 6 in layer 7 is : 0
+
+Hardware packet 1 for read config is : 0X440000002238030C
+Hardware packet 2 for read config is : 0X4400000000001068
+Start address for read for CB number 7 in layer 0 is : 8760
+Number address for read for CB number 7 in layer 0 is : 780
+Write counter for read for CB number 7 in layer 0 is : 4200
+
+Hardware packet 1 for read config is : 0X450000002238030C
+Hardware packet 2 for read config is : 0X4500000000001068
+Start address for read for CB number 7 in layer 1 is : 8760
+Number address for read for CB number 7 in layer 1 is : 780
+Write counter for read for CB number 7 in layer 1 is : 4200
+
+Hardware packet 1 for read config is : 0X460000002238030C
+Hardware packet 2 for read config is : 0X4600000000001068
+Start address for DISCARD read for CB number 7 in layer 2 is : 8760
+Number address for DISCARD read for CB number 7 in layer 2 is : 780
+Write counter for DISCARD read for CB number 7 in layer 2 is : 4200
+
+Hardware packet 1 for read config is : 0X470000002238030C
+Hardware packet 2 for read config is : 0X4700000000001068
+Start address for DISCARD read for CB number 7 in layer 3 is : 8760
+Number address for DISCARD read for CB number 7 in layer 3 is : 780
+Write counter for DISCARD read for CB number 7 in layer 3 is : 4200
+
+Hardware packet 1 for layer-demap is : 0X4800000000000011
+Hardware packet 2 for layer-demap is : 0X4800000000000041
+Hardware packet 3 for layer-demap is : 0X4800000000000000
+Layer Map for CB number 7 in layer 0 is : 1
+Layer Map for CB number 7 in layer 1 is : 1
+Layer Map for CB number 7 in layer 2 is : 0
+Layer Map for CB number 7 in layer 3 is : 0
+Layer Map for CB number 7 in layer 4 is : 0
+Layer Map for CB number 7 in layer 5 is : 0
+Layer Map for CB number 7 in layer 6 is : 0
+Layer Map for CB number 7 in layer 7 is : 0
+User ID for CB number 7 in layer 0 is : 1
+User ID for CB number 7 in layer 1 is : 1
+User ID for CB number 7 in layer 2 is : 0
+User ID for CB number 7 in layer 3 is : 0
+User ID for CB number 7 in layer 4 is : 0
+User ID for CB number 7 in layer 5 is : 0
+User ID for CB number 7 in layer 6 is : 0
+User ID for CB number 7 in layer 7 is : 0
+
+Hardware packet 1 for read config is : 0X4400000005DC012C
+Hardware packet 2 for read config is : 0X4400000000001518
+Start address for read for CB number 8 in layer 0 is : 1500
+Number address for read for CB number 8 in layer 0 is : 300
+Write counter for read for CB number 8 in layer 0 is : 5400
+
+Hardware packet 1 for read config is : 0X4500000005DC012C
+Hardware packet 2 for read config is : 0X4500000000001518
+Start address for read for CB number 8 in layer 1 is : 1500
+Number address for read for CB number 8 in layer 1 is : 300
+Write counter for read for CB number 8 in layer 1 is : 5400
+
+Hardware packet 1 for read config is : 0X4600000005DC012C
+Hardware packet 2 for read config is : 0X4600000000001518
+Start address for read for CB number 8 in layer 2 is : 1500
+Number address for read for CB number 8 in layer 2 is : 300
+Write counter for read for CB number 8 in layer 2 is : 5400
+
+Hardware packet 1 for read config is : 0X4700000005DC012C
+Hardware packet 2 for read config is : 0X4700000000001518
+Start address for read for CB number 8 in layer 3 is : 1500
+Number address for read for CB number 8 in layer 3 is : 300
+Write counter for read for CB number 8 in layer 3 is : 5400
+
+Hardware packet 1 for layer-demap is : 0X4800000000001111
+Hardware packet 2 for layer-demap is : 0X4800000000000000
+Hardware packet 3 for layer-demap is : 0X4800000000000000
+Layer Map for CB number 8 in layer 0 is : 1
+Layer Map for CB number 8 in layer 1 is : 1
+Layer Map for CB number 8 in layer 2 is : 1
+Layer Map for CB number 8 in layer 3 is : 1
+Layer Map for CB number 8 in layer 4 is : 0
+Layer Map for CB number 8 in layer 5 is : 0
+Layer Map for CB number 8 in layer 6 is : 0
+Layer Map for CB number 8 in layer 7 is : 0
+User ID for CB number 8 in layer 0 is : 0
+User ID for CB number 8 in layer 1 is : 0
+User ID for CB number 8 in layer 2 is : 0
+User ID for CB number 8 in layer 3 is : 0
+User ID for CB number 8 in layer 4 is : 0
+User ID for CB number 8 in layer 5 is : 0
+User ID for CB number 8 in layer 6 is : 0
+User ID for CB number 8 in layer 7 is : 0
+
+Hardware packet 1 for read config is : 0X440000000708012C
+Hardware packet 2 for read config is : 0X4400000000001518
+Start address for read for CB number 9 in layer 0 is : 1800
+Number address for read for CB number 9 in layer 0 is : 300
+Write counter for read for CB number 9 in layer 0 is : 5400
+
+Hardware packet 1 for read config is : 0X450000000708012C
+Hardware packet 2 for read config is : 0X4500000000001518
+Start address for read for CB number 9 in layer 1 is : 1800
+Number address for read for CB number 9 in layer 1 is : 300
+Write counter for read for CB number 9 in layer 1 is : 5400
+
+Hardware packet 1 for read config is : 0X460000000708012C
+Hardware packet 2 for read config is : 0X4600000000001518
+Start address for read for CB number 9 in layer 2 is : 1800
+Number address for read for CB number 9 in layer 2 is : 300
+Write counter for read for CB number 9 in layer 2 is : 5400
+
+Hardware packet 1 for read config is : 0X470000000708012C
+Hardware packet 2 for read config is : 0X4700000000001518
+Start address for read for CB number 9 in layer 3 is : 1800
+Number address for read for CB number 9 in layer 3 is : 300
+Write counter for read for CB number 9 in layer 3 is : 5400
+
+Hardware packet 1 for layer-demap is : 0X4800000000001111
+Hardware packet 2 for layer-demap is : 0X4800000000000000
+Hardware packet 3 for layer-demap is : 0X4800000000000000
+Layer Map for CB number 9 in layer 0 is : 1
+Layer Map for CB number 9 in layer 1 is : 1
+Layer Map for CB number 9 in layer 2 is : 1
+Layer Map for CB number 9 in layer 3 is : 1
+Layer Map for CB number 9 in layer 4 is : 0
+Layer Map for CB number 9 in layer 5 is : 0
+Layer Map for CB number 9 in layer 6 is : 0
+Layer Map for CB number 9 in layer 7 is : 0
+User ID for CB number 9 in layer 0 is : 0
+User ID for CB number 9 in layer 1 is : 0
+User ID for CB number 9 in layer 2 is : 0
+User ID for CB number 9 in layer 3 is : 0
+User ID for CB number 9 in layer 4 is : 0
+User ID for CB number 9 in layer 5 is : 0
+User ID for CB number 9 in layer 6 is : 0
+User ID for CB number 9 in layer 7 is : 0
+
+Hardware packet 1 for read config is : 0X440000000834012C
+Hardware packet 2 for read config is : 0X44000000000019C8
+Start address for read for CB number 10 in layer 0 is : 2100
+Number address for read for CB number 10 in layer 0 is : 300
+Write counter for read for CB number 10 in layer 0 is : 6600
+
+Hardware packet 1 for read config is : 0X450000000834012C
+Hardware packet 2 for read config is : 0X45000000000019C8
+Start address for read for CB number 10 in layer 1 is : 2100
+Number address for read for CB number 10 in layer 1 is : 300
+Write counter for read for CB number 10 in layer 1 is : 6600
+
+Hardware packet 1 for read config is : 0X460000000834012C
+Hardware packet 2 for read config is : 0X46000000000019C8
+Start address for read for CB number 10 in layer 2 is : 2100
+Number address for read for CB number 10 in layer 2 is : 300
+Write counter for read for CB number 10 in layer 2 is : 6600
+
+Hardware packet 1 for read config is : 0X470000000834012C
+Hardware packet 2 for read config is : 0X47000000000019C8
+Start address for read for CB number 10 in layer 3 is : 2100
+Number address for read for CB number 10 in layer 3 is : 300
+Write counter for read for CB number 10 in layer 3 is : 6600
+
+Hardware packet 1 for layer-demap is : 0X4800000000001111
+Hardware packet 2 for layer-demap is : 0X4800000000000000
+Hardware packet 3 for layer-demap is : 0X4800000000000000
+Layer Map for CB number 10 in layer 0 is : 1
+Layer Map for CB number 10 in layer 1 is : 1
+Layer Map for CB number 10 in layer 2 is : 1
+Layer Map for CB number 10 in layer 3 is : 1
+Layer Map for CB number 10 in layer 4 is : 0
+Layer Map for CB number 10 in layer 5 is : 0
+Layer Map for CB number 10 in layer 6 is : 0
+Layer Map for CB number 10 in layer 7 is : 0
+User ID for CB number 10 in layer 0 is : 0
+User ID for CB number 10 in layer 1 is : 0
+User ID for CB number 10 in layer 2 is : 0
+User ID for CB number 10 in layer 3 is : 0
+User ID for CB number 10 in layer 4 is : 0
+User ID for CB number 10 in layer 5 is : 0
+User ID for CB number 10 in layer 6 is : 0
+User ID for CB number 10 in layer 7 is : 0
+
+Hardware packet 1 for read config is : 0X440000002544030C
+Hardware packet 2 for read config is : 0X44000000000019C8
+Start address for read for CB number 11 in layer 0 is : 9540
+Number address for read for CB number 11 in layer 0 is : 780
+Write counter for read for CB number 11 in layer 0 is : 6600
+
+Hardware packet 1 for read config is : 0X450000002544030C
+Hardware packet 2 for read config is : 0X45000000000019C8
+Start address for read for CB number 11 in layer 1 is : 9540
+Number address for read for CB number 11 in layer 1 is : 780
+Write counter for read for CB number 11 in layer 1 is : 6600
+
+Hardware packet 1 for read config is : 0X460000002544030C
+Hardware packet 2 for read config is : 0X46000000000019C8
+Start address for DISCARD read for CB number 11 in layer 2 is : 9540
+Number address for DISCARD read for CB number 11 in layer 2 is : 780
+Write counter for DISCARD read for CB number 11 in layer 2 is : 6600
+
+Hardware packet 1 for read config is : 0X470000002544030C
+Hardware packet 2 for read config is : 0X47000000000019C8
+Start address for DISCARD read for CB number 11 in layer 3 is : 9540
+Number address for DISCARD read for CB number 11 in layer 3 is : 780
+Write counter for DISCARD read for CB number 11 in layer 3 is : 6600
+
+Hardware packet 1 for layer-demap is : 0X4800000000000011
+Hardware packet 2 for layer-demap is : 0X4800000000000041
+Hardware packet 3 for layer-demap is : 0X4800000000000000
+Layer Map for CB number 11 in layer 0 is : 1
+Layer Map for CB number 11 in layer 1 is : 1
+Layer Map for CB number 11 in layer 2 is : 0
+Layer Map for CB number 11 in layer 3 is : 0
+Layer Map for CB number 11 in layer 4 is : 0
+Layer Map for CB number 11 in layer 5 is : 0
+Layer Map for CB number 11 in layer 6 is : 0
+Layer Map for CB number 11 in layer 7 is : 0
+User ID for CB number 11 in layer 0 is : 1
+User ID for CB number 11 in layer 1 is : 1
+User ID for CB number 11 in layer 2 is : 0
+User ID for CB number 11 in layer 3 is : 0
+User ID for CB number 11 in layer 4 is : 0
+User ID for CB number 11 in layer 5 is : 0
+User ID for CB number 11 in layer 6 is : 0
+User ID for CB number 11 in layer 7 is : 0
+
+Hardware packet 1 for read config is : 0X440000000960012C
+Hardware packet 2 for read config is : 0X44000000000019C8
+Start address for read for CB number 12 in layer 0 is : 2400
+Number address for read for CB number 12 in layer 0 is : 300
+Write counter for read for CB number 12 in layer 0 is : 6600
+
+Hardware packet 1 for read config is : 0X450000000960012C
+Hardware packet 2 for read config is : 0X45000000000019C8
+Start address for read for CB number 12 in layer 1 is : 2400
+Number address for read for CB number 12 in layer 1 is : 300
+Write counter for read for CB number 12 in layer 1 is : 6600
+
+Hardware packet 1 for read config is : 0X460000000960012C
+Hardware packet 2 for read config is : 0X46000000000019C8
+Start address for read for CB number 12 in layer 2 is : 2400
+Number address for read for CB number 12 in layer 2 is : 300
+Write counter for read for CB number 12 in layer 2 is : 6600
+
+Hardware packet 1 for read config is : 0X470000000960012C
+Hardware packet 2 for read config is : 0X47000000000019C8
+Start address for read for CB number 12 in layer 3 is : 2400
+Number address for read for CB number 12 in layer 3 is : 300
+Write counter for read for CB number 12 in layer 3 is : 6600
+
+Hardware packet 1 for layer-demap is : 0X4800000000001111
+Hardware packet 2 for layer-demap is : 0X4800000000000000
+Hardware packet 3 for layer-demap is : 0X4800000000000000
+Layer Map for CB number 12 in layer 0 is : 1
+Layer Map for CB number 12 in layer 1 is : 1
+Layer Map for CB number 12 in layer 2 is : 1
+Layer Map for CB number 12 in layer 3 is : 1
+Layer Map for CB number 12 in layer 4 is : 0
+Layer Map for CB number 12 in layer 5 is : 0
+Layer Map for CB number 12 in layer 6 is : 0
+Layer Map for CB number 12 in layer 7 is : 0
+User ID for CB number 12 in layer 0 is : 0
+User ID for CB number 12 in layer 1 is : 0
+User ID for CB number 12 in layer 2 is : 0
+User ID for CB number 12 in layer 3 is : 0
+User ID for CB number 12 in layer 4 is : 0
+User ID for CB number 12 in layer 5 is : 0
+User ID for CB number 12 in layer 6 is : 0
+User ID for CB number 12 in layer 7 is : 0
+
+Hardware packet 1 for read config is : 0X440000000A8C012C
+Hardware packet 2 for read config is : 0X4400000000001E78
+Start address for read for CB number 13 in layer 0 is : 2700
+Number address for read for CB number 13 in layer 0 is : 300
+Write counter for read for CB number 13 in layer 0 is : 7800
+
+Hardware packet 1 for read config is : 0X450000000A8C012C
+Hardware packet 2 for read config is : 0X4500000000001E78
+Start address for read for CB number 13 in layer 1 is : 2700
+Number address for read for CB number 13 in layer 1 is : 300
+Write counter for read for CB number 13 in layer 1 is : 7800
+
+Hardware packet 1 for read config is : 0X460000000A8C012C
+Hardware packet 2 for read config is : 0X4600000000001E78
+Start address for read for CB number 13 in layer 2 is : 2700
+Number address for read for CB number 13 in layer 2 is : 300
+Write counter for read for CB number 13 in layer 2 is : 7800
+
+Hardware packet 1 for read config is : 0X470000000A8C012C
+Hardware packet 2 for read config is : 0X4700000000001E78
+Start address for read for CB number 13 in layer 3 is : 2700
+Number address for read for CB number 13 in layer 3 is : 300
+Write counter for read for CB number 13 in layer 3 is : 7800
+
+Hardware packet 1 for layer-demap is : 0X4800000000001111
+Hardware packet 2 for layer-demap is : 0X4800000000000000
+Hardware packet 3 for layer-demap is : 0X4800000000000000
+Layer Map for CB number 13 in layer 0 is : 1
+Layer Map for CB number 13 in layer 1 is : 1
+Layer Map for CB number 13 in layer 2 is : 1
+Layer Map for CB number 13 in layer 3 is : 1
+Layer Map for CB number 13 in layer 4 is : 0
+Layer Map for CB number 13 in layer 5 is : 0
+Layer Map for CB number 13 in layer 6 is : 0
+Layer Map for CB number 13 in layer 7 is : 0
+User ID for CB number 13 in layer 0 is : 0
+User ID for CB number 13 in layer 1 is : 0
+User ID for CB number 13 in layer 2 is : 0
+User ID for CB number 13 in layer 3 is : 0
+User ID for CB number 13 in layer 4 is : 0
+User ID for CB number 13 in layer 5 is : 0
+User ID for CB number 13 in layer 6 is : 0
+User ID for CB number 13 in layer 7 is : 0
+
+Hardware packet 1 for read config is : 0X440000000BB8012C
+Hardware packet 2 for read config is : 0X4400000000001E78
+Start address for read for CB number 14 in layer 0 is : 3000
+Number address for read for CB number 14 in layer 0 is : 300
+Write counter for read for CB number 14 in layer 0 is : 7800
+
+Hardware packet 1 for read config is : 0X450000000BB8012C
+Hardware packet 2 for read config is : 0X4500000000001E78
+Start address for read for CB number 14 in layer 1 is : 3000
+Number address for read for CB number 14 in layer 1 is : 300
+Write counter for read for CB number 14 in layer 1 is : 7800
+
+Hardware packet 1 for read config is : 0X460000000BB8012C
+Hardware packet 2 for read config is : 0X4600000000001E78
+Start address for read for CB number 14 in layer 2 is : 3000
+Number address for read for CB number 14 in layer 2 is : 300
+Write counter for read for CB number 14 in layer 2 is : 7800
+
+Hardware packet 1 for read config is : 0X470000000BB8012C
+Hardware packet 2 for read config is : 0X4700000000001E78
+Start address for read for CB number 14 in layer 3 is : 3000
+Number address for read for CB number 14 in layer 3 is : 300
+Write counter for read for CB number 14 in layer 3 is : 7800
+
+Hardware packet 1 for layer-demap is : 0X4800000000001111
+Hardware packet 2 for layer-demap is : 0X4800000000000000
+Hardware packet 3 for layer-demap is : 0X4800000000000000
+Layer Map for CB number 14 in layer 0 is : 1
+Layer Map for CB number 14 in layer 1 is : 1
+Layer Map for CB number 14 in layer 2 is : 1
+Layer Map for CB number 14 in layer 3 is : 1
+Layer Map for CB number 14 in layer 4 is : 0
+Layer Map for CB number 14 in layer 5 is : 0
+Layer Map for CB number 14 in layer 6 is : 0
+Layer Map for CB number 14 in layer 7 is : 0
+User ID for CB number 14 in layer 0 is : 0
+User ID for CB number 14 in layer 1 is : 0
+User ID for CB number 14 in layer 2 is : 0
+User ID for CB number 14 in layer 3 is : 0
+User ID for CB number 14 in layer 4 is : 0
+User ID for CB number 14 in layer 5 is : 0
+User ID for CB number 14 in layer 6 is : 0
+User ID for CB number 14 in layer 7 is : 0
+
+Hardware packet 1 for read config is : 0X440000002850030C
+Hardware packet 2 for read config is : 0X4400000000001E78
+Start address for read for CB number 15 in layer 0 is : 10320
+Number address for read for CB number 15 in layer 0 is : 780
+Write counter for read for CB number 15 in layer 0 is : 7800
+
+Hardware packet 1 for read config is : 0X450000002850030C
+Hardware packet 2 for read config is : 0X4500000000001E78
+Start address for read for CB number 15 in layer 1 is : 10320
+Number address for read for CB number 15 in layer 1 is : 780
+Write counter for read for CB number 15 in layer 1 is : 7800
+
+Hardware packet 1 for read config is : 0X460000002850030C
+Hardware packet 2 for read config is : 0X4600000000001E78
+Start address for DISCARD read for CB number 15 in layer 2 is : 10320
+Number address for DISCARD read for CB number 15 in layer 2 is : 780
+Write counter for DISCARD read for CB number 15 in layer 2 is : 7800
+
+Hardware packet 1 for read config is : 0X470000002850030C
+Hardware packet 2 for read config is : 0X4700000000001E78
+Start address for DISCARD read for CB number 15 in layer 3 is : 10320
+Number address for DISCARD read for CB number 15 in layer 3 is : 780
+Write counter for DISCARD read for CB number 15 in layer 3 is : 7800
+
+Hardware packet 1 for layer-demap is : 0X4800000000000011
+Hardware packet 2 for layer-demap is : 0X4800000000000041
+Hardware packet 3 for layer-demap is : 0X4800000000000000
+Layer Map for CB number 15 in layer 0 is : 1
+Layer Map for CB number 15 in layer 1 is : 1
+Layer Map for CB number 15 in layer 2 is : 0
+Layer Map for CB number 15 in layer 3 is : 0
+Layer Map for CB number 15 in layer 4 is : 0
+Layer Map for CB number 15 in layer 5 is : 0
+Layer Map for CB number 15 in layer 6 is : 0
+Layer Map for CB number 15 in layer 7 is : 0
+User ID for CB number 15 in layer 0 is : 1
+User ID for CB number 15 in layer 1 is : 1
+User ID for CB number 15 in layer 2 is : 0
+User ID for CB number 15 in layer 3 is : 0
+User ID for CB number 15 in layer 4 is : 0
+User ID for CB number 15 in layer 5 is : 0
+User ID for CB number 15 in layer 6 is : 0
+User ID for CB number 15 in layer 7 is : 0
+
+Hardware packet 1 for read config is : 0X440000000CE4012C
+Hardware packet 2 for read config is : 0X4400000000002328
+Start address for read for CB number 16 in layer 0 is : 3300
+Number address for read for CB number 16 in layer 0 is : 300
+Write counter for read for CB number 16 in layer 0 is : 9000
+
+Hardware packet 1 for read config is : 0X450000000CE4012C
+Hardware packet 2 for read config is : 0X4500000000002328
+Start address for read for CB number 16 in layer 1 is : 3300
+Number address for read for CB number 16 in layer 1 is : 300
+Write counter for read for CB number 16 in layer 1 is : 9000
+
+Hardware packet 1 for read config is : 0X460000000CE4012C
+Hardware packet 2 for read config is : 0X4600000000002328
+Start address for read for CB number 16 in layer 2 is : 3300
+Number address for read for CB number 16 in layer 2 is : 300
+Write counter for read for CB number 16 in layer 2 is : 9000
+
+Hardware packet 1 for read config is : 0X470000000CE4012C
+Hardware packet 2 for read config is : 0X4700000000002328
+Start address for read for CB number 16 in layer 3 is : 3300
+Number address for read for CB number 16 in layer 3 is : 300
+Write counter for read for CB number 16 in layer 3 is : 9000
+
+Hardware packet 1 for layer-demap is : 0X4800000000001111
+Hardware packet 2 for layer-demap is : 0X4800000000000000
+Hardware packet 3 for layer-demap is : 0X4800000000000000
+Layer Map for CB number 16 in layer 0 is : 1
+Layer Map for CB number 16 in layer 1 is : 1
+Layer Map for CB number 16 in layer 2 is : 1
+Layer Map for CB number 16 in layer 3 is : 1
+Layer Map for CB number 16 in layer 4 is : 0
+Layer Map for CB number 16 in layer 5 is : 0
+Layer Map for CB number 16 in layer 6 is : 0
+Layer Map for CB number 16 in layer 7 is : 0
+User ID for CB number 16 in layer 0 is : 0
+User ID for CB number 16 in layer 1 is : 0
+User ID for CB number 16 in layer 2 is : 0
+User ID for CB number 16 in layer 3 is : 0
+User ID for CB number 16 in layer 4 is : 0
+User ID for CB number 16 in layer 5 is : 0
+User ID for CB number 16 in layer 6 is : 0
+User ID for CB number 16 in layer 7 is : 0
+
+Hardware packet 1 for read config is : 0X440000000E10012C
+Hardware packet 2 for read config is : 0X4400000000002328
+Start address for read for CB number 17 in layer 0 is : 3600
+Number address for read for CB number 17 in layer 0 is : 300
+Write counter for read for CB number 17 in layer 0 is : 9000
+
+Hardware packet 1 for read config is : 0X450000000E10012C
+Hardware packet 2 for read config is : 0X4500000000002328
+Start address for read for CB number 17 in layer 1 is : 3600
+Number address for read for CB number 17 in layer 1 is : 300
+Write counter for read for CB number 17 in layer 1 is : 9000
+
+Hardware packet 1 for read config is : 0X460000000E10012C
+Hardware packet 2 for read config is : 0X4600000000002328
+Start address for read for CB number 17 in layer 2 is : 3600
+Number address for read for CB number 17 in layer 2 is : 300
+Write counter for read for CB number 17 in layer 2 is : 9000
+
+Hardware packet 1 for read config is : 0X470000000E10012C
+Hardware packet 2 for read config is : 0X4700000000002328
+Start address for read for CB number 17 in layer 3 is : 3600
+Number address for read for CB number 17 in layer 3 is : 300
+Write counter for read for CB number 17 in layer 3 is : 9000
+
+Hardware packet 1 for layer-demap is : 0X4800000000001111
+Hardware packet 2 for layer-demap is : 0X4800000000000000
+Hardware packet 3 for layer-demap is : 0X4800000000000000
+Layer Map for CB number 17 in layer 0 is : 1
+Layer Map for CB number 17 in layer 1 is : 1
+Layer Map for CB number 17 in layer 2 is : 1
+Layer Map for CB number 17 in layer 3 is : 1
+Layer Map for CB number 17 in layer 4 is : 0
+Layer Map for CB number 17 in layer 5 is : 0
+Layer Map for CB number 17 in layer 6 is : 0
+Layer Map for CB number 17 in layer 7 is : 0
+User ID for CB number 17 in layer 0 is : 0
+User ID for CB number 17 in layer 1 is : 0
+User ID for CB number 17 in layer 2 is : 0
+User ID for CB number 17 in layer 3 is : 0
+User ID for CB number 17 in layer 4 is : 0
+User ID for CB number 17 in layer 5 is : 0
+User ID for CB number 17 in layer 6 is : 0
+User ID for CB number 17 in layer 7 is : 0
+
+Hardware packet 1 for read config is : 0X440000002B5C030C
+Hardware packet 2 for read config is : 0X4400000000002328
+Start address for read for CB number 18 in layer 0 is : 11100
+Number address for read for CB number 18 in layer 0 is : 780
+Write counter for read for CB number 18 in layer 0 is : 9000
+
+Hardware packet 1 for read config is : 0X450000002B5C030C
+Hardware packet 2 for read config is : 0X4500000000002328
+Start address for read for CB number 18 in layer 1 is : 11100
+Number address for read for CB number 18 in layer 1 is : 780
+Write counter for read for CB number 18 in layer 1 is : 9000
+
+Hardware packet 1 for read config is : 0X460000002B5C030C
+Hardware packet 2 for read config is : 0X4600000000002328
+Start address for DISCARD read for CB number 18 in layer 2 is : 11100
+Number address for DISCARD read for CB number 18 in layer 2 is : 780
+Write counter for DISCARD read for CB number 18 in layer 2 is : 9000
+
+Hardware packet 1 for read config is : 0X470000002B5C030C
+Hardware packet 2 for read config is : 0X4700000000002328
+Start address for DISCARD read for CB number 18 in layer 3 is : 11100
+Number address for DISCARD read for CB number 18 in layer 3 is : 780
+Write counter for DISCARD read for CB number 18 in layer 3 is : 9000
+
+Hardware packet 1 for layer-demap is : 0X4800000000000011
+Hardware packet 2 for layer-demap is : 0X4800000000000041
+Hardware packet 3 for layer-demap is : 0X4800000000000000
+Layer Map for CB number 18 in layer 0 is : 1
+Layer Map for CB number 18 in layer 1 is : 1
+Layer Map for CB number 18 in layer 2 is : 0
+Layer Map for CB number 18 in layer 3 is : 0
+Layer Map for CB number 18 in layer 4 is : 0
+Layer Map for CB number 18 in layer 5 is : 0
+Layer Map for CB number 18 in layer 6 is : 0
+Layer Map for CB number 18 in layer 7 is : 0
+User ID for CB number 18 in layer 0 is : 1
+User ID for CB number 18 in layer 1 is : 1
+User ID for CB number 18 in layer 2 is : 0
+User ID for CB number 18 in layer 3 is : 0
+User ID for CB number 18 in layer 4 is : 0
+User ID for CB number 18 in layer 5 is : 0
+User ID for CB number 18 in layer 6 is : 0
+User ID for CB number 18 in layer 7 is : 0
+
+Hardware packet 1 for read config is : 0X440000000F3C012C
+Hardware packet 2 for read config is : 0X44000000000027D8
+Start address for read for CB number 19 in layer 0 is : 3900
+Number address for read for CB number 19 in layer 0 is : 300
+Write counter for read for CB number 19 in layer 0 is : 10200
+
+Hardware packet 1 for read config is : 0X450000000F3C012C
+Hardware packet 2 for read config is : 0X45000000000027D8
+Start address for read for CB number 19 in layer 1 is : 3900
+Number address for read for CB number 19 in layer 1 is : 300
+Write counter for read for CB number 19 in layer 1 is : 10200
+
+Hardware packet 1 for read config is : 0X460000000F3C012C
+Hardware packet 2 for read config is : 0X46000000000027D8
+Start address for read for CB number 19 in layer 2 is : 3900
+Number address for read for CB number 19 in layer 2 is : 300
+Write counter for read for CB number 19 in layer 2 is : 10200
+
+Hardware packet 1 for read config is : 0X470000000F3C012C
+Hardware packet 2 for read config is : 0X47000000000027D8
+Start address for read for CB number 19 in layer 3 is : 3900
+Number address for read for CB number 19 in layer 3 is : 300
+Write counter for read for CB number 19 in layer 3 is : 10200
+
+Hardware packet 1 for layer-demap is : 0X4800000000001111
+Hardware packet 2 for layer-demap is : 0X4800000000000000
+Hardware packet 3 for layer-demap is : 0X4800000000000000
+Layer Map for CB number 19 in layer 0 is : 1
+Layer Map for CB number 19 in layer 1 is : 1
+Layer Map for CB number 19 in layer 2 is : 1
+Layer Map for CB number 19 in layer 3 is : 1
+Layer Map for CB number 19 in layer 4 is : 0
+Layer Map for CB number 19 in layer 5 is : 0
+Layer Map for CB number 19 in layer 6 is : 0
+Layer Map for CB number 19 in layer 7 is : 0
+User ID for CB number 19 in layer 0 is : 0
+User ID for CB number 19 in layer 1 is : 0
+User ID for CB number 19 in layer 2 is : 0
+User ID for CB number 19 in layer 3 is : 0
+User ID for CB number 19 in layer 4 is : 0
+User ID for CB number 19 in layer 5 is : 0
+User ID for CB number 19 in layer 6 is : 0
+User ID for CB number 19 in layer 7 is : 0
+
+Hardware packet 1 for read config is : 0X440000001068012C
+Hardware packet 2 for read config is : 0X44000000000027D8
+Start address for read for CB number 20 in layer 0 is : 4200
+Number address for read for CB number 20 in layer 0 is : 300
+Write counter for read for CB number 20 in layer 0 is : 10200
+
+Hardware packet 1 for read config is : 0X450000001068012C
+Hardware packet 2 for read config is : 0X45000000000027D8
+Start address for read for CB number 20 in layer 1 is : 4200
+Number address for read for CB number 20 in layer 1 is : 300
+Write counter for read for CB number 20 in layer 1 is : 10200
+
+Hardware packet 1 for read config is : 0X460000001068012C
+Hardware packet 2 for read config is : 0X46000000000027D8
+Start address for read for CB number 20 in layer 2 is : 4200
+Number address for read for CB number 20 in layer 2 is : 300
+Write counter for read for CB number 20 in layer 2 is : 10200
+
+Hardware packet 1 for read config is : 0X470000001068012C
+Hardware packet 2 for read config is : 0X47000000000027D8
+Start address for read for CB number 20 in layer 3 is : 4200
+Number address for read for CB number 20 in layer 3 is : 300
+Write counter for read for CB number 20 in layer 3 is : 10200
+
+Hardware packet 1 for layer-demap is : 0X4800000000001111
+Hardware packet 2 for layer-demap is : 0X4800000000000000
+Hardware packet 3 for layer-demap is : 0X4800000000000000
+Layer Map for CB number 20 in layer 0 is : 1
+Layer Map for CB number 20 in layer 1 is : 1
+Layer Map for CB number 20 in layer 2 is : 1
+Layer Map for CB number 20 in layer 3 is : 1
+Layer Map for CB number 20 in layer 4 is : 0
+Layer Map for CB number 20 in layer 5 is : 0
+Layer Map for CB number 20 in layer 6 is : 0
+Layer Map for CB number 20 in layer 7 is : 0
+User ID for CB number 20 in layer 0 is : 0
+User ID for CB number 20 in layer 1 is : 0
+User ID for CB number 20 in layer 2 is : 0
+User ID for CB number 20 in layer 3 is : 0
+User ID for CB number 20 in layer 4 is : 0
+User ID for CB number 20 in layer 5 is : 0
+User ID for CB number 20 in layer 6 is : 0
+User ID for CB number 20 in layer 7 is : 0
+
+Hardware packet 1 for read config is : 0X440000001194012C
+Hardware packet 2 for read config is : 0X4400000000002C88
+Start address for read for CB number 21 in layer 0 is : 4500
+Number address for read for CB number 21 in layer 0 is : 300
+Write counter for read for CB number 21 in layer 0 is : 11400
+
+Hardware packet 1 for read config is : 0X450000001194012C
+Hardware packet 2 for read config is : 0X4500000000002C88
+Start address for read for CB number 21 in layer 1 is : 4500
+Number address for read for CB number 21 in layer 1 is : 300
+Write counter for read for CB number 21 in layer 1 is : 11400
+
+Hardware packet 1 for read config is : 0X460000001194012C
+Hardware packet 2 for read config is : 0X4600000000002C88
+Start address for read for CB number 21 in layer 2 is : 4500
+Number address for read for CB number 21 in layer 2 is : 300
+Write counter for read for CB number 21 in layer 2 is : 11400
+
+Hardware packet 1 for read config is : 0X470000001194012C
+Hardware packet 2 for read config is : 0X4700000000002C88
+Start address for read for CB number 21 in layer 3 is : 4500
+Number address for read for CB number 21 in layer 3 is : 300
+Write counter for read for CB number 21 in layer 3 is : 11400
+
+Hardware packet 1 for layer-demap is : 0X4800000000001111
+Hardware packet 2 for layer-demap is : 0X4800000000000000
+Hardware packet 3 for layer-demap is : 0X4800000000000000
+Layer Map for CB number 21 in layer 0 is : 1
+Layer Map for CB number 21 in layer 1 is : 1
+Layer Map for CB number 21 in layer 2 is : 1
+Layer Map for CB number 21 in layer 3 is : 1
+Layer Map for CB number 21 in layer 4 is : 0
+Layer Map for CB number 21 in layer 5 is : 0
+Layer Map for CB number 21 in layer 6 is : 0
+Layer Map for CB number 21 in layer 7 is : 0
+User ID for CB number 21 in layer 0 is : 0
+User ID for CB number 21 in layer 1 is : 0
+User ID for CB number 21 in layer 2 is : 0
+User ID for CB number 21 in layer 3 is : 0
+User ID for CB number 21 in layer 4 is : 0
+User ID for CB number 21 in layer 5 is : 0
+User ID for CB number 21 in layer 6 is : 0
+User ID for CB number 21 in layer 7 is : 0
+
+Hardware packet 1 for read config is : 0X440000002E68030C
+Hardware packet 2 for read config is : 0X4400000000002C88
+Start address for read for CB number 22 in layer 0 is : 11880
+Number address for read for CB number 22 in layer 0 is : 780
+Write counter for read for CB number 22 in layer 0 is : 11400
+
+Hardware packet 1 for read config is : 0X450000002E68030C
+Hardware packet 2 for read config is : 0X4500000000002C88
+Start address for read for CB number 22 in layer 1 is : 11880
+Number address for read for CB number 22 in layer 1 is : 780
+Write counter for read for CB number 22 in layer 1 is : 11400
+
+Hardware packet 1 for read config is : 0X460000002E68030C
+Hardware packet 2 for read config is : 0X4600000000002C88
+Start address for DISCARD read for CB number 22 in layer 2 is : 11880
+Number address for DISCARD read for CB number 22 in layer 2 is : 780
+Write counter for DISCARD read for CB number 22 in layer 2 is : 11400
+
+Hardware packet 1 for read config is : 0X470000002E68030C
+Hardware packet 2 for read config is : 0X4700000000002C88
+Start address for DISCARD read for CB number 22 in layer 3 is : 11880
+Number address for DISCARD read for CB number 22 in layer 3 is : 780
+Write counter for DISCARD read for CB number 22 in layer 3 is : 11400
+
+Hardware packet 1 for layer-demap is : 0X4800000000000011
+Hardware packet 2 for layer-demap is : 0X4800000000000041
+Hardware packet 3 for layer-demap is : 0X4800000000000000
+Layer Map for CB number 22 in layer 0 is : 1
+Layer Map for CB number 22 in layer 1 is : 1
+Layer Map for CB number 22 in layer 2 is : 0
+Layer Map for CB number 22 in layer 3 is : 0
+Layer Map for CB number 22 in layer 4 is : 0
+Layer Map for CB number 22 in layer 5 is : 0
+Layer Map for CB number 22 in layer 6 is : 0
+Layer Map for CB number 22 in layer 7 is : 0
+User ID for CB number 22 in layer 0 is : 1
+User ID for CB number 22 in layer 1 is : 1
+User ID for CB number 22 in layer 2 is : 0
+User ID for CB number 22 in layer 3 is : 0
+User ID for CB number 22 in layer 4 is : 0
+User ID for CB number 22 in layer 5 is : 0
+User ID for CB number 22 in layer 6 is : 0
+User ID for CB number 22 in layer 7 is : 0
+
+Hardware packet 1 for read config is : 0X4400000012C0012C
+Hardware packet 2 for read config is : 0X4400000000002C88
+Start address for read for CB number 23 in layer 0 is : 4800
+Number address for read for CB number 23 in layer 0 is : 300
+Write counter for read for CB number 23 in layer 0 is : 11400
+
+Hardware packet 1 for read config is : 0X4500000012C0012C
+Hardware packet 2 for read config is : 0X4500000000002C88
+Start address for read for CB number 23 in layer 1 is : 4800
+Number address for read for CB number 23 in layer 1 is : 300
+Write counter for read for CB number 23 in layer 1 is : 11400
+
+Hardware packet 1 for read config is : 0X4600000012C0012C
+Hardware packet 2 for read config is : 0X4600000000002C88
+Start address for read for CB number 23 in layer 2 is : 4800
+Number address for read for CB number 23 in layer 2 is : 300
+Write counter for read for CB number 23 in layer 2 is : 11400
+
+Hardware packet 1 for read config is : 0X4700000012C0012C
+Hardware packet 2 for read config is : 0X4700000000002C88
+Start address for read for CB number 23 in layer 3 is : 4800
+Number address for read for CB number 23 in layer 3 is : 300
+Write counter for read for CB number 23 in layer 3 is : 11400
+
+Hardware packet 1 for layer-demap is : 0X4800000000001111
+Hardware packet 2 for layer-demap is : 0X4800000000000000
+Hardware packet 3 for layer-demap is : 0X4800000000000000
+Layer Map for CB number 23 in layer 0 is : 1
+Layer Map for CB number 23 in layer 1 is : 1
+Layer Map for CB number 23 in layer 2 is : 1
+Layer Map for CB number 23 in layer 3 is : 1
+Layer Map for CB number 23 in layer 4 is : 0
+Layer Map for CB number 23 in layer 5 is : 0
+Layer Map for CB number 23 in layer 6 is : 0
+Layer Map for CB number 23 in layer 7 is : 0
+User ID for CB number 23 in layer 0 is : 0
+User ID for CB number 23 in layer 1 is : 0
+User ID for CB number 23 in layer 2 is : 0
+User ID for CB number 23 in layer 3 is : 0
+User ID for CB number 23 in layer 4 is : 0
+User ID for CB number 23 in layer 5 is : 0
+User ID for CB number 23 in layer 6 is : 0
+User ID for CB number 23 in layer 7 is : 0
+
+Hardware packet 1 for read config is : 0X4400000013EC012C
+Hardware packet 2 for read config is : 0X4400000000003138
+Start address for read for CB number 24 in layer 0 is : 5100
+Number address for read for CB number 24 in layer 0 is : 300
+Write counter for read for CB number 24 in layer 0 is : 12600
+
+Hardware packet 1 for read config is : 0X4500000013EC012C
+Hardware packet 2 for read config is : 0X4500000000003138
+Start address for read for CB number 24 in layer 1 is : 5100
+Number address for read for CB number 24 in layer 1 is : 300
+Write counter for read for CB number 24 in layer 1 is : 12600
+
+Hardware packet 1 for read config is : 0X4600000013EC012C
+Hardware packet 2 for read config is : 0X4600000000003138
+Start address for read for CB number 24 in layer 2 is : 5100
+Number address for read for CB number 24 in layer 2 is : 300
+Write counter for read for CB number 24 in layer 2 is : 12600
+
+Hardware packet 1 for read config is : 0X4700000013EC012C
+Hardware packet 2 for read config is : 0X4700000000003138
+Start address for read for CB number 24 in layer 3 is : 5100
+Number address for read for CB number 24 in layer 3 is : 300
+Write counter for read for CB number 24 in layer 3 is : 12600
+
+Hardware packet 1 for layer-demap is : 0X4800000000001111
+Hardware packet 2 for layer-demap is : 0X4800000000000000
+Hardware packet 3 for layer-demap is : 0X4800000000000000
+Layer Map for CB number 24 in layer 0 is : 1
+Layer Map for CB number 24 in layer 1 is : 1
+Layer Map for CB number 24 in layer 2 is : 1
+Layer Map for CB number 24 in layer 3 is : 1
+Layer Map for CB number 24 in layer 4 is : 0
+Layer Map for CB number 24 in layer 5 is : 0
+Layer Map for CB number 24 in layer 6 is : 0
+Layer Map for CB number 24 in layer 7 is : 0
+User ID for CB number 24 in layer 0 is : 0
+User ID for CB number 24 in layer 1 is : 0
+User ID for CB number 24 in layer 2 is : 0
+User ID for CB number 24 in layer 3 is : 0
+User ID for CB number 24 in layer 4 is : 0
+User ID for CB number 24 in layer 5 is : 0
+User ID for CB number 24 in layer 6 is : 0
+User ID for CB number 24 in layer 7 is : 0
+
+Hardware packet 1 for read config is : 0X440000003174030C
+Hardware packet 2 for read config is : 0X4400000000003138
+Start address for read for CB number 25 in layer 0 is : 12660
+Number address for read for CB number 25 in layer 0 is : 780
+Write counter for read for CB number 25 in layer 0 is : 12600
+
+Hardware packet 1 for read config is : 0X450000003174030C
+Hardware packet 2 for read config is : 0X4500000000003138
+Start address for read for CB number 25 in layer 1 is : 12660
+Number address for read for CB number 25 in layer 1 is : 780
+Write counter for read for CB number 25 in layer 1 is : 12600
+
+Hardware packet 1 for read config is : 0X460000003174030C
+Hardware packet 2 for read config is : 0X4600000000003138
+Start address for DISCARD read for CB number 25 in layer 2 is : 12660
+Number address for DISCARD read for CB number 25 in layer 2 is : 780
+Write counter for DISCARD read for CB number 25 in layer 2 is : 12600
+
+Hardware packet 1 for read config is : 0X470000003174030C
+Hardware packet 2 for read config is : 0X4700000000003138
+Start address for DISCARD read for CB number 25 in layer 3 is : 12660
+Number address for DISCARD read for CB number 25 in layer 3 is : 780
+Write counter for DISCARD read for CB number 25 in layer 3 is : 12600
+
+Hardware packet 1 for layer-demap is : 0X4800000000000011
+Hardware packet 2 for layer-demap is : 0X4800000000000041
+Hardware packet 3 for layer-demap is : 0X4800000000000000
+Layer Map for CB number 25 in layer 0 is : 1
+Layer Map for CB number 25 in layer 1 is : 1
+Layer Map for CB number 25 in layer 2 is : 0
+Layer Map for CB number 25 in layer 3 is : 0
+Layer Map for CB number 25 in layer 4 is : 0
+Layer Map for CB number 25 in layer 5 is : 0
+Layer Map for CB number 25 in layer 6 is : 0
+Layer Map for CB number 25 in layer 7 is : 0
+User ID for CB number 25 in layer 0 is : 1
+User ID for CB number 25 in layer 1 is : 1
+User ID for CB number 25 in layer 2 is : 0
+User ID for CB number 25 in layer 3 is : 0
+User ID for CB number 25 in layer 4 is : 0
+User ID for CB number 25 in layer 5 is : 0
+User ID for CB number 25 in layer 6 is : 0
+User ID for CB number 25 in layer 7 is : 0
+
+Hardware packet 1 for read config is : 0X440000001518012C
+Hardware packet 2 for read config is : 0X4400000000003138
+Start address for read for CB number 26 in layer 0 is : 5400
+Number address for read for CB number 26 in layer 0 is : 300
+Write counter for read for CB number 26 in layer 0 is : 12600
+
+Hardware packet 1 for read config is : 0X450000001518012C
+Hardware packet 2 for read config is : 0X4500000000003138
+Start address for read for CB number 26 in layer 1 is : 5400
+Number address for read for CB number 26 in layer 1 is : 300
+Write counter for read for CB number 26 in layer 1 is : 12600
+
+Hardware packet 1 for read config is : 0X460000001518012C
+Hardware packet 2 for read config is : 0X4600000000003138
+Start address for read for CB number 26 in layer 2 is : 5400
+Number address for read for CB number 26 in layer 2 is : 300
+Write counter for read for CB number 26 in layer 2 is : 12600
+
+Hardware packet 1 for read config is : 0X470000001518012C
+Hardware packet 2 for read config is : 0X4700000000003138
+Start address for read for CB number 26 in layer 3 is : 5400
+Number address for read for CB number 26 in layer 3 is : 300
+Write counter for read for CB number 26 in layer 3 is : 12600
+
+Hardware packet 1 for layer-demap is : 0X4800000000001111
+Hardware packet 2 for layer-demap is : 0X4800000000000000
+Hardware packet 3 for layer-demap is : 0X4800000000000000
+Layer Map for CB number 26 in layer 0 is : 1
+Layer Map for CB number 26 in layer 1 is : 1
+Layer Map for CB number 26 in layer 2 is : 1
+Layer Map for CB number 26 in layer 3 is : 1
+Layer Map for CB number 26 in layer 4 is : 0
+Layer Map for CB number 26 in layer 5 is : 0
+Layer Map for CB number 26 in layer 6 is : 0
+Layer Map for CB number 26 in layer 7 is : 0
+User ID for CB number 26 in layer 0 is : 0
+User ID for CB number 26 in layer 1 is : 0
+User ID for CB number 26 in layer 2 is : 0
+User ID for CB number 26 in layer 3 is : 0
+User ID for CB number 26 in layer 4 is : 0
+User ID for CB number 26 in layer 5 is : 0
+User ID for CB number 26 in layer 6 is : 0
+User ID for CB number 26 in layer 7 is : 0
+
+Hardware packet 1 for read config is : 0X440000001644012C
+Hardware packet 2 for read config is : 0X44000000000035E8
+Start address for read for CB number 27 in layer 0 is : 5700
+Number address for read for CB number 27 in layer 0 is : 300
+Write counter for read for CB number 27 in layer 0 is : 13800
+
+Hardware packet 1 for read config is : 0X450000001644012C
+Hardware packet 2 for read config is : 0X45000000000035E8
+Start address for read for CB number 27 in layer 1 is : 5700
+Number address for read for CB number 27 in layer 1 is : 300
+Write counter for read for CB number 27 in layer 1 is : 13800
+
+Hardware packet 1 for read config is : 0X460000001644012C
+Hardware packet 2 for read config is : 0X46000000000035E8
+Start address for read for CB number 27 in layer 2 is : 5700
+Number address for read for CB number 27 in layer 2 is : 300
+Write counter for read for CB number 27 in layer 2 is : 13800
+
+Hardware packet 1 for read config is : 0X470000001644012C
+Hardware packet 2 for read config is : 0X47000000000035E8
+Start address for read for CB number 27 in layer 3 is : 5700
+Number address for read for CB number 27 in layer 3 is : 300
+Write counter for read for CB number 27 in layer 3 is : 13800
+
+Hardware packet 1 for layer-demap is : 0X4800000000001111
+Hardware packet 2 for layer-demap is : 0X4800000000000000
+Hardware packet 3 for layer-demap is : 0X4800000000000000
+Layer Map for CB number 27 in layer 0 is : 1
+Layer Map for CB number 27 in layer 1 is : 1
+Layer Map for CB number 27 in layer 2 is : 1
+Layer Map for CB number 27 in layer 3 is : 1
+Layer Map for CB number 27 in layer 4 is : 0
+Layer Map for CB number 27 in layer 5 is : 0
+Layer Map for CB number 27 in layer 6 is : 0
+Layer Map for CB number 27 in layer 7 is : 0
+User ID for CB number 27 in layer 0 is : 0
+User ID for CB number 27 in layer 1 is : 0
+User ID for CB number 27 in layer 2 is : 0
+User ID for CB number 27 in layer 3 is : 0
+User ID for CB number 27 in layer 4 is : 0
+User ID for CB number 27 in layer 5 is : 0
+User ID for CB number 27 in layer 6 is : 0
+User ID for CB number 27 in layer 7 is : 0
+
+Hardware packet 1 for read config is : 0X440000001770012C
+Hardware packet 2 for read config is : 0X44000000000035E8
+Start address for read for CB number 28 in layer 0 is : 6000
+Number address for read for CB number 28 in layer 0 is : 300
+Write counter for read for CB number 28 in layer 0 is : 13800
+
+Hardware packet 1 for read config is : 0X450000001770012C
+Hardware packet 2 for read config is : 0X45000000000035E8
+Start address for read for CB number 28 in layer 1 is : 6000
+Number address for read for CB number 28 in layer 1 is : 300
+Write counter for read for CB number 28 in layer 1 is : 13800
+
+Hardware packet 1 for read config is : 0X460000001770012C
+Hardware packet 2 for read config is : 0X46000000000035E8
+Start address for read for CB number 28 in layer 2 is : 6000
+Number address for read for CB number 28 in layer 2 is : 300
+Write counter for read for CB number 28 in layer 2 is : 13800
+
+Hardware packet 1 for read config is : 0X470000001770012C
+Hardware packet 2 for read config is : 0X47000000000035E8
+Start address for read for CB number 28 in layer 3 is : 6000
+Number address for read for CB number 28 in layer 3 is : 300
+Write counter for read for CB number 28 in layer 3 is : 13800
+
+Hardware packet 1 for layer-demap is : 0X4800000000001111
+Hardware packet 2 for layer-demap is : 0X4800000000000000
+Hardware packet 3 for layer-demap is : 0X4800000000000000
+Layer Map for CB number 28 in layer 0 is : 1
+Layer Map for CB number 28 in layer 1 is : 1
+Layer Map for CB number 28 in layer 2 is : 1
+Layer Map for CB number 28 in layer 3 is : 1
+Layer Map for CB number 28 in layer 4 is : 0
+Layer Map for CB number 28 in layer 5 is : 0
+Layer Map for CB number 28 in layer 6 is : 0
+Layer Map for CB number 28 in layer 7 is : 0
+User ID for CB number 28 in layer 0 is : 0
+User ID for CB number 28 in layer 1 is : 0
+User ID for CB number 28 in layer 2 is : 0
+User ID for CB number 28 in layer 3 is : 0
+User ID for CB number 28 in layer 4 is : 0
+User ID for CB number 28 in layer 5 is : 0
+User ID for CB number 28 in layer 6 is : 0
+User ID for CB number 28 in layer 7 is : 0
+
+Hardware packet 1 for read config is : 0X440000003480030C
+Hardware packet 2 for read config is : 0X44000000000035E8
+Start address for read for CB number 29 in layer 0 is : 13440
+Number address for read for CB number 29 in layer 0 is : 780
+Write counter for read for CB number 29 in layer 0 is : 13800
+
+Hardware packet 1 for read config is : 0X450000003480030C
+Hardware packet 2 for read config is : 0X45000000000035E8
+Start address for read for CB number 29 in layer 1 is : 13440
+Number address for read for CB number 29 in layer 1 is : 780
+Write counter for read for CB number 29 in layer 1 is : 13800
+
+Hardware packet 1 for read config is : 0X460000003480030C
+Hardware packet 2 for read config is : 0X46000000000035E8
+Start address for DISCARD read for CB number 29 in layer 2 is : 13440
+Number address for DISCARD read for CB number 29 in layer 2 is : 780
+Write counter for DISCARD read for CB number 29 in layer 2 is : 13800
+
+Hardware packet 1 for read config is : 0X470000003480030C
+Hardware packet 2 for read config is : 0X47000000000035E8
+Start address for DISCARD read for CB number 29 in layer 3 is : 13440
+Number address for DISCARD read for CB number 29 in layer 3 is : 780
+Write counter for DISCARD read for CB number 29 in layer 3 is : 13800
+
+Hardware packet 1 for layer-demap is : 0X4800000000000011
+Hardware packet 2 for layer-demap is : 0X4800000000000041
+Hardware packet 3 for layer-demap is : 0X4800000000000000
+Layer Map for CB number 29 in layer 0 is : 1
+Layer Map for CB number 29 in layer 1 is : 1
+Layer Map for CB number 29 in layer 2 is : 0
+Layer Map for CB number 29 in layer 3 is : 0
+Layer Map for CB number 29 in layer 4 is : 0
+Layer Map for CB number 29 in layer 5 is : 0
+Layer Map for CB number 29 in layer 6 is : 0
+Layer Map for CB number 29 in layer 7 is : 0
+User ID for CB number 29 in layer 0 is : 1
+User ID for CB number 29 in layer 1 is : 1
+User ID for CB number 29 in layer 2 is : 0
+User ID for CB number 29 in layer 3 is : 0
+User ID for CB number 29 in layer 4 is : 0
+User ID for CB number 29 in layer 5 is : 0
+User ID for CB number 29 in layer 6 is : 0
+User ID for CB number 29 in layer 7 is : 0
+
+Hardware packet 1 for read config is : 0X44000000189C012C
+Hardware packet 2 for read config is : 0X4400000000003A98
+Start address for read for CB number 30 in layer 0 is : 6300
+Number address for read for CB number 30 in layer 0 is : 300
+Write counter for read for CB number 30 in layer 0 is : 15000
+
+Hardware packet 1 for read config is : 0X45000000189C012C
+Hardware packet 2 for read config is : 0X4500000000003A98
+Start address for read for CB number 30 in layer 1 is : 6300
+Number address for read for CB number 30 in layer 1 is : 300
+Write counter for read for CB number 30 in layer 1 is : 15000
+
+Hardware packet 1 for read config is : 0X46000000189C012C
+Hardware packet 2 for read config is : 0X4600000000003A98
+Start address for read for CB number 30 in layer 2 is : 6300
+Number address for read for CB number 30 in layer 2 is : 300
+Write counter for read for CB number 30 in layer 2 is : 15000
+
+Hardware packet 1 for read config is : 0X47000000189C012C
+Hardware packet 2 for read config is : 0X4700000000003A98
+Start address for read for CB number 30 in layer 3 is : 6300
+Number address for read for CB number 30 in layer 3 is : 300
+Write counter for read for CB number 30 in layer 3 is : 15000
+
+Hardware packet 1 for layer-demap is : 0X4800000000001111
+Hardware packet 2 for layer-demap is : 0X4800000000000000
+Hardware packet 3 for layer-demap is : 0X4800000000000000
+Layer Map for CB number 30 in layer 0 is : 1
+Layer Map for CB number 30 in layer 1 is : 1
+Layer Map for CB number 30 in layer 2 is : 1
+Layer Map for CB number 30 in layer 3 is : 1
+Layer Map for CB number 30 in layer 4 is : 0
+Layer Map for CB number 30 in layer 5 is : 0
+Layer Map for CB number 30 in layer 6 is : 0
+Layer Map for CB number 30 in layer 7 is : 0
+User ID for CB number 30 in layer 0 is : 0
+User ID for CB number 30 in layer 1 is : 0
+User ID for CB number 30 in layer 2 is : 0
+User ID for CB number 30 in layer 3 is : 0
+User ID for CB number 30 in layer 4 is : 0
+User ID for CB number 30 in layer 5 is : 0
+User ID for CB number 30 in layer 6 is : 0
+User ID for CB number 30 in layer 7 is : 0
+
+Hardware packet 1 for read config is : 0X4400000019C8012C
+Hardware packet 2 for read config is : 0X4400000000003A98
+Start address for read for CB number 31 in layer 0 is : 6600
+Number address for read for CB number 31 in layer 0 is : 300
+Write counter for read for CB number 31 in layer 0 is : 15000
+
+Hardware packet 1 for read config is : 0X4500000019C8012C
+Hardware packet 2 for read config is : 0X4500000000003A98
+Start address for read for CB number 31 in layer 1 is : 6600
+Number address for read for CB number 31 in layer 1 is : 300
+Write counter for read for CB number 31 in layer 1 is : 15000
+
+Hardware packet 1 for read config is : 0X4600000019C8012C
+Hardware packet 2 for read config is : 0X4600000000003A98
+Start address for read for CB number 31 in layer 2 is : 6600
+Number address for read for CB number 31 in layer 2 is : 300
+Write counter for read for CB number 31 in layer 2 is : 15000
+
+Hardware packet 1 for read config is : 0X4700000019C8012C
+Hardware packet 2 for read config is : 0X4700000000003A98
+Start address for read for CB number 31 in layer 3 is : 6600
+Number address for read for CB number 31 in layer 3 is : 300
+Write counter for read for CB number 31 in layer 3 is : 15000
+
+Hardware packet 1 for layer-demap is : 0X4800000000001111
+Hardware packet 2 for layer-demap is : 0X4800000000000000
+Hardware packet 3 for layer-demap is : 0X4800000000000000
+Layer Map for CB number 31 in layer 0 is : 1
+Layer Map for CB number 31 in layer 1 is : 1
+Layer Map for CB number 31 in layer 2 is : 1
+Layer Map for CB number 31 in layer 3 is : 1
+Layer Map for CB number 31 in layer 4 is : 0
+Layer Map for CB number 31 in layer 5 is : 0
+Layer Map for CB number 31 in layer 6 is : 0
+Layer Map for CB number 31 in layer 7 is : 0
+User ID for CB number 31 in layer 0 is : 0
+User ID for CB number 31 in layer 1 is : 0
+User ID for CB number 31 in layer 2 is : 0
+User ID for CB number 31 in layer 3 is : 0
+User ID for CB number 31 in layer 4 is : 0
+User ID for CB number 31 in layer 5 is : 0
+User ID for CB number 31 in layer 6 is : 0
+User ID for CB number 31 in layer 7 is : 0
+
+Hardware packet 1 for read config is : 0X440000001AF4012C
+Hardware packet 2 for read config is : 0X4400000000003A98
+Start address for read for CB number 32 in layer 0 is : 6900
+Number address for read for CB number 32 in layer 0 is : 300
+Write counter for read for CB number 32 in layer 0 is : 15000
+
+Hardware packet 1 for read config is : 0X450000001AF4012C
+Hardware packet 2 for read config is : 0X4500000000003A98
+Start address for read for CB number 32 in layer 1 is : 6900
+Number address for read for CB number 32 in layer 1 is : 300
+Write counter for read for CB number 32 in layer 1 is : 15000
+
+Hardware packet 1 for read config is : 0X460000001AF4012C
+Hardware packet 2 for read config is : 0X4600000000003A98
+Start address for read for CB number 32 in layer 2 is : 6900
+Number address for read for CB number 32 in layer 2 is : 300
+Write counter for read for CB number 32 in layer 2 is : 15000
+
+Hardware packet 1 for read config is : 0X470000001AF4012C
+Hardware packet 2 for read config is : 0X4700000000003A98
+Start address for read for CB number 32 in layer 3 is : 6900
+Number address for read for CB number 32 in layer 3 is : 300
+Write counter for read for CB number 32 in layer 3 is : 15000
+
+Hardware packet 1 for layer-demap is : 0X4800000000001111
+Hardware packet 2 for layer-demap is : 0X4800000000000000
+Hardware packet 3 for layer-demap is : 0X4800000000000000
+Layer Map for CB number 32 in layer 0 is : 1
+Layer Map for CB number 32 in layer 1 is : 1
+Layer Map for CB number 32 in layer 2 is : 1
+Layer Map for CB number 32 in layer 3 is : 1
+Layer Map for CB number 32 in layer 4 is : 0
+Layer Map for CB number 32 in layer 5 is : 0
+Layer Map for CB number 32 in layer 6 is : 0
+Layer Map for CB number 32 in layer 7 is : 0
+User ID for CB number 32 in layer 0 is : 0
+User ID for CB number 32 in layer 1 is : 0
+User ID for CB number 32 in layer 2 is : 0
+User ID for CB number 32 in layer 3 is : 0
+User ID for CB number 32 in layer 4 is : 0
+User ID for CB number 32 in layer 5 is : 0
+User ID for CB number 32 in layer 6 is : 0
+User ID for CB number 32 in layer 7 is : 0
+
+Hardware packet 1 for read config is : 0X44000000378C030C
+Hardware packet 2 for read config is : 0X4400000000003A98
+Start address for read for CB number 33 in layer 0 is : 14220
+Number address for read for CB number 33 in layer 0 is : 780
+Write counter for read for CB number 33 in layer 0 is : 15000
+
+Hardware packet 1 for read config is : 0X45000000378C030C
+Hardware packet 2 for read config is : 0X4500000000003A98
+Start address for read for CB number 33 in layer 1 is : 14220
+Number address for read for CB number 33 in layer 1 is : 780
+Write counter for read for CB number 33 in layer 1 is : 15000
+
+Hardware packet 1 for read config is : 0X46000000378C030C
+Hardware packet 2 for read config is : 0X4600000000003A98
+Start address for DISCARD read for CB number 33 in layer 2 is : 14220
+Number address for DISCARD read for CB number 33 in layer 2 is : 780
+Write counter for DISCARD read for CB number 33 in layer 2 is : 15000
+
+Hardware packet 1 for read config is : 0X47000000378C030C
+Hardware packet 2 for read config is : 0X4700000000003A98
+Start address for DISCARD read for CB number 33 in layer 3 is : 14220
+Number address for DISCARD read for CB number 33 in layer 3 is : 780
+Write counter for DISCARD read for CB number 33 in layer 3 is : 15000
+
+Hardware packet 1 for layer-demap is : 0X4800000000000011
+Hardware packet 2 for layer-demap is : 0X4800000000000041
+Hardware packet 3 for layer-demap is : 0X4800000000000000
+Layer Map for CB number 33 in layer 0 is : 1
+Layer Map for CB number 33 in layer 1 is : 1
+Layer Map for CB number 33 in layer 2 is : 0
+Layer Map for CB number 33 in layer 3 is : 0
+Layer Map for CB number 33 in layer 4 is : 0
+Layer Map for CB number 33 in layer 5 is : 0
+Layer Map for CB number 33 in layer 6 is : 0
+Layer Map for CB number 33 in layer 7 is : 0
+User ID for CB number 33 in layer 0 is : 1
+User ID for CB number 33 in layer 1 is : 1
+User ID for CB number 33 in layer 2 is : 0
+User ID for CB number 33 in layer 3 is : 0
+User ID for CB number 33 in layer 4 is : 0
+User ID for CB number 33 in layer 5 is : 0
+User ID for CB number 33 in layer 6 is : 0
+User ID for CB number 33 in layer 7 is : 0
+
+Hardware packet for read config is : 0X4400000000000022
+Total number of read configs for layer 0 are : 34
+
+Hardware packet for read config is : 0X4500000000000022
+Total number of read configs for layer 1 are : 34
+
+Hardware packet for read config is : 0X4600000000000022
+Total number of read configs for layer 2 are : 34
+
+Hardware packet for read config is : 0X4700000000000022
+Total number of read configs for layer 3 are : 34
+
+
+=====================Remaining PUSCH configurations=======================
+Configuration for descrambler module- 
+Hardware packet1 is : 0X4A0000000014015E
+rnti_user0: 350 
+n_id_user0: 20 
+Hardware packet1 is : 0X4A0000000014012C
+rnti_user1: 300 
+n_id_user1: 20 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user2: 0 
+n_id_user2: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user3: 0 
+n_id_user3: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user4: 0 
+n_id_user4: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user5: 0 
+n_id_user5: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user6: 0 
+n_id_user6: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user7: 0 
+n_id_user7: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user8: 0 
+n_id_user8: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user9: 0 
+n_id_user9: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user10: 0 
+n_id_user10: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user11: 0 
+n_id_user11: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user12: 0 
+n_id_user12: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user13: 0 
+n_id_user13: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user14: 0 
+n_id_user14: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user15: 0 
+n_id_user15: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user16: 0 
+n_id_user16: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user17: 0 
+n_id_user17: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user18: 0 
+n_id_user18: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user19: 0 
+n_id_user19: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user20: 0 
+n_id_user20: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user21: 0 
+n_id_user21: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user22: 0 
+n_id_user22: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user23: 0 
+n_id_user23: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user24: 0 
+n_id_user24: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user25: 0 
+n_id_user25: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user26: 0 
+n_id_user26: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user27: 0 
+n_id_user27: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user28: 0 
+n_id_user28: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user29: 0 
+n_id_user29: 0 
+=======================
+Configuration for LLR gen module- 
+Hardware packet1 is : 0X490000000000AD70
+tot_iq_samples_slot: 44400 
+Hardware packet0 is : 0X490000000000001C
+qam_type_user0: 4 
+qam_type_user1: 3 
+qam_type_user2: 0 
+qam_type_user3: 0 
+qam_type_user4: 0 
+qam_type_user5: 0 
+qam_type_user6: 0 
+qam_type_user7: 0 
+qam_type_user8: 0 
+qam_type_user9: 0 
+Hardware packet1 is : 0X4900000000000000
+qam_type_user10: 0 
+qam_type_user11: 0 
+qam_type_user12: 0 
+qam_type_user13: 0 
+qam_type_user14: 0 
+qam_type_user15: 0 
+qam_type_user16: 0 
+qam_type_user17: 0 
+qam_type_user18: 0 
+qam_type_user19: 0 
+Hardware packet2 is : 0X4900000000000000
+qam_type_user20: 0 
+qam_type_user21: 0 
+qam_type_user22: 0 
+qam_type_user23: 0 
+qam_type_user24: 0 
+qam_type_user25: 0 
+qam_type_user26: 0 
+qam_type_user27: 0 
+qam_type_user28: 0 
+qam_type_user29: 0 
+=======================
+
+
+=====================TB and CB CRC configurations=======================
+
+Hardware packet for CB CRC for CB 0 is : 0X5000000001004148
+l1_r is : 72
+l1_k is : 65
+l1_poly_type is : 1
+
+Hardware packet for CB CRC for CB 1 is : 0X5000000001004148
+l1_r is : 72
+l1_k is : 65
+l1_poly_type is : 1
+
+Hardware packet for CB CRC for CB 24 is : 0X5000000001003E50
+l1_r is : 80
+l1_k is : 62
+l1_poly_type is : 1
+
+Hardware packet for CB CRC for CB 2 is : 0X5000000001004148
+l1_r is : 72
+l1_k is : 65
+l1_poly_type is : 1
+
+Hardware packet for CB CRC for CB 25 is : 0X5000000001003E50
+l1_r is : 80
+l1_k is : 62
+l1_poly_type is : 1
+
+Hardware packet for CB CRC for CB 3 is : 0X5000000001004148
+l1_r is : 72
+l1_k is : 65
+l1_poly_type is : 1
+
+Hardware packet for CB CRC for CB 4 is : 0X5000000001004148
+l1_r is : 72
+l1_k is : 65
+l1_poly_type is : 1
+
+Hardware packet for CB CRC for CB 26 is : 0X5000000001003E50
+l1_r is : 80
+l1_k is : 62
+l1_poly_type is : 1
+
+Hardware packet for CB CRC for CB 5 is : 0X5000000001004148
+l1_r is : 72
+l1_k is : 65
+l1_poly_type is : 1
+
+Hardware packet for CB CRC for CB 6 is : 0X5000000001004148
+l1_r is : 72
+l1_k is : 65
+l1_poly_type is : 1
+
+Hardware packet for CB CRC for CB 7 is : 0X5000000001004148
+l1_r is : 72
+l1_k is : 65
+l1_poly_type is : 1
+
+Hardware packet for CB CRC for CB 27 is : 0X5000000001003E50
+l1_r is : 80
+l1_k is : 62
+l1_poly_type is : 1
+
+Hardware packet for CB CRC for CB 8 is : 0X5000000001004148
+l1_r is : 72
+l1_k is : 65
+l1_poly_type is : 1
+
+Hardware packet for CB CRC for CB 9 is : 0X5000000001004148
+l1_r is : 72
+l1_k is : 65
+l1_poly_type is : 1
+
+Hardware packet for CB CRC for CB 10 is : 0X5000000001004148
+l1_r is : 72
+l1_k is : 65
+l1_poly_type is : 1
+
+Hardware packet for CB CRC for CB 28 is : 0X5000000001003E50
+l1_r is : 80
+l1_k is : 62
+l1_poly_type is : 1
+
+Hardware packet for CB CRC for CB 11 is : 0X5000000001004148
+l1_r is : 72
+l1_k is : 65
+l1_poly_type is : 1
+
+Hardware packet for CB CRC for CB 12 is : 0X5000000001004148
+l1_r is : 72
+l1_k is : 65
+l1_poly_type is : 1
+
+Hardware packet for CB CRC for CB 29 is : 0X5000000001003E50
+l1_r is : 80
+l1_k is : 62
+l1_poly_type is : 1
+
+Hardware packet for CB CRC for CB 13 is : 0X5000000001004148
+l1_r is : 72
+l1_k is : 65
+l1_poly_type is : 1
+
+Hardware packet for CB CRC for CB 14 is : 0X5000000001004148
+l1_r is : 72
+l1_k is : 65
+l1_poly_type is : 1
+
+Hardware packet for CB CRC for CB 15 is : 0X5000000001004148
+l1_r is : 72
+l1_k is : 65
+l1_poly_type is : 1
+
+Hardware packet for CB CRC for CB 30 is : 0X5000000001003E50
+l1_r is : 80
+l1_k is : 62
+l1_poly_type is : 1
+
+Hardware packet for CB CRC for CB 16 is : 0X5000000001004148
+l1_r is : 72
+l1_k is : 65
+l1_poly_type is : 1
+
+Hardware packet for CB CRC for CB 17 is : 0X5000000001004148
+l1_r is : 72
+l1_k is : 65
+l1_poly_type is : 1
+
+Hardware packet for CB CRC for CB 31 is : 0X5000000001003E50
+l1_r is : 80
+l1_k is : 62
+l1_poly_type is : 1
+
+Hardware packet for CB CRC for CB 18 is : 0X5000000001004148
+l1_r is : 72
+l1_k is : 65
+l1_poly_type is : 1
+
+Hardware packet for CB CRC for CB 19 is : 0X5000000001004148
+l1_r is : 72
+l1_k is : 65
+l1_poly_type is : 1
+
+Hardware packet for CB CRC for CB 20 is : 0X5000000001004148
+l1_r is : 72
+l1_k is : 65
+l1_poly_type is : 1
+
+Hardware packet for CB CRC for CB 32 is : 0X5000000001003E50
+l1_r is : 80
+l1_k is : 62
+l1_poly_type is : 1
+
+Hardware packet for CB CRC for CB 21 is : 0X5000000001004148
+l1_r is : 72
+l1_k is : 65
+l1_poly_type is : 1
+
+Hardware packet for CB CRC for CB 22 is : 0X5000000001004148
+l1_r is : 72
+l1_k is : 65
+l1_poly_type is : 1
+
+Hardware packet for CB CRC for CB 23 is : 0X5000000001004148
+l1_r is : 72
+l1_k is : 65
+l1_poly_type is : 1
+
+Hardware packet for CB CRC for CB 33 is : 0X5000000001003E50
+l1_r is : 80
+l1_k is : 62
+l1_poly_type is : 1
+
+Hardware packet for TB CRC for user 0 is : 0X5300000000062100
+l1_r is : 0
+l1_k is : 1569
+l1_poly_type is : 0
+
+Hardware packet for TB CRC for user 1 is : 0X5300000000027030
+l1_r is : 48
+l1_k is : 624
+l1_poly_type is : 0
