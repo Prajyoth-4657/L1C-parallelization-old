@@ -1,0 +1,3918 @@
+Total PDU count = 4 
+PUSCH PDU count = 3 
+SRS PDU count = 0 
+PUCCH PDU count = 0 
+PRACH PDU count = 1 
+
+
+===================RE demapper configurations===================
+
+
+Hardware packet for number of configs is : 0X4000000000008C63
+Number of PUSCH/DMRS/PTRS configs are : 3 
+Number of PRACH configs are : 1 
+Number of SRS configs are : 0 
+Number of PUCCH configs are : 0 
+
+==================PUSCH/DMRS/PTRS configs===========================
+
+Hardware packet 1(DMRS) is : 0X4000000080107814
+Hardware packet 2(PUSCH) is : 0X40000000FFEC7814
+Hardware packet 3(PTRS) is : 0X4000000080007814
+Starting RB is : 20 
+Length of RB is : 60 
+PUSCH locations are : 0X3FFB 
+DMRS locations are : 0X0004 
+PTRS locations are : 0X0000 
+Interleaved DMRS is : 1 
+
+Hardware packet 1(DMRS) is : 0X4000000080305050
+Hardware packet 2(PUSCH) is : 0X40000000FFCC5050
+Hardware packet 3(PTRS) is : 0X4000000080005050
+Starting RB is : 80 
+Length of RB is : 40 
+PUSCH locations are : 0X3FF3 
+DMRS locations are : 0X000C 
+PTRS locations are : 0X0000 
+Interleaved DMRS is : 1 
+
+Hardware packet 1(DMRS) is : 0X4000000080306A78
+Hardware packet 2(PUSCH) is : 0X40000000FFCC6A78
+Hardware packet 3(PTRS) is : 0X4000000080006A78
+Starting RB is : 120 
+Length of RB is : 53 
+PUSCH locations are : 0X3FF3 
+DMRS locations are : 0X000C 
+PTRS locations are : 0X0000 
+Interleaved DMRS is : 1 
+
+==================PRACH configs===========================
+
+Hardware packet is : 0X400000003FFC1800
+Starting RB is : 0 
+Number of RB are : 12 
+Time locations are : 0X0FFF 
+
+==================SRS configs===========================
+
+==================PUCCH configs===========================
+
+
+=====================DMRS configurations=======================
+
+Hardware packet1 is : 0X4100000000147814
+Hardware packet2 is : 0X41000000000407D0
+Hardware packet3 is : 0X4100000000048000
+PDU index : 0 
+Starting RB is : 20 
+PRB length is : 60 
+DMRS configuration type is : 1 
+n_scid is : 0 
+The layers which are present are : 0X0001 
+DMRS scrambling ID is : 2000 
+DMRS symbols are : 0X0004 
+The value of l_prime is : 0X0000 
+Slot number in the frame is : 18 
+The reserved REs for TB 0 by DMRS is 720
+
+Hardware packet1 is : 0X4100000000145050
+Hardware packet2 is : 0X41000000000C07D0
+Hardware packet3 is : 0X4100000000048008
+PDU index : 1 
+Starting RB is : 80 
+PRB length is : 40 
+DMRS configuration type is : 1 
+n_scid is : 0 
+The layers which are present are : 0X0001 
+DMRS scrambling ID is : 2000 
+DMRS symbols are : 0X000C 
+The value of l_prime is : 0X0008 
+Slot number in the frame is : 18 
+The reserved REs for TB 1 by DMRS is 960
+
+Hardware packet1 is : 0X4100000000146A78
+Hardware packet2 is : 0X41000000000C07D0
+Hardware packet3 is : 0X4100000000048008
+PDU index : 2 
+Starting RB is : 120 
+PRB length is : 53 
+DMRS configuration type is : 1 
+n_scid is : 0 
+The layers which are present are : 0X0001 
+DMRS scrambling ID is : 2000 
+DMRS symbols are : 0X000C 
+The value of l_prime is : 0X0008 
+Slot number in the frame is : 18 
+The reserved REs for TB 2 by DMRS is 1272
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+Hardware packet1 is : 0X4100000000000000
+Hardware packet2 is : 0X4100000000000000
+Hardware packet3 is : 0X4100000000000000
+
+
+=====================CBS configurations========================
+PDU ID 0 , Number of codeblocks 6 , Codeblock size 8032
+PDU ID 1 , Number of codeblocks 4 , Codeblock size 7688
+PDU ID 2 , Number of codeblocks 5 , Codeblock size 8408
+
+Hardware packet for CBS write is : 0X5100000000007712
+Slot number : 18
+Sum total of CB length : 952
+
+Hardware packet for CBS read is : 0X520000001F600000
+TB/User index : 0
+Codeblock index in TB : 0
+CB length in bits : 8032
+CB start address in packets : 0
+Is the CB the last for the TB : 0
+
+Hardware packet for CBS read is : 0X520000001F6000BE
+TB/User index : 0
+Codeblock index in TB : 1
+CB length in bits : 8032
+CB start address in packets : 190
+Is the CB the last for the TB : 0
+
+Hardware packet for CBS read is : 0X520000001F60013F
+TB/User index : 0
+Codeblock index in TB : 2
+CB length in bits : 8032
+CB start address in packets : 319
+Is the CB the last for the TB : 0
+
+Hardware packet for CBS read is : 0X520000001F6001FD
+TB/User index : 0
+Codeblock index in TB : 3
+CB length in bits : 8032
+CB start address in packets : 509
+Is the CB the last for the TB : 0
+
+Hardware packet for CBS read is : 0X520000001F6002BB
+TB/User index : 0
+Codeblock index in TB : 4
+CB length in bits : 8032
+CB start address in packets : 699
+Is the CB the last for the TB : 0
+
+Hardware packet for CBS read is : 0X520000001F608337
+TB/User index : 0
+Codeblock index in TB : 5
+CB length in bits : 8032
+CB start address in packets : 823
+Is the CB the last for the TB : 1
+
+Hardware packet for CBS read is : 0X520000001E080081
+TB/User index : 1
+Codeblock index in TB : 0
+CB length in bits : 7688
+CB start address in packets : 129
+Is the CB the last for the TB : 0
+
+Hardware packet for CBS read is : 0X520000001E08017E
+TB/User index : 1
+Codeblock index in TB : 1
+CB length in bits : 7688
+CB start address in packets : 382
+Is the CB the last for the TB : 0
+
+Hardware packet for CBS read is : 0X520000001E08023C
+TB/User index : 1
+Codeblock index in TB : 2
+CB length in bits : 7688
+CB start address in packets : 572
+Is the CB the last for the TB : 0
+
+Hardware packet for CBS read is : 0X520000001E0882FA
+TB/User index : 1
+Codeblock index in TB : 3
+CB length in bits : 7688
+CB start address in packets : 762
+Is the CB the last for the TB : 1
+
+Hardware packet for CBS read is : 0X5200000020D8003F
+TB/User index : 2
+Codeblock index in TB : 0
+CB length in bits : 8408
+CB start address in packets : 63
+Is the CB the last for the TB : 0
+
+Hardware packet for CBS read is : 0X5200000020D800FD
+TB/User index : 2
+Codeblock index in TB : 1
+CB length in bits : 8408
+CB start address in packets : 253
+Is the CB the last for the TB : 0
+
+Hardware packet for CBS read is : 0X5200000020D801BB
+TB/User index : 2
+Codeblock index in TB : 2
+CB length in bits : 8408
+CB start address in packets : 443
+Is the CB the last for the TB : 0
+
+Hardware packet for CBS read is : 0X5200000020D80279
+TB/User index : 2
+Codeblock index in TB : 3
+CB length in bits : 8408
+CB start address in packets : 633
+Is the CB the last for the TB : 0
+
+Hardware packet for CBS read is : 0X5200000020D88376
+TB/User index : 2
+Codeblock index in TB : 4
+CB length in bits : 8408
+CB start address in packets : 886
+Is the CB the last for the TB : 1
+
+Hardware packet for CBS read is : 0X5200000040000000
+End of slot, dummy config
+
+
+=====================Channel Estimation configurations=======================
+
+Hardware packet1 is : 0X42000000000005C4
+Hardware packet2 is : 0X42000000000058E0
+Number of DMRS location at the first occasion : 1476 
+Number of DMRS location at the second occasion : 0 
+Number of PUSCH location TILL the second DMRS : 22752 
+Number of PUSCH location TILL the third DMRS : 0 
+
+
+====================PUSCH configurations=====================
+
+CB index: 0 
+
+PUSCH PDU index: 0 
+UE index: 0 
+CB index in TB: 0 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X4E00000000C82918
+ip_codeblock_size: 10520 
+base_graph_index: 0 
+lifting_size_index: 50 
+user_id: 0 
+=======================
+Configuration for filler bit remover module- 
+Hardware packet is : 0X4F00000000840188
+no_of_filler_bits: 392 
+msg_block_size: 8448 
+=======================
+Configuration for depuncturing module- 
+Hardware packet1 is : 0X4D00000008401F78
+Hardware packet2 is : 0X4D000000004C3180
+kcb: 8056 
+Kcb: 8448 
+lifting_factor: 384 
+Ncb: 9752 
+=======================
+Configuration for rate dematching module- 
+Hardware packet1 is : 0X4C00000001248600
+Hardware packet2 is : 0X4C00000006202490
+rvid: 0 
+lifting_factor: 384 
+ncb: 9360 
+tot_llrs_codeblock: 9360 
+base_graph_index: 0 
+filler_bits: 392 
+=======================
+Configuration for deinterleaver module- 
+Hardware packet1 is : 0X4B00000000024903
+QAM_type: 3 
+tot_llrs_codeblock: 9360 
+=======================
+=========================================================
+
+CB index: 10 
+
+PUSCH PDU index: 2 
+UE index: 2 
+CB index in TB: 0 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X4E00000002C832C0
+ip_codeblock_size: 12992 
+base_graph_index: 0 
+lifting_size_index: 50 
+user_id: 2 
+=======================
+Configuration for filler bit remover module- 
+Hardware packet is : 0X4F00000000840010
+no_of_filler_bits: 16 
+msg_block_size: 8448 
+=======================
+Configuration for depuncturing module- 
+Hardware packet1 is : 0X4D000000084020F0
+Hardware packet2 is : 0X4D000000005F8180
+kcb: 8432 
+Kcb: 8448 
+lifting_factor: 384 
+Ncb: 12224 
+=======================
+Configuration for rate dematching module- 
+Hardware packet1 is : 0X4C000000017D8600
+Hardware packet2 is : 0X4C00000000402FB0
+rvid: 0 
+lifting_factor: 384 
+ncb: 12208 
+tot_llrs_codeblock: 12208 
+base_graph_index: 0 
+filler_bits: 16 
+=======================
+Configuration for deinterleaver module- 
+Hardware packet1 is : 0X4B0000000002FB04
+QAM_type: 4 
+tot_llrs_codeblock: 12208 
+=======================
+=========================================================
+
+CB index: 6 
+
+PUSCH PDU index: 1 
+UE index: 1 
+CB index in TB: 0 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X4E00000001C42FE0
+ip_codeblock_size: 12256 
+base_graph_index: 0 
+lifting_size_index: 49 
+user_id: 1 
+=======================
+Configuration for filler bit remover module- 
+Hardware packet is : 0X4F00000000790020
+no_of_filler_bits: 32 
+msg_block_size: 7744 
+=======================
+Configuration for depuncturing module- 
+Hardware packet1 is : 0X4D00000007901E20
+Hardware packet2 is : 0X4D000000005A4160
+kcb: 7712 
+Kcb: 7744 
+lifting_factor: 352 
+Ncb: 11552 
+=======================
+Configuration for rate dematching module- 
+Hardware packet1 is : 0X4C00000001680580
+Hardware packet2 is : 0X4C00000000802D00
+rvid: 0 
+lifting_factor: 352 
+ncb: 11520 
+tot_llrs_codeblock: 11520 
+base_graph_index: 0 
+filler_bits: 32 
+=======================
+Configuration for deinterleaver module- 
+Hardware packet1 is : 0X4B0000000002D004
+QAM_type: 4 
+tot_llrs_codeblock: 11520 
+=======================
+=========================================================
+
+CB index: 1 
+
+PUSCH PDU index: 0 
+UE index: 0 
+CB index in TB: 1 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X4E00000000C82918
+ip_codeblock_size: 10520 
+base_graph_index: 0 
+lifting_size_index: 50 
+user_id: 0 
+=======================
+Configuration for filler bit remover module- 
+Hardware packet is : 0X4F00000000840188
+no_of_filler_bits: 392 
+msg_block_size: 8448 
+=======================
+Configuration for depuncturing module- 
+Hardware packet1 is : 0X4D00000008401F78
+Hardware packet2 is : 0X4D000000004C3180
+kcb: 8056 
+Kcb: 8448 
+lifting_factor: 384 
+Ncb: 9752 
+=======================
+Configuration for rate dematching module- 
+Hardware packet1 is : 0X4C00000001248600
+Hardware packet2 is : 0X4C00000006202490
+rvid: 0 
+lifting_factor: 384 
+ncb: 9360 
+tot_llrs_codeblock: 9360 
+base_graph_index: 0 
+filler_bits: 392 
+=======================
+Configuration for deinterleaver module- 
+Hardware packet1 is : 0X4B00000000024903
+QAM_type: 3 
+tot_llrs_codeblock: 9360 
+=======================
+=========================================================
+
+CB index: 11 
+
+PUSCH PDU index: 2 
+UE index: 2 
+CB index in TB: 1 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X4E00000002C832C0
+ip_codeblock_size: 12992 
+base_graph_index: 0 
+lifting_size_index: 50 
+user_id: 2 
+=======================
+Configuration for filler bit remover module- 
+Hardware packet is : 0X4F00000000840010
+no_of_filler_bits: 16 
+msg_block_size: 8448 
+=======================
+Configuration for depuncturing module- 
+Hardware packet1 is : 0X4D000000084020F0
+Hardware packet2 is : 0X4D000000005F8180
+kcb: 8432 
+Kcb: 8448 
+lifting_factor: 384 
+Ncb: 12224 
+=======================
+Configuration for rate dematching module- 
+Hardware packet1 is : 0X4C000000017D8600
+Hardware packet2 is : 0X4C00000000402FB0
+rvid: 0 
+lifting_factor: 384 
+ncb: 12208 
+tot_llrs_codeblock: 12208 
+base_graph_index: 0 
+filler_bits: 16 
+=======================
+Configuration for deinterleaver module- 
+Hardware packet1 is : 0X4B0000000002FB04
+QAM_type: 4 
+tot_llrs_codeblock: 12208 
+=======================
+=========================================================
+
+CB index: 2 
+
+PUSCH PDU index: 0 
+UE index: 0 
+CB index in TB: 2 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X4E00000000C82918
+ip_codeblock_size: 10520 
+base_graph_index: 0 
+lifting_size_index: 50 
+user_id: 0 
+=======================
+Configuration for filler bit remover module- 
+Hardware packet is : 0X4F00000000840188
+no_of_filler_bits: 392 
+msg_block_size: 8448 
+=======================
+Configuration for depuncturing module- 
+Hardware packet1 is : 0X4D00000008401F78
+Hardware packet2 is : 0X4D000000004C3180
+kcb: 8056 
+Kcb: 8448 
+lifting_factor: 384 
+Ncb: 9752 
+=======================
+Configuration for rate dematching module- 
+Hardware packet1 is : 0X4C00000001248600
+Hardware packet2 is : 0X4C00000006202490
+rvid: 0 
+lifting_factor: 384 
+ncb: 9360 
+tot_llrs_codeblock: 9360 
+base_graph_index: 0 
+filler_bits: 392 
+=======================
+Configuration for deinterleaver module- 
+Hardware packet1 is : 0X4B00000000024903
+QAM_type: 3 
+tot_llrs_codeblock: 9360 
+=======================
+=========================================================
+
+CB index: 7 
+
+PUSCH PDU index: 1 
+UE index: 1 
+CB index in TB: 1 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X4E00000001C42FE0
+ip_codeblock_size: 12256 
+base_graph_index: 0 
+lifting_size_index: 49 
+user_id: 1 
+=======================
+Configuration for filler bit remover module- 
+Hardware packet is : 0X4F00000000790020
+no_of_filler_bits: 32 
+msg_block_size: 7744 
+=======================
+Configuration for depuncturing module- 
+Hardware packet1 is : 0X4D00000007901E20
+Hardware packet2 is : 0X4D000000005A4160
+kcb: 7712 
+Kcb: 7744 
+lifting_factor: 352 
+Ncb: 11552 
+=======================
+Configuration for rate dematching module- 
+Hardware packet1 is : 0X4C00000001680580
+Hardware packet2 is : 0X4C00000000802D00
+rvid: 0 
+lifting_factor: 352 
+ncb: 11520 
+tot_llrs_codeblock: 11520 
+base_graph_index: 0 
+filler_bits: 32 
+=======================
+Configuration for deinterleaver module- 
+Hardware packet1 is : 0X4B0000000002D004
+QAM_type: 4 
+tot_llrs_codeblock: 11520 
+=======================
+=========================================================
+
+CB index: 12 
+
+PUSCH PDU index: 2 
+UE index: 2 
+CB index in TB: 2 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X4E00000002C832C0
+ip_codeblock_size: 12992 
+base_graph_index: 0 
+lifting_size_index: 50 
+user_id: 2 
+=======================
+Configuration for filler bit remover module- 
+Hardware packet is : 0X4F00000000840010
+no_of_filler_bits: 16 
+msg_block_size: 8448 
+=======================
+Configuration for depuncturing module- 
+Hardware packet1 is : 0X4D000000084020F0
+Hardware packet2 is : 0X4D000000005F8180
+kcb: 8432 
+Kcb: 8448 
+lifting_factor: 384 
+Ncb: 12224 
+=======================
+Configuration for rate dematching module- 
+Hardware packet1 is : 0X4C000000017D8600
+Hardware packet2 is : 0X4C00000000402FB0
+rvid: 0 
+lifting_factor: 384 
+ncb: 12208 
+tot_llrs_codeblock: 12208 
+base_graph_index: 0 
+filler_bits: 16 
+=======================
+Configuration for deinterleaver module- 
+Hardware packet1 is : 0X4B0000000002FB04
+QAM_type: 4 
+tot_llrs_codeblock: 12208 
+=======================
+=========================================================
+
+CB index: 3 
+
+PUSCH PDU index: 0 
+UE index: 0 
+CB index in TB: 3 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X4E00000000C82918
+ip_codeblock_size: 10520 
+base_graph_index: 0 
+lifting_size_index: 50 
+user_id: 0 
+=======================
+Configuration for filler bit remover module- 
+Hardware packet is : 0X4F00000000840188
+no_of_filler_bits: 392 
+msg_block_size: 8448 
+=======================
+Configuration for depuncturing module- 
+Hardware packet1 is : 0X4D00000008401F78
+Hardware packet2 is : 0X4D000000004C3180
+kcb: 8056 
+Kcb: 8448 
+lifting_factor: 384 
+Ncb: 9752 
+=======================
+Configuration for rate dematching module- 
+Hardware packet1 is : 0X4C00000001248600
+Hardware packet2 is : 0X4C00000006202490
+rvid: 0 
+lifting_factor: 384 
+ncb: 9360 
+tot_llrs_codeblock: 9360 
+base_graph_index: 0 
+filler_bits: 392 
+=======================
+Configuration for deinterleaver module- 
+Hardware packet1 is : 0X4B00000000024903
+QAM_type: 3 
+tot_llrs_codeblock: 9360 
+=======================
+=========================================================
+
+CB index: 8 
+
+PUSCH PDU index: 1 
+UE index: 1 
+CB index in TB: 2 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X4E00000001C42FE0
+ip_codeblock_size: 12256 
+base_graph_index: 0 
+lifting_size_index: 49 
+user_id: 1 
+=======================
+Configuration for filler bit remover module- 
+Hardware packet is : 0X4F00000000790020
+no_of_filler_bits: 32 
+msg_block_size: 7744 
+=======================
+Configuration for depuncturing module- 
+Hardware packet1 is : 0X4D00000007901E20
+Hardware packet2 is : 0X4D000000005A4160
+kcb: 7712 
+Kcb: 7744 
+lifting_factor: 352 
+Ncb: 11552 
+=======================
+Configuration for rate dematching module- 
+Hardware packet1 is : 0X4C00000001680580
+Hardware packet2 is : 0X4C00000000802D00
+rvid: 0 
+lifting_factor: 352 
+ncb: 11520 
+tot_llrs_codeblock: 11520 
+base_graph_index: 0 
+filler_bits: 32 
+=======================
+Configuration for deinterleaver module- 
+Hardware packet1 is : 0X4B0000000002D004
+QAM_type: 4 
+tot_llrs_codeblock: 11520 
+=======================
+=========================================================
+
+CB index: 13 
+
+PUSCH PDU index: 2 
+UE index: 2 
+CB index in TB: 3 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X4E00000002C832C8
+ip_codeblock_size: 13000 
+base_graph_index: 0 
+lifting_size_index: 50 
+user_id: 2 
+=======================
+Configuration for filler bit remover module- 
+Hardware packet is : 0X4F00000000840010
+no_of_filler_bits: 16 
+msg_block_size: 8448 
+=======================
+Configuration for depuncturing module- 
+Hardware packet1 is : 0X4D000000084020F0
+Hardware packet2 is : 0X4D000000005F9180
+kcb: 8432 
+Kcb: 8448 
+lifting_factor: 384 
+Ncb: 12232 
+=======================
+Configuration for rate dematching module- 
+Hardware packet1 is : 0X4C000000017DC600
+Hardware packet2 is : 0X4C00000000402FB8
+rvid: 0 
+lifting_factor: 384 
+ncb: 12216 
+tot_llrs_codeblock: 12216 
+base_graph_index: 0 
+filler_bits: 16 
+=======================
+Configuration for deinterleaver module- 
+Hardware packet1 is : 0X4B0000000002FB84
+QAM_type: 4 
+tot_llrs_codeblock: 12216 
+=======================
+=========================================================
+
+CB index: 4 
+
+PUSCH PDU index: 0 
+UE index: 0 
+CB index in TB: 4 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X4E00000000C82918
+ip_codeblock_size: 10520 
+base_graph_index: 0 
+lifting_size_index: 50 
+user_id: 0 
+=======================
+Configuration for filler bit remover module- 
+Hardware packet is : 0X4F00000000840188
+no_of_filler_bits: 392 
+msg_block_size: 8448 
+=======================
+Configuration for depuncturing module- 
+Hardware packet1 is : 0X4D00000008401F78
+Hardware packet2 is : 0X4D000000004C3180
+kcb: 8056 
+Kcb: 8448 
+lifting_factor: 384 
+Ncb: 9752 
+=======================
+Configuration for rate dematching module- 
+Hardware packet1 is : 0X4C00000001248600
+Hardware packet2 is : 0X4C00000006202490
+rvid: 0 
+lifting_factor: 384 
+ncb: 9360 
+tot_llrs_codeblock: 9360 
+base_graph_index: 0 
+filler_bits: 392 
+=======================
+Configuration for deinterleaver module- 
+Hardware packet1 is : 0X4B00000000024903
+QAM_type: 3 
+tot_llrs_codeblock: 9360 
+=======================
+=========================================================
+
+CB index: 9 
+
+PUSCH PDU index: 1 
+UE index: 1 
+CB index in TB: 3 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X4E00000001C42FE0
+ip_codeblock_size: 12256 
+base_graph_index: 0 
+lifting_size_index: 49 
+user_id: 1 
+=======================
+Configuration for filler bit remover module- 
+Hardware packet is : 0X4F00000000790020
+no_of_filler_bits: 32 
+msg_block_size: 7744 
+=======================
+Configuration for depuncturing module- 
+Hardware packet1 is : 0X4D00000007901E20
+Hardware packet2 is : 0X4D000000005A4160
+kcb: 7712 
+Kcb: 7744 
+lifting_factor: 352 
+Ncb: 11552 
+=======================
+Configuration for rate dematching module- 
+Hardware packet1 is : 0X4C00000001680580
+Hardware packet2 is : 0X4C00000000802D00
+rvid: 0 
+lifting_factor: 352 
+ncb: 11520 
+tot_llrs_codeblock: 11520 
+base_graph_index: 0 
+filler_bits: 32 
+=======================
+Configuration for deinterleaver module- 
+Hardware packet1 is : 0X4B0000000002D004
+QAM_type: 4 
+tot_llrs_codeblock: 11520 
+=======================
+=========================================================
+
+CB index: 5 
+
+PUSCH PDU index: 0 
+UE index: 0 
+CB index in TB: 5 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X4E00000000C82918
+ip_codeblock_size: 10520 
+base_graph_index: 0 
+lifting_size_index: 50 
+user_id: 0 
+=======================
+Configuration for filler bit remover module- 
+Hardware packet is : 0X4F00000000840188
+no_of_filler_bits: 392 
+msg_block_size: 8448 
+=======================
+Configuration for depuncturing module- 
+Hardware packet1 is : 0X4D00000008401F78
+Hardware packet2 is : 0X4D000000004C3180
+kcb: 8056 
+Kcb: 8448 
+lifting_factor: 384 
+Ncb: 9752 
+=======================
+Configuration for rate dematching module- 
+Hardware packet1 is : 0X4C00000001248600
+Hardware packet2 is : 0X4C00000006202490
+rvid: 0 
+lifting_factor: 384 
+ncb: 9360 
+tot_llrs_codeblock: 9360 
+base_graph_index: 0 
+filler_bits: 392 
+=======================
+Configuration for deinterleaver module- 
+Hardware packet1 is : 0X4B00000000024903
+QAM_type: 3 
+tot_llrs_codeblock: 9360 
+=======================
+=========================================================
+
+CB index: 14 
+
+PUSCH PDU index: 2 
+UE index: 2 
+CB index in TB: 4 
+
+=======================
+Configuration for LDPC module- 
+Hardware packet is : 0X4E00000002C832C8
+ip_codeblock_size: 13000 
+base_graph_index: 0 
+lifting_size_index: 50 
+user_id: 2 
+=======================
+Configuration for filler bit remover module- 
+Hardware packet is : 0X4F00000000840010
+no_of_filler_bits: 16 
+msg_block_size: 8448 
+=======================
+Configuration for depuncturing module- 
+Hardware packet1 is : 0X4D000000084020F0
+Hardware packet2 is : 0X4D000000005F9180
+kcb: 8432 
+Kcb: 8448 
+lifting_factor: 384 
+Ncb: 12232 
+=======================
+Configuration for rate dematching module- 
+Hardware packet1 is : 0X4C000000017DC600
+Hardware packet2 is : 0X4C00000000402FB8
+rvid: 0 
+lifting_factor: 384 
+ncb: 12216 
+tot_llrs_codeblock: 12216 
+base_graph_index: 0 
+filler_bits: 16 
+=======================
+Configuration for deinterleaver module- 
+Hardware packet1 is : 0X4B0000000002FB84
+QAM_type: 4 
+tot_llrs_codeblock: 12216 
+=======================
+=========================================================
+
+
+
+=====================User Interleaver configurations=======================
+
+Hardware packet for write config is : 0X430000000000002A
+Number of write configs are : 42
+
+Hardware packet for write config is : 0X43000000000002D0
+Start address for write number 1 is : 0
+End address for write number 1 is : 720
+OFDM Symbol number is : 0
+BWP/User number is : 0
+
+Hardware packet for write config is : 0X4300000024902670
+Start address for write number 2 is : 9360
+End address for write number 2 is : 9840
+OFDM Symbol number is : 0
+BWP/User number is : 1
+
+Hardware packet for write config is : 0X430000003B103D8C
+Start address for write number 3 is : 15120
+End address for write number 3 is : 15756
+OFDM Symbol number is : 0
+BWP/User number is : 2
+
+Hardware packet for write config is : 0X4300000002D005A0
+Start address for write number 4 is : 720
+End address for write number 4 is : 1440
+OFDM Symbol number is : 1
+BWP/User number is : 0
+
+Hardware packet for write config is : 0X4300000026702850
+Start address for write number 5 is : 9840
+End address for write number 5 is : 10320
+OFDM Symbol number is : 1
+BWP/User number is : 1
+
+Hardware packet for write config is : 0X430000003D8C4008
+Start address for write number 6 is : 15756
+End address for write number 6 is : 16392
+OFDM Symbol number is : 1
+BWP/User number is : 2
+
+Hardware packet for write config is : 0X4300000005A005A0
+Start address for write number 7 is : 1440
+End address for write number 7 is : 1440
+OFDM Symbol number is : 2
+BWP/User number is : 0
+
+Hardware packet for write config is : 0X4300000028502850
+Start address for write number 8 is : 10320
+End address for write number 8 is : 10320
+OFDM Symbol number is : 2
+BWP/User number is : 1
+
+Hardware packet for write config is : 0X4300000040084008
+Start address for write number 9 is : 16392
+End address for write number 9 is : 16392
+OFDM Symbol number is : 2
+BWP/User number is : 2
+
+Hardware packet for write config is : 0X4300000005A00870
+Start address for write number 10 is : 1440
+End address for write number 10 is : 2160
+OFDM Symbol number is : 3
+BWP/User number is : 0
+
+Hardware packet for write config is : 0X4300000028502850
+Start address for write number 11 is : 10320
+End address for write number 11 is : 10320
+OFDM Symbol number is : 3
+BWP/User number is : 1
+
+Hardware packet for write config is : 0X4300000040084008
+Start address for write number 12 is : 16392
+End address for write number 12 is : 16392
+OFDM Symbol number is : 3
+BWP/User number is : 2
+
+Hardware packet for write config is : 0X4300000008700B40
+Start address for write number 13 is : 2160
+End address for write number 13 is : 2880
+OFDM Symbol number is : 4
+BWP/User number is : 0
+
+Hardware packet for write config is : 0X4300000028502A30
+Start address for write number 14 is : 10320
+End address for write number 14 is : 10800
+OFDM Symbol number is : 4
+BWP/User number is : 1
+
+Hardware packet for write config is : 0X4300000040084284
+Start address for write number 15 is : 16392
+End address for write number 15 is : 17028
+OFDM Symbol number is : 4
+BWP/User number is : 2
+
+Hardware packet for write config is : 0X430000000B400E10
+Start address for write number 16 is : 2880
+End address for write number 16 is : 3600
+OFDM Symbol number is : 5
+BWP/User number is : 0
+
+Hardware packet for write config is : 0X430000002A302C10
+Start address for write number 17 is : 10800
+End address for write number 17 is : 11280
+OFDM Symbol number is : 5
+BWP/User number is : 1
+
+Hardware packet for write config is : 0X4300000042844500
+Start address for write number 18 is : 17028
+End address for write number 18 is : 17664
+OFDM Symbol number is : 5
+BWP/User number is : 2
+
+Hardware packet for write config is : 0X430000000E1010E0
+Start address for write number 19 is : 3600
+End address for write number 19 is : 4320
+OFDM Symbol number is : 6
+BWP/User number is : 0
+
+Hardware packet for write config is : 0X430000002C102DF0
+Start address for write number 20 is : 11280
+End address for write number 20 is : 11760
+OFDM Symbol number is : 6
+BWP/User number is : 1
+
+Hardware packet for write config is : 0X430000004500477C
+Start address for write number 21 is : 17664
+End address for write number 21 is : 18300
+OFDM Symbol number is : 6
+BWP/User number is : 2
+
+Hardware packet for write config is : 0X4300000010E013B0
+Start address for write number 22 is : 4320
+End address for write number 22 is : 5040
+OFDM Symbol number is : 7
+BWP/User number is : 0
+
+Hardware packet for write config is : 0X430000002DF02FD0
+Start address for write number 23 is : 11760
+End address for write number 23 is : 12240
+OFDM Symbol number is : 7
+BWP/User number is : 1
+
+Hardware packet for write config is : 0X43000000477C49F8
+Start address for write number 24 is : 18300
+End address for write number 24 is : 18936
+OFDM Symbol number is : 7
+BWP/User number is : 2
+
+Hardware packet for write config is : 0X4300000013B01680
+Start address for write number 25 is : 5040
+End address for write number 25 is : 5760
+OFDM Symbol number is : 8
+BWP/User number is : 0
+
+Hardware packet for write config is : 0X430000002FD031B0
+Start address for write number 26 is : 12240
+End address for write number 26 is : 12720
+OFDM Symbol number is : 8
+BWP/User number is : 1
+
+Hardware packet for write config is : 0X4300000049F84C74
+Start address for write number 27 is : 18936
+End address for write number 27 is : 19572
+OFDM Symbol number is : 8
+BWP/User number is : 2
+
+Hardware packet for write config is : 0X4300000016801950
+Start address for write number 28 is : 5760
+End address for write number 28 is : 6480
+OFDM Symbol number is : 9
+BWP/User number is : 0
+
+Hardware packet for write config is : 0X4300000031B03390
+Start address for write number 29 is : 12720
+End address for write number 29 is : 13200
+OFDM Symbol number is : 9
+BWP/User number is : 1
+
+Hardware packet for write config is : 0X430000004C744EF0
+Start address for write number 30 is : 19572
+End address for write number 30 is : 20208
+OFDM Symbol number is : 9
+BWP/User number is : 2
+
+Hardware packet for write config is : 0X4300000019501C20
+Start address for write number 31 is : 6480
+End address for write number 31 is : 7200
+OFDM Symbol number is : 10
+BWP/User number is : 0
+
+Hardware packet for write config is : 0X4300000033903570
+Start address for write number 32 is : 13200
+End address for write number 32 is : 13680
+OFDM Symbol number is : 10
+BWP/User number is : 1
+
+Hardware packet for write config is : 0X430000004EF0516C
+Start address for write number 33 is : 20208
+End address for write number 33 is : 20844
+OFDM Symbol number is : 10
+BWP/User number is : 2
+
+Hardware packet for write config is : 0X430000001C201EF0
+Start address for write number 34 is : 7200
+End address for write number 34 is : 7920
+OFDM Symbol number is : 11
+BWP/User number is : 0
+
+Hardware packet for write config is : 0X4300000035703750
+Start address for write number 35 is : 13680
+End address for write number 35 is : 14160
+OFDM Symbol number is : 11
+BWP/User number is : 1
+
+Hardware packet for write config is : 0X43000000516C53E8
+Start address for write number 36 is : 20844
+End address for write number 36 is : 21480
+OFDM Symbol number is : 11
+BWP/User number is : 2
+
+Hardware packet for write config is : 0X430000001EF021C0
+Start address for write number 37 is : 7920
+End address for write number 37 is : 8640
+OFDM Symbol number is : 12
+BWP/User number is : 0
+
+Hardware packet for write config is : 0X4300000037503930
+Start address for write number 38 is : 14160
+End address for write number 38 is : 14640
+OFDM Symbol number is : 12
+BWP/User number is : 1
+
+Hardware packet for write config is : 0X4300000053E85664
+Start address for write number 39 is : 21480
+End address for write number 39 is : 22116
+OFDM Symbol number is : 12
+BWP/User number is : 2
+
+Hardware packet for write config is : 0X4300000021C02490
+Start address for write number 40 is : 8640
+End address for write number 40 is : 9360
+OFDM Symbol number is : 13
+BWP/User number is : 0
+
+Hardware packet for write config is : 0X4300000039303B10
+Start address for write number 41 is : 14640
+End address for write number 41 is : 15120
+OFDM Symbol number is : 13
+BWP/User number is : 1
+
+Hardware packet for write config is : 0X43000000566458E0
+Start address for write number 42 is : 22116
+End address for write number 42 is : 22752
+OFDM Symbol number is : 13
+BWP/User number is : 2
+
+Hardware packet 1 for read config is : 0X4400000000000618
+Hardware packet 2 for read config is : 0X4400000000001128
+Start address for read for CB number 0 in layer 0 is : 0
+Number address for read for CB number 0 in layer 0 is : 1560
+Write counter for read for CB number 0 in layer 0 is : 4392
+Last OFDM symbol for CB number 0 in layer 0 is : 3
+CB number 0 of user 0 at cb_in_tb 0
+
+Hardware packet 1 for read config is : 0X4500000000000618
+Hardware packet 2 for read config is : 0X4500000000001128
+Start address for DISCARD read for CB number 0 in layer 1 is : 0
+Number address for DISCARD read for CB number 0 in layer 1 is : 1560
+Write counter for DISCARD read for CB number 0 in layer 1 is : 4392
+
+Hardware packet 1 for read config is : 0X4600000000000618
+Hardware packet 2 for read config is : 0X4600000000001128
+Start address for DISCARD read for CB number 0 in layer 2 is : 0
+Number address for DISCARD read for CB number 0 in layer 2 is : 1560
+Write counter for DISCARD read for CB number 0 in layer 2 is : 4392
+
+Hardware packet 1 for read config is : 0X4700000000000618
+Hardware packet 2 for read config is : 0X4700000000001128
+Start address for DISCARD read for CB number 0 in layer 3 is : 0
+Number address for DISCARD read for CB number 0 in layer 3 is : 1560
+Write counter for DISCARD read for CB number 0 in layer 3 is : 4392
+
+Hardware packet 1 for layer-demap is : 0X4800000000000001
+Hardware packet 2 for layer-demap is : 0X4800000000000000
+Hardware packet 3 for layer-demap is : 0X4800000000000000
+Layer Map for CB number 0 in layer 0 is : 1
+Layer Map for CB number 0 in layer 1 is : 0
+Layer Map for CB number 0 in layer 2 is : 0
+Layer Map for CB number 0 in layer 3 is : 0
+Layer Map for CB number 0 in layer 4 is : 0
+Layer Map for CB number 0 in layer 5 is : 0
+Layer Map for CB number 0 in layer 6 is : 0
+Layer Map for CB number 0 in layer 7 is : 0
+User ID for CB number 0 in layer 0 is : 0
+User ID for CB number 0 in layer 1 is : 0
+User ID for CB number 0 in layer 2 is : 0
+User ID for CB number 0 in layer 3 is : 0
+User ID for CB number 0 in layer 4 is : 0
+User ID for CB number 0 in layer 5 is : 0
+User ID for CB number 0 in layer 6 is : 0
+User ID for CB number 0 in layer 7 is : 0
+
+Hardware packet 1 for read config is : 0X440000003B1005F6
+Hardware packet 2 for read config is : 0X4400000000001854
+Start address for read for CB number 1 in layer 0 is : 15120
+Number address for read for CB number 1 in layer 0 is : 1526
+Write counter for read for CB number 1 in layer 0 is : 6228
+Last OFDM symbol for CB number 1 in layer 0 is : 4
+CB number 1 of user 2 at cb_in_tb 0
+
+Hardware packet 1 for read config is : 0X450000003B1005F6
+Hardware packet 2 for read config is : 0X4500000000001854
+Start address for DISCARD read for CB number 1 in layer 1 is : 15120
+Number address for DISCARD read for CB number 1 in layer 1 is : 1526
+Write counter for DISCARD read for CB number 1 in layer 1 is : 6228
+
+Hardware packet 1 for read config is : 0X460000003B1005F6
+Hardware packet 2 for read config is : 0X4600000000001854
+Start address for DISCARD read for CB number 1 in layer 2 is : 15120
+Number address for DISCARD read for CB number 1 in layer 2 is : 1526
+Write counter for DISCARD read for CB number 1 in layer 2 is : 6228
+
+Hardware packet 1 for read config is : 0X470000003B1005F6
+Hardware packet 2 for read config is : 0X4700000000001854
+Start address for DISCARD read for CB number 1 in layer 3 is : 15120
+Number address for DISCARD read for CB number 1 in layer 3 is : 1526
+Write counter for DISCARD read for CB number 1 in layer 3 is : 6228
+
+Hardware packet 1 for layer-demap is : 0X4800000000000001
+Hardware packet 2 for layer-demap is : 0X4800000000000002
+Hardware packet 3 for layer-demap is : 0X4800000000000000
+Layer Map for CB number 1 in layer 0 is : 1
+Layer Map for CB number 1 in layer 1 is : 0
+Layer Map for CB number 1 in layer 2 is : 0
+Layer Map for CB number 1 in layer 3 is : 0
+Layer Map for CB number 1 in layer 4 is : 0
+Layer Map for CB number 1 in layer 5 is : 0
+Layer Map for CB number 1 in layer 6 is : 0
+Layer Map for CB number 1 in layer 7 is : 0
+User ID for CB number 1 in layer 0 is : 2
+User ID for CB number 1 in layer 1 is : 0
+User ID for CB number 1 in layer 2 is : 0
+User ID for CB number 1 in layer 3 is : 0
+User ID for CB number 1 in layer 4 is : 0
+User ID for CB number 1 in layer 5 is : 0
+User ID for CB number 1 in layer 6 is : 0
+User ID for CB number 1 in layer 7 is : 0
+
+Hardware packet 1 for read config is : 0X44000000249005A0
+Hardware packet 2 for read config is : 0X4400000000001854
+Start address for read for CB number 2 in layer 0 is : 9360
+Number address for read for CB number 2 in layer 0 is : 1440
+Write counter for read for CB number 2 in layer 0 is : 6228
+Last OFDM symbol for CB number 2 in layer 0 is : 4
+CB number 2 of user 1 at cb_in_tb 0
+
+Hardware packet 1 for read config is : 0X45000000249005A0
+Hardware packet 2 for read config is : 0X4500000000001854
+Start address for DISCARD read for CB number 2 in layer 1 is : 9360
+Number address for DISCARD read for CB number 2 in layer 1 is : 1440
+Write counter for DISCARD read for CB number 2 in layer 1 is : 6228
+
+Hardware packet 1 for read config is : 0X46000000249005A0
+Hardware packet 2 for read config is : 0X4600000000001854
+Start address for DISCARD read for CB number 2 in layer 2 is : 9360
+Number address for DISCARD read for CB number 2 in layer 2 is : 1440
+Write counter for DISCARD read for CB number 2 in layer 2 is : 6228
+
+Hardware packet 1 for read config is : 0X47000000249005A0
+Hardware packet 2 for read config is : 0X4700000000001854
+Start address for DISCARD read for CB number 2 in layer 3 is : 9360
+Number address for DISCARD read for CB number 2 in layer 3 is : 1440
+Write counter for DISCARD read for CB number 2 in layer 3 is : 6228
+
+Hardware packet 1 for layer-demap is : 0X4800000000000001
+Hardware packet 2 for layer-demap is : 0X4800000000000001
+Hardware packet 3 for layer-demap is : 0X4800000000000000
+Layer Map for CB number 2 in layer 0 is : 1
+Layer Map for CB number 2 in layer 1 is : 0
+Layer Map for CB number 2 in layer 2 is : 0
+Layer Map for CB number 2 in layer 3 is : 0
+Layer Map for CB number 2 in layer 4 is : 0
+Layer Map for CB number 2 in layer 5 is : 0
+Layer Map for CB number 2 in layer 6 is : 0
+Layer Map for CB number 2 in layer 7 is : 0
+User ID for CB number 2 in layer 0 is : 1
+User ID for CB number 2 in layer 1 is : 0
+User ID for CB number 2 in layer 2 is : 0
+User ID for CB number 2 in layer 3 is : 0
+User ID for CB number 2 in layer 4 is : 0
+User ID for CB number 2 in layer 5 is : 0
+User ID for CB number 2 in layer 6 is : 0
+User ID for CB number 2 in layer 7 is : 0
+
+Hardware packet 1 for read config is : 0X4400000006180618
+Hardware packet 2 for read config is : 0X4400000000001F80
+Start address for read for CB number 3 in layer 0 is : 1560
+Number address for read for CB number 3 in layer 0 is : 1560
+Write counter for read for CB number 3 in layer 0 is : 8064
+Last OFDM symbol for CB number 3 in layer 0 is : 5
+CB number 3 of user 0 at cb_in_tb 1
+
+Hardware packet 1 for read config is : 0X4500000006180618
+Hardware packet 2 for read config is : 0X4500000000001F80
+Start address for DISCARD read for CB number 3 in layer 1 is : 1560
+Number address for DISCARD read for CB number 3 in layer 1 is : 1560
+Write counter for DISCARD read for CB number 3 in layer 1 is : 8064
+
+Hardware packet 1 for read config is : 0X4600000006180618
+Hardware packet 2 for read config is : 0X4600000000001F80
+Start address for DISCARD read for CB number 3 in layer 2 is : 1560
+Number address for DISCARD read for CB number 3 in layer 2 is : 1560
+Write counter for DISCARD read for CB number 3 in layer 2 is : 8064
+
+Hardware packet 1 for read config is : 0X4700000006180618
+Hardware packet 2 for read config is : 0X4700000000001F80
+Start address for DISCARD read for CB number 3 in layer 3 is : 1560
+Number address for DISCARD read for CB number 3 in layer 3 is : 1560
+Write counter for DISCARD read for CB number 3 in layer 3 is : 8064
+
+Hardware packet 1 for layer-demap is : 0X4800000000000001
+Hardware packet 2 for layer-demap is : 0X4800000000000000
+Hardware packet 3 for layer-demap is : 0X4800000000000000
+Layer Map for CB number 3 in layer 0 is : 1
+Layer Map for CB number 3 in layer 1 is : 0
+Layer Map for CB number 3 in layer 2 is : 0
+Layer Map for CB number 3 in layer 3 is : 0
+Layer Map for CB number 3 in layer 4 is : 0
+Layer Map for CB number 3 in layer 5 is : 0
+Layer Map for CB number 3 in layer 6 is : 0
+Layer Map for CB number 3 in layer 7 is : 0
+User ID for CB number 3 in layer 0 is : 0
+User ID for CB number 3 in layer 1 is : 0
+User ID for CB number 3 in layer 2 is : 0
+User ID for CB number 3 in layer 3 is : 0
+User ID for CB number 3 in layer 4 is : 0
+User ID for CB number 3 in layer 5 is : 0
+User ID for CB number 3 in layer 6 is : 0
+User ID for CB number 3 in layer 7 is : 0
+
+Hardware packet 1 for read config is : 0X44000000410605F6
+Hardware packet 2 for read config is : 0X44000000000026AC
+Start address for read for CB number 4 in layer 0 is : 16646
+Number address for read for CB number 4 in layer 0 is : 1526
+Write counter for read for CB number 4 in layer 0 is : 9900
+Last OFDM symbol for CB number 4 in layer 0 is : 6
+CB number 4 of user 2 at cb_in_tb 1
+
+Hardware packet 1 for read config is : 0X45000000410605F6
+Hardware packet 2 for read config is : 0X45000000000026AC
+Start address for DISCARD read for CB number 4 in layer 1 is : 16646
+Number address for DISCARD read for CB number 4 in layer 1 is : 1526
+Write counter for DISCARD read for CB number 4 in layer 1 is : 9900
+
+Hardware packet 1 for read config is : 0X46000000410605F6
+Hardware packet 2 for read config is : 0X46000000000026AC
+Start address for DISCARD read for CB number 4 in layer 2 is : 16646
+Number address for DISCARD read for CB number 4 in layer 2 is : 1526
+Write counter for DISCARD read for CB number 4 in layer 2 is : 9900
+
+Hardware packet 1 for read config is : 0X47000000410605F6
+Hardware packet 2 for read config is : 0X47000000000026AC
+Start address for DISCARD read for CB number 4 in layer 3 is : 16646
+Number address for DISCARD read for CB number 4 in layer 3 is : 1526
+Write counter for DISCARD read for CB number 4 in layer 3 is : 9900
+
+Hardware packet 1 for layer-demap is : 0X4800000000000001
+Hardware packet 2 for layer-demap is : 0X4800000000000002
+Hardware packet 3 for layer-demap is : 0X4800000000000000
+Layer Map for CB number 4 in layer 0 is : 1
+Layer Map for CB number 4 in layer 1 is : 0
+Layer Map for CB number 4 in layer 2 is : 0
+Layer Map for CB number 4 in layer 3 is : 0
+Layer Map for CB number 4 in layer 4 is : 0
+Layer Map for CB number 4 in layer 5 is : 0
+Layer Map for CB number 4 in layer 6 is : 0
+Layer Map for CB number 4 in layer 7 is : 0
+User ID for CB number 4 in layer 0 is : 2
+User ID for CB number 4 in layer 1 is : 0
+User ID for CB number 4 in layer 2 is : 0
+User ID for CB number 4 in layer 3 is : 0
+User ID for CB number 4 in layer 4 is : 0
+User ID for CB number 4 in layer 5 is : 0
+User ID for CB number 4 in layer 6 is : 0
+User ID for CB number 4 in layer 7 is : 0
+
+Hardware packet 1 for read config is : 0X440000000C300618
+Hardware packet 2 for read config is : 0X4400000000002DD8
+Start address for read for CB number 5 in layer 0 is : 3120
+Number address for read for CB number 5 in layer 0 is : 1560
+Write counter for read for CB number 5 in layer 0 is : 11736
+Last OFDM symbol for CB number 5 in layer 0 is : 7
+CB number 5 of user 0 at cb_in_tb 2
+
+Hardware packet 1 for read config is : 0X450000000C300618
+Hardware packet 2 for read config is : 0X4500000000002DD8
+Start address for DISCARD read for CB number 5 in layer 1 is : 3120
+Number address for DISCARD read for CB number 5 in layer 1 is : 1560
+Write counter for DISCARD read for CB number 5 in layer 1 is : 11736
+
+Hardware packet 1 for read config is : 0X460000000C300618
+Hardware packet 2 for read config is : 0X4600000000002DD8
+Start address for DISCARD read for CB number 5 in layer 2 is : 3120
+Number address for DISCARD read for CB number 5 in layer 2 is : 1560
+Write counter for DISCARD read for CB number 5 in layer 2 is : 11736
+
+Hardware packet 1 for read config is : 0X470000000C300618
+Hardware packet 2 for read config is : 0X4700000000002DD8
+Start address for DISCARD read for CB number 5 in layer 3 is : 3120
+Number address for DISCARD read for CB number 5 in layer 3 is : 1560
+Write counter for DISCARD read for CB number 5 in layer 3 is : 11736
+
+Hardware packet 1 for layer-demap is : 0X4800000000000001
+Hardware packet 2 for layer-demap is : 0X4800000000000000
+Hardware packet 3 for layer-demap is : 0X4800000000000000
+Layer Map for CB number 5 in layer 0 is : 1
+Layer Map for CB number 5 in layer 1 is : 0
+Layer Map for CB number 5 in layer 2 is : 0
+Layer Map for CB number 5 in layer 3 is : 0
+Layer Map for CB number 5 in layer 4 is : 0
+Layer Map for CB number 5 in layer 5 is : 0
+Layer Map for CB number 5 in layer 6 is : 0
+Layer Map for CB number 5 in layer 7 is : 0
+User ID for CB number 5 in layer 0 is : 0
+User ID for CB number 5 in layer 1 is : 0
+User ID for CB number 5 in layer 2 is : 0
+User ID for CB number 5 in layer 3 is : 0
+User ID for CB number 5 in layer 4 is : 0
+User ID for CB number 5 in layer 5 is : 0
+User ID for CB number 5 in layer 6 is : 0
+User ID for CB number 5 in layer 7 is : 0
+
+Hardware packet 1 for read config is : 0X440000002A3005A0
+Hardware packet 2 for read config is : 0X4400000000002DD8
+Start address for read for CB number 6 in layer 0 is : 10800
+Number address for read for CB number 6 in layer 0 is : 1440
+Write counter for read for CB number 6 in layer 0 is : 11736
+Last OFDM symbol for CB number 6 in layer 0 is : 7
+CB number 6 of user 1 at cb_in_tb 1
+
+Hardware packet 1 for read config is : 0X450000002A3005A0
+Hardware packet 2 for read config is : 0X4500000000002DD8
+Start address for DISCARD read for CB number 6 in layer 1 is : 10800
+Number address for DISCARD read for CB number 6 in layer 1 is : 1440
+Write counter for DISCARD read for CB number 6 in layer 1 is : 11736
+
+Hardware packet 1 for read config is : 0X460000002A3005A0
+Hardware packet 2 for read config is : 0X4600000000002DD8
+Start address for DISCARD read for CB number 6 in layer 2 is : 10800
+Number address for DISCARD read for CB number 6 in layer 2 is : 1440
+Write counter for DISCARD read for CB number 6 in layer 2 is : 11736
+
+Hardware packet 1 for read config is : 0X470000002A3005A0
+Hardware packet 2 for read config is : 0X4700000000002DD8
+Start address for DISCARD read for CB number 6 in layer 3 is : 10800
+Number address for DISCARD read for CB number 6 in layer 3 is : 1440
+Write counter for DISCARD read for CB number 6 in layer 3 is : 11736
+
+Hardware packet 1 for layer-demap is : 0X4800000000000001
+Hardware packet 2 for layer-demap is : 0X4800000000000001
+Hardware packet 3 for layer-demap is : 0X4800000000000000
+Layer Map for CB number 6 in layer 0 is : 1
+Layer Map for CB number 6 in layer 1 is : 0
+Layer Map for CB number 6 in layer 2 is : 0
+Layer Map for CB number 6 in layer 3 is : 0
+Layer Map for CB number 6 in layer 4 is : 0
+Layer Map for CB number 6 in layer 5 is : 0
+Layer Map for CB number 6 in layer 6 is : 0
+Layer Map for CB number 6 in layer 7 is : 0
+User ID for CB number 6 in layer 0 is : 1
+User ID for CB number 6 in layer 1 is : 0
+User ID for CB number 6 in layer 2 is : 0
+User ID for CB number 6 in layer 3 is : 0
+User ID for CB number 6 in layer 4 is : 0
+User ID for CB number 6 in layer 5 is : 0
+User ID for CB number 6 in layer 6 is : 0
+User ID for CB number 6 in layer 7 is : 0
+
+Hardware packet 1 for read config is : 0X4400000046FC05F6
+Hardware packet 2 for read config is : 0X4400000000003C30
+Start address for read for CB number 7 in layer 0 is : 18172
+Number address for read for CB number 7 in layer 0 is : 1526
+Write counter for read for CB number 7 in layer 0 is : 15408
+Last OFDM symbol for CB number 7 in layer 0 is : 9
+CB number 7 of user 2 at cb_in_tb 2
+
+Hardware packet 1 for read config is : 0X4500000046FC05F6
+Hardware packet 2 for read config is : 0X4500000000003C30
+Start address for DISCARD read for CB number 7 in layer 1 is : 18172
+Number address for DISCARD read for CB number 7 in layer 1 is : 1526
+Write counter for DISCARD read for CB number 7 in layer 1 is : 15408
+
+Hardware packet 1 for read config is : 0X4600000046FC05F6
+Hardware packet 2 for read config is : 0X4600000000003C30
+Start address for DISCARD read for CB number 7 in layer 2 is : 18172
+Number address for DISCARD read for CB number 7 in layer 2 is : 1526
+Write counter for DISCARD read for CB number 7 in layer 2 is : 15408
+
+Hardware packet 1 for read config is : 0X4700000046FC05F6
+Hardware packet 2 for read config is : 0X4700000000003C30
+Start address for DISCARD read for CB number 7 in layer 3 is : 18172
+Number address for DISCARD read for CB number 7 in layer 3 is : 1526
+Write counter for DISCARD read for CB number 7 in layer 3 is : 15408
+
+Hardware packet 1 for layer-demap is : 0X4800000000000001
+Hardware packet 2 for layer-demap is : 0X4800000000000002
+Hardware packet 3 for layer-demap is : 0X4800000000000000
+Layer Map for CB number 7 in layer 0 is : 1
+Layer Map for CB number 7 in layer 1 is : 0
+Layer Map for CB number 7 in layer 2 is : 0
+Layer Map for CB number 7 in layer 3 is : 0
+Layer Map for CB number 7 in layer 4 is : 0
+Layer Map for CB number 7 in layer 5 is : 0
+Layer Map for CB number 7 in layer 6 is : 0
+Layer Map for CB number 7 in layer 7 is : 0
+User ID for CB number 7 in layer 0 is : 2
+User ID for CB number 7 in layer 1 is : 0
+User ID for CB number 7 in layer 2 is : 0
+User ID for CB number 7 in layer 3 is : 0
+User ID for CB number 7 in layer 4 is : 0
+User ID for CB number 7 in layer 5 is : 0
+User ID for CB number 7 in layer 6 is : 0
+User ID for CB number 7 in layer 7 is : 0
+
+Hardware packet 1 for read config is : 0X4400000012480618
+Hardware packet 2 for read config is : 0X4400000000003C30
+Start address for read for CB number 8 in layer 0 is : 4680
+Number address for read for CB number 8 in layer 0 is : 1560
+Write counter for read for CB number 8 in layer 0 is : 15408
+Last OFDM symbol for CB number 8 in layer 0 is : 9
+CB number 8 of user 0 at cb_in_tb 3
+
+Hardware packet 1 for read config is : 0X4500000012480618
+Hardware packet 2 for read config is : 0X4500000000003C30
+Start address for DISCARD read for CB number 8 in layer 1 is : 4680
+Number address for DISCARD read for CB number 8 in layer 1 is : 1560
+Write counter for DISCARD read for CB number 8 in layer 1 is : 15408
+
+Hardware packet 1 for read config is : 0X4600000012480618
+Hardware packet 2 for read config is : 0X4600000000003C30
+Start address for DISCARD read for CB number 8 in layer 2 is : 4680
+Number address for DISCARD read for CB number 8 in layer 2 is : 1560
+Write counter for DISCARD read for CB number 8 in layer 2 is : 15408
+
+Hardware packet 1 for read config is : 0X4700000012480618
+Hardware packet 2 for read config is : 0X4700000000003C30
+Start address for DISCARD read for CB number 8 in layer 3 is : 4680
+Number address for DISCARD read for CB number 8 in layer 3 is : 1560
+Write counter for DISCARD read for CB number 8 in layer 3 is : 15408
+
+Hardware packet 1 for layer-demap is : 0X4800000000000001
+Hardware packet 2 for layer-demap is : 0X4800000000000000
+Hardware packet 3 for layer-demap is : 0X4800000000000000
+Layer Map for CB number 8 in layer 0 is : 1
+Layer Map for CB number 8 in layer 1 is : 0
+Layer Map for CB number 8 in layer 2 is : 0
+Layer Map for CB number 8 in layer 3 is : 0
+Layer Map for CB number 8 in layer 4 is : 0
+Layer Map for CB number 8 in layer 5 is : 0
+Layer Map for CB number 8 in layer 6 is : 0
+Layer Map for CB number 8 in layer 7 is : 0
+User ID for CB number 8 in layer 0 is : 0
+User ID for CB number 8 in layer 1 is : 0
+User ID for CB number 8 in layer 2 is : 0
+User ID for CB number 8 in layer 3 is : 0
+User ID for CB number 8 in layer 4 is : 0
+User ID for CB number 8 in layer 5 is : 0
+User ID for CB number 8 in layer 6 is : 0
+User ID for CB number 8 in layer 7 is : 0
+
+Hardware packet 1 for read config is : 0X440000002FD005A0
+Hardware packet 2 for read config is : 0X440000000000435C
+Start address for read for CB number 9 in layer 0 is : 12240
+Number address for read for CB number 9 in layer 0 is : 1440
+Write counter for read for CB number 9 in layer 0 is : 17244
+Last OFDM symbol for CB number 9 in layer 0 is : 10
+CB number 9 of user 1 at cb_in_tb 2
+
+Hardware packet 1 for read config is : 0X450000002FD005A0
+Hardware packet 2 for read config is : 0X450000000000435C
+Start address for DISCARD read for CB number 9 in layer 1 is : 12240
+Number address for DISCARD read for CB number 9 in layer 1 is : 1440
+Write counter for DISCARD read for CB number 9 in layer 1 is : 17244
+
+Hardware packet 1 for read config is : 0X460000002FD005A0
+Hardware packet 2 for read config is : 0X460000000000435C
+Start address for DISCARD read for CB number 9 in layer 2 is : 12240
+Number address for DISCARD read for CB number 9 in layer 2 is : 1440
+Write counter for DISCARD read for CB number 9 in layer 2 is : 17244
+
+Hardware packet 1 for read config is : 0X470000002FD005A0
+Hardware packet 2 for read config is : 0X470000000000435C
+Start address for DISCARD read for CB number 9 in layer 3 is : 12240
+Number address for DISCARD read for CB number 9 in layer 3 is : 1440
+Write counter for DISCARD read for CB number 9 in layer 3 is : 17244
+
+Hardware packet 1 for layer-demap is : 0X4800000000000001
+Hardware packet 2 for layer-demap is : 0X4800000000000001
+Hardware packet 3 for layer-demap is : 0X4800000000000000
+Layer Map for CB number 9 in layer 0 is : 1
+Layer Map for CB number 9 in layer 1 is : 0
+Layer Map for CB number 9 in layer 2 is : 0
+Layer Map for CB number 9 in layer 3 is : 0
+Layer Map for CB number 9 in layer 4 is : 0
+Layer Map for CB number 9 in layer 5 is : 0
+Layer Map for CB number 9 in layer 6 is : 0
+Layer Map for CB number 9 in layer 7 is : 0
+User ID for CB number 9 in layer 0 is : 1
+User ID for CB number 9 in layer 1 is : 0
+User ID for CB number 9 in layer 2 is : 0
+User ID for CB number 9 in layer 3 is : 0
+User ID for CB number 9 in layer 4 is : 0
+User ID for CB number 9 in layer 5 is : 0
+User ID for CB number 9 in layer 6 is : 0
+User ID for CB number 9 in layer 7 is : 0
+
+Hardware packet 1 for read config is : 0X440000004CF205F7
+Hardware packet 2 for read config is : 0X4400000000004A88
+Start address for read for CB number 10 in layer 0 is : 19698
+Number address for read for CB number 10 in layer 0 is : 1527
+Write counter for read for CB number 10 in layer 0 is : 19080
+Last OFDM symbol for CB number 10 in layer 0 is : 11
+CB number 10 of user 2 at cb_in_tb 3
+
+Hardware packet 1 for read config is : 0X450000004CF205F7
+Hardware packet 2 for read config is : 0X4500000000004A88
+Start address for DISCARD read for CB number 10 in layer 1 is : 19698
+Number address for DISCARD read for CB number 10 in layer 1 is : 1527
+Write counter for DISCARD read for CB number 10 in layer 1 is : 19080
+
+Hardware packet 1 for read config is : 0X460000004CF205F7
+Hardware packet 2 for read config is : 0X4600000000004A88
+Start address for DISCARD read for CB number 10 in layer 2 is : 19698
+Number address for DISCARD read for CB number 10 in layer 2 is : 1527
+Write counter for DISCARD read for CB number 10 in layer 2 is : 19080
+
+Hardware packet 1 for read config is : 0X470000004CF205F7
+Hardware packet 2 for read config is : 0X4700000000004A88
+Start address for DISCARD read for CB number 10 in layer 3 is : 19698
+Number address for DISCARD read for CB number 10 in layer 3 is : 1527
+Write counter for DISCARD read for CB number 10 in layer 3 is : 19080
+
+Hardware packet 1 for layer-demap is : 0X4800000000000001
+Hardware packet 2 for layer-demap is : 0X4800000000000002
+Hardware packet 3 for layer-demap is : 0X4800000000000000
+Layer Map for CB number 10 in layer 0 is : 1
+Layer Map for CB number 10 in layer 1 is : 0
+Layer Map for CB number 10 in layer 2 is : 0
+Layer Map for CB number 10 in layer 3 is : 0
+Layer Map for CB number 10 in layer 4 is : 0
+Layer Map for CB number 10 in layer 5 is : 0
+Layer Map for CB number 10 in layer 6 is : 0
+Layer Map for CB number 10 in layer 7 is : 0
+User ID for CB number 10 in layer 0 is : 2
+User ID for CB number 10 in layer 1 is : 0
+User ID for CB number 10 in layer 2 is : 0
+User ID for CB number 10 in layer 3 is : 0
+User ID for CB number 10 in layer 4 is : 0
+User ID for CB number 10 in layer 5 is : 0
+User ID for CB number 10 in layer 6 is : 0
+User ID for CB number 10 in layer 7 is : 0
+
+Hardware packet 1 for read config is : 0X4400000018600618
+Hardware packet 2 for read config is : 0X4400000000004A88
+Start address for read for CB number 11 in layer 0 is : 6240
+Number address for read for CB number 11 in layer 0 is : 1560
+Write counter for read for CB number 11 in layer 0 is : 19080
+Last OFDM symbol for CB number 11 in layer 0 is : 11
+CB number 11 of user 0 at cb_in_tb 4
+
+Hardware packet 1 for read config is : 0X4500000018600618
+Hardware packet 2 for read config is : 0X4500000000004A88
+Start address for DISCARD read for CB number 11 in layer 1 is : 6240
+Number address for DISCARD read for CB number 11 in layer 1 is : 1560
+Write counter for DISCARD read for CB number 11 in layer 1 is : 19080
+
+Hardware packet 1 for read config is : 0X4600000018600618
+Hardware packet 2 for read config is : 0X4600000000004A88
+Start address for DISCARD read for CB number 11 in layer 2 is : 6240
+Number address for DISCARD read for CB number 11 in layer 2 is : 1560
+Write counter for DISCARD read for CB number 11 in layer 2 is : 19080
+
+Hardware packet 1 for read config is : 0X4700000018600618
+Hardware packet 2 for read config is : 0X4700000000004A88
+Start address for DISCARD read for CB number 11 in layer 3 is : 6240
+Number address for DISCARD read for CB number 11 in layer 3 is : 1560
+Write counter for DISCARD read for CB number 11 in layer 3 is : 19080
+
+Hardware packet 1 for layer-demap is : 0X4800000000000001
+Hardware packet 2 for layer-demap is : 0X4800000000000000
+Hardware packet 3 for layer-demap is : 0X4800000000000000
+Layer Map for CB number 11 in layer 0 is : 1
+Layer Map for CB number 11 in layer 1 is : 0
+Layer Map for CB number 11 in layer 2 is : 0
+Layer Map for CB number 11 in layer 3 is : 0
+Layer Map for CB number 11 in layer 4 is : 0
+Layer Map for CB number 11 in layer 5 is : 0
+Layer Map for CB number 11 in layer 6 is : 0
+Layer Map for CB number 11 in layer 7 is : 0
+User ID for CB number 11 in layer 0 is : 0
+User ID for CB number 11 in layer 1 is : 0
+User ID for CB number 11 in layer 2 is : 0
+User ID for CB number 11 in layer 3 is : 0
+User ID for CB number 11 in layer 4 is : 0
+User ID for CB number 11 in layer 5 is : 0
+User ID for CB number 11 in layer 6 is : 0
+User ID for CB number 11 in layer 7 is : 0
+
+Hardware packet 1 for read config is : 0X44000000357005A0
+Hardware packet 2 for read config is : 0X44000000000058E0
+Start address for read for CB number 12 in layer 0 is : 13680
+Number address for read for CB number 12 in layer 0 is : 1440
+Write counter for read for CB number 12 in layer 0 is : 22752
+Last OFDM symbol for CB number 12 in layer 0 is : 13
+CB number 12 of user 1 at cb_in_tb 3
+
+Hardware packet 1 for read config is : 0X45000000357005A0
+Hardware packet 2 for read config is : 0X45000000000058E0
+Start address for DISCARD read for CB number 12 in layer 1 is : 13680
+Number address for DISCARD read for CB number 12 in layer 1 is : 1440
+Write counter for DISCARD read for CB number 12 in layer 1 is : 22752
+
+Hardware packet 1 for read config is : 0X46000000357005A0
+Hardware packet 2 for read config is : 0X46000000000058E0
+Start address for DISCARD read for CB number 12 in layer 2 is : 13680
+Number address for DISCARD read for CB number 12 in layer 2 is : 1440
+Write counter for DISCARD read for CB number 12 in layer 2 is : 22752
+
+Hardware packet 1 for read config is : 0X47000000357005A0
+Hardware packet 2 for read config is : 0X47000000000058E0
+Start address for DISCARD read for CB number 12 in layer 3 is : 13680
+Number address for DISCARD read for CB number 12 in layer 3 is : 1440
+Write counter for DISCARD read for CB number 12 in layer 3 is : 22752
+
+Hardware packet 1 for layer-demap is : 0X4800000000000001
+Hardware packet 2 for layer-demap is : 0X4800000000000001
+Hardware packet 3 for layer-demap is : 0X4800000000000000
+Layer Map for CB number 12 in layer 0 is : 1
+Layer Map for CB number 12 in layer 1 is : 0
+Layer Map for CB number 12 in layer 2 is : 0
+Layer Map for CB number 12 in layer 3 is : 0
+Layer Map for CB number 12 in layer 4 is : 0
+Layer Map for CB number 12 in layer 5 is : 0
+Layer Map for CB number 12 in layer 6 is : 0
+Layer Map for CB number 12 in layer 7 is : 0
+User ID for CB number 12 in layer 0 is : 1
+User ID for CB number 12 in layer 1 is : 0
+User ID for CB number 12 in layer 2 is : 0
+User ID for CB number 12 in layer 3 is : 0
+User ID for CB number 12 in layer 4 is : 0
+User ID for CB number 12 in layer 5 is : 0
+User ID for CB number 12 in layer 6 is : 0
+User ID for CB number 12 in layer 7 is : 0
+
+Hardware packet 1 for read config is : 0X440000001E780618
+Hardware packet 2 for read config is : 0X44000000000058E0
+Start address for read for CB number 13 in layer 0 is : 7800
+Number address for read for CB number 13 in layer 0 is : 1560
+Write counter for read for CB number 13 in layer 0 is : 22752
+Last OFDM symbol for CB number 13 in layer 0 is : 13
+CB number 13 of user 0 at cb_in_tb 5
+
+Hardware packet 1 for read config is : 0X450000001E780618
+Hardware packet 2 for read config is : 0X45000000000058E0
+Start address for DISCARD read for CB number 13 in layer 1 is : 7800
+Number address for DISCARD read for CB number 13 in layer 1 is : 1560
+Write counter for DISCARD read for CB number 13 in layer 1 is : 22752
+
+Hardware packet 1 for read config is : 0X460000001E780618
+Hardware packet 2 for read config is : 0X46000000000058E0
+Start address for DISCARD read for CB number 13 in layer 2 is : 7800
+Number address for DISCARD read for CB number 13 in layer 2 is : 1560
+Write counter for DISCARD read for CB number 13 in layer 2 is : 22752
+
+Hardware packet 1 for read config is : 0X470000001E780618
+Hardware packet 2 for read config is : 0X47000000000058E0
+Start address for DISCARD read for CB number 13 in layer 3 is : 7800
+Number address for DISCARD read for CB number 13 in layer 3 is : 1560
+Write counter for DISCARD read for CB number 13 in layer 3 is : 22752
+
+Hardware packet 1 for layer-demap is : 0X4800000000000001
+Hardware packet 2 for layer-demap is : 0X4800000000000000
+Hardware packet 3 for layer-demap is : 0X4800000000000000
+Layer Map for CB number 13 in layer 0 is : 1
+Layer Map for CB number 13 in layer 1 is : 0
+Layer Map for CB number 13 in layer 2 is : 0
+Layer Map for CB number 13 in layer 3 is : 0
+Layer Map for CB number 13 in layer 4 is : 0
+Layer Map for CB number 13 in layer 5 is : 0
+Layer Map for CB number 13 in layer 6 is : 0
+Layer Map for CB number 13 in layer 7 is : 0
+User ID for CB number 13 in layer 0 is : 0
+User ID for CB number 13 in layer 1 is : 0
+User ID for CB number 13 in layer 2 is : 0
+User ID for CB number 13 in layer 3 is : 0
+User ID for CB number 13 in layer 4 is : 0
+User ID for CB number 13 in layer 5 is : 0
+User ID for CB number 13 in layer 6 is : 0
+User ID for CB number 13 in layer 7 is : 0
+
+Hardware packet 1 for read config is : 0X4400000052E905F7
+Hardware packet 2 for read config is : 0X44000000000058E0
+Start address for read for CB number 14 in layer 0 is : 21225
+Number address for read for CB number 14 in layer 0 is : 1527
+Write counter for read for CB number 14 in layer 0 is : 22752
+Last OFDM symbol for CB number 14 in layer 0 is : 13
+CB number 14 of user 2 at cb_in_tb 4
+
+Hardware packet 1 for read config is : 0X4500000052E905F7
+Hardware packet 2 for read config is : 0X45000000000058E0
+Start address for DISCARD read for CB number 14 in layer 1 is : 21225
+Number address for DISCARD read for CB number 14 in layer 1 is : 1527
+Write counter for DISCARD read for CB number 14 in layer 1 is : 22752
+
+Hardware packet 1 for read config is : 0X4600000052E905F7
+Hardware packet 2 for read config is : 0X46000000000058E0
+Start address for DISCARD read for CB number 14 in layer 2 is : 21225
+Number address for DISCARD read for CB number 14 in layer 2 is : 1527
+Write counter for DISCARD read for CB number 14 in layer 2 is : 22752
+
+Hardware packet 1 for read config is : 0X4700000052E905F7
+Hardware packet 2 for read config is : 0X47000000000058E0
+Start address for DISCARD read for CB number 14 in layer 3 is : 21225
+Number address for DISCARD read for CB number 14 in layer 3 is : 1527
+Write counter for DISCARD read for CB number 14 in layer 3 is : 22752
+
+Hardware packet 1 for layer-demap is : 0X4800000000000001
+Hardware packet 2 for layer-demap is : 0X4800000000000002
+Hardware packet 3 for layer-demap is : 0X4800000000000000
+Layer Map for CB number 14 in layer 0 is : 1
+Layer Map for CB number 14 in layer 1 is : 0
+Layer Map for CB number 14 in layer 2 is : 0
+Layer Map for CB number 14 in layer 3 is : 0
+Layer Map for CB number 14 in layer 4 is : 0
+Layer Map for CB number 14 in layer 5 is : 0
+Layer Map for CB number 14 in layer 6 is : 0
+Layer Map for CB number 14 in layer 7 is : 0
+User ID for CB number 14 in layer 0 is : 2
+User ID for CB number 14 in layer 1 is : 0
+User ID for CB number 14 in layer 2 is : 0
+User ID for CB number 14 in layer 3 is : 0
+User ID for CB number 14 in layer 4 is : 0
+User ID for CB number 14 in layer 5 is : 0
+User ID for CB number 14 in layer 6 is : 0
+User ID for CB number 14 in layer 7 is : 0
+
+Hardware packet for read config is : 0X440000000000000F
+Total number of read configs for layer 0 are : 15
+
+Hardware packet for read config is : 0X450000000000000F
+Total number of read configs for layer 1 are : 15
+
+Hardware packet for read config is : 0X460000000000000F
+Total number of read configs for layer 2 are : 15
+
+Hardware packet for read config is : 0X470000000000000F
+Total number of read configs for layer 3 are : 15
+
+
+=====================Remaining PUSCH configurations=======================
+Configuration for descrambler module- 
+Hardware packet1 is : 0X4A00000000140001
+rnti_user0: 1 
+n_id_user0: 20 
+Hardware packet1 is : 0X4A00000000140002
+rnti_user1: 2 
+n_id_user1: 20 
+Hardware packet1 is : 0X4A00000000140003
+rnti_user2: 3 
+n_id_user2: 20 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user3: 0 
+n_id_user3: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user4: 0 
+n_id_user4: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user5: 0 
+n_id_user5: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user6: 0 
+n_id_user6: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user7: 0 
+n_id_user7: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user8: 0 
+n_id_user8: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user9: 0 
+n_id_user9: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user10: 0 
+n_id_user10: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user11: 0 
+n_id_user11: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user12: 0 
+n_id_user12: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user13: 0 
+n_id_user13: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user14: 0 
+n_id_user14: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user15: 0 
+n_id_user15: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user16: 0 
+n_id_user16: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user17: 0 
+n_id_user17: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user18: 0 
+n_id_user18: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user19: 0 
+n_id_user19: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user20: 0 
+n_id_user20: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user21: 0 
+n_id_user21: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user22: 0 
+n_id_user22: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user23: 0 
+n_id_user23: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user24: 0 
+n_id_user24: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user25: 0 
+n_id_user25: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user26: 0 
+n_id_user26: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user27: 0 
+n_id_user27: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user28: 0 
+n_id_user28: 0 
+Hardware packet1 is : 0X4A00000000000000
+rnti_user29: 0 
+n_id_user29: 0 
+=======================
+Configuration for LLR gen module- 
+Hardware packet1 is : 0X49000000000058E0
+tot_iq_samples_slot: 22752 
+Hardware packet0 is : 0X4900000000000123
+qam_type_user0: 3 
+qam_type_user1: 4 
+qam_type_user2: 4 
+qam_type_user3: 0 
+qam_type_user4: 0 
+qam_type_user5: 0 
+qam_type_user6: 0 
+qam_type_user7: 0 
+qam_type_user8: 0 
+qam_type_user9: 0 
+Hardware packet1 is : 0X4900000000000000
+qam_type_user10: 0 
+qam_type_user11: 0 
+qam_type_user12: 0 
+qam_type_user13: 0 
+qam_type_user14: 0 
+qam_type_user15: 0 
+qam_type_user16: 0 
+qam_type_user17: 0 
+qam_type_user18: 0 
+qam_type_user19: 0 
+Hardware packet2 is : 0X4900000000000000
+qam_type_user20: 0 
+qam_type_user21: 0 
+qam_type_user22: 0 
+qam_type_user23: 0 
+qam_type_user24: 0 
+qam_type_user25: 0 
+qam_type_user26: 0 
+qam_type_user27: 0 
+qam_type_user28: 0 
+qam_type_user29: 0 
+=======================
+
+
+=====================TB and CB CRC configurations=======================
+
+Hardware packet for CB CRC for CB 0 is : 0X5000000001003E78
+l1_r is : 120
+l1_k is : 62
+l1_poly_type is : 1
+
+Hardware packet for CB CRC for CB 10 is : 0X5000000001004170
+l1_r is : 112
+l1_k is : 65
+l1_poly_type is : 1
+
+Hardware packet for CB CRC for CB 6 is : 0X5000000001003C20
+l1_r is : 32
+l1_k is : 60
+l1_poly_type is : 1
+
+Hardware packet for CB CRC for CB 1 is : 0X5000000001003E78
+l1_r is : 120
+l1_k is : 62
+l1_poly_type is : 1
+
+Hardware packet for CB CRC for CB 11 is : 0X5000000001004170
+l1_r is : 112
+l1_k is : 65
+l1_poly_type is : 1
+
+Hardware packet for CB CRC for CB 2 is : 0X5000000001003E78
+l1_r is : 120
+l1_k is : 62
+l1_poly_type is : 1
+
+Hardware packet for CB CRC for CB 7 is : 0X5000000001003C20
+l1_r is : 32
+l1_k is : 60
+l1_poly_type is : 1
+
+Hardware packet for CB CRC for CB 12 is : 0X5000000001004170
+l1_r is : 112
+l1_k is : 65
+l1_poly_type is : 1
+
+Hardware packet for CB CRC for CB 3 is : 0X5000000001003E78
+l1_r is : 120
+l1_k is : 62
+l1_poly_type is : 1
+
+Hardware packet for CB CRC for CB 8 is : 0X5000000001003C20
+l1_r is : 32
+l1_k is : 60
+l1_poly_type is : 1
+
+Hardware packet for CB CRC for CB 13 is : 0X5000000001004170
+l1_r is : 112
+l1_k is : 65
+l1_poly_type is : 1
+
+Hardware packet for CB CRC for CB 4 is : 0X5000000001003E78
+l1_r is : 120
+l1_k is : 62
+l1_poly_type is : 1
+
+Hardware packet for CB CRC for CB 9 is : 0X5000000001003C20
+l1_r is : 32
+l1_k is : 60
+l1_poly_type is : 1
+
+Hardware packet for CB CRC for CB 5 is : 0X5000000001003E78
+l1_r is : 120
+l1_k is : 62
+l1_poly_type is : 1
+
+Hardware packet for CB CRC for CB 14 is : 0X5000000001004170
+l1_r is : 112
+l1_k is : 65
+l1_poly_type is : 1
+
+Hardware packet for TB CRC for user 0 is : 0X5300000000017840
+l1_r is : 64
+l1_k is : 376
+l1_poly_type is : 0
+
+Hardware packet for TB CRC for user 1 is : 0X530000000000F020
+l1_r is : 32
+l1_k is : 240
+l1_poly_type is : 0
+
+Hardware packet for TB CRC for user 2 is : 0X5300000000014838
+l1_r is : 56
+l1_k is : 328
+l1_poly_type is : 0
+
+
+=================================================ORAN configurations===================================================
+
+=====================================================C-plane configs=====================================================================
+
+Hardware packet 1 of Application Header is : 0X68101082AC800020
+Hardware packet 2 of Application Header is : 0X6810180000000000
+Section type is : 1 
+Data Direction is : 0 
+Frame number is : 85 
+Subframe number is : 9 
+Slot number is : 0 
+Starting symbol is : 0 
+Number of sections are : 1 
+Compression header is : 0 
+
+Hardware packet 1 of Section Header is : 0X6820100002829FFE
+Hardware packet 2 of Section Header is : 0X68201F0001880000
+Section type is : 1 
+Section ID is : 0 
+RB is : 0 
+Symbol Increment is : 0 
+Start PRB is : 20 
+Number of PRB are : 60 
+RE mask is : 0X0FFF 
+Number of symbols are : 14 
+Beam ID is : 1 
+RTC ID is : 0X1000 
+
+Hardware packet 1 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 2 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 3 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 4 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 5 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 6 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 7 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 8 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 9 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 10 of Section Extension Header is : 0X6830B80000000000
+Extension type is : 11 
+ef is : 1 
+extLen is : 1 
+disableBFW is : 0 
+RAD is : 0 
+Number of PRBs in a bundle are : 4 
+BFW compression header is : 0X0000 
+BFW CompParam is : 0 
+Beam1 ID is : 0X0000 
+Beam2 ID is : 0X0000 
+Beam3 ID is : 0X0000 
+Beam4 ID is : 0X0000 
+Beam5 ID is : 0X0000 
+
+Hardware packet 1 of Application Header is : 0X68101082AC800020
+Hardware packet 2 of Application Header is : 0X6810180000000000
+Section type is : 1 
+Data Direction is : 0 
+Frame number is : 85 
+Subframe number is : 9 
+Slot number is : 0 
+Starting symbol is : 0 
+Number of sections are : 1 
+Compression header is : 0 
+
+Hardware packet 1 of Section Header is : 0X6820100002829FFE
+Hardware packet 2 of Section Header is : 0X68201F0001880000
+Section type is : 1 
+Section ID is : 0 
+RB is : 0 
+Symbol Increment is : 0 
+Start PRB is : 20 
+Number of PRB are : 60 
+RE mask is : 0X0FFF 
+Number of symbols are : 14 
+Beam ID is : 1 
+RTC ID is : 0X1000 
+
+Hardware packet 1 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 2 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 3 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 4 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 5 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 6 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 7 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 8 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 9 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 10 of Section Extension Header is : 0X6830B80000000000
+Extension type is : 11 
+ef is : 1 
+extLen is : 1 
+disableBFW is : 0 
+RAD is : 0 
+Number of PRBs in a bundle are : 4 
+BFW compression header is : 0X0000 
+BFW CompParam is : 0 
+Beam1 ID is : 0X0000 
+Beam2 ID is : 0X0000 
+Beam3 ID is : 0X0000 
+Beam4 ID is : 0X0000 
+Beam5 ID is : 0X0000 
+
+Hardware packet 1 of Application Header is : 0X68101082AC800020
+Hardware packet 2 of Application Header is : 0X6810180000000000
+Section type is : 1 
+Data Direction is : 0 
+Frame number is : 85 
+Subframe number is : 9 
+Slot number is : 0 
+Starting symbol is : 0 
+Number of sections are : 1 
+Compression header is : 0 
+
+Hardware packet 1 of Section Header is : 0X6820100002829FFE
+Hardware packet 2 of Section Header is : 0X68201F0001880000
+Section type is : 1 
+Section ID is : 0 
+RB is : 0 
+Symbol Increment is : 0 
+Start PRB is : 20 
+Number of PRB are : 60 
+RE mask is : 0X0FFF 
+Number of symbols are : 14 
+Beam ID is : 1 
+RTC ID is : 0X1000 
+
+Hardware packet 1 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 2 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 3 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 4 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 5 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 6 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 7 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 8 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 9 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 10 of Section Extension Header is : 0X6830B80000000000
+Extension type is : 11 
+ef is : 1 
+extLen is : 1 
+disableBFW is : 0 
+RAD is : 0 
+Number of PRBs in a bundle are : 4 
+BFW compression header is : 0X0000 
+BFW CompParam is : 0 
+Beam1 ID is : 0X0000 
+Beam2 ID is : 0X0000 
+Beam3 ID is : 0X0000 
+Beam4 ID is : 0X0000 
+Beam5 ID is : 0X0000 
+
+Hardware packet 1 of Application Header is : 0X68101082AC800020
+Hardware packet 2 of Application Header is : 0X6810180000000000
+Section type is : 1 
+Data Direction is : 0 
+Frame number is : 85 
+Subframe number is : 9 
+Slot number is : 0 
+Starting symbol is : 0 
+Number of sections are : 1 
+Compression header is : 0 
+
+Hardware packet 1 of Section Header is : 0X682010018A029FFE
+Hardware packet 2 of Section Header is : 0X68201F0001880000
+Section type is : 1 
+Section ID is : 3 
+RB is : 0 
+Symbol Increment is : 0 
+Start PRB is : 80 
+Number of PRB are : 40 
+RE mask is : 0X0FFF 
+Number of symbols are : 14 
+Beam ID is : 1 
+RTC ID is : 0X1000 
+
+Hardware packet 1 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 2 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 3 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 4 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 5 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 6 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 7 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 8 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 9 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 10 of Section Extension Header is : 0X6830B80000000000
+Extension type is : 11 
+ef is : 1 
+extLen is : 1 
+disableBFW is : 0 
+RAD is : 0 
+Number of PRBs in a bundle are : 4 
+BFW compression header is : 0X0000 
+BFW CompParam is : 0 
+Beam1 ID is : 0X0000 
+Beam2 ID is : 0X0000 
+Beam3 ID is : 0X0000 
+Beam4 ID is : 0X0000 
+Beam5 ID is : 0X0000 
+
+Hardware packet 1 of Application Header is : 0X68101082AC800020
+Hardware packet 2 of Application Header is : 0X6810180000000000
+Section type is : 1 
+Data Direction is : 0 
+Frame number is : 85 
+Subframe number is : 9 
+Slot number is : 0 
+Starting symbol is : 0 
+Number of sections are : 1 
+Compression header is : 0 
+
+Hardware packet 1 of Section Header is : 0X682010018A029FFE
+Hardware packet 2 of Section Header is : 0X68201F0001880000
+Section type is : 1 
+Section ID is : 3 
+RB is : 0 
+Symbol Increment is : 0 
+Start PRB is : 80 
+Number of PRB are : 40 
+RE mask is : 0X0FFF 
+Number of symbols are : 14 
+Beam ID is : 1 
+RTC ID is : 0X1000 
+
+Hardware packet 1 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 2 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 3 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 4 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 5 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 6 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 7 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 8 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 9 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 10 of Section Extension Header is : 0X6830B80000000000
+Extension type is : 11 
+ef is : 1 
+extLen is : 1 
+disableBFW is : 0 
+RAD is : 0 
+Number of PRBs in a bundle are : 4 
+BFW compression header is : 0X0000 
+BFW CompParam is : 0 
+Beam1 ID is : 0X0000 
+Beam2 ID is : 0X0000 
+Beam3 ID is : 0X0000 
+Beam4 ID is : 0X0000 
+Beam5 ID is : 0X0000 
+
+Hardware packet 1 of Application Header is : 0X68101082AC800020
+Hardware packet 2 of Application Header is : 0X6810180000000000
+Section type is : 1 
+Data Direction is : 0 
+Frame number is : 85 
+Subframe number is : 9 
+Slot number is : 0 
+Starting symbol is : 0 
+Number of sections are : 1 
+Compression header is : 0 
+
+Hardware packet 1 of Section Header is : 0X682010028F029FFE
+Hardware packet 2 of Section Header is : 0X68201F0001880000
+Section type is : 1 
+Section ID is : 5 
+RB is : 0 
+Symbol Increment is : 0 
+Start PRB is : 120 
+Number of PRB are : 53 
+RE mask is : 0X0FFF 
+Number of symbols are : 14 
+Beam ID is : 1 
+RTC ID is : 0X1000 
+
+Hardware packet 1 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 2 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 3 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 4 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 5 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 6 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 7 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 8 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 9 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 10 of Section Extension Header is : 0X6830B80000000000
+Extension type is : 11 
+ef is : 1 
+extLen is : 1 
+disableBFW is : 0 
+RAD is : 0 
+Number of PRBs in a bundle are : 4 
+BFW compression header is : 0X0000 
+BFW CompParam is : 0 
+Beam1 ID is : 0X0000 
+Beam2 ID is : 0X0000 
+Beam3 ID is : 0X0000 
+Beam4 ID is : 0X0000 
+Beam5 ID is : 0X0000 
+
+Hardware packet 1 of Application Header is : 0X68101082AC800020
+Hardware packet 2 of Application Header is : 0X6810180000000000
+Section type is : 1 
+Data Direction is : 0 
+Frame number is : 85 
+Subframe number is : 9 
+Slot number is : 0 
+Starting symbol is : 0 
+Number of sections are : 1 
+Compression header is : 0 
+
+Hardware packet 1 of Section Header is : 0X682010028F029FFE
+Hardware packet 2 of Section Header is : 0X68201F0001880000
+Section type is : 1 
+Section ID is : 5 
+RB is : 0 
+Symbol Increment is : 0 
+Start PRB is : 120 
+Number of PRB are : 53 
+RE mask is : 0X0FFF 
+Number of symbols are : 14 
+Beam ID is : 1 
+RTC ID is : 0X1000 
+
+Hardware packet 1 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 2 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 3 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 4 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 5 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 6 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 7 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 8 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 9 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 10 of Section Extension Header is : 0X6830B80000000000
+Extension type is : 11 
+ef is : 1 
+extLen is : 1 
+disableBFW is : 0 
+RAD is : 0 
+Number of PRBs in a bundle are : 4 
+BFW compression header is : 0X0000 
+BFW CompParam is : 0 
+Beam1 ID is : 0X0000 
+Beam2 ID is : 0X0000 
+Beam3 ID is : 0X0000 
+Beam4 ID is : 0X0000 
+Beam5 ID is : 0X0000 
+
+Hardware packet 1 of Application Header is : 0X68101082AC800020
+Hardware packet 2 of Application Header is : 0X6810180000000000
+Section type is : 1 
+Data Direction is : 0 
+Frame number is : 85 
+Subframe number is : 9 
+Slot number is : 0 
+Starting symbol is : 0 
+Number of sections are : 1 
+Compression header is : 0 
+
+Hardware packet 1 of Section Header is : 0X682010028F01BFFE
+Hardware packet 2 of Section Header is : 0X68201F0001880000
+Section type is : 1 
+Section ID is : 5 
+RB is : 0 
+Symbol Increment is : 0 
+Start PRB is : 120 
+Number of PRB are : 53 
+RE mask is : 0X0FFF 
+Number of symbols are : 14 
+Beam ID is : 1 
+RTC ID is : 0X1000 
+
+Hardware packet 1 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 2 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 3 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 4 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 5 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 6 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 7 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 8 of Section Extension Header is : 0X6830B80000000000
+Extension type is : 11 
+ef is : 1 
+extLen is : 1 
+disableBFW is : 0 
+RAD is : 0 
+Number of PRBs in a bundle are : 4 
+BFW compression header is : 0X0000 
+BFW CompParam is : 0 
+Beam1 ID is : 0X0000 
+Beam2 ID is : 0X0000 
+Beam3 ID is : 0X0000 
+Beam4 ID is : 0X0000 
+
+Hardware packet 1 of Application Header is : 0X68101082AC800020
+Hardware packet 2 of Application Header is : 0X6810180000000000
+PDU type is : PRACH 
+Section type is : 1 
+Data Direction is : 0 
+Frame number is : 85 
+Subframe number is : 9 
+Slot number is : 0 
+Starting symbol is : 0 
+Number of sections are : 1 
+Compression header is : 0 
+
+Hardware packet 1 of Section Header is : 0X6820100412C19FFE
+Hardware packet 2 of Section Header is : 0X6820180001880000
+Section type is : 1 
+Section ID is : 8 
+RB is : 0 
+Symbol Increment is : 0 
+Start PRB is : 150 
+Number of PRB are : 12 
+RE mask is : 0X0FFF 
+Number of symbols are : 0 
+Beam ID is : 1 
+RTC ID is : 4096 
+
+Hardware packet 1 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 2 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 3 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 4 of Section Extension Header is : 0X6830B80000000000
+
+Hardware packet 5 of Section Extension Header is : 0X6830B40004040000
+Hardware packet 6 of Section Extension Header is : 0X6830B80000000000
+Extension type is : 11 
+ef is : 1 
+extLen is : 1 
+disableBFW is : 0 
+RAD is : 0 
+Number of PRBs in a bundle are : 4 
+BFW compression header is : 0X0000 
+BFW CompParam is : 0 
+Beam1 ID is : 0X0000 
+Beam2 ID is : 0X0000 
+Beam3 ID is : 0X0000 
+
+Hardware packet1 of Mux config is : 0X6800048048048048
+Hardware packet2 of Mux config is : 0X6808048048048048
+Number of sections in layer 1 is 9 
+=============================================================U-plane configs=============================================================================
+
+Hardware packet of Application Header is : 0X7001055900100000
+Data direction is : 0 
+Payload version is : 1 
+Filter index is : 0 
+Frame ID is : 85 
+Subframe ID is : 9 
+Slot ID is : 0 
+Start symbol is : 1 
+Layer id is 1
+
+Hardware packet of Section Header is : 0X701FFF0001400000
+Section ID is : 4095 
+rb is : 0 
+symInc is : 0 
+Start prb is : 0 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010000141400000
+Section ID is : 0 
+rb is : 0 
+symInc is : 0 
+Start prb is : 20 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010010281400000
+Section ID is : 1 
+rb is : 0 
+symInc is : 0 
+Start prb is : 40 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X70100203C1400000
+Section ID is : 2 
+rb is : 0 
+symInc is : 0 
+Start prb is : 60 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010030501400000
+Section ID is : 3 
+rb is : 0 
+symInc is : 0 
+Start prb is : 80 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010040641400000
+Section ID is : 4 
+rb is : 0 
+symInc is : 0 
+Start prb is : 100 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010050781400000
+Section ID is : 5 
+rb is : 0 
+symInc is : 0 
+Start prb is : 120 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X70100608C1400000
+Section ID is : 6 
+rb is : 0 
+symInc is : 0 
+Start prb is : 140 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010070A00D00000
+Section ID is : 7 
+rb is : 0 
+symInc is : 0 
+Start prb is : 160 
+Number of prb are : 13 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X701FFE0AD6400000
+Section ID is : 4094 
+rb is : 0 
+symInc is : 0 
+Start prb is : 173 
+Number of prb are : 100 
+UD compression header is : 0X0000 
+
+Hardware packet of Application Header is : 0X7001055900200000
+Data direction is : 0 
+Payload version is : 1 
+Filter index is : 0 
+Frame ID is : 85 
+Subframe ID is : 9 
+Slot ID is : 0 
+Start symbol is : 2 
+Layer id is 1
+
+Hardware packet of Section Header is : 0X701FFF0001400000
+Section ID is : 4095 
+rb is : 0 
+symInc is : 0 
+Start prb is : 0 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010000141400000
+Section ID is : 0 
+rb is : 0 
+symInc is : 0 
+Start prb is : 20 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010010281400000
+Section ID is : 1 
+rb is : 0 
+symInc is : 0 
+Start prb is : 40 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X70100203C1400000
+Section ID is : 2 
+rb is : 0 
+symInc is : 0 
+Start prb is : 60 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010030501400000
+Section ID is : 3 
+rb is : 0 
+symInc is : 0 
+Start prb is : 80 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010040641400000
+Section ID is : 4 
+rb is : 0 
+symInc is : 0 
+Start prb is : 100 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010050781400000
+Section ID is : 5 
+rb is : 0 
+symInc is : 0 
+Start prb is : 120 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X70100608C1400000
+Section ID is : 6 
+rb is : 0 
+symInc is : 0 
+Start prb is : 140 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010070A00D00000
+Section ID is : 7 
+rb is : 0 
+symInc is : 0 
+Start prb is : 160 
+Number of prb are : 13 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X701FFE0AD6400000
+Section ID is : 4094 
+rb is : 0 
+symInc is : 0 
+Start prb is : 173 
+Number of prb are : 100 
+UD compression header is : 0X0000 
+
+Hardware packet of Application Header is : 0X7001055900300000
+Data direction is : 0 
+Payload version is : 1 
+Filter index is : 0 
+Frame ID is : 85 
+Subframe ID is : 9 
+Slot ID is : 0 
+Start symbol is : 3 
+Layer id is 1
+
+Hardware packet of Section Header is : 0X701FFF0001400000
+Section ID is : 4095 
+rb is : 0 
+symInc is : 0 
+Start prb is : 0 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010000141400000
+Section ID is : 0 
+rb is : 0 
+symInc is : 0 
+Start prb is : 20 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010010281400000
+Section ID is : 1 
+rb is : 0 
+symInc is : 0 
+Start prb is : 40 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X70100203C1400000
+Section ID is : 2 
+rb is : 0 
+symInc is : 0 
+Start prb is : 60 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010030501400000
+Section ID is : 3 
+rb is : 0 
+symInc is : 0 
+Start prb is : 80 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010040641400000
+Section ID is : 4 
+rb is : 0 
+symInc is : 0 
+Start prb is : 100 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010050781400000
+Section ID is : 5 
+rb is : 0 
+symInc is : 0 
+Start prb is : 120 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X70100608C1400000
+Section ID is : 6 
+rb is : 0 
+symInc is : 0 
+Start prb is : 140 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010070A00D00000
+Section ID is : 7 
+rb is : 0 
+symInc is : 0 
+Start prb is : 160 
+Number of prb are : 13 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X701FFE0AD6400000
+Section ID is : 4094 
+rb is : 0 
+symInc is : 0 
+Start prb is : 173 
+Number of prb are : 100 
+UD compression header is : 0X0000 
+
+Hardware packet of Application Header is : 0X7001055900400000
+Data direction is : 0 
+Payload version is : 1 
+Filter index is : 0 
+Frame ID is : 85 
+Subframe ID is : 9 
+Slot ID is : 0 
+Start symbol is : 4 
+Layer id is 1
+
+Hardware packet of Section Header is : 0X701FFF0001400000
+Section ID is : 4095 
+rb is : 0 
+symInc is : 0 
+Start prb is : 0 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010000141400000
+Section ID is : 0 
+rb is : 0 
+symInc is : 0 
+Start prb is : 20 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010010281400000
+Section ID is : 1 
+rb is : 0 
+symInc is : 0 
+Start prb is : 40 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X70100203C1400000
+Section ID is : 2 
+rb is : 0 
+symInc is : 0 
+Start prb is : 60 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010030501400000
+Section ID is : 3 
+rb is : 0 
+symInc is : 0 
+Start prb is : 80 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010040641400000
+Section ID is : 4 
+rb is : 0 
+symInc is : 0 
+Start prb is : 100 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010050781400000
+Section ID is : 5 
+rb is : 0 
+symInc is : 0 
+Start prb is : 120 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X70100608C1400000
+Section ID is : 6 
+rb is : 0 
+symInc is : 0 
+Start prb is : 140 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010070A00D00000
+Section ID is : 7 
+rb is : 0 
+symInc is : 0 
+Start prb is : 160 
+Number of prb are : 13 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X701FFE0AD6400000
+Section ID is : 4094 
+rb is : 0 
+symInc is : 0 
+Start prb is : 173 
+Number of prb are : 100 
+UD compression header is : 0X0000 
+
+Hardware packet of Application Header is : 0X7001055900500000
+Data direction is : 0 
+Payload version is : 1 
+Filter index is : 0 
+Frame ID is : 85 
+Subframe ID is : 9 
+Slot ID is : 0 
+Start symbol is : 5 
+Layer id is 1
+
+Hardware packet of Section Header is : 0X701FFF0001400000
+Section ID is : 4095 
+rb is : 0 
+symInc is : 0 
+Start prb is : 0 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010000141400000
+Section ID is : 0 
+rb is : 0 
+symInc is : 0 
+Start prb is : 20 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010010281400000
+Section ID is : 1 
+rb is : 0 
+symInc is : 0 
+Start prb is : 40 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X70100203C1400000
+Section ID is : 2 
+rb is : 0 
+symInc is : 0 
+Start prb is : 60 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010030501400000
+Section ID is : 3 
+rb is : 0 
+symInc is : 0 
+Start prb is : 80 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010040641400000
+Section ID is : 4 
+rb is : 0 
+symInc is : 0 
+Start prb is : 100 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010050781400000
+Section ID is : 5 
+rb is : 0 
+symInc is : 0 
+Start prb is : 120 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X70100608C1400000
+Section ID is : 6 
+rb is : 0 
+symInc is : 0 
+Start prb is : 140 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010070A00D00000
+Section ID is : 7 
+rb is : 0 
+symInc is : 0 
+Start prb is : 160 
+Number of prb are : 13 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X701FFE0AD6400000
+Section ID is : 4094 
+rb is : 0 
+symInc is : 0 
+Start prb is : 173 
+Number of prb are : 100 
+UD compression header is : 0X0000 
+
+Hardware packet of Application Header is : 0X7001055900600000
+Data direction is : 0 
+Payload version is : 1 
+Filter index is : 0 
+Frame ID is : 85 
+Subframe ID is : 9 
+Slot ID is : 0 
+Start symbol is : 6 
+Layer id is 1
+
+Hardware packet of Section Header is : 0X701FFF0001400000
+Section ID is : 4095 
+rb is : 0 
+symInc is : 0 
+Start prb is : 0 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010000141400000
+Section ID is : 0 
+rb is : 0 
+symInc is : 0 
+Start prb is : 20 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010010281400000
+Section ID is : 1 
+rb is : 0 
+symInc is : 0 
+Start prb is : 40 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X70100203C1400000
+Section ID is : 2 
+rb is : 0 
+symInc is : 0 
+Start prb is : 60 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010030501400000
+Section ID is : 3 
+rb is : 0 
+symInc is : 0 
+Start prb is : 80 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010040641400000
+Section ID is : 4 
+rb is : 0 
+symInc is : 0 
+Start prb is : 100 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010050781400000
+Section ID is : 5 
+rb is : 0 
+symInc is : 0 
+Start prb is : 120 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X70100608C1400000
+Section ID is : 6 
+rb is : 0 
+symInc is : 0 
+Start prb is : 140 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010070A00D00000
+Section ID is : 7 
+rb is : 0 
+symInc is : 0 
+Start prb is : 160 
+Number of prb are : 13 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X701FFE0AD6400000
+Section ID is : 4094 
+rb is : 0 
+symInc is : 0 
+Start prb is : 173 
+Number of prb are : 100 
+UD compression header is : 0X0000 
+
+Hardware packet of Application Header is : 0X7001055900700000
+Data direction is : 0 
+Payload version is : 1 
+Filter index is : 0 
+Frame ID is : 85 
+Subframe ID is : 9 
+Slot ID is : 0 
+Start symbol is : 7 
+Layer id is 1
+
+Hardware packet of Section Header is : 0X701FFF0001400000
+Section ID is : 4095 
+rb is : 0 
+symInc is : 0 
+Start prb is : 0 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010000141400000
+Section ID is : 0 
+rb is : 0 
+symInc is : 0 
+Start prb is : 20 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010010281400000
+Section ID is : 1 
+rb is : 0 
+symInc is : 0 
+Start prb is : 40 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X70100203C1400000
+Section ID is : 2 
+rb is : 0 
+symInc is : 0 
+Start prb is : 60 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010030501400000
+Section ID is : 3 
+rb is : 0 
+symInc is : 0 
+Start prb is : 80 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010040641400000
+Section ID is : 4 
+rb is : 0 
+symInc is : 0 
+Start prb is : 100 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010050781400000
+Section ID is : 5 
+rb is : 0 
+symInc is : 0 
+Start prb is : 120 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X70100608C1400000
+Section ID is : 6 
+rb is : 0 
+symInc is : 0 
+Start prb is : 140 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010070A00D00000
+Section ID is : 7 
+rb is : 0 
+symInc is : 0 
+Start prb is : 160 
+Number of prb are : 13 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X701FFE0AD6400000
+Section ID is : 4094 
+rb is : 0 
+symInc is : 0 
+Start prb is : 173 
+Number of prb are : 100 
+UD compression header is : 0X0000 
+
+Hardware packet of Application Header is : 0X7001055900800000
+Data direction is : 0 
+Payload version is : 1 
+Filter index is : 0 
+Frame ID is : 85 
+Subframe ID is : 9 
+Slot ID is : 0 
+Start symbol is : 8 
+Layer id is 1
+
+Hardware packet of Section Header is : 0X701FFF0001400000
+Section ID is : 4095 
+rb is : 0 
+symInc is : 0 
+Start prb is : 0 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010000141400000
+Section ID is : 0 
+rb is : 0 
+symInc is : 0 
+Start prb is : 20 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010010281400000
+Section ID is : 1 
+rb is : 0 
+symInc is : 0 
+Start prb is : 40 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X70100203C1400000
+Section ID is : 2 
+rb is : 0 
+symInc is : 0 
+Start prb is : 60 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010030501400000
+Section ID is : 3 
+rb is : 0 
+symInc is : 0 
+Start prb is : 80 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010040641400000
+Section ID is : 4 
+rb is : 0 
+symInc is : 0 
+Start prb is : 100 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010050781400000
+Section ID is : 5 
+rb is : 0 
+symInc is : 0 
+Start prb is : 120 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X70100608C1400000
+Section ID is : 6 
+rb is : 0 
+symInc is : 0 
+Start prb is : 140 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010070A00D00000
+Section ID is : 7 
+rb is : 0 
+symInc is : 0 
+Start prb is : 160 
+Number of prb are : 13 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X701FFE0AD6400000
+Section ID is : 4094 
+rb is : 0 
+symInc is : 0 
+Start prb is : 173 
+Number of prb are : 100 
+UD compression header is : 0X0000 
+
+Hardware packet of Application Header is : 0X7001055900900000
+Data direction is : 0 
+Payload version is : 1 
+Filter index is : 0 
+Frame ID is : 85 
+Subframe ID is : 9 
+Slot ID is : 0 
+Start symbol is : 9 
+Layer id is 1
+
+Hardware packet of Section Header is : 0X701FFF0001400000
+Section ID is : 4095 
+rb is : 0 
+symInc is : 0 
+Start prb is : 0 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010000141400000
+Section ID is : 0 
+rb is : 0 
+symInc is : 0 
+Start prb is : 20 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010010281400000
+Section ID is : 1 
+rb is : 0 
+symInc is : 0 
+Start prb is : 40 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X70100203C1400000
+Section ID is : 2 
+rb is : 0 
+symInc is : 0 
+Start prb is : 60 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010030501400000
+Section ID is : 3 
+rb is : 0 
+symInc is : 0 
+Start prb is : 80 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010040641400000
+Section ID is : 4 
+rb is : 0 
+symInc is : 0 
+Start prb is : 100 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010050781400000
+Section ID is : 5 
+rb is : 0 
+symInc is : 0 
+Start prb is : 120 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X70100608C1400000
+Section ID is : 6 
+rb is : 0 
+symInc is : 0 
+Start prb is : 140 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010070A00D00000
+Section ID is : 7 
+rb is : 0 
+symInc is : 0 
+Start prb is : 160 
+Number of prb are : 13 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X701FFE0AD6400000
+Section ID is : 4094 
+rb is : 0 
+symInc is : 0 
+Start prb is : 173 
+Number of prb are : 100 
+UD compression header is : 0X0000 
+
+Hardware packet of Application Header is : 0X7001055900A00000
+Data direction is : 0 
+Payload version is : 1 
+Filter index is : 0 
+Frame ID is : 85 
+Subframe ID is : 9 
+Slot ID is : 0 
+Start symbol is : 10 
+Layer id is 1
+
+Hardware packet of Section Header is : 0X701FFF0001400000
+Section ID is : 4095 
+rb is : 0 
+symInc is : 0 
+Start prb is : 0 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010000141400000
+Section ID is : 0 
+rb is : 0 
+symInc is : 0 
+Start prb is : 20 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010010281400000
+Section ID is : 1 
+rb is : 0 
+symInc is : 0 
+Start prb is : 40 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X70100203C1400000
+Section ID is : 2 
+rb is : 0 
+symInc is : 0 
+Start prb is : 60 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010030501400000
+Section ID is : 3 
+rb is : 0 
+symInc is : 0 
+Start prb is : 80 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010040641400000
+Section ID is : 4 
+rb is : 0 
+symInc is : 0 
+Start prb is : 100 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010050781400000
+Section ID is : 5 
+rb is : 0 
+symInc is : 0 
+Start prb is : 120 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X70100608C1400000
+Section ID is : 6 
+rb is : 0 
+symInc is : 0 
+Start prb is : 140 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010070A00D00000
+Section ID is : 7 
+rb is : 0 
+symInc is : 0 
+Start prb is : 160 
+Number of prb are : 13 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X701FFE0AD6400000
+Section ID is : 4094 
+rb is : 0 
+symInc is : 0 
+Start prb is : 173 
+Number of prb are : 100 
+UD compression header is : 0X0000 
+
+Hardware packet of Application Header is : 0X7001055900B00000
+Data direction is : 0 
+Payload version is : 1 
+Filter index is : 0 
+Frame ID is : 85 
+Subframe ID is : 9 
+Slot ID is : 0 
+Start symbol is : 11 
+Layer id is 1
+
+Hardware packet of Section Header is : 0X701FFF0001400000
+Section ID is : 4095 
+rb is : 0 
+symInc is : 0 
+Start prb is : 0 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010000141400000
+Section ID is : 0 
+rb is : 0 
+symInc is : 0 
+Start prb is : 20 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010010281400000
+Section ID is : 1 
+rb is : 0 
+symInc is : 0 
+Start prb is : 40 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X70100203C1400000
+Section ID is : 2 
+rb is : 0 
+symInc is : 0 
+Start prb is : 60 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010030501400000
+Section ID is : 3 
+rb is : 0 
+symInc is : 0 
+Start prb is : 80 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010040641400000
+Section ID is : 4 
+rb is : 0 
+symInc is : 0 
+Start prb is : 100 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010050781400000
+Section ID is : 5 
+rb is : 0 
+symInc is : 0 
+Start prb is : 120 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X70100608C1400000
+Section ID is : 6 
+rb is : 0 
+symInc is : 0 
+Start prb is : 140 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010070A00D00000
+Section ID is : 7 
+rb is : 0 
+symInc is : 0 
+Start prb is : 160 
+Number of prb are : 13 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X701FFE0AD6400000
+Section ID is : 4094 
+rb is : 0 
+symInc is : 0 
+Start prb is : 173 
+Number of prb are : 100 
+UD compression header is : 0X0000 
+
+Hardware packet of Application Header is : 0X7001055900C00000
+Data direction is : 0 
+Payload version is : 1 
+Filter index is : 0 
+Frame ID is : 85 
+Subframe ID is : 9 
+Slot ID is : 0 
+Start symbol is : 12 
+Layer id is 1
+
+Hardware packet of Section Header is : 0X701FFF0001400000
+Section ID is : 4095 
+rb is : 0 
+symInc is : 0 
+Start prb is : 0 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010000141400000
+Section ID is : 0 
+rb is : 0 
+symInc is : 0 
+Start prb is : 20 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010010281400000
+Section ID is : 1 
+rb is : 0 
+symInc is : 0 
+Start prb is : 40 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X70100203C1400000
+Section ID is : 2 
+rb is : 0 
+symInc is : 0 
+Start prb is : 60 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010030501400000
+Section ID is : 3 
+rb is : 0 
+symInc is : 0 
+Start prb is : 80 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010040641400000
+Section ID is : 4 
+rb is : 0 
+symInc is : 0 
+Start prb is : 100 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010050781400000
+Section ID is : 5 
+rb is : 0 
+symInc is : 0 
+Start prb is : 120 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X70100608C1400000
+Section ID is : 6 
+rb is : 0 
+symInc is : 0 
+Start prb is : 140 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010070A00D00000
+Section ID is : 7 
+rb is : 0 
+symInc is : 0 
+Start prb is : 160 
+Number of prb are : 13 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X701FFE0AD6400000
+Section ID is : 4094 
+rb is : 0 
+symInc is : 0 
+Start prb is : 173 
+Number of prb are : 100 
+UD compression header is : 0X0000 
+
+Hardware packet of Application Header is : 0X7001055900D00000
+Data direction is : 0 
+Payload version is : 1 
+Filter index is : 0 
+Frame ID is : 85 
+Subframe ID is : 9 
+Slot ID is : 0 
+Start symbol is : 13 
+Layer id is 1
+
+Hardware packet of Section Header is : 0X701FFF0001400000
+Section ID is : 4095 
+rb is : 0 
+symInc is : 0 
+Start prb is : 0 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010000141400000
+Section ID is : 0 
+rb is : 0 
+symInc is : 0 
+Start prb is : 20 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010010281400000
+Section ID is : 1 
+rb is : 0 
+symInc is : 0 
+Start prb is : 40 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X70100203C1400000
+Section ID is : 2 
+rb is : 0 
+symInc is : 0 
+Start prb is : 60 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010030501400000
+Section ID is : 3 
+rb is : 0 
+symInc is : 0 
+Start prb is : 80 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010040641400000
+Section ID is : 4 
+rb is : 0 
+symInc is : 0 
+Start prb is : 100 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010050781400000
+Section ID is : 5 
+rb is : 0 
+symInc is : 0 
+Start prb is : 120 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X70100608C1400000
+Section ID is : 6 
+rb is : 0 
+symInc is : 0 
+Start prb is : 140 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010070A00D00000
+Section ID is : 7 
+rb is : 0 
+symInc is : 0 
+Start prb is : 160 
+Number of prb are : 13 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X701FFE0AD6400000
+Section ID is : 4094 
+rb is : 0 
+symInc is : 0 
+Start prb is : 173 
+Number of prb are : 100 
+UD compression header is : 0X0000 
+
+Hardware packet of Application Header is : 0X7001055900E00000
+Data direction is : 0 
+Payload version is : 1 
+Filter index is : 0 
+Frame ID is : 85 
+Subframe ID is : 9 
+Slot ID is : 0 
+Start symbol is : 14 
+Layer id is 1
+
+Hardware packet of Section Header is : 0X701FFF0001400000
+Section ID is : 4095 
+rb is : 0 
+symInc is : 0 
+Start prb is : 0 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010000141400000
+Section ID is : 0 
+rb is : 0 
+symInc is : 0 
+Start prb is : 20 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010010281400000
+Section ID is : 1 
+rb is : 0 
+symInc is : 0 
+Start prb is : 40 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X70100203C1400000
+Section ID is : 2 
+rb is : 0 
+symInc is : 0 
+Start prb is : 60 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010030501400000
+Section ID is : 3 
+rb is : 0 
+symInc is : 0 
+Start prb is : 80 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010040641400000
+Section ID is : 4 
+rb is : 0 
+symInc is : 0 
+Start prb is : 100 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010050781400000
+Section ID is : 5 
+rb is : 0 
+symInc is : 0 
+Start prb is : 120 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X70100608C1400000
+Section ID is : 6 
+rb is : 0 
+symInc is : 0 
+Start prb is : 140 
+Number of prb are : 20 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X7010070A00D00000
+Section ID is : 7 
+rb is : 0 
+symInc is : 0 
+Start prb is : 160 
+Number of prb are : 13 
+UD compression header is : 0X0000 
+
+Hardware packet of Section Header is : 0X701FFE0AD6400000
+Section ID is : 4094 
+rb is : 0 
+symInc is : 0 
+Start prb is : 173 
+Number of prb are : 100 
+UD compression header is : 0X0000 

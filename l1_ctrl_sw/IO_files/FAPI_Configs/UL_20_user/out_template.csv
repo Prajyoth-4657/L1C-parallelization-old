@@ -1,0 +1,1165 @@
+Path,Name,DisplayValue,Type,Length,DisplayFormat,ValidityChkOpt,ValidityChkStr,ToolTip,Visibility
+,,,struct,1,none,"none","","",on
+,SFN,853,uint16,1,numeric,"Limits:[min,max]","[0,1023]","System Frame Number, Value: 0-1023",on
+,Slot,15,uint16,1,numeric,"Limits:[min,max]","[0,319]","Value: 0-319",on
+,nPDUs,20,uint8,1,numeric,"CallbackFunction","@ul_tti_callback","Number of PDUs that are included in this message. All PDUs in the message are numbered in order. Value 0-255",on
+,RachPresent,0,uint8,1,numeric,"DropDownList","{0,1}","Indicates if a RACH PDU will be included in this message. 0: no RACH in this slot 1: RACH in this slot",on
+,nULSCH,20,uint8,1,numeric,"Limits:[min,max]","[0,255]","Number of ULSCH PDUs that are included in this message. Value: 0 - 255",on
+,nULCCH,0,uint8,1,numeric,"Limits:[min,max]","[0,255]","Number of ULCCH PDUs that are included in this message. Value: 0 - 255",on
+,nGroup,8,uint8,1,numeric,"CallbackFunction","@ul_tti_callback","Number of UE Groups included in this message. Value 0-8",on
+,PDU(1),,struct,1,none,"none","","",on
+PDU(1),PDUType,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","0: PRACH, 1: PUSCH,  2: PUCCH, 3: SRS",on
+PDU(1),PDUSize,0,uint16,1,numeric,"Limits:[min,max]","[0, 65535]","Size of the PDU control information (in bytes). This length value includes the 4 bytes required for the PDU type and PDU size parameters. Value: 0 - 65535",on
+PDU(1),PUSCH,,struct,1,none,"none","","",on
+PDU(1).PUSCH,pduBitmap,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Bitmap indicating presence of optional PDUs Bit 0: puschData (Indicates data is expected on the PUSCH) Bit 1:puschUci (Indicates UCI is expected on the PUSCH) Bit 2: puschPtrs (Indicates PTRS included (FR2)) Bit 3: dftsOfdm (Indicates DFT S-OFDM transmission)",on
+PDU(1).PUSCH,RNTI,1,uint16,1,numeric,"Limits:[min,max]","[1,65535]","The RNTI used for identifying the UE when receiving the PDU",on
+PDU(1).PUSCH,Handle,0,uint32,1,numeric,"none","","An opaque handling returned in the RxData.indication and/or UCI.indication message",on
+PDU(1).PUSCH,BWP,,struct,1,none,"none","","",on
+PDU(1).PUSCH.BWP,BWPsize,56,uint16,1,numeric,"Limits:[min,max]","[1,275]","Number of contiguous PRBs allocated to the BWP, Value: 1-275",on
+PDU(1).PUSCH.BWP,BWPStart,0,uint16,1,numeric,"Limits:[min,max]","[0,274]","Bandwidth part start RB index from reference CRB, Value: 0-274",on
+PDU(1).PUSCH.BWP,SubcarrierSpacing,0,uint8,1,numeric,"DropDownList","{0,1,2,3,4}","Value:0-4",on
+PDU(1).PUSCH.BWP,CyclicPrefix,0,uint8,1,numeric,"DropDownList","{0,1}","Cyclic prefix type, 0: Normal; 1: Extended",on
+PDU(1).PUSCH,CODEWORD(1),,struct,1,none,"none","","",on
+PDU(1).PUSCH.CODEWORD(1),targetCodeRate,8850,uint16,1,numeric,"none","","Target coding rate [TS38.214 sec 6.1.4.1]. This is the number of information bits per 1024 coded bits expressed in 0.1 bit units",on
+PDU(1).PUSCH.CODEWORD(1),qamModOrder,8,uint8,1,numeric,"DropDownList","{2,4,6,8}","QAM modulation [TS38.214 sec 6.1.4.1] Value: 2,4,6,8",on
+PDU(1).PUSCH.CODEWORD(1),mcsIndex,26,uint8,1,numeric,"Limits:[min,max]","[0,31]","MCS index [TS38.214, sec 6.1.4.1], should match value sent in DCI Value : 0-31",on
+PDU(1).PUSCH.CODEWORD(1),mcsTable,1,uint8,1,numeric,"DropDownList","{0,1,2,3,4}","MCS-Table-PUSCH [TS38.214, sec 6.1.4.1] Value: 0: notqam256 [TS38.214, table 5.1.3.1-1] 1: qam256 [TS38.214, table 5.1.3.1-2] 2: qam64LowSE [TS38.214, table 5.1.3.1-3] 3: notqam256-withTransformPrecoding [TS38.214, table 6.1.4.1-1] 4: qam64LowSE-withTransformPrecoding [TS38.214, table 6.1.4.1-2]",on
+PDU(1).PUSCH.CODEWORD(1),TransformPrecoding,1,uint8,1,numeric,"DropDownList","{0,1}","Indicates if transform precoding is enabled or disabled [TS38.214, sec 6.1.4.1] [TS38.211 6.3.1.4] Value: 0: enabled, 1: disabled",on
+PDU(1).PUSCH,dataScramblingId,20,uint16,1,numeric,"Limits:[min,max]","[0,65535]","dataScramblingIdentityPdsch [TS38.211, sec 6.3.1.1] It equals the higher-layer parameter Datascrambling- Identity if configured and the RNTI equals the C-RNTI, otherwise L2 needs to set it to physical cell id. Value: 0-65535",on
+PDU(1).PUSCH,nrOfLayers,4,uint8,1,numeric,"DropDownList","{1,2,3,4}","Number of layers [TS38.211, sec 6.3.1.3] Value : 1-4",on
+PDU(1).PUSCH,DMRS,,struct,1,none,"none","","",on
+PDU(1).PUSCH.DMRS,ulDmrsSymbPos,2052,uint16,1,numeric,"none","","DMRS symbol positions [TS38.211, sec 6.4.1.1.3 and Tables 6.4.1.1.3-3 and 6.4.1.1.3-4] Bitmap occupying the 14 LSBs with: bit 0: first symbol and for each bit 0: no DMRS 1: DMRS",on
+PDU(1).PUSCH.DMRS,dmrsConfigType,0,uint8,1,numeric,"DropDownList","{0,1}","UL DMRS config type [TS38.211, sec 6.4.1.1.3], 0: type 1 1: type 2",on
+PDU(1).PUSCH.DMRS,ulDmrsScramblingId,1000,uint16,1,numeric,"Limits:[min,max]","[0,65535]","UL-DMRS-Scrambling-ID. If provided and the PUSCH is not a msg3 PUSCH, otherwise, L2 should set this to physical cell id. 0-65535",on
+PDU(1).PUSCH.DMRS,SCID,0,uint8,1,numeric,"DropDownList","{0,1}","DMRS sequence initialization [TS38.211, sec 6.4.1.1.1]. Should match what is sent in DCI 0_1, otherwise set to 0. Value : 0-1",on
+PDU(1).PUSCH.DMRS,numDmrsCdmGrpsNoData,2,uint8,1,numeric,"DropDownList","{0,1,2,3}","Number of DM-RS CDM groups without data [TS38.212 sec 7.3.1.1] Value: 1-3",on
+PDU(1).PUSCH.DMRS,dmrsPorts,15,uint16,1,numeric,"none","","DMRS ports. [TS38.212 7.3.1.1.2] provides description between DCI 0-1 content and DMRS ports. Bitmap occupying the 11 LSBs with: bit 0: antenna port 1000 bit 11: antenna port 1011 and for each bit. 0: DMRS port not used 1: DMRS port used",on
+PDU(1).PUSCH,FD_ALLOC,,struct,1,none,"none","","",on
+PDU(1).PUSCH.FD_ALLOC,resourceAlloc,1,uint8,1,numeric,"DropDownList","{0,1}","Resource Allocation Type [TS38.214, sec 6.1.2.2] 0: Type 0 1: Type 1.",on
+PDU(1).PUSCH.FD_ALLOC,rbBitmap,"zeros(1,36)",uint8,36,matlab expr string,"none","","For resource alloc type 0. [TS38.214, sec 6.1.2.2.1] [TS 38.212, 7.3.1.1.2] bitmap of RBs, 273 rounded up to multiple of 32. This bitmap is in units of VRBs. LSB of byte 0 of the bitmap represents the first RB of the BWP",on
+PDU(1).PUSCH.FD_ALLOC,rbStart,0,uint16,1,numeric,"Limits:[min,max]","[0,274]","For resource allocation type 1. [TS38.214, sec 6.1.2.2.2] The starting resource block within the BWP for this PUSCH. Value: 0-274.",on
+PDU(1).PUSCH.FD_ALLOC,rbSize,56,uint16,1,numeric,"none","[1,275]","For resource allocation type 1. [TS38.214, sec 6.1.2.2.2] The number of resource block within for this PUSCH. Value: 1-275",on
+PDU(1).PUSCH.FD_ALLOC,VRBtoPRBMapping,0,uint8,1,numeric,"DropDownList","{0}","VRB-to-PRB-mapping [TS38.211, sec 6.3.1.7] Value: 0: non-interleaved",on
+PDU(1).PUSCH.FD_ALLOC,FrequencyHopping,0,uint8,1,numeric,"DropDownList","{0,1}","For resource allocation type 1. [TS38.212, sec 7.3.1.1] [TS38.214, sec 6.3] Indicates if frequency hopping is enabled Value: 0: disabled 1: enabled",on
+PDU(1).PUSCH.FD_ALLOC,txDirectCurrentLocation,3300,uint16,1,numeric,"Limits:[min,max]","[0,4095]","The uplink Tx Direct Current location for the carrier. Only values in the value range of this field between 0 and 3299, which indicate the subcarrier index within the carrier corresponding to the numerology of the corresponding uplink BWP and value 3300, which indicates ""Outside the carrier"" and value 3301, which indicates ""Undetermined position within the carrier"" are used. [TS38.331, UplinkTxDirectCurrentBWP IE] Value: 0-4095",on
+PDU(1).PUSCH.FD_ALLOC,uplinkFrequencyShift7p5khz,0,uint8,1,numeric,"DropDownList","{0,1}","Indicates whether there is 7.5 kHz shift or not. [TS38.331, UplinkTxDirectCurrentBWP IE] Value: 0: false, 1: true",on
+PDU(1).PUSCH,TD_ALLOC,,struct,1,none,"none","","",on
+PDU(1).PUSCH.TD_ALLOC,StartSymbolIndex,0,uint8,1,numeric,"Limits:[min,max]","[0,13]","Start symbol index of PUSCH mapping from the start of the slot, S. [TS38.214, Table 6.1.2.1-1] Value: 0-13",on
+PDU(1).PUSCH.TD_ALLOC,NrOfSymbols,14,uint8,1,numeric,"Limits:[min,max]","[1,14]","PUSCH duration in symbols, L [TS38.214, Table 6.1.2.1-1] Value: 1-14",on
+PDU(1).PUSCH,PUSCH_DATA(1),,struct,1,none,"none","","",on
+PDU(1).PUSCH.PUSCH_DATA(1),rvIndex,0,uint8,1,numeric,"DropDownList","{0,1,2,3}","Redundancy version index [TS38.214, sec 6.1.4], it should match value sent in DCI Value : 0-3",on
+PDU(1).PUSCH.PUSCH_DATA(1),harqProcessID,0,uint8,1,numeric,"Limits:[min,max]","[0,15]","HARQ process number [TS38.212, sec 7.3.1.1], it should match value sent in DCI Value: 0 -15",on
+PDU(1).PUSCH.PUSCH_DATA(1),newDataIndicator,1,uint8,1,numeric,"DropDownList","{0,1}","Indicates if this new data or a retransmission [TS38.212, sec 7.3.1.1] Value: 0: retransmission 1: new data",on
+PDU(1).PUSCH.PUSCH_DATA(1),TBSize,27672,uint32,1,numeric,"Limits:[min,max]","[0,65535]","Transmit block size (in bytes) [TS38.214 sec 6.1.4.2] Value: 0-65535",on
+PDU(1).PUSCH.PUSCH_DATA(1),numCb,0,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Number of CBs in the TB (could be more than the number of CBs in this PUSCH transmission). Should be set to zero in any of the following conditions: 1) CBG is not supported 2) isReTx=0 (new transmission) 3) tbSize=0",on
+PDU(1).PUSCH.PUSCH_DATA(1),CB,,struct,1,none,"none","","",on
+PDU(1).PUSCH,PUSCH_UCI,,struct,1,none,"none","","",on
+PDU(1).PUSCH,PUSCH_PTRS,,struct,1,none,"none","","",on
+PDU(1).PUSCH,DFTS_OFDM,,struct,1,none,"none","","",on
+PDU(1).PUSCH,RX_BEAMFORMING,,struct,1,none,"none","","",on
+PDU(1).PUSCH.RX_BEAMFORMING,numPRGs,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Number of PRGs spanning this allocation. Value : 1-275",on
+PDU(1).PUSCH.RX_BEAMFORMING,prgSize,56,uint16,1,numeric,"Limits:[min,max]","[1,275]","Size in RBs of a precoding resource block group (PRG) – to which same precoding and digital beamforming gets applied. Value: 1-275",on
+PDU(1).PUSCH.RX_BEAMFORMING,digBFInterfaces,0,uint8,1,numeric,"CallbackFunction","@ul_tti_callback","Number of STD ant ports (parallel streams) feeding into the digBF Value: 0-255",on
+PDU(1).PUSCH.RX_BEAMFORMING,PRG(1),,struct,1,none,"none","","",on
+PDU(1).PUSCH.RX_BEAMFORMING.PRG(1),DIG_BF_INTERFACE,,struct,1,none,"none","","",on
+,PDU(2),,struct,1,none,"none","","",on
+PDU(2),PDUType,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","0: PRACH, 1: PUSCH,  2: PUCCH, 3: SRS",on
+PDU(2),PDUSize,0,uint16,1,numeric,"Limits:[min,max]","[0, 65535]","Size of the PDU control information (in bytes). This length value includes the 4 bytes required for the PDU type and PDU size parameters. Value: 0 - 65535",on
+PDU(2),PUSCH,,struct,1,none,"none","","",on
+PDU(2).PUSCH,pduBitmap,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Bitmap indicating presence of optional PDUs Bit 0: puschData (Indicates data is expected on the PUSCH) Bit 1:puschUci (Indicates UCI is expected on the PUSCH) Bit 2: puschPtrs (Indicates PTRS included (FR2)) Bit 3: dftsOfdm (Indicates DFT S-OFDM transmission)",on
+PDU(2).PUSCH,RNTI,2,uint16,1,numeric,"Limits:[min,max]","[1,65535]","The RNTI used for identifying the UE when receiving the PDU",on
+PDU(2).PUSCH,Handle,0,uint32,1,numeric,"none","","An opaque handling returned in the RxData.indication and/or UCI.indication message",on
+PDU(2).PUSCH,BWP,,struct,1,none,"none","","",on
+PDU(2).PUSCH.BWP,BWPsize,27,uint16,1,numeric,"Limits:[min,max]","[1,275]","Number of contiguous PRBs allocated to the BWP, Value: 1-275",on
+PDU(2).PUSCH.BWP,BWPStart,56,uint16,1,numeric,"Limits:[min,max]","[0,274]","Bandwidth part start RB index from reference CRB, Value: 0-274",on
+PDU(2).PUSCH.BWP,SubcarrierSpacing,0,uint8,1,numeric,"DropDownList","{0,1,2,3,4}","Value:0-4",on
+PDU(2).PUSCH.BWP,CyclicPrefix,0,uint8,1,numeric,"DropDownList","{0,1}","Cyclic prefix type, 0: Normal; 1: Extended",on
+PDU(2).PUSCH,CODEWORD(1),,struct,1,none,"none","","",on
+PDU(2).PUSCH.CODEWORD(1),targetCodeRate,6160,uint16,1,numeric,"none","","Target coding rate [TS38.214 sec 6.1.4.1]. This is the number of information bits per 1024 coded bits expressed in 0.1 bit units",on
+PDU(2).PUSCH.CODEWORD(1),qamModOrder,4,uint8,1,numeric,"DropDownList","{2,4,6,8}","QAM modulation [TS38.214 sec 6.1.4.1] Value: 2,4,6,8",on
+PDU(2).PUSCH.CODEWORD(1),mcsIndex,10,uint8,1,numeric,"Limits:[min,max]","[0,31]","MCS index [TS38.214, sec 6.1.4.1], should match value sent in DCI Value : 0-31",on
+PDU(2).PUSCH.CODEWORD(1),mcsTable,1,uint8,1,numeric,"DropDownList","{0,1,2,3,4}","MCS-Table-PUSCH [TS38.214, sec 6.1.4.1] Value: 0: notqam256 [TS38.214, table 5.1.3.1-1] 1: qam256 [TS38.214, table 5.1.3.1-2] 2: qam64LowSE [TS38.214, table 5.1.3.1-3] 3: notqam256-withTransformPrecoding [TS38.214, table 6.1.4.1-1] 4: qam64LowSE-withTransformPrecoding [TS38.214, table 6.1.4.1-2]",on
+PDU(2).PUSCH.CODEWORD(1),TransformPrecoding,1,uint8,1,numeric,"DropDownList","{0,1}","Indicates if transform precoding is enabled or disabled [TS38.214, sec 6.1.4.1] [TS38.211 6.3.1.4] Value: 0: enabled, 1: disabled",on
+PDU(2).PUSCH,dataScramblingId,20,uint16,1,numeric,"Limits:[min,max]","[0,65535]","dataScramblingIdentityPdsch [TS38.211, sec 6.3.1.1] It equals the higher-layer parameter Datascrambling- Identity if configured and the RNTI equals the C-RNTI, otherwise L2 needs to set it to physical cell id. Value: 0-65535",on
+PDU(2).PUSCH,nrOfLayers,1,uint8,1,numeric,"DropDownList","{1,2,3,4}","Number of layers [TS38.211, sec 6.3.1.3] Value : 1-4",on
+PDU(2).PUSCH,DMRS,,struct,1,none,"none","","",on
+PDU(2).PUSCH.DMRS,ulDmrsSymbPos,4,uint16,1,numeric,"none","","DMRS symbol positions [TS38.211, sec 6.4.1.1.3 and Tables 6.4.1.1.3-3 and 6.4.1.1.3-4] Bitmap occupying the 14 LSBs with: bit 0: first symbol and for each bit 0: no DMRS 1: DMRS",on
+PDU(2).PUSCH.DMRS,dmrsConfigType,0,uint8,1,numeric,"DropDownList","{0,1}","UL DMRS config type [TS38.211, sec 6.4.1.1.3], 0: type 1 1: type 2",on
+PDU(2).PUSCH.DMRS,ulDmrsScramblingId,2000,uint16,1,numeric,"Limits:[min,max]","[0,65535]","UL-DMRS-Scrambling-ID. If provided and the PUSCH is not a msg3 PUSCH, otherwise, L2 should set this to physical cell id. 0-65535",on
+PDU(2).PUSCH.DMRS,SCID,0,uint8,1,numeric,"DropDownList","{0,1}","DMRS sequence initialization [TS38.211, sec 6.4.1.1.1]. Should match what is sent in DCI 0_1, otherwise set to 0. Value : 0-1",on
+PDU(2).PUSCH.DMRS,numDmrsCdmGrpsNoData,2,uint8,1,numeric,"DropDownList","{0,1,2,3}","Number of DM-RS CDM groups without data [TS38.212 sec 7.3.1.1] Value: 1-3",on
+PDU(2).PUSCH.DMRS,dmrsPorts,1,uint16,1,numeric,"none","","DMRS ports. [TS38.212 7.3.1.1.2] provides description between DCI 0-1 content and DMRS ports. Bitmap occupying the 11 LSBs with: bit 0: antenna port 1000 bit 11: antenna port 1011 and for each bit. 0: DMRS port not used 1: DMRS port used",on
+PDU(2).PUSCH,FD_ALLOC,,struct,1,none,"none","","",on
+PDU(2).PUSCH.FD_ALLOC,resourceAlloc,1,uint8,1,numeric,"DropDownList","{0,1}","Resource Allocation Type [TS38.214, sec 6.1.2.2] 0: Type 0 1: Type 1.",on
+PDU(2).PUSCH.FD_ALLOC,rbBitmap,"zeros(1,36)",uint8,36,matlab expr string,"none","","For resource alloc type 0. [TS38.214, sec 6.1.2.2.1] [TS 38.212, 7.3.1.1.2] bitmap of RBs, 273 rounded up to multiple of 32. This bitmap is in units of VRBs. LSB of byte 0 of the bitmap represents the first RB of the BWP",on
+PDU(2).PUSCH.FD_ALLOC,rbStart,0,uint16,1,numeric,"Limits:[min,max]","[0,274]","For resource allocation type 1. [TS38.214, sec 6.1.2.2.2] The starting resource block within the BWP for this PUSCH. Value: 0-274.",on
+PDU(2).PUSCH.FD_ALLOC,rbSize,27,uint16,1,numeric,"none","[1,275]","For resource allocation type 1. [TS38.214, sec 6.1.2.2.2] The number of resource block within for this PUSCH. Value: 1-275",on
+PDU(2).PUSCH.FD_ALLOC,VRBtoPRBMapping,0,uint8,1,numeric,"DropDownList","{0}","VRB-to-PRB-mapping [TS38.211, sec 6.3.1.7] Value: 0: non-interleaved",on
+PDU(2).PUSCH.FD_ALLOC,FrequencyHopping,0,uint8,1,numeric,"DropDownList","{0,1}","For resource allocation type 1. [TS38.212, sec 7.3.1.1] [TS38.214, sec 6.3] Indicates if frequency hopping is enabled Value: 0: disabled 1: enabled",on
+PDU(2).PUSCH.FD_ALLOC,txDirectCurrentLocation,3300,uint16,1,numeric,"Limits:[min,max]","[0,4095]","The uplink Tx Direct Current location for the carrier. Only values in the value range of this field between 0 and 3299, which indicate the subcarrier index within the carrier corresponding to the numerology of the corresponding uplink BWP and value 3300, which indicates ""Outside the carrier"" and value 3301, which indicates ""Undetermined position within the carrier"" are used. [TS38.331, UplinkTxDirectCurrentBWP IE] Value: 0-4095",on
+PDU(2).PUSCH.FD_ALLOC,uplinkFrequencyShift7p5khz,0,uint8,1,numeric,"DropDownList","{0,1}","Indicates whether there is 7.5 kHz shift or not. [TS38.331, UplinkTxDirectCurrentBWP IE] Value: 0: false, 1: true",on
+PDU(2).PUSCH,TD_ALLOC,,struct,1,none,"none","","",on
+PDU(2).PUSCH.TD_ALLOC,StartSymbolIndex,0,uint8,1,numeric,"Limits:[min,max]","[0,13]","Start symbol index of PUSCH mapping from the start of the slot, S. [TS38.214, Table 6.1.2.1-1] Value: 0-13",on
+PDU(2).PUSCH.TD_ALLOC,NrOfSymbols,14,uint8,1,numeric,"Limits:[min,max]","[1,14]","PUSCH duration in symbols, L [TS38.214, Table 6.1.2.1-1] Value: 1-14",on
+PDU(2).PUSCH,PUSCH_DATA(1),,struct,1,none,"none","","",on
+PDU(2).PUSCH.PUSCH_DATA(1),rvIndex,0,uint8,1,numeric,"DropDownList","{0,1,2,3}","Redundancy version index [TS38.214, sec 6.1.4], it should match value sent in DCI Value : 0-3",on
+PDU(2).PUSCH.PUSCH_DATA(1),harqProcessID,0,uint8,1,numeric,"Limits:[min,max]","[0,15]","HARQ process number [TS38.212, sec 7.3.1.1], it should match value sent in DCI Value: 0 -15",on
+PDU(2).PUSCH.PUSCH_DATA(1),newDataIndicator,1,uint8,1,numeric,"DropDownList","{0,1}","Indicates if this new data or a retransmission [TS38.212, sec 7.3.1.1] Value: 0: retransmission 1: new data",on
+PDU(2).PUSCH.PUSCH_DATA(1),TBSize,1249,uint32,1,numeric,"Limits:[min,max]","[0,65535]","Transmit block size (in bytes) [TS38.214 sec 6.1.4.2] Value: 0-65535",on
+PDU(2).PUSCH.PUSCH_DATA(1),numCb,0,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Number of CBs in the TB (could be more than the number of CBs in this PUSCH transmission). Should be set to zero in any of the following conditions: 1) CBG is not supported 2) isReTx=0 (new transmission) 3) tbSize=0",on
+PDU(2).PUSCH.PUSCH_DATA(1),CB,,struct,1,none,"none","","",on
+PDU(2).PUSCH,PUSCH_UCI,,struct,1,none,"none","","",on
+PDU(2).PUSCH,PUSCH_PTRS,,struct,1,none,"none","","",on
+PDU(2).PUSCH,DFTS_OFDM,,struct,1,none,"none","","",on
+PDU(2).PUSCH,RX_BEAMFORMING,,struct,1,none,"none","","",on
+PDU(2).PUSCH.RX_BEAMFORMING,numPRGs,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Number of PRGs spanning this allocation. Value : 1-275",on
+PDU(2).PUSCH.RX_BEAMFORMING,prgSize,56,uint16,1,numeric,"Limits:[min,max]","[1,275]","Size in RBs of a precoding resource block group (PRG) – to which same precoding and digital beamforming gets applied. Value: 1-275",on
+PDU(2).PUSCH.RX_BEAMFORMING,digBFInterfaces,0,uint8,1,numeric,"CallbackFunction","@ul_tti_callback","Number of STD ant ports (parallel streams) feeding into the digBF Value: 0-255",on
+PDU(2).PUSCH.RX_BEAMFORMING,PRG(1),,struct,1,none,"none","","",on
+PDU(2).PUSCH.RX_BEAMFORMING.PRG(1),DIG_BF_INTERFACE,,struct,1,none,"none","","",on
+,PDU(3),,struct,1,none,"none","","",on
+PDU(3),PDUType,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","0: PRACH, 1: PUSCH,  2: PUCCH, 3: SRS",on
+PDU(3),PDUSize,0,uint16,1,numeric,"Limits:[min,max]","[0, 65535]","Size of the PDU control information (in bytes). This length value includes the 4 bytes required for the PDU type and PDU size parameters. Value: 0 - 65535",on
+PDU(3),PUSCH,,struct,1,none,"none","","",on
+PDU(3).PUSCH,pduBitmap,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Bitmap indicating presence of optional PDUs Bit 0: puschData (Indicates data is expected on the PUSCH) Bit 1:puschUci (Indicates UCI is expected on the PUSCH) Bit 2: puschPtrs (Indicates PTRS included (FR2)) Bit 3: dftsOfdm (Indicates DFT S-OFDM transmission)",on
+PDU(3).PUSCH,RNTI,3,uint16,1,numeric,"Limits:[min,max]","[1,65535]","The RNTI used for identifying the UE when receiving the PDU",on
+PDU(3).PUSCH,Handle,0,uint32,1,numeric,"none","","An opaque handling returned in the RxData.indication and/or UCI.indication message",on
+PDU(3).PUSCH,BWP,,struct,1,none,"none","","",on
+PDU(3).PUSCH.BWP,BWPsize,27,uint16,1,numeric,"Limits:[min,max]","[1,275]","Number of contiguous PRBs allocated to the BWP, Value: 1-275",on
+PDU(3).PUSCH.BWP,BWPStart,56,uint16,1,numeric,"Limits:[min,max]","[0,274]","Bandwidth part start RB index from reference CRB, Value: 0-274",on
+PDU(3).PUSCH.BWP,SubcarrierSpacing,0,uint8,1,numeric,"DropDownList","{0,1,2,3,4}","Value:0-4",on
+PDU(3).PUSCH.BWP,CyclicPrefix,0,uint8,1,numeric,"DropDownList","{0,1}","Cyclic prefix type, 0: Normal; 1: Extended",on
+PDU(3).PUSCH,CODEWORD(1),,struct,1,none,"none","","",on
+PDU(3).PUSCH.CODEWORD(1),targetCodeRate,6160,uint16,1,numeric,"none","","Target coding rate [TS38.214 sec 6.1.4.1]. This is the number of information bits per 1024 coded bits expressed in 0.1 bit units",on
+PDU(3).PUSCH.CODEWORD(1),qamModOrder,4,uint8,1,numeric,"DropDownList","{2,4,6,8}","QAM modulation [TS38.214 sec 6.1.4.1] Value: 2,4,6,8",on
+PDU(3).PUSCH.CODEWORD(1),mcsIndex,10,uint8,1,numeric,"Limits:[min,max]","[0,31]","MCS index [TS38.214, sec 6.1.4.1], should match value sent in DCI Value : 0-31",on
+PDU(3).PUSCH.CODEWORD(1),mcsTable,1,uint8,1,numeric,"DropDownList","{0,1,2,3,4}","MCS-Table-PUSCH [TS38.214, sec 6.1.4.1] Value: 0: notqam256 [TS38.214, table 5.1.3.1-1] 1: qam256 [TS38.214, table 5.1.3.1-2] 2: qam64LowSE [TS38.214, table 5.1.3.1-3] 3: notqam256-withTransformPrecoding [TS38.214, table 6.1.4.1-1] 4: qam64LowSE-withTransformPrecoding [TS38.214, table 6.1.4.1-2]",on
+PDU(3).PUSCH.CODEWORD(1),TransformPrecoding,1,uint8,1,numeric,"DropDownList","{0,1}","Indicates if transform precoding is enabled or disabled [TS38.214, sec 6.1.4.1] [TS38.211 6.3.1.4] Value: 0: enabled, 1: disabled",on
+PDU(3).PUSCH,dataScramblingId,20,uint16,1,numeric,"Limits:[min,max]","[0,65535]","dataScramblingIdentityPdsch [TS38.211, sec 6.3.1.1] It equals the higher-layer parameter Datascrambling- Identity if configured and the RNTI equals the C-RNTI, otherwise L2 needs to set it to physical cell id. Value: 0-65535",on
+PDU(3).PUSCH,nrOfLayers,1,uint8,1,numeric,"DropDownList","{1,2,3,4}","Number of layers [TS38.211, sec 6.3.1.3] Value : 1-4",on
+PDU(3).PUSCH,DMRS,,struct,1,none,"none","","",on
+PDU(3).PUSCH.DMRS,ulDmrsSymbPos,4,uint16,1,numeric,"none","","DMRS symbol positions [TS38.211, sec 6.4.1.1.3 and Tables 6.4.1.1.3-3 and 6.4.1.1.3-4] Bitmap occupying the 14 LSBs with: bit 0: first symbol and for each bit 0: no DMRS 1: DMRS",on
+PDU(3).PUSCH.DMRS,dmrsConfigType,0,uint8,1,numeric,"DropDownList","{0,1}","UL DMRS config type [TS38.211, sec 6.4.1.1.3], 0: type 1 1: type 2",on
+PDU(3).PUSCH.DMRS,ulDmrsScramblingId,2000,uint16,1,numeric,"Limits:[min,max]","[0,65535]","UL-DMRS-Scrambling-ID. If provided and the PUSCH is not a msg3 PUSCH, otherwise, L2 should set this to physical cell id. 0-65535",on
+PDU(3).PUSCH.DMRS,SCID,0,uint8,1,numeric,"DropDownList","{0,1}","DMRS sequence initialization [TS38.211, sec 6.4.1.1.1]. Should match what is sent in DCI 0_1, otherwise set to 0. Value : 0-1",on
+PDU(3).PUSCH.DMRS,numDmrsCdmGrpsNoData,2,uint8,1,numeric,"DropDownList","{0,1,2,3}","Number of DM-RS CDM groups without data [TS38.212 sec 7.3.1.1] Value: 1-3",on
+PDU(3).PUSCH.DMRS,dmrsPorts,2,uint16,1,numeric,"none","","DMRS ports. [TS38.212 7.3.1.1.2] provides description between DCI 0-1 content and DMRS ports. Bitmap occupying the 11 LSBs with: bit 0: antenna port 1000 bit 11: antenna port 1011 and for each bit. 0: DMRS port not used 1: DMRS port used",on
+PDU(3).PUSCH,FD_ALLOC,,struct,1,none,"none","","",on
+PDU(3).PUSCH.FD_ALLOC,resourceAlloc,1,uint8,1,numeric,"DropDownList","{0,1}","Resource Allocation Type [TS38.214, sec 6.1.2.2] 0: Type 0 1: Type 1.",on
+PDU(3).PUSCH.FD_ALLOC,rbBitmap,"zeros(1,36)",uint8,36,matlab expr string,"none","","For resource alloc type 0. [TS38.214, sec 6.1.2.2.1] [TS 38.212, 7.3.1.1.2] bitmap of RBs, 273 rounded up to multiple of 32. This bitmap is in units of VRBs. LSB of byte 0 of the bitmap represents the first RB of the BWP",on
+PDU(3).PUSCH.FD_ALLOC,rbStart,0,uint16,1,numeric,"Limits:[min,max]","[0,274]","For resource allocation type 1. [TS38.214, sec 6.1.2.2.2] The starting resource block within the BWP for this PUSCH. Value: 0-274.",on
+PDU(3).PUSCH.FD_ALLOC,rbSize,27,uint16,1,numeric,"none","[1,275]","For resource allocation type 1. [TS38.214, sec 6.1.2.2.2] The number of resource block within for this PUSCH. Value: 1-275",on
+PDU(3).PUSCH.FD_ALLOC,VRBtoPRBMapping,0,uint8,1,numeric,"DropDownList","{0}","VRB-to-PRB-mapping [TS38.211, sec 6.3.1.7] Value: 0: non-interleaved",on
+PDU(3).PUSCH.FD_ALLOC,FrequencyHopping,0,uint8,1,numeric,"DropDownList","{0,1}","For resource allocation type 1. [TS38.212, sec 7.3.1.1] [TS38.214, sec 6.3] Indicates if frequency hopping is enabled Value: 0: disabled 1: enabled",on
+PDU(3).PUSCH.FD_ALLOC,txDirectCurrentLocation,3300,uint16,1,numeric,"Limits:[min,max]","[0,4095]","The uplink Tx Direct Current location for the carrier. Only values in the value range of this field between 0 and 3299, which indicate the subcarrier index within the carrier corresponding to the numerology of the corresponding uplink BWP and value 3300, which indicates ""Outside the carrier"" and value 3301, which indicates ""Undetermined position within the carrier"" are used. [TS38.331, UplinkTxDirectCurrentBWP IE] Value: 0-4095",on
+PDU(3).PUSCH.FD_ALLOC,uplinkFrequencyShift7p5khz,0,uint8,1,numeric,"DropDownList","{0,1}","Indicates whether there is 7.5 kHz shift or not. [TS38.331, UplinkTxDirectCurrentBWP IE] Value: 0: false, 1: true",on
+PDU(3).PUSCH,TD_ALLOC,,struct,1,none,"none","","",on
+PDU(3).PUSCH.TD_ALLOC,StartSymbolIndex,0,uint8,1,numeric,"Limits:[min,max]","[0,13]","Start symbol index of PUSCH mapping from the start of the slot, S. [TS38.214, Table 6.1.2.1-1] Value: 0-13",on
+PDU(3).PUSCH.TD_ALLOC,NrOfSymbols,14,uint8,1,numeric,"Limits:[min,max]","[1,14]","PUSCH duration in symbols, L [TS38.214, Table 6.1.2.1-1] Value: 1-14",on
+PDU(3).PUSCH,PUSCH_DATA(1),,struct,1,none,"none","","",on
+PDU(3).PUSCH.PUSCH_DATA(1),rvIndex,0,uint8,1,numeric,"DropDownList","{0,1,2,3}","Redundancy version index [TS38.214, sec 6.1.4], it should match value sent in DCI Value : 0-3",on
+PDU(3).PUSCH.PUSCH_DATA(1),harqProcessID,0,uint8,1,numeric,"Limits:[min,max]","[0,15]","HARQ process number [TS38.212, sec 7.3.1.1], it should match value sent in DCI Value: 0 -15",on
+PDU(3).PUSCH.PUSCH_DATA(1),newDataIndicator,1,uint8,1,numeric,"DropDownList","{0,1}","Indicates if this new data or a retransmission [TS38.212, sec 7.3.1.1] Value: 0: retransmission 1: new data",on
+PDU(3).PUSCH.PUSCH_DATA(1),TBSize,1249,uint32,1,numeric,"Limits:[min,max]","[0,65535]","Transmit block size (in bytes) [TS38.214 sec 6.1.4.2] Value: 0-65535",on
+PDU(3).PUSCH.PUSCH_DATA(1),numCb,0,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Number of CBs in the TB (could be more than the number of CBs in this PUSCH transmission). Should be set to zero in any of the following conditions: 1) CBG is not supported 2) isReTx=0 (new transmission) 3) tbSize=0",on
+PDU(3).PUSCH.PUSCH_DATA(1),CB,,struct,1,none,"none","","",on
+PDU(3).PUSCH,PUSCH_UCI,,struct,1,none,"none","","",on
+PDU(3).PUSCH,PUSCH_PTRS,,struct,1,none,"none","","",on
+PDU(3).PUSCH,DFTS_OFDM,,struct,1,none,"none","","",on
+PDU(3).PUSCH,RX_BEAMFORMING,,struct,1,none,"none","","",on
+PDU(3).PUSCH.RX_BEAMFORMING,numPRGs,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Number of PRGs spanning this allocation. Value : 1-275",on
+PDU(3).PUSCH.RX_BEAMFORMING,prgSize,56,uint16,1,numeric,"Limits:[min,max]","[1,275]","Size in RBs of a precoding resource block group (PRG) – to which same precoding and digital beamforming gets applied. Value: 1-275",on
+PDU(3).PUSCH.RX_BEAMFORMING,digBFInterfaces,0,uint8,1,numeric,"CallbackFunction","@ul_tti_callback","Number of STD ant ports (parallel streams) feeding into the digBF Value: 0-255",on
+PDU(3).PUSCH.RX_BEAMFORMING,PRG(1),,struct,1,none,"none","","",on
+PDU(3).PUSCH.RX_BEAMFORMING.PRG(1),DIG_BF_INTERFACE,,struct,1,none,"none","","",on
+,PDU(4),,struct,1,none,"none","","",on
+PDU(4),PDUType,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","0: PRACH, 1: PUSCH,  2: PUCCH, 3: SRS",on
+PDU(4),PDUSize,0,uint16,1,numeric,"Limits:[min,max]","[0, 65535]","Size of the PDU control information (in bytes). This length value includes the 4 bytes required for the PDU type and PDU size parameters. Value: 0 - 65535",on
+PDU(4),PUSCH,,struct,1,none,"none","","",on
+PDU(4).PUSCH,pduBitmap,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Bitmap indicating presence of optional PDUs Bit 0: puschData (Indicates data is expected on the PUSCH) Bit 1:puschUci (Indicates UCI is expected on the PUSCH) Bit 2: puschPtrs (Indicates PTRS included (FR2)) Bit 3: dftsOfdm (Indicates DFT S-OFDM transmission)",on
+PDU(4).PUSCH,RNTI,4,uint16,1,numeric,"Limits:[min,max]","[1,65535]","The RNTI used for identifying the UE when receiving the PDU",on
+PDU(4).PUSCH,Handle,0,uint32,1,numeric,"none","","An opaque handling returned in the RxData.indication and/or UCI.indication message",on
+PDU(4).PUSCH,BWP,,struct,1,none,"none","","",on
+PDU(4).PUSCH.BWP,BWPsize,27,uint16,1,numeric,"Limits:[min,max]","[1,275]","Number of contiguous PRBs allocated to the BWP, Value: 1-275",on
+PDU(4).PUSCH.BWP,BWPStart,56,uint16,1,numeric,"Limits:[min,max]","[0,274]","Bandwidth part start RB index from reference CRB, Value: 0-274",on
+PDU(4).PUSCH.BWP,SubcarrierSpacing,0,uint8,1,numeric,"DropDownList","{0,1,2,3,4}","Value:0-4",on
+PDU(4).PUSCH.BWP,CyclicPrefix,0,uint8,1,numeric,"DropDownList","{0,1}","Cyclic prefix type, 0: Normal; 1: Extended",on
+PDU(4).PUSCH,CODEWORD(1),,struct,1,none,"none","","",on
+PDU(4).PUSCH.CODEWORD(1),targetCodeRate,6160,uint16,1,numeric,"none","","Target coding rate [TS38.214 sec 6.1.4.1]. This is the number of information bits per 1024 coded bits expressed in 0.1 bit units",on
+PDU(4).PUSCH.CODEWORD(1),qamModOrder,4,uint8,1,numeric,"DropDownList","{2,4,6,8}","QAM modulation [TS38.214 sec 6.1.4.1] Value: 2,4,6,8",on
+PDU(4).PUSCH.CODEWORD(1),mcsIndex,10,uint8,1,numeric,"Limits:[min,max]","[0,31]","MCS index [TS38.214, sec 6.1.4.1], should match value sent in DCI Value : 0-31",on
+PDU(4).PUSCH.CODEWORD(1),mcsTable,1,uint8,1,numeric,"DropDownList","{0,1,2,3,4}","MCS-Table-PUSCH [TS38.214, sec 6.1.4.1] Value: 0: notqam256 [TS38.214, table 5.1.3.1-1] 1: qam256 [TS38.214, table 5.1.3.1-2] 2: qam64LowSE [TS38.214, table 5.1.3.1-3] 3: notqam256-withTransformPrecoding [TS38.214, table 6.1.4.1-1] 4: qam64LowSE-withTransformPrecoding [TS38.214, table 6.1.4.1-2]",on
+PDU(4).PUSCH.CODEWORD(1),TransformPrecoding,1,uint8,1,numeric,"DropDownList","{0,1}","Indicates if transform precoding is enabled or disabled [TS38.214, sec 6.1.4.1] [TS38.211 6.3.1.4] Value: 0: enabled, 1: disabled",on
+PDU(4).PUSCH,dataScramblingId,20,uint16,1,numeric,"Limits:[min,max]","[0,65535]","dataScramblingIdentityPdsch [TS38.211, sec 6.3.1.1] It equals the higher-layer parameter Datascrambling- Identity if configured and the RNTI equals the C-RNTI, otherwise L2 needs to set it to physical cell id. Value: 0-65535",on
+PDU(4).PUSCH,nrOfLayers,1,uint8,1,numeric,"DropDownList","{1,2,3,4}","Number of layers [TS38.211, sec 6.3.1.3] Value : 1-4",on
+PDU(4).PUSCH,DMRS,,struct,1,none,"none","","",on
+PDU(4).PUSCH.DMRS,ulDmrsSymbPos,4,uint16,1,numeric,"none","","DMRS symbol positions [TS38.211, sec 6.4.1.1.3 and Tables 6.4.1.1.3-3 and 6.4.1.1.3-4] Bitmap occupying the 14 LSBs with: bit 0: first symbol and for each bit 0: no DMRS 1: DMRS",on
+PDU(4).PUSCH.DMRS,dmrsConfigType,0,uint8,1,numeric,"DropDownList","{0,1}","UL DMRS config type [TS38.211, sec 6.4.1.1.3], 0: type 1 1: type 2",on
+PDU(4).PUSCH.DMRS,ulDmrsScramblingId,2000,uint16,1,numeric,"Limits:[min,max]","[0,65535]","UL-DMRS-Scrambling-ID. If provided and the PUSCH is not a msg3 PUSCH, otherwise, L2 should set this to physical cell id. 0-65535",on
+PDU(4).PUSCH.DMRS,SCID,0,uint8,1,numeric,"DropDownList","{0,1}","DMRS sequence initialization [TS38.211, sec 6.4.1.1.1]. Should match what is sent in DCI 0_1, otherwise set to 0. Value : 0-1",on
+PDU(4).PUSCH.DMRS,numDmrsCdmGrpsNoData,2,uint8,1,numeric,"DropDownList","{0,1,2,3}","Number of DM-RS CDM groups without data [TS38.212 sec 7.3.1.1] Value: 1-3",on
+PDU(4).PUSCH.DMRS,dmrsPorts,4,uint16,1,numeric,"none","","DMRS ports. [TS38.212 7.3.1.1.2] provides description between DCI 0-1 content and DMRS ports. Bitmap occupying the 11 LSBs with: bit 0: antenna port 1000 bit 11: antenna port 1011 and for each bit. 0: DMRS port not used 1: DMRS port used",on
+PDU(4).PUSCH,FD_ALLOC,,struct,1,none,"none","","",on
+PDU(4).PUSCH.FD_ALLOC,resourceAlloc,1,uint8,1,numeric,"DropDownList","{0,1}","Resource Allocation Type [TS38.214, sec 6.1.2.2] 0: Type 0 1: Type 1.",on
+PDU(4).PUSCH.FD_ALLOC,rbBitmap,"zeros(1,36)",uint8,36,matlab expr string,"none","","For resource alloc type 0. [TS38.214, sec 6.1.2.2.1] [TS 38.212, 7.3.1.1.2] bitmap of RBs, 273 rounded up to multiple of 32. This bitmap is in units of VRBs. LSB of byte 0 of the bitmap represents the first RB of the BWP",on
+PDU(4).PUSCH.FD_ALLOC,rbStart,0,uint16,1,numeric,"Limits:[min,max]","[0,274]","For resource allocation type 1. [TS38.214, sec 6.1.2.2.2] The starting resource block within the BWP for this PUSCH. Value: 0-274.",on
+PDU(4).PUSCH.FD_ALLOC,rbSize,27,uint16,1,numeric,"none","[1,275]","For resource allocation type 1. [TS38.214, sec 6.1.2.2.2] The number of resource block within for this PUSCH. Value: 1-275",on
+PDU(4).PUSCH.FD_ALLOC,VRBtoPRBMapping,0,uint8,1,numeric,"DropDownList","{0}","VRB-to-PRB-mapping [TS38.211, sec 6.3.1.7] Value: 0: non-interleaved",on
+PDU(4).PUSCH.FD_ALLOC,FrequencyHopping,0,uint8,1,numeric,"DropDownList","{0,1}","For resource allocation type 1. [TS38.212, sec 7.3.1.1] [TS38.214, sec 6.3] Indicates if frequency hopping is enabled Value: 0: disabled 1: enabled",on
+PDU(4).PUSCH.FD_ALLOC,txDirectCurrentLocation,3300,uint16,1,numeric,"Limits:[min,max]","[0,4095]","The uplink Tx Direct Current location for the carrier. Only values in the value range of this field between 0 and 3299, which indicate the subcarrier index within the carrier corresponding to the numerology of the corresponding uplink BWP and value 3300, which indicates ""Outside the carrier"" and value 3301, which indicates ""Undetermined position within the carrier"" are used. [TS38.331, UplinkTxDirectCurrentBWP IE] Value: 0-4095",on
+PDU(4).PUSCH.FD_ALLOC,uplinkFrequencyShift7p5khz,0,uint8,1,numeric,"DropDownList","{0,1}","Indicates whether there is 7.5 kHz shift or not. [TS38.331, UplinkTxDirectCurrentBWP IE] Value: 0: false, 1: true",on
+PDU(4).PUSCH,TD_ALLOC,,struct,1,none,"none","","",on
+PDU(4).PUSCH.TD_ALLOC,StartSymbolIndex,0,uint8,1,numeric,"Limits:[min,max]","[0,13]","Start symbol index of PUSCH mapping from the start of the slot, S. [TS38.214, Table 6.1.2.1-1] Value: 0-13",on
+PDU(4).PUSCH.TD_ALLOC,NrOfSymbols,14,uint8,1,numeric,"Limits:[min,max]","[1,14]","PUSCH duration in symbols, L [TS38.214, Table 6.1.2.1-1] Value: 1-14",on
+PDU(4).PUSCH,PUSCH_DATA(1),,struct,1,none,"none","","",on
+PDU(4).PUSCH.PUSCH_DATA(1),rvIndex,0,uint8,1,numeric,"DropDownList","{0,1,2,3}","Redundancy version index [TS38.214, sec 6.1.4], it should match value sent in DCI Value : 0-3",on
+PDU(4).PUSCH.PUSCH_DATA(1),harqProcessID,0,uint8,1,numeric,"Limits:[min,max]","[0,15]","HARQ process number [TS38.212, sec 7.3.1.1], it should match value sent in DCI Value: 0 -15",on
+PDU(4).PUSCH.PUSCH_DATA(1),newDataIndicator,1,uint8,1,numeric,"DropDownList","{0,1}","Indicates if this new data or a retransmission [TS38.212, sec 7.3.1.1] Value: 0: retransmission 1: new data",on
+PDU(4).PUSCH.PUSCH_DATA(1),TBSize,1249,uint32,1,numeric,"Limits:[min,max]","[0,65535]","Transmit block size (in bytes) [TS38.214 sec 6.1.4.2] Value: 0-65535",on
+PDU(4).PUSCH.PUSCH_DATA(1),numCb,0,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Number of CBs in the TB (could be more than the number of CBs in this PUSCH transmission). Should be set to zero in any of the following conditions: 1) CBG is not supported 2) isReTx=0 (new transmission) 3) tbSize=0",on
+PDU(4).PUSCH.PUSCH_DATA(1),CB,,struct,1,none,"none","","",on
+PDU(4).PUSCH,PUSCH_UCI,,struct,1,none,"none","","",on
+PDU(4).PUSCH,PUSCH_PTRS,,struct,1,none,"none","","",on
+PDU(4).PUSCH,DFTS_OFDM,,struct,1,none,"none","","",on
+PDU(4).PUSCH,RX_BEAMFORMING,,struct,1,none,"none","","",on
+PDU(4).PUSCH.RX_BEAMFORMING,numPRGs,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Number of PRGs spanning this allocation. Value : 1-275",on
+PDU(4).PUSCH.RX_BEAMFORMING,prgSize,56,uint16,1,numeric,"Limits:[min,max]","[1,275]","Size in RBs of a precoding resource block group (PRG) – to which same precoding and digital beamforming gets applied. Value: 1-275",on
+PDU(4).PUSCH.RX_BEAMFORMING,digBFInterfaces,0,uint8,1,numeric,"CallbackFunction","@ul_tti_callback","Number of STD ant ports (parallel streams) feeding into the digBF Value: 0-255",on
+PDU(4).PUSCH.RX_BEAMFORMING,PRG(1),,struct,1,none,"none","","",on
+PDU(4).PUSCH.RX_BEAMFORMING.PRG(1),DIG_BF_INTERFACE,,struct,1,none,"none","","",on
+,PDU(5),,struct,1,none,"none","","",on
+PDU(5),PDUType,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","0: PRACH, 1: PUSCH,  2: PUCCH, 3: SRS",on
+PDU(5),PDUSize,0,uint16,1,numeric,"Limits:[min,max]","[0, 65535]","Size of the PDU control information (in bytes). This length value includes the 4 bytes required for the PDU type and PDU size parameters. Value: 0 - 65535",on
+PDU(5),PUSCH,,struct,1,none,"none","","",on
+PDU(5).PUSCH,pduBitmap,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Bitmap indicating presence of optional PDUs Bit 0: puschData (Indicates data is expected on the PUSCH) Bit 1:puschUci (Indicates UCI is expected on the PUSCH) Bit 2: puschPtrs (Indicates PTRS included (FR2)) Bit 3: dftsOfdm (Indicates DFT S-OFDM transmission)",on
+PDU(5).PUSCH,RNTI,5,uint16,1,numeric,"Limits:[min,max]","[1,65535]","The RNTI used for identifying the UE when receiving the PDU",on
+PDU(5).PUSCH,Handle,0,uint32,1,numeric,"none","","An opaque handling returned in the RxData.indication and/or UCI.indication message",on
+PDU(5).PUSCH,BWP,,struct,1,none,"none","","",on
+PDU(5).PUSCH.BWP,BWPsize,29,uint16,1,numeric,"Limits:[min,max]","[1,275]","Number of contiguous PRBs allocated to the BWP, Value: 1-275",on
+PDU(5).PUSCH.BWP,BWPStart,83,uint16,1,numeric,"Limits:[min,max]","[0,274]","Bandwidth part start RB index from reference CRB, Value: 0-274",on
+PDU(5).PUSCH.BWP,SubcarrierSpacing,0,uint8,1,numeric,"DropDownList","{0,1,2,3,4}","Value:0-4",on
+PDU(5).PUSCH.BWP,CyclicPrefix,0,uint8,1,numeric,"DropDownList","{0,1}","Cyclic prefix type, 0: Normal; 1: Extended",on
+PDU(5).PUSCH,CODEWORD(1),,struct,1,none,"none","","",on
+PDU(5).PUSCH.CODEWORD(1),targetCodeRate,3080,uint16,1,numeric,"none","","Target coding rate [TS38.214 sec 6.1.4.1]. This is the number of information bits per 1024 coded bits expressed in 0.1 bit units",on
+PDU(5).PUSCH.CODEWORD(1),qamModOrder,2,uint8,1,numeric,"DropDownList","{2,4,6,8}","QAM modulation [TS38.214 sec 6.1.4.1] Value: 2,4,6,8",on
+PDU(5).PUSCH.CODEWORD(1),mcsIndex,3,uint8,1,numeric,"Limits:[min,max]","[0,31]","MCS index [TS38.214, sec 6.1.4.1], should match value sent in DCI Value : 0-31",on
+PDU(5).PUSCH.CODEWORD(1),mcsTable,1,uint8,1,numeric,"DropDownList","{0,1,2,3,4}","MCS-Table-PUSCH [TS38.214, sec 6.1.4.1] Value: 0: notqam256 [TS38.214, table 5.1.3.1-1] 1: qam256 [TS38.214, table 5.1.3.1-2] 2: qam64LowSE [TS38.214, table 5.1.3.1-3] 3: notqam256-withTransformPrecoding [TS38.214, table 6.1.4.1-1] 4: qam64LowSE-withTransformPrecoding [TS38.214, table 6.1.4.1-2]",on
+PDU(5).PUSCH.CODEWORD(1),TransformPrecoding,1,uint8,1,numeric,"DropDownList","{0,1}","Indicates if transform precoding is enabled or disabled [TS38.214, sec 6.1.4.1] [TS38.211 6.3.1.4] Value: 0: enabled, 1: disabled",on
+PDU(5).PUSCH,dataScramblingId,20,uint16,1,numeric,"Limits:[min,max]","[0,65535]","dataScramblingIdentityPdsch [TS38.211, sec 6.3.1.1] It equals the higher-layer parameter Datascrambling- Identity if configured and the RNTI equals the C-RNTI, otherwise L2 needs to set it to physical cell id. Value: 0-65535",on
+PDU(5).PUSCH,nrOfLayers,1,uint8,1,numeric,"DropDownList","{1,2,3,4}","Number of layers [TS38.211, sec 6.3.1.3] Value : 1-4",on
+PDU(5).PUSCH,DMRS,,struct,1,none,"none","","",on
+PDU(5).PUSCH.DMRS,ulDmrsSymbPos,2340,uint16,1,numeric,"none","","DMRS symbol positions [TS38.211, sec 6.4.1.1.3 and Tables 6.4.1.1.3-3 and 6.4.1.1.3-4] Bitmap occupying the 14 LSBs with: bit 0: first symbol and for each bit 0: no DMRS 1: DMRS",on
+PDU(5).PUSCH.DMRS,dmrsConfigType,0,uint8,1,numeric,"DropDownList","{0,1}","UL DMRS config type [TS38.211, sec 6.4.1.1.3], 0: type 1 1: type 2",on
+PDU(5).PUSCH.DMRS,ulDmrsScramblingId,3000,uint16,1,numeric,"Limits:[min,max]","[0,65535]","UL-DMRS-Scrambling-ID. If provided and the PUSCH is not a msg3 PUSCH, otherwise, L2 should set this to physical cell id. 0-65535",on
+PDU(5).PUSCH.DMRS,SCID,0,uint8,1,numeric,"DropDownList","{0,1}","DMRS sequence initialization [TS38.211, sec 6.4.1.1.1]. Should match what is sent in DCI 0_1, otherwise set to 0. Value : 0-1",on
+PDU(5).PUSCH.DMRS,numDmrsCdmGrpsNoData,1,uint8,1,numeric,"DropDownList","{0,1,2,3}","Number of DM-RS CDM groups without data [TS38.212 sec 7.3.1.1] Value: 1-3",on
+PDU(5).PUSCH.DMRS,dmrsPorts,1,uint16,1,numeric,"none","","DMRS ports. [TS38.212 7.3.1.1.2] provides description between DCI 0-1 content and DMRS ports. Bitmap occupying the 11 LSBs with: bit 0: antenna port 1000 bit 11: antenna port 1011 and for each bit. 0: DMRS port not used 1: DMRS port used",on
+PDU(5).PUSCH,FD_ALLOC,,struct,1,none,"none","","",on
+PDU(5).PUSCH.FD_ALLOC,resourceAlloc,1,uint8,1,numeric,"DropDownList","{0,1}","Resource Allocation Type [TS38.214, sec 6.1.2.2] 0: Type 0 1: Type 1.",on
+PDU(5).PUSCH.FD_ALLOC,rbBitmap,"zeros(1,36)",uint8,36,matlab expr string,"none","","For resource alloc type 0. [TS38.214, sec 6.1.2.2.1] [TS 38.212, 7.3.1.1.2] bitmap of RBs, 273 rounded up to multiple of 32. This bitmap is in units of VRBs. LSB of byte 0 of the bitmap represents the first RB of the BWP",on
+PDU(5).PUSCH.FD_ALLOC,rbStart,0,uint16,1,numeric,"Limits:[min,max]","[0,274]","For resource allocation type 1. [TS38.214, sec 6.1.2.2.2] The starting resource block within the BWP for this PUSCH. Value: 0-274.",on
+PDU(5).PUSCH.FD_ALLOC,rbSize,29,uint16,1,numeric,"none","[1,275]","For resource allocation type 1. [TS38.214, sec 6.1.2.2.2] The number of resource block within for this PUSCH. Value: 1-275",on
+PDU(5).PUSCH.FD_ALLOC,VRBtoPRBMapping,0,uint8,1,numeric,"DropDownList","{0}","VRB-to-PRB-mapping [TS38.211, sec 6.3.1.7] Value: 0: non-interleaved",on
+PDU(5).PUSCH.FD_ALLOC,FrequencyHopping,0,uint8,1,numeric,"DropDownList","{0,1}","For resource allocation type 1. [TS38.212, sec 7.3.1.1] [TS38.214, sec 6.3] Indicates if frequency hopping is enabled Value: 0: disabled 1: enabled",on
+PDU(5).PUSCH.FD_ALLOC,txDirectCurrentLocation,3300,uint16,1,numeric,"Limits:[min,max]","[0,4095]","The uplink Tx Direct Current location for the carrier. Only values in the value range of this field between 0 and 3299, which indicate the subcarrier index within the carrier corresponding to the numerology of the corresponding uplink BWP and value 3300, which indicates ""Outside the carrier"" and value 3301, which indicates ""Undetermined position within the carrier"" are used. [TS38.331, UplinkTxDirectCurrentBWP IE] Value: 0-4095",on
+PDU(5).PUSCH.FD_ALLOC,uplinkFrequencyShift7p5khz,0,uint8,1,numeric,"DropDownList","{0,1}","Indicates whether there is 7.5 kHz shift or not. [TS38.331, UplinkTxDirectCurrentBWP IE] Value: 0: false, 1: true",on
+PDU(5).PUSCH,TD_ALLOC,,struct,1,none,"none","","",on
+PDU(5).PUSCH.TD_ALLOC,StartSymbolIndex,0,uint8,1,numeric,"Limits:[min,max]","[0,13]","Start symbol index of PUSCH mapping from the start of the slot, S. [TS38.214, Table 6.1.2.1-1] Value: 0-13",on
+PDU(5).PUSCH.TD_ALLOC,NrOfSymbols,14,uint8,1,numeric,"Limits:[min,max]","[1,14]","PUSCH duration in symbols, L [TS38.214, Table 6.1.2.1-1] Value: 1-14",on
+PDU(5).PUSCH,PUSCH_DATA(1),,struct,1,none,"none","","",on
+PDU(5).PUSCH.PUSCH_DATA(1),rvIndex,0,uint8,1,numeric,"DropDownList","{0,1,2,3}","Redundancy version index [TS38.214, sec 6.1.4], it should match value sent in DCI Value : 0-3",on
+PDU(5).PUSCH.PUSCH_DATA(1),harqProcessID,0,uint8,1,numeric,"Limits:[min,max]","[0,15]","HARQ process number [TS38.212, sec 7.3.1.1], it should match value sent in DCI Value: 0 -15",on
+PDU(5).PUSCH.PUSCH_DATA(1),newDataIndicator,1,uint8,1,numeric,"DropDownList","{0,1}","Indicates if this new data or a retransmission [TS38.212, sec 7.3.1.1] Value: 0: retransmission 1: new data",on
+PDU(5).PUSCH.PUSCH_DATA(1),TBSize,317,uint32,1,numeric,"Limits:[min,max]","[0,65535]","Transmit block size (in bytes) [TS38.214 sec 6.1.4.2] Value: 0-65535",on
+PDU(5).PUSCH.PUSCH_DATA(1),numCb,0,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Number of CBs in the TB (could be more than the number of CBs in this PUSCH transmission). Should be set to zero in any of the following conditions: 1) CBG is not supported 2) isReTx=0 (new transmission) 3) tbSize=0",on
+PDU(5).PUSCH.PUSCH_DATA(1),CB,,struct,1,none,"none","","",on
+PDU(5).PUSCH,PUSCH_UCI,,struct,1,none,"none","","",on
+PDU(5).PUSCH,PUSCH_PTRS,,struct,1,none,"none","","",on
+PDU(5).PUSCH,DFTS_OFDM,,struct,1,none,"none","","",on
+PDU(5).PUSCH,RX_BEAMFORMING,,struct,1,none,"none","","",on
+PDU(5).PUSCH.RX_BEAMFORMING,numPRGs,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Number of PRGs spanning this allocation. Value : 1-275",on
+PDU(5).PUSCH.RX_BEAMFORMING,prgSize,56,uint16,1,numeric,"Limits:[min,max]","[1,275]","Size in RBs of a precoding resource block group (PRG) – to which same precoding and digital beamforming gets applied. Value: 1-275",on
+PDU(5).PUSCH.RX_BEAMFORMING,digBFInterfaces,0,uint8,1,numeric,"CallbackFunction","@ul_tti_callback","Number of STD ant ports (parallel streams) feeding into the digBF Value: 0-255",on
+PDU(5).PUSCH.RX_BEAMFORMING,PRG(1),,struct,1,none,"none","","",on
+PDU(5).PUSCH.RX_BEAMFORMING.PRG(1),DIG_BF_INTERFACE,,struct,1,none,"none","","",on
+,PDU(6),,struct,1,none,"none","","",on
+PDU(6),PDUType,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","0: PRACH, 1: PUSCH,  2: PUCCH, 3: SRS",on
+PDU(6),PDUSize,0,uint16,1,numeric,"Limits:[min,max]","[0, 65535]","Size of the PDU control information (in bytes). This length value includes the 4 bytes required for the PDU type and PDU size parameters. Value: 0 - 65535",on
+PDU(6),PUSCH,,struct,1,none,"none","","",on
+PDU(6).PUSCH,pduBitmap,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Bitmap indicating presence of optional PDUs Bit 0: puschData (Indicates data is expected on the PUSCH) Bit 1:puschUci (Indicates UCI is expected on the PUSCH) Bit 2: puschPtrs (Indicates PTRS included (FR2)) Bit 3: dftsOfdm (Indicates DFT S-OFDM transmission)",on
+PDU(6).PUSCH,RNTI,6,uint16,1,numeric,"Limits:[min,max]","[1,65535]","The RNTI used for identifying the UE when receiving the PDU",on
+PDU(6).PUSCH,Handle,0,uint32,1,numeric,"none","","An opaque handling returned in the RxData.indication and/or UCI.indication message",on
+PDU(6).PUSCH,BWP,,struct,1,none,"none","","",on
+PDU(6).PUSCH.BWP,BWPsize,29,uint16,1,numeric,"Limits:[min,max]","[1,275]","Number of contiguous PRBs allocated to the BWP, Value: 1-275",on
+PDU(6).PUSCH.BWP,BWPStart,83,uint16,1,numeric,"Limits:[min,max]","[0,274]","Bandwidth part start RB index from reference CRB, Value: 0-274",on
+PDU(6).PUSCH.BWP,SubcarrierSpacing,0,uint8,1,numeric,"DropDownList","{0,1,2,3,4}","Value:0-4",on
+PDU(6).PUSCH.BWP,CyclicPrefix,0,uint8,1,numeric,"DropDownList","{0,1}","Cyclic prefix type, 0: Normal; 1: Extended",on
+PDU(6).PUSCH,CODEWORD(1),,struct,1,none,"none","","",on
+PDU(6).PUSCH.CODEWORD(1),targetCodeRate,3080,uint16,1,numeric,"none","","Target coding rate [TS38.214 sec 6.1.4.1]. This is the number of information bits per 1024 coded bits expressed in 0.1 bit units",on
+PDU(6).PUSCH.CODEWORD(1),qamModOrder,2,uint8,1,numeric,"DropDownList","{2,4,6,8}","QAM modulation [TS38.214 sec 6.1.4.1] Value: 2,4,6,8",on
+PDU(6).PUSCH.CODEWORD(1),mcsIndex,3,uint8,1,numeric,"Limits:[min,max]","[0,31]","MCS index [TS38.214, sec 6.1.4.1], should match value sent in DCI Value : 0-31",on
+PDU(6).PUSCH.CODEWORD(1),mcsTable,1,uint8,1,numeric,"DropDownList","{0,1,2,3,4}","MCS-Table-PUSCH [TS38.214, sec 6.1.4.1] Value: 0: notqam256 [TS38.214, table 5.1.3.1-1] 1: qam256 [TS38.214, table 5.1.3.1-2] 2: qam64LowSE [TS38.214, table 5.1.3.1-3] 3: notqam256-withTransformPrecoding [TS38.214, table 6.1.4.1-1] 4: qam64LowSE-withTransformPrecoding [TS38.214, table 6.1.4.1-2]",on
+PDU(6).PUSCH.CODEWORD(1),TransformPrecoding,1,uint8,1,numeric,"DropDownList","{0,1}","Indicates if transform precoding is enabled or disabled [TS38.214, sec 6.1.4.1] [TS38.211 6.3.1.4] Value: 0: enabled, 1: disabled",on
+PDU(6).PUSCH,dataScramblingId,20,uint16,1,numeric,"Limits:[min,max]","[0,65535]","dataScramblingIdentityPdsch [TS38.211, sec 6.3.1.1] It equals the higher-layer parameter Datascrambling- Identity if configured and the RNTI equals the C-RNTI, otherwise L2 needs to set it to physical cell id. Value: 0-65535",on
+PDU(6).PUSCH,nrOfLayers,1,uint8,1,numeric,"DropDownList","{1,2,3,4}","Number of layers [TS38.211, sec 6.3.1.3] Value : 1-4",on
+PDU(6).PUSCH,DMRS,,struct,1,none,"none","","",on
+PDU(6).PUSCH.DMRS,ulDmrsSymbPos,2340,uint16,1,numeric,"none","","DMRS symbol positions [TS38.211, sec 6.4.1.1.3 and Tables 6.4.1.1.3-3 and 6.4.1.1.3-4] Bitmap occupying the 14 LSBs with: bit 0: first symbol and for each bit 0: no DMRS 1: DMRS",on
+PDU(6).PUSCH.DMRS,dmrsConfigType,0,uint8,1,numeric,"DropDownList","{0,1}","UL DMRS config type [TS38.211, sec 6.4.1.1.3], 0: type 1 1: type 2",on
+PDU(6).PUSCH.DMRS,ulDmrsScramblingId,3000,uint16,1,numeric,"Limits:[min,max]","[0,65535]","UL-DMRS-Scrambling-ID. If provided and the PUSCH is not a msg3 PUSCH, otherwise, L2 should set this to physical cell id. 0-65535",on
+PDU(6).PUSCH.DMRS,SCID,0,uint8,1,numeric,"DropDownList","{0,1}","DMRS sequence initialization [TS38.211, sec 6.4.1.1.1]. Should match what is sent in DCI 0_1, otherwise set to 0. Value : 0-1",on
+PDU(6).PUSCH.DMRS,numDmrsCdmGrpsNoData,1,uint8,1,numeric,"DropDownList","{0,1,2,3}","Number of DM-RS CDM groups without data [TS38.212 sec 7.3.1.1] Value: 1-3",on
+PDU(6).PUSCH.DMRS,dmrsPorts,2,uint16,1,numeric,"none","","DMRS ports. [TS38.212 7.3.1.1.2] provides description between DCI 0-1 content and DMRS ports. Bitmap occupying the 11 LSBs with: bit 0: antenna port 1000 bit 11: antenna port 1011 and for each bit. 0: DMRS port not used 1: DMRS port used",on
+PDU(6).PUSCH,FD_ALLOC,,struct,1,none,"none","","",on
+PDU(6).PUSCH.FD_ALLOC,resourceAlloc,1,uint8,1,numeric,"DropDownList","{0,1}","Resource Allocation Type [TS38.214, sec 6.1.2.2] 0: Type 0 1: Type 1.",on
+PDU(6).PUSCH.FD_ALLOC,rbBitmap,"zeros(1,36)",uint8,36,matlab expr string,"none","","For resource alloc type 0. [TS38.214, sec 6.1.2.2.1] [TS 38.212, 7.3.1.1.2] bitmap of RBs, 273 rounded up to multiple of 32. This bitmap is in units of VRBs. LSB of byte 0 of the bitmap represents the first RB of the BWP",on
+PDU(6).PUSCH.FD_ALLOC,rbStart,0,uint16,1,numeric,"Limits:[min,max]","[0,274]","For resource allocation type 1. [TS38.214, sec 6.1.2.2.2] The starting resource block within the BWP for this PUSCH. Value: 0-274.",on
+PDU(6).PUSCH.FD_ALLOC,rbSize,29,uint16,1,numeric,"none","[1,275]","For resource allocation type 1. [TS38.214, sec 6.1.2.2.2] The number of resource block within for this PUSCH. Value: 1-275",on
+PDU(6).PUSCH.FD_ALLOC,VRBtoPRBMapping,0,uint8,1,numeric,"DropDownList","{0}","VRB-to-PRB-mapping [TS38.211, sec 6.3.1.7] Value: 0: non-interleaved",on
+PDU(6).PUSCH.FD_ALLOC,FrequencyHopping,0,uint8,1,numeric,"DropDownList","{0,1}","For resource allocation type 1. [TS38.212, sec 7.3.1.1] [TS38.214, sec 6.3] Indicates if frequency hopping is enabled Value: 0: disabled 1: enabled",on
+PDU(6).PUSCH.FD_ALLOC,txDirectCurrentLocation,3300,uint16,1,numeric,"Limits:[min,max]","[0,4095]","The uplink Tx Direct Current location for the carrier. Only values in the value range of this field between 0 and 3299, which indicate the subcarrier index within the carrier corresponding to the numerology of the corresponding uplink BWP and value 3300, which indicates ""Outside the carrier"" and value 3301, which indicates ""Undetermined position within the carrier"" are used. [TS38.331, UplinkTxDirectCurrentBWP IE] Value: 0-4095",on
+PDU(6).PUSCH.FD_ALLOC,uplinkFrequencyShift7p5khz,0,uint8,1,numeric,"DropDownList","{0,1}","Indicates whether there is 7.5 kHz shift or not. [TS38.331, UplinkTxDirectCurrentBWP IE] Value: 0: false, 1: true",on
+PDU(6).PUSCH,TD_ALLOC,,struct,1,none,"none","","",on
+PDU(6).PUSCH.TD_ALLOC,StartSymbolIndex,0,uint8,1,numeric,"Limits:[min,max]","[0,13]","Start symbol index of PUSCH mapping from the start of the slot, S. [TS38.214, Table 6.1.2.1-1] Value: 0-13",on
+PDU(6).PUSCH.TD_ALLOC,NrOfSymbols,14,uint8,1,numeric,"Limits:[min,max]","[1,14]","PUSCH duration in symbols, L [TS38.214, Table 6.1.2.1-1] Value: 1-14",on
+PDU(6).PUSCH,PUSCH_DATA(1),,struct,1,none,"none","","",on
+PDU(6).PUSCH.PUSCH_DATA(1),rvIndex,0,uint8,1,numeric,"DropDownList","{0,1,2,3}","Redundancy version index [TS38.214, sec 6.1.4], it should match value sent in DCI Value : 0-3",on
+PDU(6).PUSCH.PUSCH_DATA(1),harqProcessID,0,uint8,1,numeric,"Limits:[min,max]","[0,15]","HARQ process number [TS38.212, sec 7.3.1.1], it should match value sent in DCI Value: 0 -15",on
+PDU(6).PUSCH.PUSCH_DATA(1),newDataIndicator,1,uint8,1,numeric,"DropDownList","{0,1}","Indicates if this new data or a retransmission [TS38.212, sec 7.3.1.1] Value: 0: retransmission 1: new data",on
+PDU(6).PUSCH.PUSCH_DATA(1),TBSize,317,uint32,1,numeric,"Limits:[min,max]","[0,65535]","Transmit block size (in bytes) [TS38.214 sec 6.1.4.2] Value: 0-65535",on
+PDU(6).PUSCH.PUSCH_DATA(1),numCb,0,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Number of CBs in the TB (could be more than the number of CBs in this PUSCH transmission). Should be set to zero in any of the following conditions: 1) CBG is not supported 2) isReTx=0 (new transmission) 3) tbSize=0",on
+PDU(6).PUSCH.PUSCH_DATA(1),CB,,struct,1,none,"none","","",on
+PDU(6).PUSCH,PUSCH_UCI,,struct,1,none,"none","","",on
+PDU(6).PUSCH,PUSCH_PTRS,,struct,1,none,"none","","",on
+PDU(6).PUSCH,DFTS_OFDM,,struct,1,none,"none","","",on
+PDU(6).PUSCH,RX_BEAMFORMING,,struct,1,none,"none","","",on
+PDU(6).PUSCH.RX_BEAMFORMING,numPRGs,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Number of PRGs spanning this allocation. Value : 1-275",on
+PDU(6).PUSCH.RX_BEAMFORMING,prgSize,56,uint16,1,numeric,"Limits:[min,max]","[1,275]","Size in RBs of a precoding resource block group (PRG) – to which same precoding and digital beamforming gets applied. Value: 1-275",on
+PDU(6).PUSCH.RX_BEAMFORMING,digBFInterfaces,0,uint8,1,numeric,"CallbackFunction","@ul_tti_callback","Number of STD ant ports (parallel streams) feeding into the digBF Value: 0-255",on
+PDU(6).PUSCH.RX_BEAMFORMING,PRG(1),,struct,1,none,"none","","",on
+PDU(6).PUSCH.RX_BEAMFORMING.PRG(1),DIG_BF_INTERFACE,,struct,1,none,"none","","",on
+,PDU(7),,struct,1,none,"none","","",on
+PDU(7),PDUType,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","0: PRACH, 1: PUSCH,  2: PUCCH, 3: SRS",on
+PDU(7),PDUSize,0,uint16,1,numeric,"Limits:[min,max]","[0, 65535]","Size of the PDU control information (in bytes). This length value includes the 4 bytes required for the PDU type and PDU size parameters. Value: 0 - 65535",on
+PDU(7),PUSCH,,struct,1,none,"none","","",on
+PDU(7).PUSCH,pduBitmap,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Bitmap indicating presence of optional PDUs Bit 0: puschData (Indicates data is expected on the PUSCH) Bit 1:puschUci (Indicates UCI is expected on the PUSCH) Bit 2: puschPtrs (Indicates PTRS included (FR2)) Bit 3: dftsOfdm (Indicates DFT S-OFDM transmission)",on
+PDU(7).PUSCH,RNTI,7,uint16,1,numeric,"Limits:[min,max]","[1,65535]","The RNTI used for identifying the UE when receiving the PDU",on
+PDU(7).PUSCH,Handle,0,uint32,1,numeric,"none","","An opaque handling returned in the RxData.indication and/or UCI.indication message",on
+PDU(7).PUSCH,BWP,,struct,1,none,"none","","",on
+PDU(7).PUSCH.BWP,BWPsize,36,uint16,1,numeric,"Limits:[min,max]","[1,275]","Number of contiguous PRBs allocated to the BWP, Value: 1-275",on
+PDU(7).PUSCH.BWP,BWPStart,112,uint16,1,numeric,"Limits:[min,max]","[0,274]","Bandwidth part start RB index from reference CRB, Value: 0-274",on
+PDU(7).PUSCH.BWP,SubcarrierSpacing,0,uint8,1,numeric,"DropDownList","{0,1,2,3,4}","Value:0-4",on
+PDU(7).PUSCH.BWP,CyclicPrefix,0,uint8,1,numeric,"DropDownList","{0,1}","Cyclic prefix type, 0: Normal; 1: Extended",on
+PDU(7).PUSCH,CODEWORD(1),,struct,1,none,"none","","",on
+PDU(7).PUSCH.CODEWORD(1),targetCodeRate,7720,uint16,1,numeric,"none","","Target coding rate [TS38.214 sec 6.1.4.1]. This is the number of information bits per 1024 coded bits expressed in 0.1 bit units",on
+PDU(7).PUSCH.CODEWORD(1),qamModOrder,6,uint8,1,numeric,"DropDownList","{2,4,6,8}","QAM modulation [TS38.214 sec 6.1.4.1] Value: 2,4,6,8",on
+PDU(7).PUSCH.CODEWORD(1),mcsIndex,18,uint8,1,numeric,"Limits:[min,max]","[0,31]","MCS index [TS38.214, sec 6.1.4.1], should match value sent in DCI Value : 0-31",on
+PDU(7).PUSCH.CODEWORD(1),mcsTable,1,uint8,1,numeric,"DropDownList","{0,1,2,3,4}","MCS-Table-PUSCH [TS38.214, sec 6.1.4.1] Value: 0: notqam256 [TS38.214, table 5.1.3.1-1] 1: qam256 [TS38.214, table 5.1.3.1-2] 2: qam64LowSE [TS38.214, table 5.1.3.1-3] 3: notqam256-withTransformPrecoding [TS38.214, table 6.1.4.1-1] 4: qam64LowSE-withTransformPrecoding [TS38.214, table 6.1.4.1-2]",on
+PDU(7).PUSCH.CODEWORD(1),TransformPrecoding,1,uint8,1,numeric,"DropDownList","{0,1}","Indicates if transform precoding is enabled or disabled [TS38.214, sec 6.1.4.1] [TS38.211 6.3.1.4] Value: 0: enabled, 1: disabled",on
+PDU(7).PUSCH,dataScramblingId,20,uint16,1,numeric,"Limits:[min,max]","[0,65535]","dataScramblingIdentityPdsch [TS38.211, sec 6.3.1.1] It equals the higher-layer parameter Datascrambling- Identity if configured and the RNTI equals the C-RNTI, otherwise L2 needs to set it to physical cell id. Value: 0-65535",on
+PDU(7).PUSCH,nrOfLayers,1,uint8,1,numeric,"DropDownList","{1,2,3,4}","Number of layers [TS38.211, sec 6.3.1.3] Value : 1-4",on
+PDU(7).PUSCH,DMRS,,struct,1,none,"none","","",on
+PDU(7).PUSCH.DMRS,ulDmrsSymbPos,4,uint16,1,numeric,"none","","DMRS symbol positions [TS38.211, sec 6.4.1.1.3 and Tables 6.4.1.1.3-3 and 6.4.1.1.3-4] Bitmap occupying the 14 LSBs with: bit 0: first symbol and for each bit 0: no DMRS 1: DMRS",on
+PDU(7).PUSCH.DMRS,dmrsConfigType,0,uint8,1,numeric,"DropDownList","{0,1}","UL DMRS config type [TS38.211, sec 6.4.1.1.3], 0: type 1 1: type 2",on
+PDU(7).PUSCH.DMRS,ulDmrsScramblingId,4000,uint16,1,numeric,"Limits:[min,max]","[0,65535]","UL-DMRS-Scrambling-ID. If provided and the PUSCH is not a msg3 PUSCH, otherwise, L2 should set this to physical cell id. 0-65535",on
+PDU(7).PUSCH.DMRS,SCID,0,uint8,1,numeric,"DropDownList","{0,1}","DMRS sequence initialization [TS38.211, sec 6.4.1.1.1]. Should match what is sent in DCI 0_1, otherwise set to 0. Value : 0-1",on
+PDU(7).PUSCH.DMRS,numDmrsCdmGrpsNoData,2,uint8,1,numeric,"DropDownList","{0,1,2,3}","Number of DM-RS CDM groups without data [TS38.212 sec 7.3.1.1] Value: 1-3",on
+PDU(7).PUSCH.DMRS,dmrsPorts,1,uint16,1,numeric,"none","","DMRS ports. [TS38.212 7.3.1.1.2] provides description between DCI 0-1 content and DMRS ports. Bitmap occupying the 11 LSBs with: bit 0: antenna port 1000 bit 11: antenna port 1011 and for each bit. 0: DMRS port not used 1: DMRS port used",on
+PDU(7).PUSCH,FD_ALLOC,,struct,1,none,"none","","",on
+PDU(7).PUSCH.FD_ALLOC,resourceAlloc,1,uint8,1,numeric,"DropDownList","{0,1}","Resource Allocation Type [TS38.214, sec 6.1.2.2] 0: Type 0 1: Type 1.",on
+PDU(7).PUSCH.FD_ALLOC,rbBitmap,"zeros(1,36)",uint8,36,matlab expr string,"none","","For resource alloc type 0. [TS38.214, sec 6.1.2.2.1] [TS 38.212, 7.3.1.1.2] bitmap of RBs, 273 rounded up to multiple of 32. This bitmap is in units of VRBs. LSB of byte 0 of the bitmap represents the first RB of the BWP",on
+PDU(7).PUSCH.FD_ALLOC,rbStart,0,uint16,1,numeric,"Limits:[min,max]","[0,274]","For resource allocation type 1. [TS38.214, sec 6.1.2.2.2] The starting resource block within the BWP for this PUSCH. Value: 0-274.",on
+PDU(7).PUSCH.FD_ALLOC,rbSize,36,uint16,1,numeric,"none","[1,275]","For resource allocation type 1. [TS38.214, sec 6.1.2.2.2] The number of resource block within for this PUSCH. Value: 1-275",on
+PDU(7).PUSCH.FD_ALLOC,VRBtoPRBMapping,0,uint8,1,numeric,"DropDownList","{0}","VRB-to-PRB-mapping [TS38.211, sec 6.3.1.7] Value: 0: non-interleaved",on
+PDU(7).PUSCH.FD_ALLOC,FrequencyHopping,0,uint8,1,numeric,"DropDownList","{0,1}","For resource allocation type 1. [TS38.212, sec 7.3.1.1] [TS38.214, sec 6.3] Indicates if frequency hopping is enabled Value: 0: disabled 1: enabled",on
+PDU(7).PUSCH.FD_ALLOC,txDirectCurrentLocation,3300,uint16,1,numeric,"Limits:[min,max]","[0,4095]","The uplink Tx Direct Current location for the carrier. Only values in the value range of this field between 0 and 3299, which indicate the subcarrier index within the carrier corresponding to the numerology of the corresponding uplink BWP and value 3300, which indicates ""Outside the carrier"" and value 3301, which indicates ""Undetermined position within the carrier"" are used. [TS38.331, UplinkTxDirectCurrentBWP IE] Value: 0-4095",on
+PDU(7).PUSCH.FD_ALLOC,uplinkFrequencyShift7p5khz,0,uint8,1,numeric,"DropDownList","{0,1}","Indicates whether there is 7.5 kHz shift or not. [TS38.331, UplinkTxDirectCurrentBWP IE] Value: 0: false, 1: true",on
+PDU(7).PUSCH,TD_ALLOC,,struct,1,none,"none","","",on
+PDU(7).PUSCH.TD_ALLOC,StartSymbolIndex,0,uint8,1,numeric,"Limits:[min,max]","[0,13]","Start symbol index of PUSCH mapping from the start of the slot, S. [TS38.214, Table 6.1.2.1-1] Value: 0-13",on
+PDU(7).PUSCH.TD_ALLOC,NrOfSymbols,14,uint8,1,numeric,"Limits:[min,max]","[1,14]","PUSCH duration in symbols, L [TS38.214, Table 6.1.2.1-1] Value: 1-14",on
+PDU(7).PUSCH,PUSCH_DATA(1),,struct,1,none,"none","","",on
+PDU(7).PUSCH.PUSCH_DATA(1),rvIndex,0,uint8,1,numeric,"DropDownList","{0,1,2,3}","Redundancy version index [TS38.214, sec 6.1.4], it should match value sent in DCI Value : 0-3",on
+PDU(7).PUSCH.PUSCH_DATA(1),harqProcessID,0,uint8,1,numeric,"Limits:[min,max]","[0,15]","HARQ process number [TS38.212, sec 7.3.1.1], it should match value sent in DCI Value: 0 -15",on
+PDU(7).PUSCH.PUSCH_DATA(1),newDataIndicator,1,uint8,1,numeric,"DropDownList","{0,1}","Indicates if this new data or a retransmission [TS38.212, sec 7.3.1.1] Value: 0: retransmission 1: new data",on
+PDU(7).PUSCH.PUSCH_DATA(1),TBSize,3201,uint32,1,numeric,"Limits:[min,max]","[0,65535]","Transmit block size (in bytes) [TS38.214 sec 6.1.4.2] Value: 0-65535",on
+PDU(7).PUSCH.PUSCH_DATA(1),numCb,0,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Number of CBs in the TB (could be more than the number of CBs in this PUSCH transmission). Should be set to zero in any of the following conditions: 1) CBG is not supported 2) isReTx=0 (new transmission) 3) tbSize=0",on
+PDU(7).PUSCH.PUSCH_DATA(1),CB,,struct,1,none,"none","","",on
+PDU(7).PUSCH,PUSCH_UCI,,struct,1,none,"none","","",on
+PDU(7).PUSCH,PUSCH_PTRS,,struct,1,none,"none","","",on
+PDU(7).PUSCH,DFTS_OFDM,,struct,1,none,"none","","",on
+PDU(7).PUSCH,RX_BEAMFORMING,,struct,1,none,"none","","",on
+PDU(7).PUSCH.RX_BEAMFORMING,numPRGs,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Number of PRGs spanning this allocation. Value : 1-275",on
+PDU(7).PUSCH.RX_BEAMFORMING,prgSize,56,uint16,1,numeric,"Limits:[min,max]","[1,275]","Size in RBs of a precoding resource block group (PRG) – to which same precoding and digital beamforming gets applied. Value: 1-275",on
+PDU(7).PUSCH.RX_BEAMFORMING,digBFInterfaces,0,uint8,1,numeric,"CallbackFunction","@ul_tti_callback","Number of STD ant ports (parallel streams) feeding into the digBF Value: 0-255",on
+PDU(7).PUSCH.RX_BEAMFORMING,PRG(1),,struct,1,none,"none","","",on
+PDU(7).PUSCH.RX_BEAMFORMING.PRG(1),DIG_BF_INTERFACE,,struct,1,none,"none","","",on
+,PDU(8),,struct,1,none,"none","","",on
+PDU(8),PDUType,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","0: PRACH, 1: PUSCH,  2: PUCCH, 3: SRS",on
+PDU(8),PDUSize,0,uint16,1,numeric,"Limits:[min,max]","[0, 65535]","Size of the PDU control information (in bytes). This length value includes the 4 bytes required for the PDU type and PDU size parameters. Value: 0 - 65535",on
+PDU(8),PUSCH,,struct,1,none,"none","","",on
+PDU(8).PUSCH,pduBitmap,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Bitmap indicating presence of optional PDUs Bit 0: puschData (Indicates data is expected on the PUSCH) Bit 1:puschUci (Indicates UCI is expected on the PUSCH) Bit 2: puschPtrs (Indicates PTRS included (FR2)) Bit 3: dftsOfdm (Indicates DFT S-OFDM transmission)",on
+PDU(8).PUSCH,RNTI,8,uint16,1,numeric,"Limits:[min,max]","[1,65535]","The RNTI used for identifying the UE when receiving the PDU",on
+PDU(8).PUSCH,Handle,0,uint32,1,numeric,"none","","An opaque handling returned in the RxData.indication and/or UCI.indication message",on
+PDU(8).PUSCH,BWP,,struct,1,none,"none","","",on
+PDU(8).PUSCH.BWP,BWPsize,36,uint16,1,numeric,"Limits:[min,max]","[1,275]","Number of contiguous PRBs allocated to the BWP, Value: 1-275",on
+PDU(8).PUSCH.BWP,BWPStart,112,uint16,1,numeric,"Limits:[min,max]","[0,274]","Bandwidth part start RB index from reference CRB, Value: 0-274",on
+PDU(8).PUSCH.BWP,SubcarrierSpacing,0,uint8,1,numeric,"DropDownList","{0,1,2,3,4}","Value:0-4",on
+PDU(8).PUSCH.BWP,CyclicPrefix,0,uint8,1,numeric,"DropDownList","{0,1}","Cyclic prefix type, 0: Normal; 1: Extended",on
+PDU(8).PUSCH,CODEWORD(1),,struct,1,none,"none","","",on
+PDU(8).PUSCH.CODEWORD(1),targetCodeRate,7720,uint16,1,numeric,"none","","Target coding rate [TS38.214 sec 6.1.4.1]. This is the number of information bits per 1024 coded bits expressed in 0.1 bit units",on
+PDU(8).PUSCH.CODEWORD(1),qamModOrder,6,uint8,1,numeric,"DropDownList","{2,4,6,8}","QAM modulation [TS38.214 sec 6.1.4.1] Value: 2,4,6,8",on
+PDU(8).PUSCH.CODEWORD(1),mcsIndex,18,uint8,1,numeric,"Limits:[min,max]","[0,31]","MCS index [TS38.214, sec 6.1.4.1], should match value sent in DCI Value : 0-31",on
+PDU(8).PUSCH.CODEWORD(1),mcsTable,1,uint8,1,numeric,"DropDownList","{0,1,2,3,4}","MCS-Table-PUSCH [TS38.214, sec 6.1.4.1] Value: 0: notqam256 [TS38.214, table 5.1.3.1-1] 1: qam256 [TS38.214, table 5.1.3.1-2] 2: qam64LowSE [TS38.214, table 5.1.3.1-3] 3: notqam256-withTransformPrecoding [TS38.214, table 6.1.4.1-1] 4: qam64LowSE-withTransformPrecoding [TS38.214, table 6.1.4.1-2]",on
+PDU(8).PUSCH.CODEWORD(1),TransformPrecoding,1,uint8,1,numeric,"DropDownList","{0,1}","Indicates if transform precoding is enabled or disabled [TS38.214, sec 6.1.4.1] [TS38.211 6.3.1.4] Value: 0: enabled, 1: disabled",on
+PDU(8).PUSCH,dataScramblingId,20,uint16,1,numeric,"Limits:[min,max]","[0,65535]","dataScramblingIdentityPdsch [TS38.211, sec 6.3.1.1] It equals the higher-layer parameter Datascrambling- Identity if configured and the RNTI equals the C-RNTI, otherwise L2 needs to set it to physical cell id. Value: 0-65535",on
+PDU(8).PUSCH,nrOfLayers,1,uint8,1,numeric,"DropDownList","{1,2,3,4}","Number of layers [TS38.211, sec 6.3.1.3] Value : 1-4",on
+PDU(8).PUSCH,DMRS,,struct,1,none,"none","","",on
+PDU(8).PUSCH.DMRS,ulDmrsSymbPos,4,uint16,1,numeric,"none","","DMRS symbol positions [TS38.211, sec 6.4.1.1.3 and Tables 6.4.1.1.3-3 and 6.4.1.1.3-4] Bitmap occupying the 14 LSBs with: bit 0: first symbol and for each bit 0: no DMRS 1: DMRS",on
+PDU(8).PUSCH.DMRS,dmrsConfigType,0,uint8,1,numeric,"DropDownList","{0,1}","UL DMRS config type [TS38.211, sec 6.4.1.1.3], 0: type 1 1: type 2",on
+PDU(8).PUSCH.DMRS,ulDmrsScramblingId,4000,uint16,1,numeric,"Limits:[min,max]","[0,65535]","UL-DMRS-Scrambling-ID. If provided and the PUSCH is not a msg3 PUSCH, otherwise, L2 should set this to physical cell id. 0-65535",on
+PDU(8).PUSCH.DMRS,SCID,0,uint8,1,numeric,"DropDownList","{0,1}","DMRS sequence initialization [TS38.211, sec 6.4.1.1.1]. Should match what is sent in DCI 0_1, otherwise set to 0. Value : 0-1",on
+PDU(8).PUSCH.DMRS,numDmrsCdmGrpsNoData,2,uint8,1,numeric,"DropDownList","{0,1,2,3}","Number of DM-RS CDM groups without data [TS38.212 sec 7.3.1.1] Value: 1-3",on
+PDU(8).PUSCH.DMRS,dmrsPorts,2,uint16,1,numeric,"none","","DMRS ports. [TS38.212 7.3.1.1.2] provides description between DCI 0-1 content and DMRS ports. Bitmap occupying the 11 LSBs with: bit 0: antenna port 1000 bit 11: antenna port 1011 and for each bit. 0: DMRS port not used 1: DMRS port used",on
+PDU(8).PUSCH,FD_ALLOC,,struct,1,none,"none","","",on
+PDU(8).PUSCH.FD_ALLOC,resourceAlloc,1,uint8,1,numeric,"DropDownList","{0,1}","Resource Allocation Type [TS38.214, sec 6.1.2.2] 0: Type 0 1: Type 1.",on
+PDU(8).PUSCH.FD_ALLOC,rbBitmap,"zeros(1,36)",uint8,36,matlab expr string,"none","","For resource alloc type 0. [TS38.214, sec 6.1.2.2.1] [TS 38.212, 7.3.1.1.2] bitmap of RBs, 273 rounded up to multiple of 32. This bitmap is in units of VRBs. LSB of byte 0 of the bitmap represents the first RB of the BWP",on
+PDU(8).PUSCH.FD_ALLOC,rbStart,0,uint16,1,numeric,"Limits:[min,max]","[0,274]","For resource allocation type 1. [TS38.214, sec 6.1.2.2.2] The starting resource block within the BWP for this PUSCH. Value: 0-274.",on
+PDU(8).PUSCH.FD_ALLOC,rbSize,36,uint16,1,numeric,"none","[1,275]","For resource allocation type 1. [TS38.214, sec 6.1.2.2.2] The number of resource block within for this PUSCH. Value: 1-275",on
+PDU(8).PUSCH.FD_ALLOC,VRBtoPRBMapping,0,uint8,1,numeric,"DropDownList","{0}","VRB-to-PRB-mapping [TS38.211, sec 6.3.1.7] Value: 0: non-interleaved",on
+PDU(8).PUSCH.FD_ALLOC,FrequencyHopping,0,uint8,1,numeric,"DropDownList","{0,1}","For resource allocation type 1. [TS38.212, sec 7.3.1.1] [TS38.214, sec 6.3] Indicates if frequency hopping is enabled Value: 0: disabled 1: enabled",on
+PDU(8).PUSCH.FD_ALLOC,txDirectCurrentLocation,3300,uint16,1,numeric,"Limits:[min,max]","[0,4095]","The uplink Tx Direct Current location for the carrier. Only values in the value range of this field between 0 and 3299, which indicate the subcarrier index within the carrier corresponding to the numerology of the corresponding uplink BWP and value 3300, which indicates ""Outside the carrier"" and value 3301, which indicates ""Undetermined position within the carrier"" are used. [TS38.331, UplinkTxDirectCurrentBWP IE] Value: 0-4095",on
+PDU(8).PUSCH.FD_ALLOC,uplinkFrequencyShift7p5khz,0,uint8,1,numeric,"DropDownList","{0,1}","Indicates whether there is 7.5 kHz shift or not. [TS38.331, UplinkTxDirectCurrentBWP IE] Value: 0: false, 1: true",on
+PDU(8).PUSCH,TD_ALLOC,,struct,1,none,"none","","",on
+PDU(8).PUSCH.TD_ALLOC,StartSymbolIndex,0,uint8,1,numeric,"Limits:[min,max]","[0,13]","Start symbol index of PUSCH mapping from the start of the slot, S. [TS38.214, Table 6.1.2.1-1] Value: 0-13",on
+PDU(8).PUSCH.TD_ALLOC,NrOfSymbols,14,uint8,1,numeric,"Limits:[min,max]","[1,14]","PUSCH duration in symbols, L [TS38.214, Table 6.1.2.1-1] Value: 1-14",on
+PDU(8).PUSCH,PUSCH_DATA(1),,struct,1,none,"none","","",on
+PDU(8).PUSCH.PUSCH_DATA(1),rvIndex,0,uint8,1,numeric,"DropDownList","{0,1,2,3}","Redundancy version index [TS38.214, sec 6.1.4], it should match value sent in DCI Value : 0-3",on
+PDU(8).PUSCH.PUSCH_DATA(1),harqProcessID,0,uint8,1,numeric,"Limits:[min,max]","[0,15]","HARQ process number [TS38.212, sec 7.3.1.1], it should match value sent in DCI Value: 0 -15",on
+PDU(8).PUSCH.PUSCH_DATA(1),newDataIndicator,1,uint8,1,numeric,"DropDownList","{0,1}","Indicates if this new data or a retransmission [TS38.212, sec 7.3.1.1] Value: 0: retransmission 1: new data",on
+PDU(8).PUSCH.PUSCH_DATA(1),TBSize,3201,uint32,1,numeric,"Limits:[min,max]","[0,65535]","Transmit block size (in bytes) [TS38.214 sec 6.1.4.2] Value: 0-65535",on
+PDU(8).PUSCH.PUSCH_DATA(1),numCb,0,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Number of CBs in the TB (could be more than the number of CBs in this PUSCH transmission). Should be set to zero in any of the following conditions: 1) CBG is not supported 2) isReTx=0 (new transmission) 3) tbSize=0",on
+PDU(8).PUSCH.PUSCH_DATA(1),CB,,struct,1,none,"none","","",on
+PDU(8).PUSCH,PUSCH_UCI,,struct,1,none,"none","","",on
+PDU(8).PUSCH,PUSCH_PTRS,,struct,1,none,"none","","",on
+PDU(8).PUSCH,DFTS_OFDM,,struct,1,none,"none","","",on
+PDU(8).PUSCH,RX_BEAMFORMING,,struct,1,none,"none","","",on
+PDU(8).PUSCH.RX_BEAMFORMING,numPRGs,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Number of PRGs spanning this allocation. Value : 1-275",on
+PDU(8).PUSCH.RX_BEAMFORMING,prgSize,56,uint16,1,numeric,"Limits:[min,max]","[1,275]","Size in RBs of a precoding resource block group (PRG) – to which same precoding and digital beamforming gets applied. Value: 1-275",on
+PDU(8).PUSCH.RX_BEAMFORMING,digBFInterfaces,0,uint8,1,numeric,"CallbackFunction","@ul_tti_callback","Number of STD ant ports (parallel streams) feeding into the digBF Value: 0-255",on
+PDU(8).PUSCH.RX_BEAMFORMING,PRG(1),,struct,1,none,"none","","",on
+PDU(8).PUSCH.RX_BEAMFORMING.PRG(1),DIG_BF_INTERFACE,,struct,1,none,"none","","",on
+,PDU(9),,struct,1,none,"none","","",on
+PDU(9),PDUType,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","0: PRACH, 1: PUSCH,  2: PUCCH, 3: SRS",on
+PDU(9),PDUSize,0,uint16,1,numeric,"Limits:[min,max]","[0, 65535]","Size of the PDU control information (in bytes). This length value includes the 4 bytes required for the PDU type and PDU size parameters. Value: 0 - 65535",on
+PDU(9),PUSCH,,struct,1,none,"none","","",on
+PDU(9).PUSCH,pduBitmap,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Bitmap indicating presence of optional PDUs Bit 0: puschData (Indicates data is expected on the PUSCH) Bit 1:puschUci (Indicates UCI is expected on the PUSCH) Bit 2: puschPtrs (Indicates PTRS included (FR2)) Bit 3: dftsOfdm (Indicates DFT S-OFDM transmission)",on
+PDU(9).PUSCH,RNTI,9,uint16,1,numeric,"Limits:[min,max]","[1,65535]","The RNTI used for identifying the UE when receiving the PDU",on
+PDU(9).PUSCH,Handle,0,uint32,1,numeric,"none","","An opaque handling returned in the RxData.indication and/or UCI.indication message",on
+PDU(9).PUSCH,BWP,,struct,1,none,"none","","",on
+PDU(9).PUSCH.BWP,BWPsize,36,uint16,1,numeric,"Limits:[min,max]","[1,275]","Number of contiguous PRBs allocated to the BWP, Value: 1-275",on
+PDU(9).PUSCH.BWP,BWPStart,112,uint16,1,numeric,"Limits:[min,max]","[0,274]","Bandwidth part start RB index from reference CRB, Value: 0-274",on
+PDU(9).PUSCH.BWP,SubcarrierSpacing,0,uint8,1,numeric,"DropDownList","{0,1,2,3,4}","Value:0-4",on
+PDU(9).PUSCH.BWP,CyclicPrefix,0,uint8,1,numeric,"DropDownList","{0,1}","Cyclic prefix type, 0: Normal; 1: Extended",on
+PDU(9).PUSCH,CODEWORD(1),,struct,1,none,"none","","",on
+PDU(9).PUSCH.CODEWORD(1),targetCodeRate,7720,uint16,1,numeric,"none","","Target coding rate [TS38.214 sec 6.1.4.1]. This is the number of information bits per 1024 coded bits expressed in 0.1 bit units",on
+PDU(9).PUSCH.CODEWORD(1),qamModOrder,6,uint8,1,numeric,"DropDownList","{2,4,6,8}","QAM modulation [TS38.214 sec 6.1.4.1] Value: 2,4,6,8",on
+PDU(9).PUSCH.CODEWORD(1),mcsIndex,18,uint8,1,numeric,"Limits:[min,max]","[0,31]","MCS index [TS38.214, sec 6.1.4.1], should match value sent in DCI Value : 0-31",on
+PDU(9).PUSCH.CODEWORD(1),mcsTable,1,uint8,1,numeric,"DropDownList","{0,1,2,3,4}","MCS-Table-PUSCH [TS38.214, sec 6.1.4.1] Value: 0: notqam256 [TS38.214, table 5.1.3.1-1] 1: qam256 [TS38.214, table 5.1.3.1-2] 2: qam64LowSE [TS38.214, table 5.1.3.1-3] 3: notqam256-withTransformPrecoding [TS38.214, table 6.1.4.1-1] 4: qam64LowSE-withTransformPrecoding [TS38.214, table 6.1.4.1-2]",on
+PDU(9).PUSCH.CODEWORD(1),TransformPrecoding,1,uint8,1,numeric,"DropDownList","{0,1}","Indicates if transform precoding is enabled or disabled [TS38.214, sec 6.1.4.1] [TS38.211 6.3.1.4] Value: 0: enabled, 1: disabled",on
+PDU(9).PUSCH,dataScramblingId,20,uint16,1,numeric,"Limits:[min,max]","[0,65535]","dataScramblingIdentityPdsch [TS38.211, sec 6.3.1.1] It equals the higher-layer parameter Datascrambling- Identity if configured and the RNTI equals the C-RNTI, otherwise L2 needs to set it to physical cell id. Value: 0-65535",on
+PDU(9).PUSCH,nrOfLayers,1,uint8,1,numeric,"DropDownList","{1,2,3,4}","Number of layers [TS38.211, sec 6.3.1.3] Value : 1-4",on
+PDU(9).PUSCH,DMRS,,struct,1,none,"none","","",on
+PDU(9).PUSCH.DMRS,ulDmrsSymbPos,4,uint16,1,numeric,"none","","DMRS symbol positions [TS38.211, sec 6.4.1.1.3 and Tables 6.4.1.1.3-3 and 6.4.1.1.3-4] Bitmap occupying the 14 LSBs with: bit 0: first symbol and for each bit 0: no DMRS 1: DMRS",on
+PDU(9).PUSCH.DMRS,dmrsConfigType,0,uint8,1,numeric,"DropDownList","{0,1}","UL DMRS config type [TS38.211, sec 6.4.1.1.3], 0: type 1 1: type 2",on
+PDU(9).PUSCH.DMRS,ulDmrsScramblingId,4000,uint16,1,numeric,"Limits:[min,max]","[0,65535]","UL-DMRS-Scrambling-ID. If provided and the PUSCH is not a msg3 PUSCH, otherwise, L2 should set this to physical cell id. 0-65535",on
+PDU(9).PUSCH.DMRS,SCID,0,uint8,1,numeric,"DropDownList","{0,1}","DMRS sequence initialization [TS38.211, sec 6.4.1.1.1]. Should match what is sent in DCI 0_1, otherwise set to 0. Value : 0-1",on
+PDU(9).PUSCH.DMRS,numDmrsCdmGrpsNoData,2,uint8,1,numeric,"DropDownList","{0,1,2,3}","Number of DM-RS CDM groups without data [TS38.212 sec 7.3.1.1] Value: 1-3",on
+PDU(9).PUSCH.DMRS,dmrsPorts,4,uint16,1,numeric,"none","","DMRS ports. [TS38.212 7.3.1.1.2] provides description between DCI 0-1 content and DMRS ports. Bitmap occupying the 11 LSBs with: bit 0: antenna port 1000 bit 11: antenna port 1011 and for each bit. 0: DMRS port not used 1: DMRS port used",on
+PDU(9).PUSCH,FD_ALLOC,,struct,1,none,"none","","",on
+PDU(9).PUSCH.FD_ALLOC,resourceAlloc,1,uint8,1,numeric,"DropDownList","{0,1}","Resource Allocation Type [TS38.214, sec 6.1.2.2] 0: Type 0 1: Type 1.",on
+PDU(9).PUSCH.FD_ALLOC,rbBitmap,"zeros(1,36)",uint8,36,matlab expr string,"none","","For resource alloc type 0. [TS38.214, sec 6.1.2.2.1] [TS 38.212, 7.3.1.1.2] bitmap of RBs, 273 rounded up to multiple of 32. This bitmap is in units of VRBs. LSB of byte 0 of the bitmap represents the first RB of the BWP",on
+PDU(9).PUSCH.FD_ALLOC,rbStart,0,uint16,1,numeric,"Limits:[min,max]","[0,274]","For resource allocation type 1. [TS38.214, sec 6.1.2.2.2] The starting resource block within the BWP for this PUSCH. Value: 0-274.",on
+PDU(9).PUSCH.FD_ALLOC,rbSize,36,uint16,1,numeric,"none","[1,275]","For resource allocation type 1. [TS38.214, sec 6.1.2.2.2] The number of resource block within for this PUSCH. Value: 1-275",on
+PDU(9).PUSCH.FD_ALLOC,VRBtoPRBMapping,0,uint8,1,numeric,"DropDownList","{0}","VRB-to-PRB-mapping [TS38.211, sec 6.3.1.7] Value: 0: non-interleaved",on
+PDU(9).PUSCH.FD_ALLOC,FrequencyHopping,0,uint8,1,numeric,"DropDownList","{0,1}","For resource allocation type 1. [TS38.212, sec 7.3.1.1] [TS38.214, sec 6.3] Indicates if frequency hopping is enabled Value: 0: disabled 1: enabled",on
+PDU(9).PUSCH.FD_ALLOC,txDirectCurrentLocation,3300,uint16,1,numeric,"Limits:[min,max]","[0,4095]","The uplink Tx Direct Current location for the carrier. Only values in the value range of this field between 0 and 3299, which indicate the subcarrier index within the carrier corresponding to the numerology of the corresponding uplink BWP and value 3300, which indicates ""Outside the carrier"" and value 3301, which indicates ""Undetermined position within the carrier"" are used. [TS38.331, UplinkTxDirectCurrentBWP IE] Value: 0-4095",on
+PDU(9).PUSCH.FD_ALLOC,uplinkFrequencyShift7p5khz,0,uint8,1,numeric,"DropDownList","{0,1}","Indicates whether there is 7.5 kHz shift or not. [TS38.331, UplinkTxDirectCurrentBWP IE] Value: 0: false, 1: true",on
+PDU(9).PUSCH,TD_ALLOC,,struct,1,none,"none","","",on
+PDU(9).PUSCH.TD_ALLOC,StartSymbolIndex,0,uint8,1,numeric,"Limits:[min,max]","[0,13]","Start symbol index of PUSCH mapping from the start of the slot, S. [TS38.214, Table 6.1.2.1-1] Value: 0-13",on
+PDU(9).PUSCH.TD_ALLOC,NrOfSymbols,14,uint8,1,numeric,"Limits:[min,max]","[1,14]","PUSCH duration in symbols, L [TS38.214, Table 6.1.2.1-1] Value: 1-14",on
+PDU(9).PUSCH,PUSCH_DATA(1),,struct,1,none,"none","","",on
+PDU(9).PUSCH.PUSCH_DATA(1),rvIndex,0,uint8,1,numeric,"DropDownList","{0,1,2,3}","Redundancy version index [TS38.214, sec 6.1.4], it should match value sent in DCI Value : 0-3",on
+PDU(9).PUSCH.PUSCH_DATA(1),harqProcessID,0,uint8,1,numeric,"Limits:[min,max]","[0,15]","HARQ process number [TS38.212, sec 7.3.1.1], it should match value sent in DCI Value: 0 -15",on
+PDU(9).PUSCH.PUSCH_DATA(1),newDataIndicator,1,uint8,1,numeric,"DropDownList","{0,1}","Indicates if this new data or a retransmission [TS38.212, sec 7.3.1.1] Value: 0: retransmission 1: new data",on
+PDU(9).PUSCH.PUSCH_DATA(1),TBSize,3201,uint32,1,numeric,"Limits:[min,max]","[0,65535]","Transmit block size (in bytes) [TS38.214 sec 6.1.4.2] Value: 0-65535",on
+PDU(9).PUSCH.PUSCH_DATA(1),numCb,0,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Number of CBs in the TB (could be more than the number of CBs in this PUSCH transmission). Should be set to zero in any of the following conditions: 1) CBG is not supported 2) isReTx=0 (new transmission) 3) tbSize=0",on
+PDU(9).PUSCH.PUSCH_DATA(1),CB,,struct,1,none,"none","","",on
+PDU(9).PUSCH,PUSCH_UCI,,struct,1,none,"none","","",on
+PDU(9).PUSCH,PUSCH_PTRS,,struct,1,none,"none","","",on
+PDU(9).PUSCH,DFTS_OFDM,,struct,1,none,"none","","",on
+PDU(9).PUSCH,RX_BEAMFORMING,,struct,1,none,"none","","",on
+PDU(9).PUSCH.RX_BEAMFORMING,numPRGs,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Number of PRGs spanning this allocation. Value : 1-275",on
+PDU(9).PUSCH.RX_BEAMFORMING,prgSize,56,uint16,1,numeric,"Limits:[min,max]","[1,275]","Size in RBs of a precoding resource block group (PRG) – to which same precoding and digital beamforming gets applied. Value: 1-275",on
+PDU(9).PUSCH.RX_BEAMFORMING,digBFInterfaces,0,uint8,1,numeric,"CallbackFunction","@ul_tti_callback","Number of STD ant ports (parallel streams) feeding into the digBF Value: 0-255",on
+PDU(9).PUSCH.RX_BEAMFORMING,PRG(1),,struct,1,none,"none","","",on
+PDU(9).PUSCH.RX_BEAMFORMING.PRG(1),DIG_BF_INTERFACE,,struct,1,none,"none","","",on
+,PDU(10),,struct,1,none,"none","","",on
+PDU(10),PDUType,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","0: PRACH, 1: PUSCH,  2: PUCCH, 3: SRS",on
+PDU(10),PDUSize,0,uint16,1,numeric,"Limits:[min,max]","[0, 65535]","Size of the PDU control information (in bytes). This length value includes the 4 bytes required for the PDU type and PDU size parameters. Value: 0 - 65535",on
+PDU(10),PUSCH,,struct,1,none,"none","","",on
+PDU(10).PUSCH,pduBitmap,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Bitmap indicating presence of optional PDUs Bit 0: puschData (Indicates data is expected on the PUSCH) Bit 1:puschUci (Indicates UCI is expected on the PUSCH) Bit 2: puschPtrs (Indicates PTRS included (FR2)) Bit 3: dftsOfdm (Indicates DFT S-OFDM transmission)",on
+PDU(10).PUSCH,RNTI,10,uint16,1,numeric,"Limits:[min,max]","[1,65535]","The RNTI used for identifying the UE when receiving the PDU",on
+PDU(10).PUSCH,Handle,0,uint32,1,numeric,"none","","An opaque handling returned in the RxData.indication and/or UCI.indication message",on
+PDU(10).PUSCH,BWP,,struct,1,none,"none","","",on
+PDU(10).PUSCH.BWP,BWPsize,36,uint16,1,numeric,"Limits:[min,max]","[1,275]","Number of contiguous PRBs allocated to the BWP, Value: 1-275",on
+PDU(10).PUSCH.BWP,BWPStart,112,uint16,1,numeric,"Limits:[min,max]","[0,274]","Bandwidth part start RB index from reference CRB, Value: 0-274",on
+PDU(10).PUSCH.BWP,SubcarrierSpacing,0,uint8,1,numeric,"DropDownList","{0,1,2,3,4}","Value:0-4",on
+PDU(10).PUSCH.BWP,CyclicPrefix,0,uint8,1,numeric,"DropDownList","{0,1}","Cyclic prefix type, 0: Normal; 1: Extended",on
+PDU(10).PUSCH,CODEWORD(1),,struct,1,none,"none","","",on
+PDU(10).PUSCH.CODEWORD(1),targetCodeRate,7720,uint16,1,numeric,"none","","Target coding rate [TS38.214 sec 6.1.4.1]. This is the number of information bits per 1024 coded bits expressed in 0.1 bit units",on
+PDU(10).PUSCH.CODEWORD(1),qamModOrder,6,uint8,1,numeric,"DropDownList","{2,4,6,8}","QAM modulation [TS38.214 sec 6.1.4.1] Value: 2,4,6,8",on
+PDU(10).PUSCH.CODEWORD(1),mcsIndex,18,uint8,1,numeric,"Limits:[min,max]","[0,31]","MCS index [TS38.214, sec 6.1.4.1], should match value sent in DCI Value : 0-31",on
+PDU(10).PUSCH.CODEWORD(1),mcsTable,1,uint8,1,numeric,"DropDownList","{0,1,2,3,4}","MCS-Table-PUSCH [TS38.214, sec 6.1.4.1] Value: 0: notqam256 [TS38.214, table 5.1.3.1-1] 1: qam256 [TS38.214, table 5.1.3.1-2] 2: qam64LowSE [TS38.214, table 5.1.3.1-3] 3: notqam256-withTransformPrecoding [TS38.214, table 6.1.4.1-1] 4: qam64LowSE-withTransformPrecoding [TS38.214, table 6.1.4.1-2]",on
+PDU(10).PUSCH.CODEWORD(1),TransformPrecoding,1,uint8,1,numeric,"DropDownList","{0,1}","Indicates if transform precoding is enabled or disabled [TS38.214, sec 6.1.4.1] [TS38.211 6.3.1.4] Value: 0: enabled, 1: disabled",on
+PDU(10).PUSCH,dataScramblingId,20,uint16,1,numeric,"Limits:[min,max]","[0,65535]","dataScramblingIdentityPdsch [TS38.211, sec 6.3.1.1] It equals the higher-layer parameter Datascrambling- Identity if configured and the RNTI equals the C-RNTI, otherwise L2 needs to set it to physical cell id. Value: 0-65535",on
+PDU(10).PUSCH,nrOfLayers,1,uint8,1,numeric,"DropDownList","{1,2,3,4}","Number of layers [TS38.211, sec 6.3.1.3] Value : 1-4",on
+PDU(10).PUSCH,DMRS,,struct,1,none,"none","","",on
+PDU(10).PUSCH.DMRS,ulDmrsSymbPos,4,uint16,1,numeric,"none","","DMRS symbol positions [TS38.211, sec 6.4.1.1.3 and Tables 6.4.1.1.3-3 and 6.4.1.1.3-4] Bitmap occupying the 14 LSBs with: bit 0: first symbol and for each bit 0: no DMRS 1: DMRS",on
+PDU(10).PUSCH.DMRS,dmrsConfigType,0,uint8,1,numeric,"DropDownList","{0,1}","UL DMRS config type [TS38.211, sec 6.4.1.1.3], 0: type 1 1: type 2",on
+PDU(10).PUSCH.DMRS,ulDmrsScramblingId,4000,uint16,1,numeric,"Limits:[min,max]","[0,65535]","UL-DMRS-Scrambling-ID. If provided and the PUSCH is not a msg3 PUSCH, otherwise, L2 should set this to physical cell id. 0-65535",on
+PDU(10).PUSCH.DMRS,SCID,0,uint8,1,numeric,"DropDownList","{0,1}","DMRS sequence initialization [TS38.211, sec 6.4.1.1.1]. Should match what is sent in DCI 0_1, otherwise set to 0. Value : 0-1",on
+PDU(10).PUSCH.DMRS,numDmrsCdmGrpsNoData,2,uint8,1,numeric,"DropDownList","{0,1,2,3}","Number of DM-RS CDM groups without data [TS38.212 sec 7.3.1.1] Value: 1-3",on
+PDU(10).PUSCH.DMRS,dmrsPorts,8,uint16,1,numeric,"none","","DMRS ports. [TS38.212 7.3.1.1.2] provides description between DCI 0-1 content and DMRS ports. Bitmap occupying the 11 LSBs with: bit 0: antenna port 1000 bit 11: antenna port 1011 and for each bit. 0: DMRS port not used 1: DMRS port used",on
+PDU(10).PUSCH,FD_ALLOC,,struct,1,none,"none","","",on
+PDU(10).PUSCH.FD_ALLOC,resourceAlloc,1,uint8,1,numeric,"DropDownList","{0,1}","Resource Allocation Type [TS38.214, sec 6.1.2.2] 0: Type 0 1: Type 1.",on
+PDU(10).PUSCH.FD_ALLOC,rbBitmap,"zeros(1,36)",uint8,36,matlab expr string,"none","","For resource alloc type 0. [TS38.214, sec 6.1.2.2.1] [TS 38.212, 7.3.1.1.2] bitmap of RBs, 273 rounded up to multiple of 32. This bitmap is in units of VRBs. LSB of byte 0 of the bitmap represents the first RB of the BWP",on
+PDU(10).PUSCH.FD_ALLOC,rbStart,0,uint16,1,numeric,"Limits:[min,max]","[0,274]","For resource allocation type 1. [TS38.214, sec 6.1.2.2.2] The starting resource block within the BWP for this PUSCH. Value: 0-274.",on
+PDU(10).PUSCH.FD_ALLOC,rbSize,36,uint16,1,numeric,"none","[1,275]","For resource allocation type 1. [TS38.214, sec 6.1.2.2.2] The number of resource block within for this PUSCH. Value: 1-275",on
+PDU(10).PUSCH.FD_ALLOC,VRBtoPRBMapping,0,uint8,1,numeric,"DropDownList","{0}","VRB-to-PRB-mapping [TS38.211, sec 6.3.1.7] Value: 0: non-interleaved",on
+PDU(10).PUSCH.FD_ALLOC,FrequencyHopping,0,uint8,1,numeric,"DropDownList","{0,1}","For resource allocation type 1. [TS38.212, sec 7.3.1.1] [TS38.214, sec 6.3] Indicates if frequency hopping is enabled Value: 0: disabled 1: enabled",on
+PDU(10).PUSCH.FD_ALLOC,txDirectCurrentLocation,3300,uint16,1,numeric,"Limits:[min,max]","[0,4095]","The uplink Tx Direct Current location for the carrier. Only values in the value range of this field between 0 and 3299, which indicate the subcarrier index within the carrier corresponding to the numerology of the corresponding uplink BWP and value 3300, which indicates ""Outside the carrier"" and value 3301, which indicates ""Undetermined position within the carrier"" are used. [TS38.331, UplinkTxDirectCurrentBWP IE] Value: 0-4095",on
+PDU(10).PUSCH.FD_ALLOC,uplinkFrequencyShift7p5khz,0,uint8,1,numeric,"DropDownList","{0,1}","Indicates whether there is 7.5 kHz shift or not. [TS38.331, UplinkTxDirectCurrentBWP IE] Value: 0: false, 1: true",on
+PDU(10).PUSCH,TD_ALLOC,,struct,1,none,"none","","",on
+PDU(10).PUSCH.TD_ALLOC,StartSymbolIndex,0,uint8,1,numeric,"Limits:[min,max]","[0,13]","Start symbol index of PUSCH mapping from the start of the slot, S. [TS38.214, Table 6.1.2.1-1] Value: 0-13",on
+PDU(10).PUSCH.TD_ALLOC,NrOfSymbols,14,uint8,1,numeric,"Limits:[min,max]","[1,14]","PUSCH duration in symbols, L [TS38.214, Table 6.1.2.1-1] Value: 1-14",on
+PDU(10).PUSCH,PUSCH_DATA(1),,struct,1,none,"none","","",on
+PDU(10).PUSCH.PUSCH_DATA(1),rvIndex,0,uint8,1,numeric,"DropDownList","{0,1,2,3}","Redundancy version index [TS38.214, sec 6.1.4], it should match value sent in DCI Value : 0-3",on
+PDU(10).PUSCH.PUSCH_DATA(1),harqProcessID,0,uint8,1,numeric,"Limits:[min,max]","[0,15]","HARQ process number [TS38.212, sec 7.3.1.1], it should match value sent in DCI Value: 0 -15",on
+PDU(10).PUSCH.PUSCH_DATA(1),newDataIndicator,1,uint8,1,numeric,"DropDownList","{0,1}","Indicates if this new data or a retransmission [TS38.212, sec 7.3.1.1] Value: 0: retransmission 1: new data",on
+PDU(10).PUSCH.PUSCH_DATA(1),TBSize,3201,uint32,1,numeric,"Limits:[min,max]","[0,65535]","Transmit block size (in bytes) [TS38.214 sec 6.1.4.2] Value: 0-65535",on
+PDU(10).PUSCH.PUSCH_DATA(1),numCb,0,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Number of CBs in the TB (could be more than the number of CBs in this PUSCH transmission). Should be set to zero in any of the following conditions: 1) CBG is not supported 2) isReTx=0 (new transmission) 3) tbSize=0",on
+PDU(10).PUSCH.PUSCH_DATA(1),CB,,struct,1,none,"none","","",on
+PDU(10).PUSCH,PUSCH_UCI,,struct,1,none,"none","","",on
+PDU(10).PUSCH,PUSCH_PTRS,,struct,1,none,"none","","",on
+PDU(10).PUSCH,DFTS_OFDM,,struct,1,none,"none","","",on
+PDU(10).PUSCH,RX_BEAMFORMING,,struct,1,none,"none","","",on
+PDU(10).PUSCH.RX_BEAMFORMING,numPRGs,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Number of PRGs spanning this allocation. Value : 1-275",on
+PDU(10).PUSCH.RX_BEAMFORMING,prgSize,56,uint16,1,numeric,"Limits:[min,max]","[1,275]","Size in RBs of a precoding resource block group (PRG) – to which same precoding and digital beamforming gets applied. Value: 1-275",on
+PDU(10).PUSCH.RX_BEAMFORMING,digBFInterfaces,0,uint8,1,numeric,"CallbackFunction","@ul_tti_callback","Number of STD ant ports (parallel streams) feeding into the digBF Value: 0-255",on
+PDU(10).PUSCH.RX_BEAMFORMING,PRG(1),,struct,1,none,"none","","",on
+PDU(10).PUSCH.RX_BEAMFORMING.PRG(1),DIG_BF_INTERFACE,,struct,1,none,"none","","",on
+,PDU(11),,struct,1,none,"none","","",on
+PDU(11),PDUType,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","0: PRACH, 1: PUSCH,  2: PUCCH, 3: SRS",on
+PDU(11),PDUSize,0,uint16,1,numeric,"Limits:[min,max]","[0, 65535]","Size of the PDU control information (in bytes). This length value includes the 4 bytes required for the PDU type and PDU size parameters. Value: 0 - 65535",on
+PDU(11),PUSCH,,struct,1,none,"none","","",on
+PDU(11).PUSCH,pduBitmap,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Bitmap indicating presence of optional PDUs Bit 0: puschData (Indicates data is expected on the PUSCH) Bit 1:puschUci (Indicates UCI is expected on the PUSCH) Bit 2: puschPtrs (Indicates PTRS included (FR2)) Bit 3: dftsOfdm (Indicates DFT S-OFDM transmission)",on
+PDU(11).PUSCH,RNTI,11,uint16,1,numeric,"Limits:[min,max]","[1,65535]","The RNTI used for identifying the UE when receiving the PDU",on
+PDU(11).PUSCH,Handle,0,uint32,1,numeric,"none","","An opaque handling returned in the RxData.indication and/or UCI.indication message",on
+PDU(11).PUSCH,BWP,,struct,1,none,"none","","",on
+PDU(11).PUSCH.BWP,BWPsize,40,uint16,1,numeric,"Limits:[min,max]","[1,275]","Number of contiguous PRBs allocated to the BWP, Value: 1-275",on
+PDU(11).PUSCH.BWP,BWPStart,148,uint16,1,numeric,"Limits:[min,max]","[0,274]","Bandwidth part start RB index from reference CRB, Value: 0-274",on
+PDU(11).PUSCH.BWP,SubcarrierSpacing,0,uint8,1,numeric,"DropDownList","{0,1,2,3,4}","Value:0-4",on
+PDU(11).PUSCH.BWP,CyclicPrefix,0,uint8,1,numeric,"DropDownList","{0,1}","Cyclic prefix type, 0: Normal; 1: Extended",on
+PDU(11).PUSCH,CODEWORD(1),,struct,1,none,"none","","",on
+PDU(11).PUSCH.CODEWORD(1),targetCodeRate,7540,uint16,1,numeric,"none","","Target coding rate [TS38.214 sec 6.1.4.1]. This is the number of information bits per 1024 coded bits expressed in 0.1 bit units",on
+PDU(11).PUSCH.CODEWORD(1),qamModOrder,8,uint8,1,numeric,"DropDownList","{2,4,6,8}","QAM modulation [TS38.214 sec 6.1.4.1] Value: 2,4,6,8",on
+PDU(11).PUSCH.CODEWORD(1),mcsIndex,23,uint8,1,numeric,"Limits:[min,max]","[0,31]","MCS index [TS38.214, sec 6.1.4.1], should match value sent in DCI Value : 0-31",on
+PDU(11).PUSCH.CODEWORD(1),mcsTable,1,uint8,1,numeric,"DropDownList","{0,1,2,3,4}","MCS-Table-PUSCH [TS38.214, sec 6.1.4.1] Value: 0: notqam256 [TS38.214, table 5.1.3.1-1] 1: qam256 [TS38.214, table 5.1.3.1-2] 2: qam64LowSE [TS38.214, table 5.1.3.1-3] 3: notqam256-withTransformPrecoding [TS38.214, table 6.1.4.1-1] 4: qam64LowSE-withTransformPrecoding [TS38.214, table 6.1.4.1-2]",on
+PDU(11).PUSCH.CODEWORD(1),TransformPrecoding,1,uint8,1,numeric,"DropDownList","{0,1}","Indicates if transform precoding is enabled or disabled [TS38.214, sec 6.1.4.1] [TS38.211 6.3.1.4] Value: 0: enabled, 1: disabled",on
+PDU(11).PUSCH,dataScramblingId,20,uint16,1,numeric,"Limits:[min,max]","[0,65535]","dataScramblingIdentityPdsch [TS38.211, sec 6.3.1.1] It equals the higher-layer parameter Datascrambling- Identity if configured and the RNTI equals the C-RNTI, otherwise L2 needs to set it to physical cell id. Value: 0-65535",on
+PDU(11).PUSCH,nrOfLayers,3,uint8,1,numeric,"DropDownList","{1,2,3,4}","Number of layers [TS38.211, sec 6.3.1.3] Value : 1-4",on
+PDU(11).PUSCH,DMRS,,struct,1,none,"none","","",on
+PDU(11).PUSCH.DMRS,ulDmrsSymbPos,4,uint16,1,numeric,"none","","DMRS symbol positions [TS38.211, sec 6.4.1.1.3 and Tables 6.4.1.1.3-3 and 6.4.1.1.3-4] Bitmap occupying the 14 LSBs with: bit 0: first symbol and for each bit 0: no DMRS 1: DMRS",on
+PDU(11).PUSCH.DMRS,dmrsConfigType,0,uint8,1,numeric,"DropDownList","{0,1}","UL DMRS config type [TS38.211, sec 6.4.1.1.3], 0: type 1 1: type 2",on
+PDU(11).PUSCH.DMRS,ulDmrsScramblingId,5000,uint16,1,numeric,"Limits:[min,max]","[0,65535]","UL-DMRS-Scrambling-ID. If provided and the PUSCH is not a msg3 PUSCH, otherwise, L2 should set this to physical cell id. 0-65535",on
+PDU(11).PUSCH.DMRS,SCID,0,uint8,1,numeric,"DropDownList","{0,1}","DMRS sequence initialization [TS38.211, sec 6.4.1.1.1]. Should match what is sent in DCI 0_1, otherwise set to 0. Value : 0-1",on
+PDU(11).PUSCH.DMRS,numDmrsCdmGrpsNoData,2,uint8,1,numeric,"DropDownList","{0,1,2,3}","Number of DM-RS CDM groups without data [TS38.212 sec 7.3.1.1] Value: 1-3",on
+PDU(11).PUSCH.DMRS,dmrsPorts,7,uint16,1,numeric,"none","","DMRS ports. [TS38.212 7.3.1.1.2] provides description between DCI 0-1 content and DMRS ports. Bitmap occupying the 11 LSBs with: bit 0: antenna port 1000 bit 11: antenna port 1011 and for each bit. 0: DMRS port not used 1: DMRS port used",on
+PDU(11).PUSCH,FD_ALLOC,,struct,1,none,"none","","",on
+PDU(11).PUSCH.FD_ALLOC,resourceAlloc,1,uint8,1,numeric,"DropDownList","{0,1}","Resource Allocation Type [TS38.214, sec 6.1.2.2] 0: Type 0 1: Type 1.",on
+PDU(11).PUSCH.FD_ALLOC,rbBitmap,"zeros(1,36)",uint8,36,matlab expr string,"none","","For resource alloc type 0. [TS38.214, sec 6.1.2.2.1] [TS 38.212, 7.3.1.1.2] bitmap of RBs, 273 rounded up to multiple of 32. This bitmap is in units of VRBs. LSB of byte 0 of the bitmap represents the first RB of the BWP",on
+PDU(11).PUSCH.FD_ALLOC,rbStart,0,uint16,1,numeric,"Limits:[min,max]","[0,274]","For resource allocation type 1. [TS38.214, sec 6.1.2.2.2] The starting resource block within the BWP for this PUSCH. Value: 0-274.",on
+PDU(11).PUSCH.FD_ALLOC,rbSize,40,uint16,1,numeric,"none","[1,275]","For resource allocation type 1. [TS38.214, sec 6.1.2.2.2] The number of resource block within for this PUSCH. Value: 1-275",on
+PDU(11).PUSCH.FD_ALLOC,VRBtoPRBMapping,0,uint8,1,numeric,"DropDownList","{0}","VRB-to-PRB-mapping [TS38.211, sec 6.3.1.7] Value: 0: non-interleaved",on
+PDU(11).PUSCH.FD_ALLOC,FrequencyHopping,0,uint8,1,numeric,"DropDownList","{0,1}","For resource allocation type 1. [TS38.212, sec 7.3.1.1] [TS38.214, sec 6.3] Indicates if frequency hopping is enabled Value: 0: disabled 1: enabled",on
+PDU(11).PUSCH.FD_ALLOC,txDirectCurrentLocation,3300,uint16,1,numeric,"Limits:[min,max]","[0,4095]","The uplink Tx Direct Current location for the carrier. Only values in the value range of this field between 0 and 3299, which indicate the subcarrier index within the carrier corresponding to the numerology of the corresponding uplink BWP and value 3300, which indicates ""Outside the carrier"" and value 3301, which indicates ""Undetermined position within the carrier"" are used. [TS38.331, UplinkTxDirectCurrentBWP IE] Value: 0-4095",on
+PDU(11).PUSCH.FD_ALLOC,uplinkFrequencyShift7p5khz,0,uint8,1,numeric,"DropDownList","{0,1}","Indicates whether there is 7.5 kHz shift or not. [TS38.331, UplinkTxDirectCurrentBWP IE] Value: 0: false, 1: true",on
+PDU(11).PUSCH,TD_ALLOC,,struct,1,none,"none","","",on
+PDU(11).PUSCH.TD_ALLOC,StartSymbolIndex,0,uint8,1,numeric,"Limits:[min,max]","[0,13]","Start symbol index of PUSCH mapping from the start of the slot, S. [TS38.214, Table 6.1.2.1-1] Value: 0-13",on
+PDU(11).PUSCH.TD_ALLOC,NrOfSymbols,14,uint8,1,numeric,"Limits:[min,max]","[1,14]","PUSCH duration in symbols, L [TS38.214, Table 6.1.2.1-1] Value: 1-14",on
+PDU(11).PUSCH,PUSCH_DATA(1),,struct,1,none,"none","","",on
+PDU(11).PUSCH.PUSCH_DATA(1),rvIndex,0,uint8,1,numeric,"DropDownList","{0,1,2,3}","Redundancy version index [TS38.214, sec 6.1.4], it should match value sent in DCI Value : 0-3",on
+PDU(11).PUSCH.PUSCH_DATA(1),harqProcessID,0,uint8,1,numeric,"Limits:[min,max]","[0,15]","HARQ process number [TS38.212, sec 7.3.1.1], it should match value sent in DCI Value: 0 -15",on
+PDU(11).PUSCH.PUSCH_DATA(1),newDataIndicator,1,uint8,1,numeric,"DropDownList","{0,1}","Indicates if this new data or a retransmission [TS38.212, sec 7.3.1.1] Value: 0: retransmission 1: new data",on
+PDU(11).PUSCH.PUSCH_DATA(1),TBSize,12802,uint32,1,numeric,"Limits:[min,max]","[0,65535]","Transmit block size (in bytes) [TS38.214 sec 6.1.4.2] Value: 0-65535",on
+PDU(11).PUSCH.PUSCH_DATA(1),numCb,0,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Number of CBs in the TB (could be more than the number of CBs in this PUSCH transmission). Should be set to zero in any of the following conditions: 1) CBG is not supported 2) isReTx=0 (new transmission) 3) tbSize=0",on
+PDU(11).PUSCH.PUSCH_DATA(1),CB,,struct,1,none,"none","","",on
+PDU(11).PUSCH,PUSCH_UCI,,struct,1,none,"none","","",on
+PDU(11).PUSCH,PUSCH_PTRS,,struct,1,none,"none","","",on
+PDU(11).PUSCH,DFTS_OFDM,,struct,1,none,"none","","",on
+PDU(11).PUSCH,RX_BEAMFORMING,,struct,1,none,"none","","",on
+PDU(11).PUSCH.RX_BEAMFORMING,numPRGs,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Number of PRGs spanning this allocation. Value : 1-275",on
+PDU(11).PUSCH.RX_BEAMFORMING,prgSize,56,uint16,1,numeric,"Limits:[min,max]","[1,275]","Size in RBs of a precoding resource block group (PRG) – to which same precoding and digital beamforming gets applied. Value: 1-275",on
+PDU(11).PUSCH.RX_BEAMFORMING,digBFInterfaces,0,uint8,1,numeric,"CallbackFunction","@ul_tti_callback","Number of STD ant ports (parallel streams) feeding into the digBF Value: 0-255",on
+PDU(11).PUSCH.RX_BEAMFORMING,PRG(1),,struct,1,none,"none","","",on
+PDU(11).PUSCH.RX_BEAMFORMING.PRG(1),DIG_BF_INTERFACE,,struct,1,none,"none","","",on
+,PDU(12),,struct,1,none,"none","","",on
+PDU(12),PDUType,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","0: PRACH, 1: PUSCH,  2: PUCCH, 3: SRS",on
+PDU(12),PDUSize,0,uint16,1,numeric,"Limits:[min,max]","[0, 65535]","Size of the PDU control information (in bytes). This length value includes the 4 bytes required for the PDU type and PDU size parameters. Value: 0 - 65535",on
+PDU(12),PUSCH,,struct,1,none,"none","","",on
+PDU(12).PUSCH,pduBitmap,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Bitmap indicating presence of optional PDUs Bit 0: puschData (Indicates data is expected on the PUSCH) Bit 1:puschUci (Indicates UCI is expected on the PUSCH) Bit 2: puschPtrs (Indicates PTRS included (FR2)) Bit 3: dftsOfdm (Indicates DFT S-OFDM transmission)",on
+PDU(12).PUSCH,RNTI,12,uint16,1,numeric,"Limits:[min,max]","[1,65535]","The RNTI used for identifying the UE when receiving the PDU",on
+PDU(12).PUSCH,Handle,0,uint32,1,numeric,"none","","An opaque handling returned in the RxData.indication and/or UCI.indication message",on
+PDU(12).PUSCH,BWP,,struct,1,none,"none","","",on
+PDU(12).PUSCH.BWP,BWPsize,40,uint16,1,numeric,"Limits:[min,max]","[1,275]","Number of contiguous PRBs allocated to the BWP, Value: 1-275",on
+PDU(12).PUSCH.BWP,BWPStart,148,uint16,1,numeric,"Limits:[min,max]","[0,274]","Bandwidth part start RB index from reference CRB, Value: 0-274",on
+PDU(12).PUSCH.BWP,SubcarrierSpacing,0,uint8,1,numeric,"DropDownList","{0,1,2,3,4}","Value:0-4",on
+PDU(12).PUSCH.BWP,CyclicPrefix,0,uint8,1,numeric,"DropDownList","{0,1}","Cyclic prefix type, 0: Normal; 1: Extended",on
+PDU(12).PUSCH,CODEWORD(1),,struct,1,none,"none","","",on
+PDU(12).PUSCH.CODEWORD(1),targetCodeRate,7540,uint16,1,numeric,"none","","Target coding rate [TS38.214 sec 6.1.4.1]. This is the number of information bits per 1024 coded bits expressed in 0.1 bit units",on
+PDU(12).PUSCH.CODEWORD(1),qamModOrder,8,uint8,1,numeric,"DropDownList","{2,4,6,8}","QAM modulation [TS38.214 sec 6.1.4.1] Value: 2,4,6,8",on
+PDU(12).PUSCH.CODEWORD(1),mcsIndex,23,uint8,1,numeric,"Limits:[min,max]","[0,31]","MCS index [TS38.214, sec 6.1.4.1], should match value sent in DCI Value : 0-31",on
+PDU(12).PUSCH.CODEWORD(1),mcsTable,1,uint8,1,numeric,"DropDownList","{0,1,2,3,4}","MCS-Table-PUSCH [TS38.214, sec 6.1.4.1] Value: 0: notqam256 [TS38.214, table 5.1.3.1-1] 1: qam256 [TS38.214, table 5.1.3.1-2] 2: qam64LowSE [TS38.214, table 5.1.3.1-3] 3: notqam256-withTransformPrecoding [TS38.214, table 6.1.4.1-1] 4: qam64LowSE-withTransformPrecoding [TS38.214, table 6.1.4.1-2]",on
+PDU(12).PUSCH.CODEWORD(1),TransformPrecoding,1,uint8,1,numeric,"DropDownList","{0,1}","Indicates if transform precoding is enabled or disabled [TS38.214, sec 6.1.4.1] [TS38.211 6.3.1.4] Value: 0: enabled, 1: disabled",on
+PDU(12).PUSCH,dataScramblingId,20,uint16,1,numeric,"Limits:[min,max]","[0,65535]","dataScramblingIdentityPdsch [TS38.211, sec 6.3.1.1] It equals the higher-layer parameter Datascrambling- Identity if configured and the RNTI equals the C-RNTI, otherwise L2 needs to set it to physical cell id. Value: 0-65535",on
+PDU(12).PUSCH,nrOfLayers,1,uint8,1,numeric,"DropDownList","{1,2,3,4}","Number of layers [TS38.211, sec 6.3.1.3] Value : 1-4",on
+PDU(12).PUSCH,DMRS,,struct,1,none,"none","","",on
+PDU(12).PUSCH.DMRS,ulDmrsSymbPos,4,uint16,1,numeric,"none","","DMRS symbol positions [TS38.211, sec 6.4.1.1.3 and Tables 6.4.1.1.3-3 and 6.4.1.1.3-4] Bitmap occupying the 14 LSBs with: bit 0: first symbol and for each bit 0: no DMRS 1: DMRS",on
+PDU(12).PUSCH.DMRS,dmrsConfigType,0,uint8,1,numeric,"DropDownList","{0,1}","UL DMRS config type [TS38.211, sec 6.4.1.1.3], 0: type 1 1: type 2",on
+PDU(12).PUSCH.DMRS,ulDmrsScramblingId,5000,uint16,1,numeric,"Limits:[min,max]","[0,65535]","UL-DMRS-Scrambling-ID. If provided and the PUSCH is not a msg3 PUSCH, otherwise, L2 should set this to physical cell id. 0-65535",on
+PDU(12).PUSCH.DMRS,SCID,0,uint8,1,numeric,"DropDownList","{0,1}","DMRS sequence initialization [TS38.211, sec 6.4.1.1.1]. Should match what is sent in DCI 0_1, otherwise set to 0. Value : 0-1",on
+PDU(12).PUSCH.DMRS,numDmrsCdmGrpsNoData,2,uint8,1,numeric,"DropDownList","{0,1,2,3}","Number of DM-RS CDM groups without data [TS38.212 sec 7.3.1.1] Value: 1-3",on
+PDU(12).PUSCH.DMRS,dmrsPorts,8,uint16,1,numeric,"none","","DMRS ports. [TS38.212 7.3.1.1.2] provides description between DCI 0-1 content and DMRS ports. Bitmap occupying the 11 LSBs with: bit 0: antenna port 1000 bit 11: antenna port 1011 and for each bit. 0: DMRS port not used 1: DMRS port used",on
+PDU(12).PUSCH,FD_ALLOC,,struct,1,none,"none","","",on
+PDU(12).PUSCH.FD_ALLOC,resourceAlloc,1,uint8,1,numeric,"DropDownList","{0,1}","Resource Allocation Type [TS38.214, sec 6.1.2.2] 0: Type 0 1: Type 1.",on
+PDU(12).PUSCH.FD_ALLOC,rbBitmap,"zeros(1,36)",uint8,36,matlab expr string,"none","","For resource alloc type 0. [TS38.214, sec 6.1.2.2.1] [TS 38.212, 7.3.1.1.2] bitmap of RBs, 273 rounded up to multiple of 32. This bitmap is in units of VRBs. LSB of byte 0 of the bitmap represents the first RB of the BWP",on
+PDU(12).PUSCH.FD_ALLOC,rbStart,0,uint16,1,numeric,"Limits:[min,max]","[0,274]","For resource allocation type 1. [TS38.214, sec 6.1.2.2.2] The starting resource block within the BWP for this PUSCH. Value: 0-274.",on
+PDU(12).PUSCH.FD_ALLOC,rbSize,40,uint16,1,numeric,"none","[1,275]","For resource allocation type 1. [TS38.214, sec 6.1.2.2.2] The number of resource block within for this PUSCH. Value: 1-275",on
+PDU(12).PUSCH.FD_ALLOC,VRBtoPRBMapping,0,uint8,1,numeric,"DropDownList","{0}","VRB-to-PRB-mapping [TS38.211, sec 6.3.1.7] Value: 0: non-interleaved",on
+PDU(12).PUSCH.FD_ALLOC,FrequencyHopping,0,uint8,1,numeric,"DropDownList","{0,1}","For resource allocation type 1. [TS38.212, sec 7.3.1.1] [TS38.214, sec 6.3] Indicates if frequency hopping is enabled Value: 0: disabled 1: enabled",on
+PDU(12).PUSCH.FD_ALLOC,txDirectCurrentLocation,3300,uint16,1,numeric,"Limits:[min,max]","[0,4095]","The uplink Tx Direct Current location for the carrier. Only values in the value range of this field between 0 and 3299, which indicate the subcarrier index within the carrier corresponding to the numerology of the corresponding uplink BWP and value 3300, which indicates ""Outside the carrier"" and value 3301, which indicates ""Undetermined position within the carrier"" are used. [TS38.331, UplinkTxDirectCurrentBWP IE] Value: 0-4095",on
+PDU(12).PUSCH.FD_ALLOC,uplinkFrequencyShift7p5khz,0,uint8,1,numeric,"DropDownList","{0,1}","Indicates whether there is 7.5 kHz shift or not. [TS38.331, UplinkTxDirectCurrentBWP IE] Value: 0: false, 1: true",on
+PDU(12).PUSCH,TD_ALLOC,,struct,1,none,"none","","",on
+PDU(12).PUSCH.TD_ALLOC,StartSymbolIndex,0,uint8,1,numeric,"Limits:[min,max]","[0,13]","Start symbol index of PUSCH mapping from the start of the slot, S. [TS38.214, Table 6.1.2.1-1] Value: 0-13",on
+PDU(12).PUSCH.TD_ALLOC,NrOfSymbols,14,uint8,1,numeric,"Limits:[min,max]","[1,14]","PUSCH duration in symbols, L [TS38.214, Table 6.1.2.1-1] Value: 1-14",on
+PDU(12).PUSCH,PUSCH_DATA(1),,struct,1,none,"none","","",on
+PDU(12).PUSCH.PUSCH_DATA(1),rvIndex,0,uint8,1,numeric,"DropDownList","{0,1,2,3}","Redundancy version index [TS38.214, sec 6.1.4], it should match value sent in DCI Value : 0-3",on
+PDU(12).PUSCH.PUSCH_DATA(1),harqProcessID,0,uint8,1,numeric,"Limits:[min,max]","[0,15]","HARQ process number [TS38.212, sec 7.3.1.1], it should match value sent in DCI Value: 0 -15",on
+PDU(12).PUSCH.PUSCH_DATA(1),newDataIndicator,1,uint8,1,numeric,"DropDownList","{0,1}","Indicates if this new data or a retransmission [TS38.212, sec 7.3.1.1] Value: 0: retransmission 1: new data",on
+PDU(12).PUSCH.PUSCH_DATA(1),TBSize,4227,uint32,1,numeric,"Limits:[min,max]","[0,65535]","Transmit block size (in bytes) [TS38.214 sec 6.1.4.2] Value: 0-65535",on
+PDU(12).PUSCH.PUSCH_DATA(1),numCb,0,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Number of CBs in the TB (could be more than the number of CBs in this PUSCH transmission). Should be set to zero in any of the following conditions: 1) CBG is not supported 2) isReTx=0 (new transmission) 3) tbSize=0",on
+PDU(12).PUSCH.PUSCH_DATA(1),CB,,struct,1,none,"none","","",on
+PDU(12).PUSCH,PUSCH_UCI,,struct,1,none,"none","","",on
+PDU(12).PUSCH,PUSCH_PTRS,,struct,1,none,"none","","",on
+PDU(12).PUSCH,DFTS_OFDM,,struct,1,none,"none","","",on
+PDU(12).PUSCH,RX_BEAMFORMING,,struct,1,none,"none","","",on
+PDU(12).PUSCH.RX_BEAMFORMING,numPRGs,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Number of PRGs spanning this allocation. Value : 1-275",on
+PDU(12).PUSCH.RX_BEAMFORMING,prgSize,56,uint16,1,numeric,"Limits:[min,max]","[1,275]","Size in RBs of a precoding resource block group (PRG) – to which same precoding and digital beamforming gets applied. Value: 1-275",on
+PDU(12).PUSCH.RX_BEAMFORMING,digBFInterfaces,0,uint8,1,numeric,"CallbackFunction","@ul_tti_callback","Number of STD ant ports (parallel streams) feeding into the digBF Value: 0-255",on
+PDU(12).PUSCH.RX_BEAMFORMING,PRG(1),,struct,1,none,"none","","",on
+PDU(12).PUSCH.RX_BEAMFORMING.PRG(1),DIG_BF_INTERFACE,,struct,1,none,"none","","",on
+,PDU(13),,struct,1,none,"none","","",on
+PDU(13),PDUType,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","0: PRACH, 1: PUSCH,  2: PUCCH, 3: SRS",on
+PDU(13),PDUSize,0,uint16,1,numeric,"Limits:[min,max]","[0, 65535]","Size of the PDU control information (in bytes). This length value includes the 4 bytes required for the PDU type and PDU size parameters. Value: 0 - 65535",on
+PDU(13),PUSCH,,struct,1,none,"none","","",on
+PDU(13).PUSCH,pduBitmap,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Bitmap indicating presence of optional PDUs Bit 0: puschData (Indicates data is expected on the PUSCH) Bit 1:puschUci (Indicates UCI is expected on the PUSCH) Bit 2: puschPtrs (Indicates PTRS included (FR2)) Bit 3: dftsOfdm (Indicates DFT S-OFDM transmission)",on
+PDU(13).PUSCH,RNTI,13,uint16,1,numeric,"Limits:[min,max]","[1,65535]","The RNTI used for identifying the UE when receiving the PDU",on
+PDU(13).PUSCH,Handle,0,uint32,1,numeric,"none","","An opaque handling returned in the RxData.indication and/or UCI.indication message",on
+PDU(13).PUSCH,BWP,,struct,1,none,"none","","",on
+PDU(13).PUSCH.BWP,BWPsize,32,uint16,1,numeric,"Limits:[min,max]","[1,275]","Number of contiguous PRBs allocated to the BWP, Value: 1-275",on
+PDU(13).PUSCH.BWP,BWPStart,188,uint16,1,numeric,"Limits:[min,max]","[0,274]","Bandwidth part start RB index from reference CRB, Value: 0-274",on
+PDU(13).PUSCH.BWP,SubcarrierSpacing,0,uint8,1,numeric,"DropDownList","{0,1,2,3,4}","Value:0-4",on
+PDU(13).PUSCH.BWP,CyclicPrefix,0,uint8,1,numeric,"DropDownList","{0,1}","Cyclic prefix type, 0: Normal; 1: Extended",on
+PDU(13).PUSCH,CODEWORD(1),,struct,1,none,"none","","",on
+PDU(13).PUSCH.CODEWORD(1),targetCodeRate,7540,uint16,1,numeric,"none","","Target coding rate [TS38.214 sec 6.1.4.1]. This is the number of information bits per 1024 coded bits expressed in 0.1 bit units",on
+PDU(13).PUSCH.CODEWORD(1),qamModOrder,6,uint8,1,numeric,"DropDownList","{2,4,6,8}","QAM modulation [TS38.214 sec 6.1.4.1] Value: 2,4,6,8",on
+PDU(13).PUSCH.CODEWORD(1),mcsIndex,20,uint8,1,numeric,"Limits:[min,max]","[0,31]","MCS index [TS38.214, sec 6.1.4.1], should match value sent in DCI Value : 0-31",on
+PDU(13).PUSCH.CODEWORD(1),mcsTable,1,uint8,1,numeric,"DropDownList","{0,1,2,3,4}","MCS-Table-PUSCH [TS38.214, sec 6.1.4.1] Value: 0: notqam256 [TS38.214, table 5.1.3.1-1] 1: qam256 [TS38.214, table 5.1.3.1-2] 2: qam64LowSE [TS38.214, table 5.1.3.1-3] 3: notqam256-withTransformPrecoding [TS38.214, table 6.1.4.1-1] 4: qam64LowSE-withTransformPrecoding [TS38.214, table 6.1.4.1-2]",on
+PDU(13).PUSCH.CODEWORD(1),TransformPrecoding,1,uint8,1,numeric,"DropDownList","{0,1}","Indicates if transform precoding is enabled or disabled [TS38.214, sec 6.1.4.1] [TS38.211 6.3.1.4] Value: 0: enabled, 1: disabled",on
+PDU(13).PUSCH,dataScramblingId,20,uint16,1,numeric,"Limits:[min,max]","[0,65535]","dataScramblingIdentityPdsch [TS38.211, sec 6.3.1.1] It equals the higher-layer parameter Datascrambling- Identity if configured and the RNTI equals the C-RNTI, otherwise L2 needs to set it to physical cell id. Value: 0-65535",on
+PDU(13).PUSCH,nrOfLayers,3,uint8,1,numeric,"DropDownList","{1,2,3,4}","Number of layers [TS38.211, sec 6.3.1.3] Value : 1-4",on
+PDU(13).PUSCH,DMRS,,struct,1,none,"none","","",on
+PDU(13).PUSCH.DMRS,ulDmrsSymbPos,4,uint16,1,numeric,"none","","DMRS symbol positions [TS38.211, sec 6.4.1.1.3 and Tables 6.4.1.1.3-3 and 6.4.1.1.3-4] Bitmap occupying the 14 LSBs with: bit 0: first symbol and for each bit 0: no DMRS 1: DMRS",on
+PDU(13).PUSCH.DMRS,dmrsConfigType,0,uint8,1,numeric,"DropDownList","{0,1}","UL DMRS config type [TS38.211, sec 6.4.1.1.3], 0: type 1 1: type 2",on
+PDU(13).PUSCH.DMRS,ulDmrsScramblingId,6000,uint16,1,numeric,"Limits:[min,max]","[0,65535]","UL-DMRS-Scrambling-ID. If provided and the PUSCH is not a msg3 PUSCH, otherwise, L2 should set this to physical cell id. 0-65535",on
+PDU(13).PUSCH.DMRS,SCID,0,uint8,1,numeric,"DropDownList","{0,1}","DMRS sequence initialization [TS38.211, sec 6.4.1.1.1]. Should match what is sent in DCI 0_1, otherwise set to 0. Value : 0-1",on
+PDU(13).PUSCH.DMRS,numDmrsCdmGrpsNoData,2,uint8,1,numeric,"DropDownList","{0,1,2,3}","Number of DM-RS CDM groups without data [TS38.212 sec 7.3.1.1] Value: 1-3",on
+PDU(13).PUSCH.DMRS,dmrsPorts,7,uint16,1,numeric,"none","","DMRS ports. [TS38.212 7.3.1.1.2] provides description between DCI 0-1 content and DMRS ports. Bitmap occupying the 11 LSBs with: bit 0: antenna port 1000 bit 11: antenna port 1011 and for each bit. 0: DMRS port not used 1: DMRS port used",on
+PDU(13).PUSCH,FD_ALLOC,,struct,1,none,"none","","",on
+PDU(13).PUSCH.FD_ALLOC,resourceAlloc,1,uint8,1,numeric,"DropDownList","{0,1}","Resource Allocation Type [TS38.214, sec 6.1.2.2] 0: Type 0 1: Type 1.",on
+PDU(13).PUSCH.FD_ALLOC,rbBitmap,"zeros(1,36)",uint8,36,matlab expr string,"none","","For resource alloc type 0. [TS38.214, sec 6.1.2.2.1] [TS 38.212, 7.3.1.1.2] bitmap of RBs, 273 rounded up to multiple of 32. This bitmap is in units of VRBs. LSB of byte 0 of the bitmap represents the first RB of the BWP",on
+PDU(13).PUSCH.FD_ALLOC,rbStart,0,uint16,1,numeric,"Limits:[min,max]","[0,274]","For resource allocation type 1. [TS38.214, sec 6.1.2.2.2] The starting resource block within the BWP for this PUSCH. Value: 0-274.",on
+PDU(13).PUSCH.FD_ALLOC,rbSize,32,uint16,1,numeric,"none","[1,275]","For resource allocation type 1. [TS38.214, sec 6.1.2.2.2] The number of resource block within for this PUSCH. Value: 1-275",on
+PDU(13).PUSCH.FD_ALLOC,VRBtoPRBMapping,0,uint8,1,numeric,"DropDownList","{0}","VRB-to-PRB-mapping [TS38.211, sec 6.3.1.7] Value: 0: non-interleaved",on
+PDU(13).PUSCH.FD_ALLOC,FrequencyHopping,0,uint8,1,numeric,"DropDownList","{0,1}","For resource allocation type 1. [TS38.212, sec 7.3.1.1] [TS38.214, sec 6.3] Indicates if frequency hopping is enabled Value: 0: disabled 1: enabled",on
+PDU(13).PUSCH.FD_ALLOC,txDirectCurrentLocation,3300,uint16,1,numeric,"Limits:[min,max]","[0,4095]","The uplink Tx Direct Current location for the carrier. Only values in the value range of this field between 0 and 3299, which indicate the subcarrier index within the carrier corresponding to the numerology of the corresponding uplink BWP and value 3300, which indicates ""Outside the carrier"" and value 3301, which indicates ""Undetermined position within the carrier"" are used. [TS38.331, UplinkTxDirectCurrentBWP IE] Value: 0-4095",on
+PDU(13).PUSCH.FD_ALLOC,uplinkFrequencyShift7p5khz,0,uint8,1,numeric,"DropDownList","{0,1}","Indicates whether there is 7.5 kHz shift or not. [TS38.331, UplinkTxDirectCurrentBWP IE] Value: 0: false, 1: true",on
+PDU(13).PUSCH,TD_ALLOC,,struct,1,none,"none","","",on
+PDU(13).PUSCH.TD_ALLOC,StartSymbolIndex,0,uint8,1,numeric,"Limits:[min,max]","[0,13]","Start symbol index of PUSCH mapping from the start of the slot, S. [TS38.214, Table 6.1.2.1-1] Value: 0-13",on
+PDU(13).PUSCH.TD_ALLOC,NrOfSymbols,14,uint8,1,numeric,"Limits:[min,max]","[1,14]","PUSCH duration in symbols, L [TS38.214, Table 6.1.2.1-1] Value: 1-14",on
+PDU(13).PUSCH,PUSCH_DATA(1),,struct,1,none,"none","","",on
+PDU(13).PUSCH.PUSCH_DATA(1),rvIndex,0,uint8,1,numeric,"DropDownList","{0,1,2,3}","Redundancy version index [TS38.214, sec 6.1.4], it should match value sent in DCI Value : 0-3",on
+PDU(13).PUSCH.PUSCH_DATA(1),harqProcessID,0,uint8,1,numeric,"Limits:[min,max]","[0,15]","HARQ process number [TS38.212, sec 7.3.1.1], it should match value sent in DCI Value: 0 -15",on
+PDU(13).PUSCH.PUSCH_DATA(1),newDataIndicator,1,uint8,1,numeric,"DropDownList","{0,1}","Indicates if this new data or a retransmission [TS38.212, sec 7.3.1.1] Value: 0: retransmission 1: new data",on
+PDU(13).PUSCH.PUSCH_DATA(1),TBSize,9474,uint32,1,numeric,"Limits:[min,max]","[0,65535]","Transmit block size (in bytes) [TS38.214 sec 6.1.4.2] Value: 0-65535",on
+PDU(13).PUSCH.PUSCH_DATA(1),numCb,0,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Number of CBs in the TB (could be more than the number of CBs in this PUSCH transmission). Should be set to zero in any of the following conditions: 1) CBG is not supported 2) isReTx=0 (new transmission) 3) tbSize=0",on
+PDU(13).PUSCH.PUSCH_DATA(1),CB,,struct,1,none,"none","","",on
+PDU(13).PUSCH,PUSCH_UCI,,struct,1,none,"none","","",on
+PDU(13).PUSCH,PUSCH_PTRS,,struct,1,none,"none","","",on
+PDU(13).PUSCH,DFTS_OFDM,,struct,1,none,"none","","",on
+PDU(13).PUSCH,RX_BEAMFORMING,,struct,1,none,"none","","",on
+PDU(13).PUSCH.RX_BEAMFORMING,numPRGs,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Number of PRGs spanning this allocation. Value : 1-275",on
+PDU(13).PUSCH.RX_BEAMFORMING,prgSize,56,uint16,1,numeric,"Limits:[min,max]","[1,275]","Size in RBs of a precoding resource block group (PRG) – to which same precoding and digital beamforming gets applied. Value: 1-275",on
+PDU(13).PUSCH.RX_BEAMFORMING,digBFInterfaces,0,uint8,1,numeric,"CallbackFunction","@ul_tti_callback","Number of STD ant ports (parallel streams) feeding into the digBF Value: 0-255",on
+PDU(13).PUSCH.RX_BEAMFORMING,PRG(1),,struct,1,none,"none","","",on
+PDU(13).PUSCH.RX_BEAMFORMING.PRG(1),DIG_BF_INTERFACE,,struct,1,none,"none","","",on
+,PDU(14),,struct,1,none,"none","","",on
+PDU(14),PDUType,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","0: PRACH, 1: PUSCH,  2: PUCCH, 3: SRS",on
+PDU(14),PDUSize,0,uint16,1,numeric,"Limits:[min,max]","[0, 65535]","Size of the PDU control information (in bytes). This length value includes the 4 bytes required for the PDU type and PDU size parameters. Value: 0 - 65535",on
+PDU(14),PUSCH,,struct,1,none,"none","","",on
+PDU(14).PUSCH,pduBitmap,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Bitmap indicating presence of optional PDUs Bit 0: puschData (Indicates data is expected on the PUSCH) Bit 1:puschUci (Indicates UCI is expected on the PUSCH) Bit 2: puschPtrs (Indicates PTRS included (FR2)) Bit 3: dftsOfdm (Indicates DFT S-OFDM transmission)",on
+PDU(14).PUSCH,RNTI,14,uint16,1,numeric,"Limits:[min,max]","[1,65535]","The RNTI used for identifying the UE when receiving the PDU",on
+PDU(14).PUSCH,Handle,0,uint32,1,numeric,"none","","An opaque handling returned in the RxData.indication and/or UCI.indication message",on
+PDU(14).PUSCH,BWP,,struct,1,none,"none","","",on
+PDU(14).PUSCH.BWP,BWPsize,24,uint16,1,numeric,"Limits:[min,max]","[1,275]","Number of contiguous PRBs allocated to the BWP, Value: 1-275",on
+PDU(14).PUSCH.BWP,BWPStart,220,uint16,1,numeric,"Limits:[min,max]","[0,274]","Bandwidth part start RB index from reference CRB, Value: 0-274",on
+PDU(14).PUSCH.BWP,SubcarrierSpacing,0,uint8,1,numeric,"DropDownList","{0,1,2,3,4}","Value:0-4",on
+PDU(14).PUSCH.BWP,CyclicPrefix,0,uint8,1,numeric,"DropDownList","{0,1}","Cyclic prefix type, 0: Normal; 1: Extended",on
+PDU(14).PUSCH,CODEWORD(1),,struct,1,none,"none","","",on
+PDU(14).PUSCH.CODEWORD(1),targetCodeRate,5670,uint16,1,numeric,"none","","Target coding rate [TS38.214 sec 6.1.4.1]. This is the number of information bits per 1024 coded bits expressed in 0.1 bit units",on
+PDU(14).PUSCH.CODEWORD(1),qamModOrder,6,uint8,1,numeric,"DropDownList","{2,4,6,8}","QAM modulation [TS38.214 sec 6.1.4.1] Value: 2,4,6,8",on
+PDU(14).PUSCH.CODEWORD(1),mcsIndex,14,uint8,1,numeric,"Limits:[min,max]","[0,31]","MCS index [TS38.214, sec 6.1.4.1], should match value sent in DCI Value : 0-31",on
+PDU(14).PUSCH.CODEWORD(1),mcsTable,1,uint8,1,numeric,"DropDownList","{0,1,2,3,4}","MCS-Table-PUSCH [TS38.214, sec 6.1.4.1] Value: 0: notqam256 [TS38.214, table 5.1.3.1-1] 1: qam256 [TS38.214, table 5.1.3.1-2] 2: qam64LowSE [TS38.214, table 5.1.3.1-3] 3: notqam256-withTransformPrecoding [TS38.214, table 6.1.4.1-1] 4: qam64LowSE-withTransformPrecoding [TS38.214, table 6.1.4.1-2]",on
+PDU(14).PUSCH.CODEWORD(1),TransformPrecoding,1,uint8,1,numeric,"DropDownList","{0,1}","Indicates if transform precoding is enabled or disabled [TS38.214, sec 6.1.4.1] [TS38.211 6.3.1.4] Value: 0: enabled, 1: disabled",on
+PDU(14).PUSCH,dataScramblingId,20,uint16,1,numeric,"Limits:[min,max]","[0,65535]","dataScramblingIdentityPdsch [TS38.211, sec 6.3.1.1] It equals the higher-layer parameter Datascrambling- Identity if configured and the RNTI equals the C-RNTI, otherwise L2 needs to set it to physical cell id. Value: 0-65535",on
+PDU(14).PUSCH,nrOfLayers,1,uint8,1,numeric,"DropDownList","{1,2,3,4}","Number of layers [TS38.211, sec 6.3.1.3] Value : 1-4",on
+PDU(14).PUSCH,DMRS,,struct,1,none,"none","","",on
+PDU(14).PUSCH.DMRS,ulDmrsSymbPos,4,uint16,1,numeric,"none","","DMRS symbol positions [TS38.211, sec 6.4.1.1.3 and Tables 6.4.1.1.3-3 and 6.4.1.1.3-4] Bitmap occupying the 14 LSBs with: bit 0: first symbol and for each bit 0: no DMRS 1: DMRS",on
+PDU(14).PUSCH.DMRS,dmrsConfigType,0,uint8,1,numeric,"DropDownList","{0,1}","UL DMRS config type [TS38.211, sec 6.4.1.1.3], 0: type 1 1: type 2",on
+PDU(14).PUSCH.DMRS,ulDmrsScramblingId,7000,uint16,1,numeric,"Limits:[min,max]","[0,65535]","UL-DMRS-Scrambling-ID. If provided and the PUSCH is not a msg3 PUSCH, otherwise, L2 should set this to physical cell id. 0-65535",on
+PDU(14).PUSCH.DMRS,SCID,0,uint8,1,numeric,"DropDownList","{0,1}","DMRS sequence initialization [TS38.211, sec 6.4.1.1.1]. Should match what is sent in DCI 0_1, otherwise set to 0. Value : 0-1",on
+PDU(14).PUSCH.DMRS,numDmrsCdmGrpsNoData,2,uint8,1,numeric,"DropDownList","{0,1,2,3}","Number of DM-RS CDM groups without data [TS38.212 sec 7.3.1.1] Value: 1-3",on
+PDU(14).PUSCH.DMRS,dmrsPorts,1,uint16,1,numeric,"none","","DMRS ports. [TS38.212 7.3.1.1.2] provides description between DCI 0-1 content and DMRS ports. Bitmap occupying the 11 LSBs with: bit 0: antenna port 1000 bit 11: antenna port 1011 and for each bit. 0: DMRS port not used 1: DMRS port used",on
+PDU(14).PUSCH,FD_ALLOC,,struct,1,none,"none","","",on
+PDU(14).PUSCH.FD_ALLOC,resourceAlloc,1,uint8,1,numeric,"DropDownList","{0,1}","Resource Allocation Type [TS38.214, sec 6.1.2.2] 0: Type 0 1: Type 1.",on
+PDU(14).PUSCH.FD_ALLOC,rbBitmap,"zeros(1,36)",uint8,36,matlab expr string,"none","","For resource alloc type 0. [TS38.214, sec 6.1.2.2.1] [TS 38.212, 7.3.1.1.2] bitmap of RBs, 273 rounded up to multiple of 32. This bitmap is in units of VRBs. LSB of byte 0 of the bitmap represents the first RB of the BWP",on
+PDU(14).PUSCH.FD_ALLOC,rbStart,0,uint16,1,numeric,"Limits:[min,max]","[0,274]","For resource allocation type 1. [TS38.214, sec 6.1.2.2.2] The starting resource block within the BWP for this PUSCH. Value: 0-274.",on
+PDU(14).PUSCH.FD_ALLOC,rbSize,24,uint16,1,numeric,"none","[1,275]","For resource allocation type 1. [TS38.214, sec 6.1.2.2.2] The number of resource block within for this PUSCH. Value: 1-275",on
+PDU(14).PUSCH.FD_ALLOC,VRBtoPRBMapping,0,uint8,1,numeric,"DropDownList","{0}","VRB-to-PRB-mapping [TS38.211, sec 6.3.1.7] Value: 0: non-interleaved",on
+PDU(14).PUSCH.FD_ALLOC,FrequencyHopping,0,uint8,1,numeric,"DropDownList","{0,1}","For resource allocation type 1. [TS38.212, sec 7.3.1.1] [TS38.214, sec 6.3] Indicates if frequency hopping is enabled Value: 0: disabled 1: enabled",on
+PDU(14).PUSCH.FD_ALLOC,txDirectCurrentLocation,3300,uint16,1,numeric,"Limits:[min,max]","[0,4095]","The uplink Tx Direct Current location for the carrier. Only values in the value range of this field between 0 and 3299, which indicate the subcarrier index within the carrier corresponding to the numerology of the corresponding uplink BWP and value 3300, which indicates ""Outside the carrier"" and value 3301, which indicates ""Undetermined position within the carrier"" are used. [TS38.331, UplinkTxDirectCurrentBWP IE] Value: 0-4095",on
+PDU(14).PUSCH.FD_ALLOC,uplinkFrequencyShift7p5khz,0,uint8,1,numeric,"DropDownList","{0,1}","Indicates whether there is 7.5 kHz shift or not. [TS38.331, UplinkTxDirectCurrentBWP IE] Value: 0: false, 1: true",on
+PDU(14).PUSCH,TD_ALLOC,,struct,1,none,"none","","",on
+PDU(14).PUSCH.TD_ALLOC,StartSymbolIndex,0,uint8,1,numeric,"Limits:[min,max]","[0,13]","Start symbol index of PUSCH mapping from the start of the slot, S. [TS38.214, Table 6.1.2.1-1] Value: 0-13",on
+PDU(14).PUSCH.TD_ALLOC,NrOfSymbols,14,uint8,1,numeric,"Limits:[min,max]","[1,14]","PUSCH duration in symbols, L [TS38.214, Table 6.1.2.1-1] Value: 1-14",on
+PDU(14).PUSCH,PUSCH_DATA(1),,struct,1,none,"none","","",on
+PDU(14).PUSCH.PUSCH_DATA(1),rvIndex,0,uint8,1,numeric,"DropDownList","{0,1,2,3}","Redundancy version index [TS38.214, sec 6.1.4], it should match value sent in DCI Value : 0-3",on
+PDU(14).PUSCH.PUSCH_DATA(1),harqProcessID,0,uint8,1,numeric,"Limits:[min,max]","[0,15]","HARQ process number [TS38.212, sec 7.3.1.1], it should match value sent in DCI Value: 0 -15",on
+PDU(14).PUSCH.PUSCH_DATA(1),newDataIndicator,1,uint8,1,numeric,"DropDownList","{0,1}","Indicates if this new data or a retransmission [TS38.212, sec 7.3.1.1] Value: 0: retransmission 1: new data",on
+PDU(14).PUSCH.PUSCH_DATA(1),TBSize,1537,uint32,1,numeric,"Limits:[min,max]","[0,65535]","Transmit block size (in bytes) [TS38.214 sec 6.1.4.2] Value: 0-65535",on
+PDU(14).PUSCH.PUSCH_DATA(1),numCb,0,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Number of CBs in the TB (could be more than the number of CBs in this PUSCH transmission). Should be set to zero in any of the following conditions: 1) CBG is not supported 2) isReTx=0 (new transmission) 3) tbSize=0",on
+PDU(14).PUSCH.PUSCH_DATA(1),CB,,struct,1,none,"none","","",on
+PDU(14).PUSCH,PUSCH_UCI,,struct,1,none,"none","","",on
+PDU(14).PUSCH,PUSCH_PTRS,,struct,1,none,"none","","",on
+PDU(14).PUSCH,DFTS_OFDM,,struct,1,none,"none","","",on
+PDU(14).PUSCH,RX_BEAMFORMING,,struct,1,none,"none","","",on
+PDU(14).PUSCH.RX_BEAMFORMING,numPRGs,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Number of PRGs spanning this allocation. Value : 1-275",on
+PDU(14).PUSCH.RX_BEAMFORMING,prgSize,56,uint16,1,numeric,"Limits:[min,max]","[1,275]","Size in RBs of a precoding resource block group (PRG) – to which same precoding and digital beamforming gets applied. Value: 1-275",on
+PDU(14).PUSCH.RX_BEAMFORMING,digBFInterfaces,0,uint8,1,numeric,"CallbackFunction","@ul_tti_callback","Number of STD ant ports (parallel streams) feeding into the digBF Value: 0-255",on
+PDU(14).PUSCH.RX_BEAMFORMING,PRG(1),,struct,1,none,"none","","",on
+PDU(14).PUSCH.RX_BEAMFORMING.PRG(1),DIG_BF_INTERFACE,,struct,1,none,"none","","",on
+,PDU(15),,struct,1,none,"none","","",on
+PDU(15),PDUType,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","0: PRACH, 1: PUSCH,  2: PUCCH, 3: SRS",on
+PDU(15),PDUSize,0,uint16,1,numeric,"Limits:[min,max]","[0, 65535]","Size of the PDU control information (in bytes). This length value includes the 4 bytes required for the PDU type and PDU size parameters. Value: 0 - 65535",on
+PDU(15),PUSCH,,struct,1,none,"none","","",on
+PDU(15).PUSCH,pduBitmap,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Bitmap indicating presence of optional PDUs Bit 0: puschData (Indicates data is expected on the PUSCH) Bit 1:puschUci (Indicates UCI is expected on the PUSCH) Bit 2: puschPtrs (Indicates PTRS included (FR2)) Bit 3: dftsOfdm (Indicates DFT S-OFDM transmission)",on
+PDU(15).PUSCH,RNTI,15,uint16,1,numeric,"Limits:[min,max]","[1,65535]","The RNTI used for identifying the UE when receiving the PDU",on
+PDU(15).PUSCH,Handle,0,uint32,1,numeric,"none","","An opaque handling returned in the RxData.indication and/or UCI.indication message",on
+PDU(15).PUSCH,BWP,,struct,1,none,"none","","",on
+PDU(15).PUSCH.BWP,BWPsize,24,uint16,1,numeric,"Limits:[min,max]","[1,275]","Number of contiguous PRBs allocated to the BWP, Value: 1-275",on
+PDU(15).PUSCH.BWP,BWPStart,220,uint16,1,numeric,"Limits:[min,max]","[0,274]","Bandwidth part start RB index from reference CRB, Value: 0-274",on
+PDU(15).PUSCH.BWP,SubcarrierSpacing,0,uint8,1,numeric,"DropDownList","{0,1,2,3,4}","Value:0-4",on
+PDU(15).PUSCH.BWP,CyclicPrefix,0,uint8,1,numeric,"DropDownList","{0,1}","Cyclic prefix type, 0: Normal; 1: Extended",on
+PDU(15).PUSCH,CODEWORD(1),,struct,1,none,"none","","",on
+PDU(15).PUSCH.CODEWORD(1),targetCodeRate,5670,uint16,1,numeric,"none","","Target coding rate [TS38.214 sec 6.1.4.1]. This is the number of information bits per 1024 coded bits expressed in 0.1 bit units",on
+PDU(15).PUSCH.CODEWORD(1),qamModOrder,6,uint8,1,numeric,"DropDownList","{2,4,6,8}","QAM modulation [TS38.214 sec 6.1.4.1] Value: 2,4,6,8",on
+PDU(15).PUSCH.CODEWORD(1),mcsIndex,14,uint8,1,numeric,"Limits:[min,max]","[0,31]","MCS index [TS38.214, sec 6.1.4.1], should match value sent in DCI Value : 0-31",on
+PDU(15).PUSCH.CODEWORD(1),mcsTable,1,uint8,1,numeric,"DropDownList","{0,1,2,3,4}","MCS-Table-PUSCH [TS38.214, sec 6.1.4.1] Value: 0: notqam256 [TS38.214, table 5.1.3.1-1] 1: qam256 [TS38.214, table 5.1.3.1-2] 2: qam64LowSE [TS38.214, table 5.1.3.1-3] 3: notqam256-withTransformPrecoding [TS38.214, table 6.1.4.1-1] 4: qam64LowSE-withTransformPrecoding [TS38.214, table 6.1.4.1-2]",on
+PDU(15).PUSCH.CODEWORD(1),TransformPrecoding,1,uint8,1,numeric,"DropDownList","{0,1}","Indicates if transform precoding is enabled or disabled [TS38.214, sec 6.1.4.1] [TS38.211 6.3.1.4] Value: 0: enabled, 1: disabled",on
+PDU(15).PUSCH,dataScramblingId,20,uint16,1,numeric,"Limits:[min,max]","[0,65535]","dataScramblingIdentityPdsch [TS38.211, sec 6.3.1.1] It equals the higher-layer parameter Datascrambling- Identity if configured and the RNTI equals the C-RNTI, otherwise L2 needs to set it to physical cell id. Value: 0-65535",on
+PDU(15).PUSCH,nrOfLayers,1,uint8,1,numeric,"DropDownList","{1,2,3,4}","Number of layers [TS38.211, sec 6.3.1.3] Value : 1-4",on
+PDU(15).PUSCH,DMRS,,struct,1,none,"none","","",on
+PDU(15).PUSCH.DMRS,ulDmrsSymbPos,4,uint16,1,numeric,"none","","DMRS symbol positions [TS38.211, sec 6.4.1.1.3 and Tables 6.4.1.1.3-3 and 6.4.1.1.3-4] Bitmap occupying the 14 LSBs with: bit 0: first symbol and for each bit 0: no DMRS 1: DMRS",on
+PDU(15).PUSCH.DMRS,dmrsConfigType,0,uint8,1,numeric,"DropDownList","{0,1}","UL DMRS config type [TS38.211, sec 6.4.1.1.3], 0: type 1 1: type 2",on
+PDU(15).PUSCH.DMRS,ulDmrsScramblingId,7000,uint16,1,numeric,"Limits:[min,max]","[0,65535]","UL-DMRS-Scrambling-ID. If provided and the PUSCH is not a msg3 PUSCH, otherwise, L2 should set this to physical cell id. 0-65535",on
+PDU(15).PUSCH.DMRS,SCID,0,uint8,1,numeric,"DropDownList","{0,1}","DMRS sequence initialization [TS38.211, sec 6.4.1.1.1]. Should match what is sent in DCI 0_1, otherwise set to 0. Value : 0-1",on
+PDU(15).PUSCH.DMRS,numDmrsCdmGrpsNoData,2,uint8,1,numeric,"DropDownList","{0,1,2,3}","Number of DM-RS CDM groups without data [TS38.212 sec 7.3.1.1] Value: 1-3",on
+PDU(15).PUSCH.DMRS,dmrsPorts,2,uint16,1,numeric,"none","","DMRS ports. [TS38.212 7.3.1.1.2] provides description between DCI 0-1 content and DMRS ports. Bitmap occupying the 11 LSBs with: bit 0: antenna port 1000 bit 11: antenna port 1011 and for each bit. 0: DMRS port not used 1: DMRS port used",on
+PDU(15).PUSCH,FD_ALLOC,,struct,1,none,"none","","",on
+PDU(15).PUSCH.FD_ALLOC,resourceAlloc,1,uint8,1,numeric,"DropDownList","{0,1}","Resource Allocation Type [TS38.214, sec 6.1.2.2] 0: Type 0 1: Type 1.",on
+PDU(15).PUSCH.FD_ALLOC,rbBitmap,"zeros(1,36)",uint8,36,matlab expr string,"none","","For resource alloc type 0. [TS38.214, sec 6.1.2.2.1] [TS 38.212, 7.3.1.1.2] bitmap of RBs, 273 rounded up to multiple of 32. This bitmap is in units of VRBs. LSB of byte 0 of the bitmap represents the first RB of the BWP",on
+PDU(15).PUSCH.FD_ALLOC,rbStart,0,uint16,1,numeric,"Limits:[min,max]","[0,274]","For resource allocation type 1. [TS38.214, sec 6.1.2.2.2] The starting resource block within the BWP for this PUSCH. Value: 0-274.",on
+PDU(15).PUSCH.FD_ALLOC,rbSize,24,uint16,1,numeric,"none","[1,275]","For resource allocation type 1. [TS38.214, sec 6.1.2.2.2] The number of resource block within for this PUSCH. Value: 1-275",on
+PDU(15).PUSCH.FD_ALLOC,VRBtoPRBMapping,0,uint8,1,numeric,"DropDownList","{0}","VRB-to-PRB-mapping [TS38.211, sec 6.3.1.7] Value: 0: non-interleaved",on
+PDU(15).PUSCH.FD_ALLOC,FrequencyHopping,0,uint8,1,numeric,"DropDownList","{0,1}","For resource allocation type 1. [TS38.212, sec 7.3.1.1] [TS38.214, sec 6.3] Indicates if frequency hopping is enabled Value: 0: disabled 1: enabled",on
+PDU(15).PUSCH.FD_ALLOC,txDirectCurrentLocation,3300,uint16,1,numeric,"Limits:[min,max]","[0,4095]","The uplink Tx Direct Current location for the carrier. Only values in the value range of this field between 0 and 3299, which indicate the subcarrier index within the carrier corresponding to the numerology of the corresponding uplink BWP and value 3300, which indicates ""Outside the carrier"" and value 3301, which indicates ""Undetermined position within the carrier"" are used. [TS38.331, UplinkTxDirectCurrentBWP IE] Value: 0-4095",on
+PDU(15).PUSCH.FD_ALLOC,uplinkFrequencyShift7p5khz,0,uint8,1,numeric,"DropDownList","{0,1}","Indicates whether there is 7.5 kHz shift or not. [TS38.331, UplinkTxDirectCurrentBWP IE] Value: 0: false, 1: true",on
+PDU(15).PUSCH,TD_ALLOC,,struct,1,none,"none","","",on
+PDU(15).PUSCH.TD_ALLOC,StartSymbolIndex,0,uint8,1,numeric,"Limits:[min,max]","[0,13]","Start symbol index of PUSCH mapping from the start of the slot, S. [TS38.214, Table 6.1.2.1-1] Value: 0-13",on
+PDU(15).PUSCH.TD_ALLOC,NrOfSymbols,14,uint8,1,numeric,"Limits:[min,max]","[1,14]","PUSCH duration in symbols, L [TS38.214, Table 6.1.2.1-1] Value: 1-14",on
+PDU(15).PUSCH,PUSCH_DATA(1),,struct,1,none,"none","","",on
+PDU(15).PUSCH.PUSCH_DATA(1),rvIndex,0,uint8,1,numeric,"DropDownList","{0,1,2,3}","Redundancy version index [TS38.214, sec 6.1.4], it should match value sent in DCI Value : 0-3",on
+PDU(15).PUSCH.PUSCH_DATA(1),harqProcessID,0,uint8,1,numeric,"Limits:[min,max]","[0,15]","HARQ process number [TS38.212, sec 7.3.1.1], it should match value sent in DCI Value: 0 -15",on
+PDU(15).PUSCH.PUSCH_DATA(1),newDataIndicator,1,uint8,1,numeric,"DropDownList","{0,1}","Indicates if this new data or a retransmission [TS38.212, sec 7.3.1.1] Value: 0: retransmission 1: new data",on
+PDU(15).PUSCH.PUSCH_DATA(1),TBSize,1537,uint32,1,numeric,"Limits:[min,max]","[0,65535]","Transmit block size (in bytes) [TS38.214 sec 6.1.4.2] Value: 0-65535",on
+PDU(15).PUSCH.PUSCH_DATA(1),numCb,0,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Number of CBs in the TB (could be more than the number of CBs in this PUSCH transmission). Should be set to zero in any of the following conditions: 1) CBG is not supported 2) isReTx=0 (new transmission) 3) tbSize=0",on
+PDU(15).PUSCH.PUSCH_DATA(1),CB,,struct,1,none,"none","","",on
+PDU(15).PUSCH,PUSCH_UCI,,struct,1,none,"none","","",on
+PDU(15).PUSCH,PUSCH_PTRS,,struct,1,none,"none","","",on
+PDU(15).PUSCH,DFTS_OFDM,,struct,1,none,"none","","",on
+PDU(15).PUSCH,RX_BEAMFORMING,,struct,1,none,"none","","",on
+PDU(15).PUSCH.RX_BEAMFORMING,numPRGs,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Number of PRGs spanning this allocation. Value : 1-275",on
+PDU(15).PUSCH.RX_BEAMFORMING,prgSize,56,uint16,1,numeric,"Limits:[min,max]","[1,275]","Size in RBs of a precoding resource block group (PRG) – to which same precoding and digital beamforming gets applied. Value: 1-275",on
+PDU(15).PUSCH.RX_BEAMFORMING,digBFInterfaces,0,uint8,1,numeric,"CallbackFunction","@ul_tti_callback","Number of STD ant ports (parallel streams) feeding into the digBF Value: 0-255",on
+PDU(15).PUSCH.RX_BEAMFORMING,PRG(1),,struct,1,none,"none","","",on
+PDU(15).PUSCH.RX_BEAMFORMING.PRG(1),DIG_BF_INTERFACE,,struct,1,none,"none","","",on
+,PDU(16),,struct,1,none,"none","","",on
+PDU(16),PDUType,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","0: PRACH, 1: PUSCH,  2: PUCCH, 3: SRS",on
+PDU(16),PDUSize,0,uint16,1,numeric,"Limits:[min,max]","[0, 65535]","Size of the PDU control information (in bytes). This length value includes the 4 bytes required for the PDU type and PDU size parameters. Value: 0 - 65535",on
+PDU(16),PUSCH,,struct,1,none,"none","","",on
+PDU(16).PUSCH,pduBitmap,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Bitmap indicating presence of optional PDUs Bit 0: puschData (Indicates data is expected on the PUSCH) Bit 1:puschUci (Indicates UCI is expected on the PUSCH) Bit 2: puschPtrs (Indicates PTRS included (FR2)) Bit 3: dftsOfdm (Indicates DFT S-OFDM transmission)",on
+PDU(16).PUSCH,RNTI,16,uint16,1,numeric,"Limits:[min,max]","[1,65535]","The RNTI used for identifying the UE when receiving the PDU",on
+PDU(16).PUSCH,Handle,0,uint32,1,numeric,"none","","An opaque handling returned in the RxData.indication and/or UCI.indication message",on
+PDU(16).PUSCH,BWP,,struct,1,none,"none","","",on
+PDU(16).PUSCH.BWP,BWPsize,24,uint16,1,numeric,"Limits:[min,max]","[1,275]","Number of contiguous PRBs allocated to the BWP, Value: 1-275",on
+PDU(16).PUSCH.BWP,BWPStart,220,uint16,1,numeric,"Limits:[min,max]","[0,274]","Bandwidth part start RB index from reference CRB, Value: 0-274",on
+PDU(16).PUSCH.BWP,SubcarrierSpacing,0,uint8,1,numeric,"DropDownList","{0,1,2,3,4}","Value:0-4",on
+PDU(16).PUSCH.BWP,CyclicPrefix,0,uint8,1,numeric,"DropDownList","{0,1}","Cyclic prefix type, 0: Normal; 1: Extended",on
+PDU(16).PUSCH,CODEWORD(1),,struct,1,none,"none","","",on
+PDU(16).PUSCH.CODEWORD(1),targetCodeRate,5670,uint16,1,numeric,"none","","Target coding rate [TS38.214 sec 6.1.4.1]. This is the number of information bits per 1024 coded bits expressed in 0.1 bit units",on
+PDU(16).PUSCH.CODEWORD(1),qamModOrder,6,uint8,1,numeric,"DropDownList","{2,4,6,8}","QAM modulation [TS38.214 sec 6.1.4.1] Value: 2,4,6,8",on
+PDU(16).PUSCH.CODEWORD(1),mcsIndex,14,uint8,1,numeric,"Limits:[min,max]","[0,31]","MCS index [TS38.214, sec 6.1.4.1], should match value sent in DCI Value : 0-31",on
+PDU(16).PUSCH.CODEWORD(1),mcsTable,1,uint8,1,numeric,"DropDownList","{0,1,2,3,4}","MCS-Table-PUSCH [TS38.214, sec 6.1.4.1] Value: 0: notqam256 [TS38.214, table 5.1.3.1-1] 1: qam256 [TS38.214, table 5.1.3.1-2] 2: qam64LowSE [TS38.214, table 5.1.3.1-3] 3: notqam256-withTransformPrecoding [TS38.214, table 6.1.4.1-1] 4: qam64LowSE-withTransformPrecoding [TS38.214, table 6.1.4.1-2]",on
+PDU(16).PUSCH.CODEWORD(1),TransformPrecoding,1,uint8,1,numeric,"DropDownList","{0,1}","Indicates if transform precoding is enabled or disabled [TS38.214, sec 6.1.4.1] [TS38.211 6.3.1.4] Value: 0: enabled, 1: disabled",on
+PDU(16).PUSCH,dataScramblingId,20,uint16,1,numeric,"Limits:[min,max]","[0,65535]","dataScramblingIdentityPdsch [TS38.211, sec 6.3.1.1] It equals the higher-layer parameter Datascrambling- Identity if configured and the RNTI equals the C-RNTI, otherwise L2 needs to set it to physical cell id. Value: 0-65535",on
+PDU(16).PUSCH,nrOfLayers,1,uint8,1,numeric,"DropDownList","{1,2,3,4}","Number of layers [TS38.211, sec 6.3.1.3] Value : 1-4",on
+PDU(16).PUSCH,DMRS,,struct,1,none,"none","","",on
+PDU(16).PUSCH.DMRS,ulDmrsSymbPos,4,uint16,1,numeric,"none","","DMRS symbol positions [TS38.211, sec 6.4.1.1.3 and Tables 6.4.1.1.3-3 and 6.4.1.1.3-4] Bitmap occupying the 14 LSBs with: bit 0: first symbol and for each bit 0: no DMRS 1: DMRS",on
+PDU(16).PUSCH.DMRS,dmrsConfigType,0,uint8,1,numeric,"DropDownList","{0,1}","UL DMRS config type [TS38.211, sec 6.4.1.1.3], 0: type 1 1: type 2",on
+PDU(16).PUSCH.DMRS,ulDmrsScramblingId,7000,uint16,1,numeric,"Limits:[min,max]","[0,65535]","UL-DMRS-Scrambling-ID. If provided and the PUSCH is not a msg3 PUSCH, otherwise, L2 should set this to physical cell id. 0-65535",on
+PDU(16).PUSCH.DMRS,SCID,0,uint8,1,numeric,"DropDownList","{0,1}","DMRS sequence initialization [TS38.211, sec 6.4.1.1.1]. Should match what is sent in DCI 0_1, otherwise set to 0. Value : 0-1",on
+PDU(16).PUSCH.DMRS,numDmrsCdmGrpsNoData,2,uint8,1,numeric,"DropDownList","{0,1,2,3}","Number of DM-RS CDM groups without data [TS38.212 sec 7.3.1.1] Value: 1-3",on
+PDU(16).PUSCH.DMRS,dmrsPorts,4,uint16,1,numeric,"none","","DMRS ports. [TS38.212 7.3.1.1.2] provides description between DCI 0-1 content and DMRS ports. Bitmap occupying the 11 LSBs with: bit 0: antenna port 1000 bit 11: antenna port 1011 and for each bit. 0: DMRS port not used 1: DMRS port used",on
+PDU(16).PUSCH,FD_ALLOC,,struct,1,none,"none","","",on
+PDU(16).PUSCH.FD_ALLOC,resourceAlloc,1,uint8,1,numeric,"DropDownList","{0,1}","Resource Allocation Type [TS38.214, sec 6.1.2.2] 0: Type 0 1: Type 1.",on
+PDU(16).PUSCH.FD_ALLOC,rbBitmap,"zeros(1,36)",uint8,36,matlab expr string,"none","","For resource alloc type 0. [TS38.214, sec 6.1.2.2.1] [TS 38.212, 7.3.1.1.2] bitmap of RBs, 273 rounded up to multiple of 32. This bitmap is in units of VRBs. LSB of byte 0 of the bitmap represents the first RB of the BWP",on
+PDU(16).PUSCH.FD_ALLOC,rbStart,0,uint16,1,numeric,"Limits:[min,max]","[0,274]","For resource allocation type 1. [TS38.214, sec 6.1.2.2.2] The starting resource block within the BWP for this PUSCH. Value: 0-274.",on
+PDU(16).PUSCH.FD_ALLOC,rbSize,24,uint16,1,numeric,"none","[1,275]","For resource allocation type 1. [TS38.214, sec 6.1.2.2.2] The number of resource block within for this PUSCH. Value: 1-275",on
+PDU(16).PUSCH.FD_ALLOC,VRBtoPRBMapping,0,uint8,1,numeric,"DropDownList","{0}","VRB-to-PRB-mapping [TS38.211, sec 6.3.1.7] Value: 0: non-interleaved",on
+PDU(16).PUSCH.FD_ALLOC,FrequencyHopping,0,uint8,1,numeric,"DropDownList","{0,1}","For resource allocation type 1. [TS38.212, sec 7.3.1.1] [TS38.214, sec 6.3] Indicates if frequency hopping is enabled Value: 0: disabled 1: enabled",on
+PDU(16).PUSCH.FD_ALLOC,txDirectCurrentLocation,3300,uint16,1,numeric,"Limits:[min,max]","[0,4095]","The uplink Tx Direct Current location for the carrier. Only values in the value range of this field between 0 and 3299, which indicate the subcarrier index within the carrier corresponding to the numerology of the corresponding uplink BWP and value 3300, which indicates ""Outside the carrier"" and value 3301, which indicates ""Undetermined position within the carrier"" are used. [TS38.331, UplinkTxDirectCurrentBWP IE] Value: 0-4095",on
+PDU(16).PUSCH.FD_ALLOC,uplinkFrequencyShift7p5khz,0,uint8,1,numeric,"DropDownList","{0,1}","Indicates whether there is 7.5 kHz shift or not. [TS38.331, UplinkTxDirectCurrentBWP IE] Value: 0: false, 1: true",on
+PDU(16).PUSCH,TD_ALLOC,,struct,1,none,"none","","",on
+PDU(16).PUSCH.TD_ALLOC,StartSymbolIndex,0,uint8,1,numeric,"Limits:[min,max]","[0,13]","Start symbol index of PUSCH mapping from the start of the slot, S. [TS38.214, Table 6.1.2.1-1] Value: 0-13",on
+PDU(16).PUSCH.TD_ALLOC,NrOfSymbols,14,uint8,1,numeric,"Limits:[min,max]","[1,14]","PUSCH duration in symbols, L [TS38.214, Table 6.1.2.1-1] Value: 1-14",on
+PDU(16).PUSCH,PUSCH_DATA(1),,struct,1,none,"none","","",on
+PDU(16).PUSCH.PUSCH_DATA(1),rvIndex,0,uint8,1,numeric,"DropDownList","{0,1,2,3}","Redundancy version index [TS38.214, sec 6.1.4], it should match value sent in DCI Value : 0-3",on
+PDU(16).PUSCH.PUSCH_DATA(1),harqProcessID,0,uint8,1,numeric,"Limits:[min,max]","[0,15]","HARQ process number [TS38.212, sec 7.3.1.1], it should match value sent in DCI Value: 0 -15",on
+PDU(16).PUSCH.PUSCH_DATA(1),newDataIndicator,1,uint8,1,numeric,"DropDownList","{0,1}","Indicates if this new data or a retransmission [TS38.212, sec 7.3.1.1] Value: 0: retransmission 1: new data",on
+PDU(16).PUSCH.PUSCH_DATA(1),TBSize,1537,uint32,1,numeric,"Limits:[min,max]","[0,65535]","Transmit block size (in bytes) [TS38.214 sec 6.1.4.2] Value: 0-65535",on
+PDU(16).PUSCH.PUSCH_DATA(1),numCb,0,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Number of CBs in the TB (could be more than the number of CBs in this PUSCH transmission). Should be set to zero in any of the following conditions: 1) CBG is not supported 2) isReTx=0 (new transmission) 3) tbSize=0",on
+PDU(16).PUSCH.PUSCH_DATA(1),CB,,struct,1,none,"none","","",on
+PDU(16).PUSCH,PUSCH_UCI,,struct,1,none,"none","","",on
+PDU(16).PUSCH,PUSCH_PTRS,,struct,1,none,"none","","",on
+PDU(16).PUSCH,DFTS_OFDM,,struct,1,none,"none","","",on
+PDU(16).PUSCH,RX_BEAMFORMING,,struct,1,none,"none","","",on
+PDU(16).PUSCH.RX_BEAMFORMING,numPRGs,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Number of PRGs spanning this allocation. Value : 1-275",on
+PDU(16).PUSCH.RX_BEAMFORMING,prgSize,56,uint16,1,numeric,"Limits:[min,max]","[1,275]","Size in RBs of a precoding resource block group (PRG) – to which same precoding and digital beamforming gets applied. Value: 1-275",on
+PDU(16).PUSCH.RX_BEAMFORMING,digBFInterfaces,0,uint8,1,numeric,"CallbackFunction","@ul_tti_callback","Number of STD ant ports (parallel streams) feeding into the digBF Value: 0-255",on
+PDU(16).PUSCH.RX_BEAMFORMING,PRG(1),,struct,1,none,"none","","",on
+PDU(16).PUSCH.RX_BEAMFORMING.PRG(1),DIG_BF_INTERFACE,,struct,1,none,"none","","",on
+,PDU(17),,struct,1,none,"none","","",on
+PDU(17),PDUType,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","0: PRACH, 1: PUSCH,  2: PUCCH, 3: SRS",on
+PDU(17),PDUSize,0,uint16,1,numeric,"Limits:[min,max]","[0, 65535]","Size of the PDU control information (in bytes). This length value includes the 4 bytes required for the PDU type and PDU size parameters. Value: 0 - 65535",on
+PDU(17),PUSCH,,struct,1,none,"none","","",on
+PDU(17).PUSCH,pduBitmap,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Bitmap indicating presence of optional PDUs Bit 0: puschData (Indicates data is expected on the PUSCH) Bit 1:puschUci (Indicates UCI is expected on the PUSCH) Bit 2: puschPtrs (Indicates PTRS included (FR2)) Bit 3: dftsOfdm (Indicates DFT S-OFDM transmission)",on
+PDU(17).PUSCH,RNTI,17,uint16,1,numeric,"Limits:[min,max]","[1,65535]","The RNTI used for identifying the UE when receiving the PDU",on
+PDU(17).PUSCH,Handle,0,uint32,1,numeric,"none","","An opaque handling returned in the RxData.indication and/or UCI.indication message",on
+PDU(17).PUSCH,BWP,,struct,1,none,"none","","",on
+PDU(17).PUSCH.BWP,BWPsize,24,uint16,1,numeric,"Limits:[min,max]","[1,275]","Number of contiguous PRBs allocated to the BWP, Value: 1-275",on
+PDU(17).PUSCH.BWP,BWPStart,220,uint16,1,numeric,"Limits:[min,max]","[0,274]","Bandwidth part start RB index from reference CRB, Value: 0-274",on
+PDU(17).PUSCH.BWP,SubcarrierSpacing,0,uint8,1,numeric,"DropDownList","{0,1,2,3,4}","Value:0-4",on
+PDU(17).PUSCH.BWP,CyclicPrefix,0,uint8,1,numeric,"DropDownList","{0,1}","Cyclic prefix type, 0: Normal; 1: Extended",on
+PDU(17).PUSCH,CODEWORD(1),,struct,1,none,"none","","",on
+PDU(17).PUSCH.CODEWORD(1),targetCodeRate,5670,uint16,1,numeric,"none","","Target coding rate [TS38.214 sec 6.1.4.1]. This is the number of information bits per 1024 coded bits expressed in 0.1 bit units",on
+PDU(17).PUSCH.CODEWORD(1),qamModOrder,6,uint8,1,numeric,"DropDownList","{2,4,6,8}","QAM modulation [TS38.214 sec 6.1.4.1] Value: 2,4,6,8",on
+PDU(17).PUSCH.CODEWORD(1),mcsIndex,14,uint8,1,numeric,"Limits:[min,max]","[0,31]","MCS index [TS38.214, sec 6.1.4.1], should match value sent in DCI Value : 0-31",on
+PDU(17).PUSCH.CODEWORD(1),mcsTable,1,uint8,1,numeric,"DropDownList","{0,1,2,3,4}","MCS-Table-PUSCH [TS38.214, sec 6.1.4.1] Value: 0: notqam256 [TS38.214, table 5.1.3.1-1] 1: qam256 [TS38.214, table 5.1.3.1-2] 2: qam64LowSE [TS38.214, table 5.1.3.1-3] 3: notqam256-withTransformPrecoding [TS38.214, table 6.1.4.1-1] 4: qam64LowSE-withTransformPrecoding [TS38.214, table 6.1.4.1-2]",on
+PDU(17).PUSCH.CODEWORD(1),TransformPrecoding,1,uint8,1,numeric,"DropDownList","{0,1}","Indicates if transform precoding is enabled or disabled [TS38.214, sec 6.1.4.1] [TS38.211 6.3.1.4] Value: 0: enabled, 1: disabled",on
+PDU(17).PUSCH,dataScramblingId,20,uint16,1,numeric,"Limits:[min,max]","[0,65535]","dataScramblingIdentityPdsch [TS38.211, sec 6.3.1.1] It equals the higher-layer parameter Datascrambling- Identity if configured and the RNTI equals the C-RNTI, otherwise L2 needs to set it to physical cell id. Value: 0-65535",on
+PDU(17).PUSCH,nrOfLayers,1,uint8,1,numeric,"DropDownList","{1,2,3,4}","Number of layers [TS38.211, sec 6.3.1.3] Value : 1-4",on
+PDU(17).PUSCH,DMRS,,struct,1,none,"none","","",on
+PDU(17).PUSCH.DMRS,ulDmrsSymbPos,4,uint16,1,numeric,"none","","DMRS symbol positions [TS38.211, sec 6.4.1.1.3 and Tables 6.4.1.1.3-3 and 6.4.1.1.3-4] Bitmap occupying the 14 LSBs with: bit 0: first symbol and for each bit 0: no DMRS 1: DMRS",on
+PDU(17).PUSCH.DMRS,dmrsConfigType,0,uint8,1,numeric,"DropDownList","{0,1}","UL DMRS config type [TS38.211, sec 6.4.1.1.3], 0: type 1 1: type 2",on
+PDU(17).PUSCH.DMRS,ulDmrsScramblingId,7000,uint16,1,numeric,"Limits:[min,max]","[0,65535]","UL-DMRS-Scrambling-ID. If provided and the PUSCH is not a msg3 PUSCH, otherwise, L2 should set this to physical cell id. 0-65535",on
+PDU(17).PUSCH.DMRS,SCID,0,uint8,1,numeric,"DropDownList","{0,1}","DMRS sequence initialization [TS38.211, sec 6.4.1.1.1]. Should match what is sent in DCI 0_1, otherwise set to 0. Value : 0-1",on
+PDU(17).PUSCH.DMRS,numDmrsCdmGrpsNoData,2,uint8,1,numeric,"DropDownList","{0,1,2,3}","Number of DM-RS CDM groups without data [TS38.212 sec 7.3.1.1] Value: 1-3",on
+PDU(17).PUSCH.DMRS,dmrsPorts,8,uint16,1,numeric,"none","","DMRS ports. [TS38.212 7.3.1.1.2] provides description between DCI 0-1 content and DMRS ports. Bitmap occupying the 11 LSBs with: bit 0: antenna port 1000 bit 11: antenna port 1011 and for each bit. 0: DMRS port not used 1: DMRS port used",on
+PDU(17).PUSCH,FD_ALLOC,,struct,1,none,"none","","",on
+PDU(17).PUSCH.FD_ALLOC,resourceAlloc,1,uint8,1,numeric,"DropDownList","{0,1}","Resource Allocation Type [TS38.214, sec 6.1.2.2] 0: Type 0 1: Type 1.",on
+PDU(17).PUSCH.FD_ALLOC,rbBitmap,"zeros(1,36)",uint8,36,matlab expr string,"none","","For resource alloc type 0. [TS38.214, sec 6.1.2.2.1] [TS 38.212, 7.3.1.1.2] bitmap of RBs, 273 rounded up to multiple of 32. This bitmap is in units of VRBs. LSB of byte 0 of the bitmap represents the first RB of the BWP",on
+PDU(17).PUSCH.FD_ALLOC,rbStart,0,uint16,1,numeric,"Limits:[min,max]","[0,274]","For resource allocation type 1. [TS38.214, sec 6.1.2.2.2] The starting resource block within the BWP for this PUSCH. Value: 0-274.",on
+PDU(17).PUSCH.FD_ALLOC,rbSize,24,uint16,1,numeric,"none","[1,275]","For resource allocation type 1. [TS38.214, sec 6.1.2.2.2] The number of resource block within for this PUSCH. Value: 1-275",on
+PDU(17).PUSCH.FD_ALLOC,VRBtoPRBMapping,0,uint8,1,numeric,"DropDownList","{0}","VRB-to-PRB-mapping [TS38.211, sec 6.3.1.7] Value: 0: non-interleaved",on
+PDU(17).PUSCH.FD_ALLOC,FrequencyHopping,0,uint8,1,numeric,"DropDownList","{0,1}","For resource allocation type 1. [TS38.212, sec 7.3.1.1] [TS38.214, sec 6.3] Indicates if frequency hopping is enabled Value: 0: disabled 1: enabled",on
+PDU(17).PUSCH.FD_ALLOC,txDirectCurrentLocation,3300,uint16,1,numeric,"Limits:[min,max]","[0,4095]","The uplink Tx Direct Current location for the carrier. Only values in the value range of this field between 0 and 3299, which indicate the subcarrier index within the carrier corresponding to the numerology of the corresponding uplink BWP and value 3300, which indicates ""Outside the carrier"" and value 3301, which indicates ""Undetermined position within the carrier"" are used. [TS38.331, UplinkTxDirectCurrentBWP IE] Value: 0-4095",on
+PDU(17).PUSCH.FD_ALLOC,uplinkFrequencyShift7p5khz,0,uint8,1,numeric,"DropDownList","{0,1}","Indicates whether there is 7.5 kHz shift or not. [TS38.331, UplinkTxDirectCurrentBWP IE] Value: 0: false, 1: true",on
+PDU(17).PUSCH,TD_ALLOC,,struct,1,none,"none","","",on
+PDU(17).PUSCH.TD_ALLOC,StartSymbolIndex,0,uint8,1,numeric,"Limits:[min,max]","[0,13]","Start symbol index of PUSCH mapping from the start of the slot, S. [TS38.214, Table 6.1.2.1-1] Value: 0-13",on
+PDU(17).PUSCH.TD_ALLOC,NrOfSymbols,14,uint8,1,numeric,"Limits:[min,max]","[1,14]","PUSCH duration in symbols, L [TS38.214, Table 6.1.2.1-1] Value: 1-14",on
+PDU(17).PUSCH,PUSCH_DATA(1),,struct,1,none,"none","","",on
+PDU(17).PUSCH.PUSCH_DATA(1),rvIndex,0,uint8,1,numeric,"DropDownList","{0,1,2,3}","Redundancy version index [TS38.214, sec 6.1.4], it should match value sent in DCI Value : 0-3",on
+PDU(17).PUSCH.PUSCH_DATA(1),harqProcessID,0,uint8,1,numeric,"Limits:[min,max]","[0,15]","HARQ process number [TS38.212, sec 7.3.1.1], it should match value sent in DCI Value: 0 -15",on
+PDU(17).PUSCH.PUSCH_DATA(1),newDataIndicator,1,uint8,1,numeric,"DropDownList","{0,1}","Indicates if this new data or a retransmission [TS38.212, sec 7.3.1.1] Value: 0: retransmission 1: new data",on
+PDU(17).PUSCH.PUSCH_DATA(1),TBSize,1537,uint32,1,numeric,"Limits:[min,max]","[0,65535]","Transmit block size (in bytes) [TS38.214 sec 6.1.4.2] Value: 0-65535",on
+PDU(17).PUSCH.PUSCH_DATA(1),numCb,0,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Number of CBs in the TB (could be more than the number of CBs in this PUSCH transmission). Should be set to zero in any of the following conditions: 1) CBG is not supported 2) isReTx=0 (new transmission) 3) tbSize=0",on
+PDU(17).PUSCH.PUSCH_DATA(1),CB,,struct,1,none,"none","","",on
+PDU(17).PUSCH,PUSCH_UCI,,struct,1,none,"none","","",on
+PDU(17).PUSCH,PUSCH_PTRS,,struct,1,none,"none","","",on
+PDU(17).PUSCH,DFTS_OFDM,,struct,1,none,"none","","",on
+PDU(17).PUSCH,RX_BEAMFORMING,,struct,1,none,"none","","",on
+PDU(17).PUSCH.RX_BEAMFORMING,numPRGs,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Number of PRGs spanning this allocation. Value : 1-275",on
+PDU(17).PUSCH.RX_BEAMFORMING,prgSize,56,uint16,1,numeric,"Limits:[min,max]","[1,275]","Size in RBs of a precoding resource block group (PRG) – to which same precoding and digital beamforming gets applied. Value: 1-275",on
+PDU(17).PUSCH.RX_BEAMFORMING,digBFInterfaces,0,uint8,1,numeric,"CallbackFunction","@ul_tti_callback","Number of STD ant ports (parallel streams) feeding into the digBF Value: 0-255",on
+PDU(17).PUSCH.RX_BEAMFORMING,PRG(1),,struct,1,none,"none","","",on
+PDU(17).PUSCH.RX_BEAMFORMING.PRG(1),DIG_BF_INTERFACE,,struct,1,none,"none","","",on
+,PDU(18),,struct,1,none,"none","","",on
+PDU(18),PDUType,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","0: PRACH, 1: PUSCH,  2: PUCCH, 3: SRS",on
+PDU(18),PDUSize,0,uint16,1,numeric,"Limits:[min,max]","[0, 65535]","Size of the PDU control information (in bytes). This length value includes the 4 bytes required for the PDU type and PDU size parameters. Value: 0 - 65535",on
+PDU(18),PUSCH,,struct,1,none,"none","","",on
+PDU(18).PUSCH,pduBitmap,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Bitmap indicating presence of optional PDUs Bit 0: puschData (Indicates data is expected on the PUSCH) Bit 1:puschUci (Indicates UCI is expected on the PUSCH) Bit 2: puschPtrs (Indicates PTRS included (FR2)) Bit 3: dftsOfdm (Indicates DFT S-OFDM transmission)",on
+PDU(18).PUSCH,RNTI,18,uint16,1,numeric,"Limits:[min,max]","[1,65535]","The RNTI used for identifying the UE when receiving the PDU",on
+PDU(18).PUSCH,Handle,0,uint32,1,numeric,"none","","An opaque handling returned in the RxData.indication and/or UCI.indication message",on
+PDU(18).PUSCH,BWP,,struct,1,none,"none","","",on
+PDU(18).PUSCH.BWP,BWPsize,29,uint16,1,numeric,"Limits:[min,max]","[1,275]","Number of contiguous PRBs allocated to the BWP, Value: 1-275",on
+PDU(18).PUSCH.BWP,BWPStart,244,uint16,1,numeric,"Limits:[min,max]","[0,274]","Bandwidth part start RB index from reference CRB, Value: 0-274",on
+PDU(18).PUSCH.BWP,SubcarrierSpacing,0,uint8,1,numeric,"DropDownList","{0,1,2,3,4}","Value:0-4",on
+PDU(18).PUSCH.BWP,CyclicPrefix,0,uint8,1,numeric,"DropDownList","{0,1}","Cyclic prefix type, 0: Normal; 1: Extended",on
+PDU(18).PUSCH,CODEWORD(1),,struct,1,none,"none","","",on
+PDU(18).PUSCH.CODEWORD(1),targetCodeRate,3780,uint16,1,numeric,"none","","Target coding rate [TS38.214 sec 6.1.4.1]. This is the number of information bits per 1024 coded bits expressed in 0.1 bit units",on
+PDU(18).PUSCH.CODEWORD(1),qamModOrder,4,uint8,1,numeric,"DropDownList","{2,4,6,8}","QAM modulation [TS38.214 sec 6.1.4.1] Value: 2,4,6,8",on
+PDU(18).PUSCH.CODEWORD(1),mcsIndex,6,uint8,1,numeric,"Limits:[min,max]","[0,31]","MCS index [TS38.214, sec 6.1.4.1], should match value sent in DCI Value : 0-31",on
+PDU(18).PUSCH.CODEWORD(1),mcsTable,1,uint8,1,numeric,"DropDownList","{0,1,2,3,4}","MCS-Table-PUSCH [TS38.214, sec 6.1.4.1] Value: 0: notqam256 [TS38.214, table 5.1.3.1-1] 1: qam256 [TS38.214, table 5.1.3.1-2] 2: qam64LowSE [TS38.214, table 5.1.3.1-3] 3: notqam256-withTransformPrecoding [TS38.214, table 6.1.4.1-1] 4: qam64LowSE-withTransformPrecoding [TS38.214, table 6.1.4.1-2]",on
+PDU(18).PUSCH.CODEWORD(1),TransformPrecoding,1,uint8,1,numeric,"DropDownList","{0,1}","Indicates if transform precoding is enabled or disabled [TS38.214, sec 6.1.4.1] [TS38.211 6.3.1.4] Value: 0: enabled, 1: disabled",on
+PDU(18).PUSCH,dataScramblingId,20,uint16,1,numeric,"Limits:[min,max]","[0,65535]","dataScramblingIdentityPdsch [TS38.211, sec 6.3.1.1] It equals the higher-layer parameter Datascrambling- Identity if configured and the RNTI equals the C-RNTI, otherwise L2 needs to set it to physical cell id. Value: 0-65535",on
+PDU(18).PUSCH,nrOfLayers,2,uint8,1,numeric,"DropDownList","{1,2,3,4}","Number of layers [TS38.211, sec 6.3.1.3] Value : 1-4",on
+PDU(18).PUSCH,DMRS,,struct,1,none,"none","","",on
+PDU(18).PUSCH.DMRS,ulDmrsSymbPos,2180,uint16,1,numeric,"none","","DMRS symbol positions [TS38.211, sec 6.4.1.1.3 and Tables 6.4.1.1.3-3 and 6.4.1.1.3-4] Bitmap occupying the 14 LSBs with: bit 0: first symbol and for each bit 0: no DMRS 1: DMRS",on
+PDU(18).PUSCH.DMRS,dmrsConfigType,0,uint8,1,numeric,"DropDownList","{0,1}","UL DMRS config type [TS38.211, sec 6.4.1.1.3], 0: type 1 1: type 2",on
+PDU(18).PUSCH.DMRS,ulDmrsScramblingId,8000,uint16,1,numeric,"Limits:[min,max]","[0,65535]","UL-DMRS-Scrambling-ID. If provided and the PUSCH is not a msg3 PUSCH, otherwise, L2 should set this to physical cell id. 0-65535",on
+PDU(18).PUSCH.DMRS,SCID,0,uint8,1,numeric,"DropDownList","{0,1}","DMRS sequence initialization [TS38.211, sec 6.4.1.1.1]. Should match what is sent in DCI 0_1, otherwise set to 0. Value : 0-1",on
+PDU(18).PUSCH.DMRS,numDmrsCdmGrpsNoData,2,uint8,1,numeric,"DropDownList","{0,1,2,3}","Number of DM-RS CDM groups without data [TS38.212 sec 7.3.1.1] Value: 1-3",on
+PDU(18).PUSCH.DMRS,dmrsPorts,3,uint16,1,numeric,"none","","DMRS ports. [TS38.212 7.3.1.1.2] provides description between DCI 0-1 content and DMRS ports. Bitmap occupying the 11 LSBs with: bit 0: antenna port 1000 bit 11: antenna port 1011 and for each bit. 0: DMRS port not used 1: DMRS port used",on
+PDU(18).PUSCH,FD_ALLOC,,struct,1,none,"none","","",on
+PDU(18).PUSCH.FD_ALLOC,resourceAlloc,1,uint8,1,numeric,"DropDownList","{0,1}","Resource Allocation Type [TS38.214, sec 6.1.2.2] 0: Type 0 1: Type 1.",on
+PDU(18).PUSCH.FD_ALLOC,rbBitmap,"zeros(1,36)",uint8,36,matlab expr string,"none","","For resource alloc type 0. [TS38.214, sec 6.1.2.2.1] [TS 38.212, 7.3.1.1.2] bitmap of RBs, 273 rounded up to multiple of 32. This bitmap is in units of VRBs. LSB of byte 0 of the bitmap represents the first RB of the BWP",on
+PDU(18).PUSCH.FD_ALLOC,rbStart,0,uint16,1,numeric,"Limits:[min,max]","[0,274]","For resource allocation type 1. [TS38.214, sec 6.1.2.2.2] The starting resource block within the BWP for this PUSCH. Value: 0-274.",on
+PDU(18).PUSCH.FD_ALLOC,rbSize,29,uint16,1,numeric,"none","[1,275]","For resource allocation type 1. [TS38.214, sec 6.1.2.2.2] The number of resource block within for this PUSCH. Value: 1-275",on
+PDU(18).PUSCH.FD_ALLOC,VRBtoPRBMapping,0,uint8,1,numeric,"DropDownList","{0}","VRB-to-PRB-mapping [TS38.211, sec 6.3.1.7] Value: 0: non-interleaved",on
+PDU(18).PUSCH.FD_ALLOC,FrequencyHopping,0,uint8,1,numeric,"DropDownList","{0,1}","For resource allocation type 1. [TS38.212, sec 7.3.1.1] [TS38.214, sec 6.3] Indicates if frequency hopping is enabled Value: 0: disabled 1: enabled",on
+PDU(18).PUSCH.FD_ALLOC,txDirectCurrentLocation,3300,uint16,1,numeric,"Limits:[min,max]","[0,4095]","The uplink Tx Direct Current location for the carrier. Only values in the value range of this field between 0 and 3299, which indicate the subcarrier index within the carrier corresponding to the numerology of the corresponding uplink BWP and value 3300, which indicates ""Outside the carrier"" and value 3301, which indicates ""Undetermined position within the carrier"" are used. [TS38.331, UplinkTxDirectCurrentBWP IE] Value: 0-4095",on
+PDU(18).PUSCH.FD_ALLOC,uplinkFrequencyShift7p5khz,0,uint8,1,numeric,"DropDownList","{0,1}","Indicates whether there is 7.5 kHz shift or not. [TS38.331, UplinkTxDirectCurrentBWP IE] Value: 0: false, 1: true",on
+PDU(18).PUSCH,TD_ALLOC,,struct,1,none,"none","","",on
+PDU(18).PUSCH.TD_ALLOC,StartSymbolIndex,0,uint8,1,numeric,"Limits:[min,max]","[0,13]","Start symbol index of PUSCH mapping from the start of the slot, S. [TS38.214, Table 6.1.2.1-1] Value: 0-13",on
+PDU(18).PUSCH.TD_ALLOC,NrOfSymbols,14,uint8,1,numeric,"Limits:[min,max]","[1,14]","PUSCH duration in symbols, L [TS38.214, Table 6.1.2.1-1] Value: 1-14",on
+PDU(18).PUSCH,PUSCH_DATA(1),,struct,1,none,"none","","",on
+PDU(18).PUSCH.PUSCH_DATA(1),rvIndex,0,uint8,1,numeric,"DropDownList","{0,1,2,3}","Redundancy version index [TS38.214, sec 6.1.4], it should match value sent in DCI Value : 0-3",on
+PDU(18).PUSCH.PUSCH_DATA(1),harqProcessID,0,uint8,1,numeric,"Limits:[min,max]","[0,15]","HARQ process number [TS38.212, sec 7.3.1.1], it should match value sent in DCI Value: 0 -15",on
+PDU(18).PUSCH.PUSCH_DATA(1),newDataIndicator,1,uint8,1,numeric,"DropDownList","{0,1}","Indicates if this new data or a retransmission [TS38.212, sec 7.3.1.1] Value: 0: retransmission 1: new data",on
+PDU(18).PUSCH.PUSCH_DATA(1),TBSize,1409,uint32,1,numeric,"Limits:[min,max]","[0,65535]","Transmit block size (in bytes) [TS38.214 sec 6.1.4.2] Value: 0-65535",on
+PDU(18).PUSCH.PUSCH_DATA(1),numCb,0,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Number of CBs in the TB (could be more than the number of CBs in this PUSCH transmission). Should be set to zero in any of the following conditions: 1) CBG is not supported 2) isReTx=0 (new transmission) 3) tbSize=0",on
+PDU(18).PUSCH.PUSCH_DATA(1),CB,,struct,1,none,"none","","",on
+PDU(18).PUSCH,PUSCH_UCI,,struct,1,none,"none","","",on
+PDU(18).PUSCH,PUSCH_PTRS,,struct,1,none,"none","","",on
+PDU(18).PUSCH,DFTS_OFDM,,struct,1,none,"none","","",on
+PDU(18).PUSCH,RX_BEAMFORMING,,struct,1,none,"none","","",on
+PDU(18).PUSCH.RX_BEAMFORMING,numPRGs,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Number of PRGs spanning this allocation. Value : 1-275",on
+PDU(18).PUSCH.RX_BEAMFORMING,prgSize,56,uint16,1,numeric,"Limits:[min,max]","[1,275]","Size in RBs of a precoding resource block group (PRG) – to which same precoding and digital beamforming gets applied. Value: 1-275",on
+PDU(18).PUSCH.RX_BEAMFORMING,digBFInterfaces,0,uint8,1,numeric,"CallbackFunction","@ul_tti_callback","Number of STD ant ports (parallel streams) feeding into the digBF Value: 0-255",on
+PDU(18).PUSCH.RX_BEAMFORMING,PRG(1),,struct,1,none,"none","","",on
+PDU(18).PUSCH.RX_BEAMFORMING.PRG(1),DIG_BF_INTERFACE,,struct,1,none,"none","","",on
+,PDU(19),,struct,1,none,"none","","",on
+PDU(19),PDUType,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","0: PRACH, 1: PUSCH,  2: PUCCH, 3: SRS",on
+PDU(19),PDUSize,0,uint16,1,numeric,"Limits:[min,max]","[0, 65535]","Size of the PDU control information (in bytes). This length value includes the 4 bytes required for the PDU type and PDU size parameters. Value: 0 - 65535",on
+PDU(19),PUSCH,,struct,1,none,"none","","",on
+PDU(19).PUSCH,pduBitmap,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Bitmap indicating presence of optional PDUs Bit 0: puschData (Indicates data is expected on the PUSCH) Bit 1:puschUci (Indicates UCI is expected on the PUSCH) Bit 2: puschPtrs (Indicates PTRS included (FR2)) Bit 3: dftsOfdm (Indicates DFT S-OFDM transmission)",on
+PDU(19).PUSCH,RNTI,19,uint16,1,numeric,"Limits:[min,max]","[1,65535]","The RNTI used for identifying the UE when receiving the PDU",on
+PDU(19).PUSCH,Handle,0,uint32,1,numeric,"none","","An opaque handling returned in the RxData.indication and/or UCI.indication message",on
+PDU(19).PUSCH,BWP,,struct,1,none,"none","","",on
+PDU(19).PUSCH.BWP,BWPsize,29,uint16,1,numeric,"Limits:[min,max]","[1,275]","Number of contiguous PRBs allocated to the BWP, Value: 1-275",on
+PDU(19).PUSCH.BWP,BWPStart,244,uint16,1,numeric,"Limits:[min,max]","[0,274]","Bandwidth part start RB index from reference CRB, Value: 0-274",on
+PDU(19).PUSCH.BWP,SubcarrierSpacing,0,uint8,1,numeric,"DropDownList","{0,1,2,3,4}","Value:0-4",on
+PDU(19).PUSCH.BWP,CyclicPrefix,0,uint8,1,numeric,"DropDownList","{0,1}","Cyclic prefix type, 0: Normal; 1: Extended",on
+PDU(19).PUSCH,CODEWORD(1),,struct,1,none,"none","","",on
+PDU(19).PUSCH.CODEWORD(1),targetCodeRate,3780,uint16,1,numeric,"none","","Target coding rate [TS38.214 sec 6.1.4.1]. This is the number of information bits per 1024 coded bits expressed in 0.1 bit units",on
+PDU(19).PUSCH.CODEWORD(1),qamModOrder,4,uint8,1,numeric,"DropDownList","{2,4,6,8}","QAM modulation [TS38.214 sec 6.1.4.1] Value: 2,4,6,8",on
+PDU(19).PUSCH.CODEWORD(1),mcsIndex,6,uint8,1,numeric,"Limits:[min,max]","[0,31]","MCS index [TS38.214, sec 6.1.4.1], should match value sent in DCI Value : 0-31",on
+PDU(19).PUSCH.CODEWORD(1),mcsTable,1,uint8,1,numeric,"DropDownList","{0,1,2,3,4}","MCS-Table-PUSCH [TS38.214, sec 6.1.4.1] Value: 0: notqam256 [TS38.214, table 5.1.3.1-1] 1: qam256 [TS38.214, table 5.1.3.1-2] 2: qam64LowSE [TS38.214, table 5.1.3.1-3] 3: notqam256-withTransformPrecoding [TS38.214, table 6.1.4.1-1] 4: qam64LowSE-withTransformPrecoding [TS38.214, table 6.1.4.1-2]",on
+PDU(19).PUSCH.CODEWORD(1),TransformPrecoding,1,uint8,1,numeric,"DropDownList","{0,1}","Indicates if transform precoding is enabled or disabled [TS38.214, sec 6.1.4.1] [TS38.211 6.3.1.4] Value: 0: enabled, 1: disabled",on
+PDU(19).PUSCH,dataScramblingId,20,uint16,1,numeric,"Limits:[min,max]","[0,65535]","dataScramblingIdentityPdsch [TS38.211, sec 6.3.1.1] It equals the higher-layer parameter Datascrambling- Identity if configured and the RNTI equals the C-RNTI, otherwise L2 needs to set it to physical cell id. Value: 0-65535",on
+PDU(19).PUSCH,nrOfLayers,1,uint8,1,numeric,"DropDownList","{1,2,3,4}","Number of layers [TS38.211, sec 6.3.1.3] Value : 1-4",on
+PDU(19).PUSCH,DMRS,,struct,1,none,"none","","",on
+PDU(19).PUSCH.DMRS,ulDmrsSymbPos,2180,uint16,1,numeric,"none","","DMRS symbol positions [TS38.211, sec 6.4.1.1.3 and Tables 6.4.1.1.3-3 and 6.4.1.1.3-4] Bitmap occupying the 14 LSBs with: bit 0: first symbol and for each bit 0: no DMRS 1: DMRS",on
+PDU(19).PUSCH.DMRS,dmrsConfigType,0,uint8,1,numeric,"DropDownList","{0,1}","UL DMRS config type [TS38.211, sec 6.4.1.1.3], 0: type 1 1: type 2",on
+PDU(19).PUSCH.DMRS,ulDmrsScramblingId,8000,uint16,1,numeric,"Limits:[min,max]","[0,65535]","UL-DMRS-Scrambling-ID. If provided and the PUSCH is not a msg3 PUSCH, otherwise, L2 should set this to physical cell id. 0-65535",on
+PDU(19).PUSCH.DMRS,SCID,0,uint8,1,numeric,"DropDownList","{0,1}","DMRS sequence initialization [TS38.211, sec 6.4.1.1.1]. Should match what is sent in DCI 0_1, otherwise set to 0. Value : 0-1",on
+PDU(19).PUSCH.DMRS,numDmrsCdmGrpsNoData,2,uint8,1,numeric,"DropDownList","{0,1,2,3}","Number of DM-RS CDM groups without data [TS38.212 sec 7.3.1.1] Value: 1-3",on
+PDU(19).PUSCH.DMRS,dmrsPorts,4,uint16,1,numeric,"none","","DMRS ports. [TS38.212 7.3.1.1.2] provides description between DCI 0-1 content and DMRS ports. Bitmap occupying the 11 LSBs with: bit 0: antenna port 1000 bit 11: antenna port 1011 and for each bit. 0: DMRS port not used 1: DMRS port used",on
+PDU(19).PUSCH,FD_ALLOC,,struct,1,none,"none","","",on
+PDU(19).PUSCH.FD_ALLOC,resourceAlloc,1,uint8,1,numeric,"DropDownList","{0,1}","Resource Allocation Type [TS38.214, sec 6.1.2.2] 0: Type 0 1: Type 1.",on
+PDU(19).PUSCH.FD_ALLOC,rbBitmap,"zeros(1,36)",uint8,36,matlab expr string,"none","","For resource alloc type 0. [TS38.214, sec 6.1.2.2.1] [TS 38.212, 7.3.1.1.2] bitmap of RBs, 273 rounded up to multiple of 32. This bitmap is in units of VRBs. LSB of byte 0 of the bitmap represents the first RB of the BWP",on
+PDU(19).PUSCH.FD_ALLOC,rbStart,0,uint16,1,numeric,"Limits:[min,max]","[0,274]","For resource allocation type 1. [TS38.214, sec 6.1.2.2.2] The starting resource block within the BWP for this PUSCH. Value: 0-274.",on
+PDU(19).PUSCH.FD_ALLOC,rbSize,29,uint16,1,numeric,"none","[1,275]","For resource allocation type 1. [TS38.214, sec 6.1.2.2.2] The number of resource block within for this PUSCH. Value: 1-275",on
+PDU(19).PUSCH.FD_ALLOC,VRBtoPRBMapping,0,uint8,1,numeric,"DropDownList","{0}","VRB-to-PRB-mapping [TS38.211, sec 6.3.1.7] Value: 0: non-interleaved",on
+PDU(19).PUSCH.FD_ALLOC,FrequencyHopping,0,uint8,1,numeric,"DropDownList","{0,1}","For resource allocation type 1. [TS38.212, sec 7.3.1.1] [TS38.214, sec 6.3] Indicates if frequency hopping is enabled Value: 0: disabled 1: enabled",on
+PDU(19).PUSCH.FD_ALLOC,txDirectCurrentLocation,3300,uint16,1,numeric,"Limits:[min,max]","[0,4095]","The uplink Tx Direct Current location for the carrier. Only values in the value range of this field between 0 and 3299, which indicate the subcarrier index within the carrier corresponding to the numerology of the corresponding uplink BWP and value 3300, which indicates ""Outside the carrier"" and value 3301, which indicates ""Undetermined position within the carrier"" are used. [TS38.331, UplinkTxDirectCurrentBWP IE] Value: 0-4095",on
+PDU(19).PUSCH.FD_ALLOC,uplinkFrequencyShift7p5khz,0,uint8,1,numeric,"DropDownList","{0,1}","Indicates whether there is 7.5 kHz shift or not. [TS38.331, UplinkTxDirectCurrentBWP IE] Value: 0: false, 1: true",on
+PDU(19).PUSCH,TD_ALLOC,,struct,1,none,"none","","",on
+PDU(19).PUSCH.TD_ALLOC,StartSymbolIndex,0,uint8,1,numeric,"Limits:[min,max]","[0,13]","Start symbol index of PUSCH mapping from the start of the slot, S. [TS38.214, Table 6.1.2.1-1] Value: 0-13",on
+PDU(19).PUSCH.TD_ALLOC,NrOfSymbols,14,uint8,1,numeric,"Limits:[min,max]","[1,14]","PUSCH duration in symbols, L [TS38.214, Table 6.1.2.1-1] Value: 1-14",on
+PDU(19).PUSCH,PUSCH_DATA(1),,struct,1,none,"none","","",on
+PDU(19).PUSCH.PUSCH_DATA(1),rvIndex,0,uint8,1,numeric,"DropDownList","{0,1,2,3}","Redundancy version index [TS38.214, sec 6.1.4], it should match value sent in DCI Value : 0-3",on
+PDU(19).PUSCH.PUSCH_DATA(1),harqProcessID,0,uint8,1,numeric,"Limits:[min,max]","[0,15]","HARQ process number [TS38.212, sec 7.3.1.1], it should match value sent in DCI Value: 0 -15",on
+PDU(19).PUSCH.PUSCH_DATA(1),newDataIndicator,1,uint8,1,numeric,"DropDownList","{0,1}","Indicates if this new data or a retransmission [TS38.212, sec 7.3.1.1] Value: 0: retransmission 1: new data",on
+PDU(19).PUSCH.PUSCH_DATA(1),TBSize,704,uint32,1,numeric,"Limits:[min,max]","[0,65535]","Transmit block size (in bytes) [TS38.214 sec 6.1.4.2] Value: 0-65535",on
+PDU(19).PUSCH.PUSCH_DATA(1),numCb,0,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Number of CBs in the TB (could be more than the number of CBs in this PUSCH transmission). Should be set to zero in any of the following conditions: 1) CBG is not supported 2) isReTx=0 (new transmission) 3) tbSize=0",on
+PDU(19).PUSCH.PUSCH_DATA(1),CB,,struct,1,none,"none","","",on
+PDU(19).PUSCH,PUSCH_UCI,,struct,1,none,"none","","",on
+PDU(19).PUSCH,PUSCH_PTRS,,struct,1,none,"none","","",on
+PDU(19).PUSCH,DFTS_OFDM,,struct,1,none,"none","","",on
+PDU(19).PUSCH,RX_BEAMFORMING,,struct,1,none,"none","","",on
+PDU(19).PUSCH.RX_BEAMFORMING,numPRGs,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Number of PRGs spanning this allocation. Value : 1-275",on
+PDU(19).PUSCH.RX_BEAMFORMING,prgSize,56,uint16,1,numeric,"Limits:[min,max]","[1,275]","Size in RBs of a precoding resource block group (PRG) – to which same precoding and digital beamforming gets applied. Value: 1-275",on
+PDU(19).PUSCH.RX_BEAMFORMING,digBFInterfaces,0,uint8,1,numeric,"CallbackFunction","@ul_tti_callback","Number of STD ant ports (parallel streams) feeding into the digBF Value: 0-255",on
+PDU(19).PUSCH.RX_BEAMFORMING,PRG(1),,struct,1,none,"none","","",on
+PDU(19).PUSCH.RX_BEAMFORMING.PRG(1),DIG_BF_INTERFACE,,struct,1,none,"none","","",on
+,PDU(20),,struct,1,none,"none","","",on
+PDU(20),PDUType,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","0: PRACH, 1: PUSCH,  2: PUCCH, 3: SRS",on
+PDU(20),PDUSize,0,uint16,1,numeric,"Limits:[min,max]","[0, 65535]","Size of the PDU control information (in bytes). This length value includes the 4 bytes required for the PDU type and PDU size parameters. Value: 0 - 65535",on
+PDU(20),PUSCH,,struct,1,none,"none","","",on
+PDU(20).PUSCH,pduBitmap,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Bitmap indicating presence of optional PDUs Bit 0: puschData (Indicates data is expected on the PUSCH) Bit 1:puschUci (Indicates UCI is expected on the PUSCH) Bit 2: puschPtrs (Indicates PTRS included (FR2)) Bit 3: dftsOfdm (Indicates DFT S-OFDM transmission)",on
+PDU(20).PUSCH,RNTI,20,uint16,1,numeric,"Limits:[min,max]","[1,65535]","The RNTI used for identifying the UE when receiving the PDU",on
+PDU(20).PUSCH,Handle,0,uint32,1,numeric,"none","","An opaque handling returned in the RxData.indication and/or UCI.indication message",on
+PDU(20).PUSCH,BWP,,struct,1,none,"none","","",on
+PDU(20).PUSCH.BWP,BWPsize,29,uint16,1,numeric,"Limits:[min,max]","[1,275]","Number of contiguous PRBs allocated to the BWP, Value: 1-275",on
+PDU(20).PUSCH.BWP,BWPStart,244,uint16,1,numeric,"Limits:[min,max]","[0,274]","Bandwidth part start RB index from reference CRB, Value: 0-274",on
+PDU(20).PUSCH.BWP,SubcarrierSpacing,0,uint8,1,numeric,"DropDownList","{0,1,2,3,4}","Value:0-4",on
+PDU(20).PUSCH.BWP,CyclicPrefix,0,uint8,1,numeric,"DropDownList","{0,1}","Cyclic prefix type, 0: Normal; 1: Extended",on
+PDU(20).PUSCH,CODEWORD(1),,struct,1,none,"none","","",on
+PDU(20).PUSCH.CODEWORD(1),targetCodeRate,3780,uint16,1,numeric,"none","","Target coding rate [TS38.214 sec 6.1.4.1]. This is the number of information bits per 1024 coded bits expressed in 0.1 bit units",on
+PDU(20).PUSCH.CODEWORD(1),qamModOrder,4,uint8,1,numeric,"DropDownList","{2,4,6,8}","QAM modulation [TS38.214 sec 6.1.4.1] Value: 2,4,6,8",on
+PDU(20).PUSCH.CODEWORD(1),mcsIndex,6,uint8,1,numeric,"Limits:[min,max]","[0,31]","MCS index [TS38.214, sec 6.1.4.1], should match value sent in DCI Value : 0-31",on
+PDU(20).PUSCH.CODEWORD(1),mcsTable,1,uint8,1,numeric,"DropDownList","{0,1,2,3,4}","MCS-Table-PUSCH [TS38.214, sec 6.1.4.1] Value: 0: notqam256 [TS38.214, table 5.1.3.1-1] 1: qam256 [TS38.214, table 5.1.3.1-2] 2: qam64LowSE [TS38.214, table 5.1.3.1-3] 3: notqam256-withTransformPrecoding [TS38.214, table 6.1.4.1-1] 4: qam64LowSE-withTransformPrecoding [TS38.214, table 6.1.4.1-2]",on
+PDU(20).PUSCH.CODEWORD(1),TransformPrecoding,1,uint8,1,numeric,"DropDownList","{0,1}","Indicates if transform precoding is enabled or disabled [TS38.214, sec 6.1.4.1] [TS38.211 6.3.1.4] Value: 0: enabled, 1: disabled",on
+PDU(20).PUSCH,dataScramblingId,20,uint16,1,numeric,"Limits:[min,max]","[0,65535]","dataScramblingIdentityPdsch [TS38.211, sec 6.3.1.1] It equals the higher-layer parameter Datascrambling- Identity if configured and the RNTI equals the C-RNTI, otherwise L2 needs to set it to physical cell id. Value: 0-65535",on
+PDU(20).PUSCH,nrOfLayers,1,uint8,1,numeric,"DropDownList","{1,2,3,4}","Number of layers [TS38.211, sec 6.3.1.3] Value : 1-4",on
+PDU(20).PUSCH,DMRS,,struct,1,none,"none","","",on
+PDU(20).PUSCH.DMRS,ulDmrsSymbPos,2180,uint16,1,numeric,"none","","DMRS symbol positions [TS38.211, sec 6.4.1.1.3 and Tables 6.4.1.1.3-3 and 6.4.1.1.3-4] Bitmap occupying the 14 LSBs with: bit 0: first symbol and for each bit 0: no DMRS 1: DMRS",on
+PDU(20).PUSCH.DMRS,dmrsConfigType,0,uint8,1,numeric,"DropDownList","{0,1}","UL DMRS config type [TS38.211, sec 6.4.1.1.3], 0: type 1 1: type 2",on
+PDU(20).PUSCH.DMRS,ulDmrsScramblingId,8000,uint16,1,numeric,"Limits:[min,max]","[0,65535]","UL-DMRS-Scrambling-ID. If provided and the PUSCH is not a msg3 PUSCH, otherwise, L2 should set this to physical cell id. 0-65535",on
+PDU(20).PUSCH.DMRS,SCID,0,uint8,1,numeric,"DropDownList","{0,1}","DMRS sequence initialization [TS38.211, sec 6.4.1.1.1]. Should match what is sent in DCI 0_1, otherwise set to 0. Value : 0-1",on
+PDU(20).PUSCH.DMRS,numDmrsCdmGrpsNoData,2,uint8,1,numeric,"DropDownList","{0,1,2,3}","Number of DM-RS CDM groups without data [TS38.212 sec 7.3.1.1] Value: 1-3",on
+PDU(20).PUSCH.DMRS,dmrsPorts,3,uint16,1,numeric,"none","","DMRS ports. [TS38.212 7.3.1.1.2] provides description between DCI 0-1 content and DMRS ports. Bitmap occupying the 11 LSBs with: bit 0: antenna port 1000 bit 11: antenna port 1011 and for each bit. 0: DMRS port not used 1: DMRS port used",on
+PDU(20).PUSCH,FD_ALLOC,,struct,1,none,"none","","",on
+PDU(20).PUSCH.FD_ALLOC,resourceAlloc,1,uint8,1,numeric,"DropDownList","{0,1}","Resource Allocation Type [TS38.214, sec 6.1.2.2] 0: Type 0 1: Type 1.",on
+PDU(20).PUSCH.FD_ALLOC,rbBitmap,"zeros(1,36)",uint8,36,matlab expr string,"none","","For resource alloc type 0. [TS38.214, sec 6.1.2.2.1] [TS 38.212, 7.3.1.1.2] bitmap of RBs, 273 rounded up to multiple of 32. This bitmap is in units of VRBs. LSB of byte 0 of the bitmap represents the first RB of the BWP",on
+PDU(20).PUSCH.FD_ALLOC,rbStart,0,uint16,1,numeric,"Limits:[min,max]","[0,274]","For resource allocation type 1. [TS38.214, sec 6.1.2.2.2] The starting resource block within the BWP for this PUSCH. Value: 0-274.",on
+PDU(20).PUSCH.FD_ALLOC,rbSize,29,uint16,1,numeric,"none","[1,275]","For resource allocation type 1. [TS38.214, sec 6.1.2.2.2] The number of resource block within for this PUSCH. Value: 1-275",on
+PDU(20).PUSCH.FD_ALLOC,VRBtoPRBMapping,0,uint8,1,numeric,"DropDownList","{0}","VRB-to-PRB-mapping [TS38.211, sec 6.3.1.7] Value: 0: non-interleaved",on
+PDU(20).PUSCH.FD_ALLOC,FrequencyHopping,0,uint8,1,numeric,"DropDownList","{0,1}","For resource allocation type 1. [TS38.212, sec 7.3.1.1] [TS38.214, sec 6.3] Indicates if frequency hopping is enabled Value: 0: disabled 1: enabled",on
+PDU(20).PUSCH.FD_ALLOC,txDirectCurrentLocation,3300,uint16,1,numeric,"Limits:[min,max]","[0,4095]","The uplink Tx Direct Current location for the carrier. Only values in the value range of this field between 0 and 3299, which indicate the subcarrier index within the carrier corresponding to the numerology of the corresponding uplink BWP and value 3300, which indicates ""Outside the carrier"" and value 3301, which indicates ""Undetermined position within the carrier"" are used. [TS38.331, UplinkTxDirectCurrentBWP IE] Value: 0-4095",on
+PDU(20).PUSCH.FD_ALLOC,uplinkFrequencyShift7p5khz,0,uint8,1,numeric,"DropDownList","{0,1}","Indicates whether there is 7.5 kHz shift or not. [TS38.331, UplinkTxDirectCurrentBWP IE] Value: 0: false, 1: true",on
+PDU(20).PUSCH,TD_ALLOC,,struct,1,none,"none","","",on
+PDU(20).PUSCH.TD_ALLOC,StartSymbolIndex,0,uint8,1,numeric,"Limits:[min,max]","[0,13]","Start symbol index of PUSCH mapping from the start of the slot, S. [TS38.214, Table 6.1.2.1-1] Value: 0-13",on
+PDU(20).PUSCH.TD_ALLOC,NrOfSymbols,14,uint8,1,numeric,"Limits:[min,max]","[1,14]","PUSCH duration in symbols, L [TS38.214, Table 6.1.2.1-1] Value: 1-14",on
+PDU(20).PUSCH,PUSCH_DATA(1),,struct,1,none,"none","","",on
+PDU(20).PUSCH.PUSCH_DATA(1),rvIndex,0,uint8,1,numeric,"DropDownList","{0,1,2,3}","Redundancy version index [TS38.214, sec 6.1.4], it should match value sent in DCI Value : 0-3",on
+PDU(20).PUSCH.PUSCH_DATA(1),harqProcessID,0,uint8,1,numeric,"Limits:[min,max]","[0,15]","HARQ process number [TS38.212, sec 7.3.1.1], it should match value sent in DCI Value: 0 -15",on
+PDU(20).PUSCH.PUSCH_DATA(1),newDataIndicator,1,uint8,1,numeric,"DropDownList","{0,1}","Indicates if this new data or a retransmission [TS38.212, sec 7.3.1.1] Value: 0: retransmission 1: new data",on
+PDU(20).PUSCH.PUSCH_DATA(1),TBSize,704,uint32,1,numeric,"Limits:[min,max]","[0,65535]","Transmit block size (in bytes) [TS38.214 sec 6.1.4.2] Value: 0-65535",on
+PDU(20).PUSCH.PUSCH_DATA(1),numCb,0,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Number of CBs in the TB (could be more than the number of CBs in this PUSCH transmission). Should be set to zero in any of the following conditions: 1) CBG is not supported 2) isReTx=0 (new transmission) 3) tbSize=0",on
+PDU(20).PUSCH.PUSCH_DATA(1),CB,,struct,1,none,"none","","",on
+PDU(20).PUSCH,PUSCH_UCI,,struct,1,none,"none","","",on
+PDU(20).PUSCH,PUSCH_PTRS,,struct,1,none,"none","","",on
+PDU(20).PUSCH,DFTS_OFDM,,struct,1,none,"none","","",on
+PDU(20).PUSCH,RX_BEAMFORMING,,struct,1,none,"none","","",on
+PDU(20).PUSCH.RX_BEAMFORMING,numPRGs,1,uint16,1,numeric,"CallbackFunction","@ul_tti_callback","Number of PRGs spanning this allocation. Value : 1-275",on
+PDU(20).PUSCH.RX_BEAMFORMING,prgSize,56,uint16,1,numeric,"Limits:[min,max]","[1,275]","Size in RBs of a precoding resource block group (PRG) – to which same precoding and digital beamforming gets applied. Value: 1-275",on
+PDU(20).PUSCH.RX_BEAMFORMING,digBFInterfaces,0,uint8,1,numeric,"CallbackFunction","@ul_tti_callback","Number of STD ant ports (parallel streams) feeding into the digBF Value: 0-255",on
+PDU(20).PUSCH.RX_BEAMFORMING,PRG(1),,struct,1,none,"none","","",on
+PDU(20).PUSCH.RX_BEAMFORMING.PRG(1),DIG_BF_INTERFACE,,struct,1,none,"none","","",on
+,UE_GROUP(1),,struct,1,none,"none","","",on
+UE_GROUP(1),nUe,1,uint8,1,numeric,"CallbackFunction","@dl_tti_callback","Number of UE in this group For SU-MIMO, one group includes one UE only. For MU-MIMO, one group includes up to 12 UEs. Value 1 -> 12",on
+UE_GROUP(1),UE(1),,struct,1,none,"none","","",on
+UE_GROUP(1).UE(1),PduIdx,0,uint8,1,numeric,"Limits:[min,max]","[0, 255]","This value is an index for number of PDU identified by nPDU in this message, Value: 0 -> 255",on
+,UE_GROUP(2),,struct,1,none,"none","","",on
+UE_GROUP(2),nUe,3,uint8,1,numeric,"CallbackFunction","@dl_tti_callback","Number of UE in this group For SU-MIMO, one group includes one UE only. For MU-MIMO, one group includes up to 12 UEs. Value 1 -> 12",on
+UE_GROUP(2),UE(1),,struct,1,none,"none","","",on
+UE_GROUP(2).UE(1),PduIdx,0,uint8,1,numeric,"Limits:[min,max]","[0, 255]","This value is an index for number of PDU identified by nPDU in this message, Value: 0 -> 255",on
+UE_GROUP(2),UE(2),,struct,1,none,"none","","",on
+UE_GROUP(2).UE(2),PduIdx,0,uint8,1,numeric,"Limits:[min,max]","[0, 65535]","This value is an index for number of PDU identified by nPDU in this message, Value: 0-65535",on
+UE_GROUP(2),UE(3),,struct,1,none,"none","","",on
+UE_GROUP(2).UE(3),PduIdx,0,uint8,1,numeric,"Limits:[min,max]","[0, 65535]","This value is an index for number of PDU identified by nPDU in this message, Value: 0-65535",on
+,UE_GROUP(3),,struct,1,none,"none","","",on
+UE_GROUP(3),nUe,2,uint8,1,numeric,"CallbackFunction","@dl_tti_callback","Number of UE in this group For SU-MIMO, one group includes one UE only. For MU-MIMO, one group includes up to 12 UEs. Value 1 -> 12",on
+UE_GROUP(3),UE(1),,struct,1,none,"none","","",on
+UE_GROUP(3).UE(1),PduIdx,0,uint8,1,numeric,"Limits:[min,max]","[0, 255]","This value is an index for number of PDU identified by nPDU in this message, Value: 0 -> 255",on
+UE_GROUP(3),UE(2),,struct,1,none,"none","","",on
+UE_GROUP(3).UE(2),PduIdx,0,uint8,1,numeric,"Limits:[min,max]","[0, 65535]","This value is an index for number of PDU identified by nPDU in this message, Value: 0-65535",on
+,UE_GROUP(4),,struct,1,none,"none","","",on
+UE_GROUP(4),nUe,4,uint8,1,numeric,"CallbackFunction","@dl_tti_callback","Number of UE in this group For SU-MIMO, one group includes one UE only. For MU-MIMO, one group includes up to 12 UEs. Value 1 -> 12",on
+UE_GROUP(4),UE(1),,struct,1,none,"none","","",on
+UE_GROUP(4).UE(1),PduIdx,0,uint8,1,numeric,"Limits:[min,max]","[0, 255]","This value is an index for number of PDU identified by nPDU in this message, Value: 0 -> 255",on
+UE_GROUP(4),UE(2),,struct,1,none,"none","","",on
+UE_GROUP(4).UE(2),PduIdx,0,uint8,1,numeric,"Limits:[min,max]","[0, 65535]","This value is an index for number of PDU identified by nPDU in this message, Value: 0-65535",on
+UE_GROUP(4),UE(3),,struct,1,none,"none","","",on
+UE_GROUP(4).UE(3),PduIdx,0,uint8,1,numeric,"Limits:[min,max]","[0, 65535]","This value is an index for number of PDU identified by nPDU in this message, Value: 0-65535",on
+UE_GROUP(4),UE(4),,struct,1,none,"none","","",on
+UE_GROUP(4).UE(4),PduIdx,0,uint8,1,numeric,"Limits:[min,max]","[0, 65535]","This value is an index for number of PDU identified by nPDU in this message, Value: 0-65535",on
+,UE_GROUP(5),,struct,1,none,"none","","",on
+UE_GROUP(5),nUe,2,uint8,1,numeric,"CallbackFunction","@dl_tti_callback","Number of UE in this group For SU-MIMO, one group includes one UE only. For MU-MIMO, one group includes up to 12 UEs. Value 1 -> 12",on
+UE_GROUP(5),UE(1),,struct,1,none,"none","","",on
+UE_GROUP(5).UE(1),PduIdx,0,uint8,1,numeric,"Limits:[min,max]","[0, 255]","This value is an index for number of PDU identified by nPDU in this message, Value: 0 -> 255",on
+UE_GROUP(5),UE(2),,struct,1,none,"none","","",on
+UE_GROUP(5).UE(2),PduIdx,0,uint8,1,numeric,"Limits:[min,max]","[0, 65535]","This value is an index for number of PDU identified by nPDU in this message, Value: 0-65535",on
+,UE_GROUP(6),,struct,1,none,"none","","",on
+UE_GROUP(6),nUe,1,uint8,1,numeric,"CallbackFunction","@dl_tti_callback","Number of UE in this group For SU-MIMO, one group includes one UE only. For MU-MIMO, one group includes up to 12 UEs. Value 1 -> 12",on
+UE_GROUP(6),UE(1),,struct,1,none,"none","","",on
+UE_GROUP(6).UE(1),PduIdx,0,uint8,1,numeric,"Limits:[min,max]","[0, 255]","This value is an index for number of PDU identified by nPDU in this message, Value: 0 -> 255",on
+,UE_GROUP(7),,struct,1,none,"none","","",on
+UE_GROUP(7),nUe,4,uint8,1,numeric,"CallbackFunction","@dl_tti_callback","Number of UE in this group For SU-MIMO, one group includes one UE only. For MU-MIMO, one group includes up to 12 UEs. Value 1 -> 12",on
+UE_GROUP(7),UE(1),,struct,1,none,"none","","",on
+UE_GROUP(7).UE(1),PduIdx,0,uint8,1,numeric,"Limits:[min,max]","[0, 255]","This value is an index for number of PDU identified by nPDU in this message, Value: 0 -> 255",on
+UE_GROUP(7),UE(2),,struct,1,none,"none","","",on
+UE_GROUP(7).UE(2),PduIdx,0,uint8,1,numeric,"Limits:[min,max]","[0, 65535]","This value is an index for number of PDU identified by nPDU in this message, Value: 0-65535",on
+UE_GROUP(7),UE(3),,struct,1,none,"none","","",on
+UE_GROUP(7).UE(3),PduIdx,0,uint8,1,numeric,"Limits:[min,max]","[0, 65535]","This value is an index for number of PDU identified by nPDU in this message, Value: 0-65535",on
+UE_GROUP(7),UE(4),,struct,1,none,"none","","",on
+UE_GROUP(7).UE(4),PduIdx,0,uint8,1,numeric,"Limits:[min,max]","[0, 65535]","This value is an index for number of PDU identified by nPDU in this message, Value: 0-65535",on
+,UE_GROUP(8),,struct,1,none,"none","","",on
+UE_GROUP(8),nUe,3,uint8,1,numeric,"CallbackFunction","@dl_tti_callback","Number of UE in this group For SU-MIMO, one group includes one UE only. For MU-MIMO, one group includes up to 12 UEs. Value 1 -> 12",on
+UE_GROUP(8),UE(1),,struct,1,none,"none","","",on
+UE_GROUP(8).UE(1),PduIdx,0,uint8,1,numeric,"Limits:[min,max]","[0, 255]","This value is an index for number of PDU identified by nPDU in this message, Value: 0 -> 255",on
+UE_GROUP(8),UE(2),,struct,1,none,"none","","",on
+UE_GROUP(8).UE(2),PduIdx,0,uint8,1,numeric,"Limits:[min,max]","[0, 65535]","This value is an index for number of PDU identified by nPDU in this message, Value: 0-65535",on
+UE_GROUP(8),UE(3),,struct,1,none,"none","","",on
+UE_GROUP(8).UE(3),PduIdx,0,uint8,1,numeric,"Limits:[min,max]","[0, 65535]","This value is an index for number of PDU identified by nPDU in this message, Value: 0-65535",on
